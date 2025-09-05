@@ -123,7 +123,7 @@ Error generating stack: `+a.message+`
  */var V1=Symbol.for("react.element"),K1=Symbol.for("react.portal"),bs=Symbol.for("react.fragment"),Ns=Symbol.for("react.strict_mode"),xs=Symbol.for("react.profiler"),Ms=Symbol.for("react.provider"),ws=Symbol.for("react.context"),FO=Symbol.for("react.server_context"),Ls=Symbol.for("react.forward_ref"),Ds=Symbol.for("react.suspense"),_s=Symbol.for("react.suspense_list"),Cs=Symbol.for("react.memo"),$s=Symbol.for("react.lazy"),kO=Symbol.for("react.offscreen"),HP;HP=Symbol.for("react.module.reference");function Wt(e){if(typeof e=="object"&&e!==null){var t=e.$$typeof;switch(t){case V1:switch(e=e.type,e){case bs:case xs:case Ns:case Ds:case _s:return e;default:switch(e=e&&e.$$typeof,e){case FO:case ws:case Ls:case $s:case Cs:case Ms:return e;default:return t}}case K1:return t}}}de.ContextConsumer=ws;de.ContextProvider=Ms;de.Element=V1;de.ForwardRef=Ls;de.Fragment=bs;de.Lazy=$s;de.Memo=Cs;de.Portal=K1;de.Profiler=xs;de.StrictMode=Ns;de.Suspense=Ds;de.SuspenseList=_s;de.isAsyncMode=function(){return!1};de.isConcurrentMode=function(){return!1};de.isContextConsumer=function(e){return Wt(e)===ws};de.isContextProvider=function(e){return Wt(e)===Ms};de.isElement=function(e){return typeof e=="object"&&e!==null&&e.$$typeof===V1};de.isForwardRef=function(e){return Wt(e)===Ls};de.isFragment=function(e){return Wt(e)===bs};de.isLazy=function(e){return Wt(e)===$s};de.isMemo=function(e){return Wt(e)===Cs};de.isPortal=function(e){return Wt(e)===K1};de.isProfiler=function(e){return Wt(e)===xs};de.isStrictMode=function(e){return Wt(e)===Ns};de.isSuspense=function(e){return Wt(e)===Ds};de.isSuspenseList=function(e){return Wt(e)===_s};de.isValidElementType=function(e){return typeof e=="string"||typeof e=="function"||e===bs||e===xs||e===Ns||e===Ds||e===_s||e===kO||typeof e=="object"&&e!==null&&(e.$$typeof===$s||e.$$typeof===Cs||e.$$typeof===Ms||e.$$typeof===ws||e.$$typeof===Ls||e.$$typeof===HP||e.getModuleId!==void 0)};de.typeOf=Wt;UP.exports=de;var BO=UP.exports,YO=Gn,UO=Wn,HO="[object Number]";function VO(e){return typeof e=="number"||UO(e)&&YO(e)==HO}var VP=VO;const KO=fe(VP);var ZO=VP;function zO(e){return ZO(e)&&e!=+e}var GO=zO;const D0=fe(GO);var lt=function(t){return t===0?0:t>0?1:-1},Ur=function(t){return ni(t)&&t.indexOf("%")===t.length-1},H=function(t){return KO(t)&&!D0(t)},WO=function(t){return Q(t)},He=function(t){return H(t)||ni(t)},JO=0,_a=function(t){var n=++JO;return"".concat(t||"").concat(n)},st=function(t,n){var r=arguments.length>2&&arguments[2]!==void 0?arguments[2]:0,i=arguments.length>3&&arguments[3]!==void 0?arguments[3]:!1;if(!H(t)&&!ni(t))return r;var a;if(Ur(t)){var o=t.indexOf("%");a=n*parseFloat(t.slice(0,o))/100}else a=+t;return D0(a)&&(a=r),i&&a>n&&(a=n),a},or=function(t){if(!t)return null;var n=Object.keys(t);return n&&n.length?t[n[0]]:null},qO=function(t){if(!Array.isArray(t))return!1;for(var n=t.length,r={},i=0;i<n;i++)if(!r[t[i]])r[t[i]]=!0;else return!0;return!1},Ot=function(t,n){return H(t)&&H(n)?function(r){return t+r*(n-t)}:function(){return n}};function ol(e,t,n){return!e||!e.length?null:e.find(function(r){return r&&(typeof t=="function"?t(r):Mt(r,t))===n})}var QO=function(t,n){return H(t)&&H(n)?t-n:ni(t)&&ni(n)?t.localeCompare(n):t instanceof Date&&n instanceof Date?t.getTime()-n.getTime():String(t).localeCompare(String(n))};function Hi(e,t){for(var n in e)if({}.hasOwnProperty.call(e,n)&&(!{}.hasOwnProperty.call(t,n)||e[n]!==t[n]))return!1;for(var r in t)if({}.hasOwnProperty.call(t,r)&&!{}.hasOwnProperty.call(e,r))return!1;return!0}function hd(e){"@babel/helpers - typeof";return hd=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},hd(e)}var eb=["viewBox","children"],tb=["aria-activedescendant","aria-atomic","aria-autocomplete","aria-busy","aria-checked","aria-colcount","aria-colindex","aria-colspan","aria-controls","aria-current","aria-describedby","aria-details","aria-disabled","aria-errormessage","aria-expanded","aria-flowto","aria-haspopup","aria-hidden","aria-invalid","aria-keyshortcuts","aria-label","aria-labelledby","aria-level","aria-live","aria-modal","aria-multiline","aria-multiselectable","aria-orientation","aria-owns","aria-placeholder","aria-posinset","aria-pressed","aria-readonly","aria-relevant","aria-required","aria-roledescription","aria-rowcount","aria-rowindex","aria-rowspan","aria-selected","aria-setsize","aria-sort","aria-valuemax","aria-valuemin","aria-valuenow","aria-valuetext","className","color","height","id","lang","max","media","method","min","name","style","target","width","role","tabIndex","accentHeight","accumulate","additive","alignmentBaseline","allowReorder","alphabetic","amplitude","arabicForm","ascent","attributeName","attributeType","autoReverse","azimuth","baseFrequency","baselineShift","baseProfile","bbox","begin","bias","by","calcMode","capHeight","clip","clipPath","clipPathUnits","clipRule","colorInterpolation","colorInterpolationFilters","colorProfile","colorRendering","contentScriptType","contentStyleType","cursor","cx","cy","d","decelerate","descent","diffuseConstant","direction","display","divisor","dominantBaseline","dur","dx","dy","edgeMode","elevation","enableBackground","end","exponent","externalResourcesRequired","fill","fillOpacity","fillRule","filter","filterRes","filterUnits","floodColor","floodOpacity","focusable","fontFamily","fontSize","fontSizeAdjust","fontStretch","fontStyle","fontVariant","fontWeight","format","from","fx","fy","g1","g2","glyphName","glyphOrientationHorizontal","glyphOrientationVertical","glyphRef","gradientTransform","gradientUnits","hanging","horizAdvX","horizOriginX","href","ideographic","imageRendering","in2","in","intercept","k1","k2","k3","k4","k","kernelMatrix","kernelUnitLength","kerning","keyPoints","keySplines","keyTimes","lengthAdjust","letterSpacing","lightingColor","limitingConeAngle","local","markerEnd","markerHeight","markerMid","markerStart","markerUnits","markerWidth","mask","maskContentUnits","maskUnits","mathematical","mode","numOctaves","offset","opacity","operator","order","orient","orientation","origin","overflow","overlinePosition","overlineThickness","paintOrder","panose1","pathLength","patternContentUnits","patternTransform","patternUnits","pointerEvents","pointsAtX","pointsAtY","pointsAtZ","preserveAlpha","preserveAspectRatio","primitiveUnits","r","radius","refX","refY","renderingIntent","repeatCount","repeatDur","requiredExtensions","requiredFeatures","restart","result","rotate","rx","ry","seed","shapeRendering","slope","spacing","specularConstant","specularExponent","speed","spreadMethod","startOffset","stdDeviation","stemh","stemv","stitchTiles","stopColor","stopOpacity","strikethroughPosition","strikethroughThickness","string","stroke","strokeDasharray","strokeDashoffset","strokeLinecap","strokeLinejoin","strokeMiterlimit","strokeOpacity","strokeWidth","surfaceScale","systemLanguage","tableValues","targetX","targetY","textAnchor","textDecoration","textLength","textRendering","to","transform","u1","u2","underlinePosition","underlineThickness","unicode","unicodeBidi","unicodeRange","unitsPerEm","vAlphabetic","values","vectorEffect","version","vertAdvY","vertOriginX","vertOriginY","vHanging","vIdeographic","viewTarget","visibility","vMathematical","widths","wordSpacing","writingMode","x1","x2","x","xChannelSelector","xHeight","xlinkActuate","xlinkArcrole","xlinkHref","xlinkRole","xlinkShow","xlinkTitle","xlinkType","xmlBase","xmlLang","xmlns","xmlnsXlink","xmlSpace","y1","y2","y","yChannelSelector","z","zoomAndPan","ref","key","angle"],dh=["points","pathLength"],Vc={svg:eb,polygon:dh,polyline:dh},Z1=["dangerouslySetInnerHTML","onCopy","onCopyCapture","onCut","onCutCapture","onPaste","onPasteCapture","onCompositionEnd","onCompositionEndCapture","onCompositionStart","onCompositionStartCapture","onCompositionUpdate","onCompositionUpdateCapture","onFocus","onFocusCapture","onBlur","onBlurCapture","onChange","onChangeCapture","onBeforeInput","onBeforeInputCapture","onInput","onInputCapture","onReset","onResetCapture","onSubmit","onSubmitCapture","onInvalid","onInvalidCapture","onLoad","onLoadCapture","onError","onErrorCapture","onKeyDown","onKeyDownCapture","onKeyPress","onKeyPressCapture","onKeyUp","onKeyUpCapture","onAbort","onAbortCapture","onCanPlay","onCanPlayCapture","onCanPlayThrough","onCanPlayThroughCapture","onDurationChange","onDurationChangeCapture","onEmptied","onEmptiedCapture","onEncrypted","onEncryptedCapture","onEnded","onEndedCapture","onLoadedData","onLoadedDataCapture","onLoadedMetadata","onLoadedMetadataCapture","onLoadStart","onLoadStartCapture","onPause","onPauseCapture","onPlay","onPlayCapture","onPlaying","onPlayingCapture","onProgress","onProgressCapture","onRateChange","onRateChangeCapture","onSeeked","onSeekedCapture","onSeeking","onSeekingCapture","onStalled","onStalledCapture","onSuspend","onSuspendCapture","onTimeUpdate","onTimeUpdateCapture","onVolumeChange","onVolumeChangeCapture","onWaiting","onWaitingCapture","onAuxClick","onAuxClickCapture","onClick","onClickCapture","onContextMenu","onContextMenuCapture","onDoubleClick","onDoubleClickCapture","onDrag","onDragCapture","onDragEnd","onDragEndCapture","onDragEnter","onDragEnterCapture","onDragExit","onDragExitCapture","onDragLeave","onDragLeaveCapture","onDragOver","onDragOverCapture","onDragStart","onDragStartCapture","onDrop","onDropCapture","onMouseDown","onMouseDownCapture","onMouseEnter","onMouseLeave","onMouseMove","onMouseMoveCapture","onMouseOut","onMouseOutCapture","onMouseOver","onMouseOverCapture","onMouseUp","onMouseUpCapture","onSelect","onSelectCapture","onTouchCancel","onTouchCancelCapture","onTouchEnd","onTouchEndCapture","onTouchMove","onTouchMoveCapture","onTouchStart","onTouchStartCapture","onPointerDown","onPointerDownCapture","onPointerMove","onPointerMoveCapture","onPointerUp","onPointerUpCapture","onPointerCancel","onPointerCancelCapture","onPointerEnter","onPointerEnterCapture","onPointerLeave","onPointerLeaveCapture","onPointerOver","onPointerOverCapture","onPointerOut","onPointerOutCapture","onGotPointerCapture","onGotPointerCaptureCapture","onLostPointerCapture","onLostPointerCaptureCapture","onScroll","onScrollCapture","onWheel","onWheelCapture","onAnimationStart","onAnimationStartCapture","onAnimationEnd","onAnimationEndCapture","onAnimationIteration","onAnimationIterationCapture","onTransitionEnd","onTransitionEndCapture"],ul=function(t,n){if(!t||typeof t=="function"||typeof t=="boolean")return null;var r=t;if(j.isValidElement(t)&&(r=t.props),!Ma(r))return null;var i={};return Object.keys(r).forEach(function(a){Z1.includes(a)&&(i[a]=n||function(o){return r[a](r,o)})}),i},nb=function(t,n,r){return function(i){return t(n,r,i),null}},ri=function(t,n,r){if(!Ma(t)||hd(t)!=="object")return null;var i=null;return Object.keys(t).forEach(function(a){var o=t[a];Z1.includes(a)&&typeof o=="function"&&(i||(i={}),i[a]=nb(o,n,r))}),i},rb=["children"],ib=["children"];function ph(e,t){if(e==null)return{};var n=ab(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function ab(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function Ad(e){"@babel/helpers - typeof";return Ad=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Ad(e)}var hh={click:"onClick",mousedown:"onMouseDown",mouseup:"onMouseUp",mouseover:"onMouseOver",mousemove:"onMouseMove",mouseout:"onMouseOut",mouseenter:"onMouseEnter",mouseleave:"onMouseLeave",touchcancel:"onTouchCancel",touchend:"onTouchEnd",touchmove:"onTouchMove",touchstart:"onTouchStart",contextmenu:"onContextMenu",dblclick:"onDoubleClick"},$n=function(t){return typeof t=="string"?t:t?t.displayName||t.name||"Component":""},Ah=null,Kc=null,z1=function e(t){if(t===Ah&&Array.isArray(Kc))return Kc;var n=[];return j.Children.forEach(t,function(r){Q(r)||(BO.isFragment(r)?n=n.concat(e(r.props.children)):n.push(r))}),Kc=n,Ah=t,n};function wt(e,t){var n=[],r=[];return Array.isArray(t)?r=t.map(function(i){return $n(i)}):r=[$n(t)],z1(e).forEach(function(i){var a=Mt(i,"type.displayName")||Mt(i,"type.name");r.indexOf(a)!==-1&&n.push(i)}),n}function Et(e,t){var n=wt(e,t);return n&&n[0]}var vh=function(t){if(!t||!t.props)return!1;var n=t.props,r=n.width,i=n.height;return!(!H(r)||r<=0||!H(i)||i<=0)},ob=["a","altGlyph","altGlyphDef","altGlyphItem","animate","animateColor","animateMotion","animateTransform","circle","clipPath","color-profile","cursor","defs","desc","ellipse","feBlend","feColormatrix","feComponentTransfer","feComposite","feConvolveMatrix","feDiffuseLighting","feDisplacementMap","feDistantLight","feFlood","feFuncA","feFuncB","feFuncG","feFuncR","feGaussianBlur","feImage","feMerge","feMergeNode","feMorphology","feOffset","fePointLight","feSpecularLighting","feSpotLight","feTile","feTurbulence","filter","font","font-face","font-face-format","font-face-name","font-face-url","foreignObject","g","glyph","glyphRef","hkern","image","line","lineGradient","marker","mask","metadata","missing-glyph","mpath","path","pattern","polygon","polyline","radialGradient","rect","script","set","stop","style","svg","switch","symbol","text","textPath","title","tref","tspan","use","view","vkern"],ub=function(t){return t&&t.type&&ni(t.type)&&ob.indexOf(t.type)>=0},lb=function(t){return t&&Ad(t)==="object"&&"clipDot"in t},sb=function(t,n,r,i){var a,o=(a=Vc==null?void 0:Vc[i])!==null&&a!==void 0?a:[];return n.startsWith("data-")||!q(t)&&(i&&o.includes(n)||tb.includes(n))||r&&Z1.includes(n)},W=function(t,n,r){if(!t||typeof t=="function"||typeof t=="boolean")return null;var i=t;if(j.isValidElement(t)&&(i=t.props),!Ma(i))return null;var a={};return Object.keys(i).forEach(function(o){var u;sb((u=i)===null||u===void 0?void 0:u[o],o,n,r)&&(a[o]=i[o])}),a},vd=function e(t,n){if(t===n)return!0;var r=j.Children.count(t);if(r!==j.Children.count(n))return!1;if(r===0)return!0;if(r===1)return yh(Array.isArray(t)?t[0]:t,Array.isArray(n)?n[0]:n);for(var i=0;i<r;i++){var a=t[i],o=n[i];if(Array.isArray(a)||Array.isArray(o)){if(!e(a,o))return!1}else if(!yh(a,o))return!1}return!0},yh=function(t,n){if(Q(t)&&Q(n))return!0;if(!Q(t)&&!Q(n)){var r=t.props||{},i=r.children,a=ph(r,rb),o=n.props||{},u=o.children,l=ph(o,ib);return i&&u?Hi(a,l)&&vd(i,u):!i&&!u?Hi(a,l):!1}return!1},mh=function(t,n){var r=[],i={};return z1(t).forEach(function(a,o){if(ub(a))r.push(a);else if(a){var u=$n(a.type),l=n[u]||{},s=l.handler,f=l.once;if(s&&(!f||!i[u])){var c=s(a,u,o);r.push(c),i[u]=!0}}}),r},cb=function(t){var n=t&&t.type;return n&&hh[n]?hh[n]:null},fb=function(t,n){return z1(n).indexOf(t)},db=["children","width","height","viewBox","className","style","title","desc"];function yd(){return yd=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},yd.apply(this,arguments)}function pb(e,t){if(e==null)return{};var n=hb(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function hb(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function md(e){var t=e.children,n=e.width,r=e.height,i=e.viewBox,a=e.className,o=e.style,u=e.title,l=e.desc,s=pb(e,db),f=i||{width:n,height:r,x:0,y:0},c=te("recharts-surface",a);return E.createElement("svg",yd({},W(s,!0,"svg"),{className:c,width:n,height:r,style:o,viewBox:"".concat(f.x," ").concat(f.y," ").concat(f.width," ").concat(f.height)}),E.createElement("title",null,u),E.createElement("desc",null,l),t)}var Ab=["children","className"];function gd(){return gd=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},gd.apply(this,arguments)}function vb(e,t){if(e==null)return{};var n=yb(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function yb(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}var ue=E.forwardRef(function(e,t){var n=e.children,r=e.className,i=vb(e,Ab),a=te("recharts-layer",r);return E.createElement("g",gd({className:a},W(i,!0),{ref:t}),n)}),cn=function(t,n){for(var r=arguments.length,i=new Array(r>2?r-2:0),a=2;a<r;a++)i[a-2]=arguments[a]};function mb(e,t,n){var r=-1,i=e.length;t<0&&(t=-t>i?0:i+t),n=n>i?i:n,n<0&&(n+=i),i=t>n?0:n-t>>>0,t>>>=0;for(var a=Array(i);++r<i;)a[r]=e[r+t];return a}var gb=mb,Pb=gb;function Tb(e,t,n){var r=e.length;return n=n===void 0?r:n,!t&&n>=r?e:Pb(e,t,n)}var Xb=Tb,Ib="\\ud800-\\udfff",Rb="\\u0300-\\u036f",Sb="\\ufe20-\\ufe2f",Eb="\\u20d0-\\u20ff",Ob=Rb+Sb+Eb,bb="\\ufe0e\\ufe0f",Nb="\\u200d",xb=RegExp("["+Nb+Ib+Ob+bb+"]");function Mb(e){return xb.test(e)}var KP=Mb;function wb(e){return e.split("")}var Lb=wb,ZP="\\ud800-\\udfff",Db="\\u0300-\\u036f",_b="\\ufe20-\\ufe2f",Cb="\\u20d0-\\u20ff",$b=Db+_b+Cb,jb="\\ufe0e\\ufe0f",Fb="["+ZP+"]",Pd="["+$b+"]",Td="\\ud83c[\\udffb-\\udfff]",kb="(?:"+Pd+"|"+Td+")",zP="[^"+ZP+"]",GP="(?:\\ud83c[\\udde6-\\uddff]){2}",WP="[\\ud800-\\udbff][\\udc00-\\udfff]",Bb="\\u200d",JP=kb+"?",qP="["+jb+"]?",Yb="(?:"+Bb+"(?:"+[zP,GP,WP].join("|")+")"+qP+JP+")*",Ub=qP+JP+Yb,Hb="(?:"+[zP+Pd+"?",Pd,GP,WP,Fb].join("|")+")",Vb=RegExp(Td+"(?="+Td+")|"+Hb+Ub,"g");function Kb(e){return e.match(Vb)||[]}var Zb=Kb,zb=Lb,Gb=KP,Wb=Zb;function Jb(e){return Gb(e)?Wb(e):zb(e)}var qb=Jb,Qb=Xb,e8=KP,t8=qb,n8=kP;function r8(e){return function(t){t=n8(t);var n=e8(t)?t8(t):void 0,r=n?n[0]:t.charAt(0),i=n?Qb(n,1).join(""):t.slice(1);return r[e]()+i}}var i8=r8,a8=i8,o8=a8("toUpperCase"),u8=o8;const js=fe(u8);function ve(e){return function(){return e}}const QP=Math.cos,ll=Math.sin,pn=Math.sqrt,sl=Math.PI,Fs=2*sl,Xd=Math.PI,Id=2*Xd,Cr=1e-6,l8=Id-Cr;function e3(e){this._+=e[0];for(let t=1,n=e.length;t<n;++t)this._+=arguments[t]+e[t]}function s8(e){let t=Math.floor(e);if(!(t>=0))throw new Error(`invalid digits: ${e}`);if(t>15)return e3;const n=10**t;return function(r){this._+=r[0];for(let i=1,a=r.length;i<a;++i)this._+=Math.round(arguments[i]*n)/n+r[i]}}class c8{constructor(t){this._x0=this._y0=this._x1=this._y1=null,this._="",this._append=t==null?e3:s8(t)}moveTo(t,n){this._append`M${this._x0=this._x1=+t},${this._y0=this._y1=+n}`}closePath(){this._x1!==null&&(this._x1=this._x0,this._y1=this._y0,this._append`Z`)}lineTo(t,n){this._append`L${this._x1=+t},${this._y1=+n}`}quadraticCurveTo(t,n,r,i){this._append`Q${+t},${+n},${this._x1=+r},${this._y1=+i}`}bezierCurveTo(t,n,r,i,a,o){this._append`C${+t},${+n},${+r},${+i},${this._x1=+a},${this._y1=+o}`}arcTo(t,n,r,i,a){if(t=+t,n=+n,r=+r,i=+i,a=+a,a<0)throw new Error(`negative radius: ${a}`);let o=this._x1,u=this._y1,l=r-t,s=i-n,f=o-t,c=u-n,d=f*f+c*c;if(this._x1===null)this._append`M${this._x1=t},${this._y1=n}`;else if(d>Cr)if(!(Math.abs(c*l-s*f)>Cr)||!a)this._append`L${this._x1=t},${this._y1=n}`;else{let p=r-o,A=i-u,h=l*l+s*s,P=p*p+A*A,y=Math.sqrt(h),v=Math.sqrt(d),m=a*Math.tan((Xd-Math.acos((h+d-P)/(2*y*v)))/2),X=m/v,g=m/y;Math.abs(X-1)>Cr&&this._append`L${t+X*f},${n+X*c}`,this._append`A${a},${a},0,0,${+(c*p>f*A)},${this._x1=t+g*l},${this._y1=n+g*s}`}}arc(t,n,r,i,a,o){if(t=+t,n=+n,r=+r,o=!!o,r<0)throw new Error(`negative radius: ${r}`);let u=r*Math.cos(i),l=r*Math.sin(i),s=t+u,f=n+l,c=1^o,d=o?i-a:a-i;this._x1===null?this._append`M${s},${f}`:(Math.abs(this._x1-s)>Cr||Math.abs(this._y1-f)>Cr)&&this._append`L${s},${f}`,r&&(d<0&&(d=d%Id+Id),d>l8?this._append`A${r},${r},0,1,${c},${t-u},${n-l}A${r},${r},0,1,${c},${this._x1=s},${this._y1=f}`:d>Cr&&this._append`A${r},${r},0,${+(d>=Xd)},${c},${this._x1=t+r*Math.cos(a)},${this._y1=n+r*Math.sin(a)}`)}rect(t,n,r,i){this._append`M${this._x0=this._x1=+t},${this._y0=this._y1=+n}h${r=+r}v${+i}h${-r}Z`}toString(){return this._}}function G1(e){let t=3;return e.digits=function(n){if(!arguments.length)return t;if(n==null)t=null;else{const r=Math.floor(n);if(!(r>=0))throw new RangeError(`invalid digits: ${n}`);t=r}return e},()=>new c8(t)}function W1(e){return typeof e=="object"&&"length"in e?e:Array.from(e)}function t3(e){this._context=e}t3.prototype={areaStart:function(){this._line=0},areaEnd:function(){this._line=NaN},lineStart:function(){this._point=0},lineEnd:function(){(this._line||this._line!==0&&this._point===1)&&this._context.closePath(),this._line=1-this._line},point:function(e,t){switch(e=+e,t=+t,this._point){case 0:this._point=1,this._line?this._context.lineTo(e,t):this._context.moveTo(e,t);break;case 1:this._point=2;default:this._context.lineTo(e,t);break}}};function ks(e){return new t3(e)}function n3(e){return e[0]}function r3(e){return e[1]}function i3(e,t){var n=ve(!0),r=null,i=ks,a=null,o=G1(u);e=typeof e=="function"?e:e===void 0?n3:ve(e),t=typeof t=="function"?t:t===void 0?r3:ve(t);function u(l){var s,f=(l=W1(l)).length,c,d=!1,p;for(r==null&&(a=i(p=o())),s=0;s<=f;++s)!(s<f&&n(c=l[s],s,l))===d&&((d=!d)?a.lineStart():a.lineEnd()),d&&a.point(+e(c,s,l),+t(c,s,l));if(p)return a=null,p+""||null}return u.x=function(l){return arguments.length?(e=typeof l=="function"?l:ve(+l),u):e},u.y=function(l){return arguments.length?(t=typeof l=="function"?l:ve(+l),u):t},u.defined=function(l){return arguments.length?(n=typeof l=="function"?l:ve(!!l),u):n},u.curve=function(l){return arguments.length?(i=l,r!=null&&(a=i(r)),u):i},u.context=function(l){return arguments.length?(l==null?r=a=null:a=i(r=l),u):r},u}function lu(e,t,n){var r=null,i=ve(!0),a=null,o=ks,u=null,l=G1(s);e=typeof e=="function"?e:e===void 0?n3:ve(+e),t=typeof t=="function"?t:ve(t===void 0?0:+t),n=typeof n=="function"?n:n===void 0?r3:ve(+n);function s(c){var d,p,A,h=(c=W1(c)).length,P,y=!1,v,m=new Array(h),X=new Array(h);for(a==null&&(u=o(v=l())),d=0;d<=h;++d){if(!(d<h&&i(P=c[d],d,c))===y)if(y=!y)p=d,u.areaStart(),u.lineStart();else{for(u.lineEnd(),u.lineStart(),A=d-1;A>=p;--A)u.point(m[A],X[A]);u.lineEnd(),u.areaEnd()}y&&(m[d]=+e(P,d,c),X[d]=+t(P,d,c),u.point(r?+r(P,d,c):m[d],n?+n(P,d,c):X[d]))}if(v)return u=null,v+""||null}function f(){return i3().defined(i).curve(o).context(a)}return s.x=function(c){return arguments.length?(e=typeof c=="function"?c:ve(+c),r=null,s):e},s.x0=function(c){return arguments.length?(e=typeof c=="function"?c:ve(+c),s):e},s.x1=function(c){return arguments.length?(r=c==null?null:typeof c=="function"?c:ve(+c),s):r},s.y=function(c){return arguments.length?(t=typeof c=="function"?c:ve(+c),n=null,s):t},s.y0=function(c){return arguments.length?(t=typeof c=="function"?c:ve(+c),s):t},s.y1=function(c){return arguments.length?(n=c==null?null:typeof c=="function"?c:ve(+c),s):n},s.lineX0=s.lineY0=function(){return f().x(e).y(t)},s.lineY1=function(){return f().x(e).y(n)},s.lineX1=function(){return f().x(r).y(t)},s.defined=function(c){return arguments.length?(i=typeof c=="function"?c:ve(!!c),s):i},s.curve=function(c){return arguments.length?(o=c,a!=null&&(u=o(a)),s):o},s.context=function(c){return arguments.length?(c==null?a=u=null:u=o(a=c),s):a},s}class a3{constructor(t,n){this._context=t,this._x=n}areaStart(){this._line=0}areaEnd(){this._line=NaN}lineStart(){this._point=0}lineEnd(){(this._line||this._line!==0&&this._point===1)&&this._context.closePath(),this._line=1-this._line}point(t,n){switch(t=+t,n=+n,this._point){case 0:{this._point=1,this._line?this._context.lineTo(t,n):this._context.moveTo(t,n);break}case 1:this._point=2;default:{this._x?this._context.bezierCurveTo(this._x0=(this._x0+t)/2,this._y0,this._x0,n,t,n):this._context.bezierCurveTo(this._x0,this._y0=(this._y0+n)/2,t,this._y0,t,n);break}}this._x0=t,this._y0=n}}function f8(e){return new a3(e,!0)}function d8(e){return new a3(e,!1)}const J1={draw(e,t){const n=pn(t/sl);e.moveTo(n,0),e.arc(0,0,n,0,Fs)}},p8={draw(e,t){const n=pn(t/5)/2;e.moveTo(-3*n,-n),e.lineTo(-n,-n),e.lineTo(-n,-3*n),e.lineTo(n,-3*n),e.lineTo(n,-n),e.lineTo(3*n,-n),e.lineTo(3*n,n),e.lineTo(n,n),e.lineTo(n,3*n),e.lineTo(-n,3*n),e.lineTo(-n,n),e.lineTo(-3*n,n),e.closePath()}},o3=pn(1/3),h8=o3*2,A8={draw(e,t){const n=pn(t/h8),r=n*o3;e.moveTo(0,-n),e.lineTo(r,0),e.lineTo(0,n),e.lineTo(-r,0),e.closePath()}},v8={draw(e,t){const n=pn(t),r=-n/2;e.rect(r,r,n,n)}},y8=.8908130915292852,u3=ll(sl/10)/ll(7*sl/10),m8=ll(Fs/10)*u3,g8=-QP(Fs/10)*u3,P8={draw(e,t){const n=pn(t*y8),r=m8*n,i=g8*n;e.moveTo(0,-n),e.lineTo(r,i);for(let a=1;a<5;++a){const o=Fs*a/5,u=QP(o),l=ll(o);e.lineTo(l*n,-u*n),e.lineTo(u*r-l*i,l*r+u*i)}e.closePath()}},Zc=pn(3),T8={draw(e,t){const n=-pn(t/(Zc*3));e.moveTo(0,n*2),e.lineTo(-Zc*n,-n),e.lineTo(Zc*n,-n),e.closePath()}},$t=-.5,jt=pn(3)/2,Rd=1/pn(12),X8=(Rd/2+1)*3,I8={draw(e,t){const n=pn(t/X8),r=n/2,i=n*Rd,a=r,o=n*Rd+n,u=-a,l=o;e.moveTo(r,i),e.lineTo(a,o),e.lineTo(u,l),e.lineTo($t*r-jt*i,jt*r+$t*i),e.lineTo($t*a-jt*o,jt*a+$t*o),e.lineTo($t*u-jt*l,jt*u+$t*l),e.lineTo($t*r+jt*i,$t*i-jt*r),e.lineTo($t*a+jt*o,$t*o-jt*a),e.lineTo($t*u+jt*l,$t*l-jt*u),e.closePath()}};function R8(e,t){let n=null,r=G1(i);e=typeof e=="function"?e:ve(e||J1),t=typeof t=="function"?t:ve(t===void 0?64:+t);function i(){let a;if(n||(n=a=r()),e.apply(this,arguments).draw(n,+t.apply(this,arguments)),a)return n=null,a+""||null}return i.type=function(a){return arguments.length?(e=typeof a=="function"?a:ve(a),i):e},i.size=function(a){return arguments.length?(t=typeof a=="function"?a:ve(+a),i):t},i.context=function(a){return arguments.length?(n=a??null,i):n},i}function cl(){}function fl(e,t,n){e._context.bezierCurveTo((2*e._x0+e._x1)/3,(2*e._y0+e._y1)/3,(e._x0+2*e._x1)/3,(e._y0+2*e._y1)/3,(e._x0+4*e._x1+t)/6,(e._y0+4*e._y1+n)/6)}function l3(e){this._context=e}l3.prototype={areaStart:function(){this._line=0},areaEnd:function(){this._line=NaN},lineStart:function(){this._x0=this._x1=this._y0=this._y1=NaN,this._point=0},lineEnd:function(){switch(this._point){case 3:fl(this,this._x1,this._y1);case 2:this._context.lineTo(this._x1,this._y1);break}(this._line||this._line!==0&&this._point===1)&&this._context.closePath(),this._line=1-this._line},point:function(e,t){switch(e=+e,t=+t,this._point){case 0:this._point=1,this._line?this._context.lineTo(e,t):this._context.moveTo(e,t);break;case 1:this._point=2;break;case 2:this._point=3,this._context.lineTo((5*this._x0+this._x1)/6,(5*this._y0+this._y1)/6);default:fl(this,e,t);break}this._x0=this._x1,this._x1=e,this._y0=this._y1,this._y1=t}};function S8(e){return new l3(e)}function s3(e){this._context=e}s3.prototype={areaStart:cl,areaEnd:cl,lineStart:function(){this._x0=this._x1=this._x2=this._x3=this._x4=this._y0=this._y1=this._y2=this._y3=this._y4=NaN,this._point=0},lineEnd:function(){switch(this._point){case 1:{this._context.moveTo(this._x2,this._y2),this._context.closePath();break}case 2:{this._context.moveTo((this._x2+2*this._x3)/3,(this._y2+2*this._y3)/3),this._context.lineTo((this._x3+2*this._x2)/3,(this._y3+2*this._y2)/3),this._context.closePath();break}case 3:{this.point(this._x2,this._y2),this.point(this._x3,this._y3),this.point(this._x4,this._y4);break}}},point:function(e,t){switch(e=+e,t=+t,this._point){case 0:this._point=1,this._x2=e,this._y2=t;break;case 1:this._point=2,this._x3=e,this._y3=t;break;case 2:this._point=3,this._x4=e,this._y4=t,this._context.moveTo((this._x0+4*this._x1+e)/6,(this._y0+4*this._y1+t)/6);break;default:fl(this,e,t);break}this._x0=this._x1,this._x1=e,this._y0=this._y1,this._y1=t}};function E8(e){return new s3(e)}function c3(e){this._context=e}c3.prototype={areaStart:function(){this._line=0},areaEnd:function(){this._line=NaN},lineStart:function(){this._x0=this._x1=this._y0=this._y1=NaN,this._point=0},lineEnd:function(){(this._line||this._line!==0&&this._point===3)&&this._context.closePath(),this._line=1-this._line},point:function(e,t){switch(e=+e,t=+t,this._point){case 0:this._point=1;break;case 1:this._point=2;break;case 2:this._point=3;var n=(this._x0+4*this._x1+e)/6,r=(this._y0+4*this._y1+t)/6;this._line?this._context.lineTo(n,r):this._context.moveTo(n,r);break;case 3:this._point=4;default:fl(this,e,t);break}this._x0=this._x1,this._x1=e,this._y0=this._y1,this._y1=t}};function O8(e){return new c3(e)}function f3(e){this._context=e}f3.prototype={areaStart:cl,areaEnd:cl,lineStart:function(){this._point=0},lineEnd:function(){this._point&&this._context.closePath()},point:function(e,t){e=+e,t=+t,this._point?this._context.lineTo(e,t):(this._point=1,this._context.moveTo(e,t))}};function b8(e){return new f3(e)}function gh(e){return e<0?-1:1}function Ph(e,t,n){var r=e._x1-e._x0,i=t-e._x1,a=(e._y1-e._y0)/(r||i<0&&-0),o=(n-e._y1)/(i||r<0&&-0),u=(a*i+o*r)/(r+i);return(gh(a)+gh(o))*Math.min(Math.abs(a),Math.abs(o),.5*Math.abs(u))||0}function Th(e,t){var n=e._x1-e._x0;return n?(3*(e._y1-e._y0)/n-t)/2:t}function zc(e,t,n){var r=e._x0,i=e._y0,a=e._x1,o=e._y1,u=(a-r)/3;e._context.bezierCurveTo(r+u,i+u*t,a-u,o-u*n,a,o)}function dl(e){this._context=e}dl.prototype={areaStart:function(){this._line=0},areaEnd:function(){this._line=NaN},lineStart:function(){this._x0=this._x1=this._y0=this._y1=this._t0=NaN,this._point=0},lineEnd:function(){switch(this._point){case 2:this._context.lineTo(this._x1,this._y1);break;case 3:zc(this,this._t0,Th(this,this._t0));break}(this._line||this._line!==0&&this._point===1)&&this._context.closePath(),this._line=1-this._line},point:function(e,t){var n=NaN;if(e=+e,t=+t,!(e===this._x1&&t===this._y1)){switch(this._point){case 0:this._point=1,this._line?this._context.lineTo(e,t):this._context.moveTo(e,t);break;case 1:this._point=2;break;case 2:this._point=3,zc(this,Th(this,n=Ph(this,e,t)),n);break;default:zc(this,this._t0,n=Ph(this,e,t));break}this._x0=this._x1,this._x1=e,this._y0=this._y1,this._y1=t,this._t0=n}}};function d3(e){this._context=new p3(e)}(d3.prototype=Object.create(dl.prototype)).point=function(e,t){dl.prototype.point.call(this,t,e)};function p3(e){this._context=e}p3.prototype={moveTo:function(e,t){this._context.moveTo(t,e)},closePath:function(){this._context.closePath()},lineTo:function(e,t){this._context.lineTo(t,e)},bezierCurveTo:function(e,t,n,r,i,a){this._context.bezierCurveTo(t,e,r,n,a,i)}};function N8(e){return new dl(e)}function x8(e){return new d3(e)}function h3(e){this._context=e}h3.prototype={areaStart:function(){this._line=0},areaEnd:function(){this._line=NaN},lineStart:function(){this._x=[],this._y=[]},lineEnd:function(){var e=this._x,t=this._y,n=e.length;if(n)if(this._line?this._context.lineTo(e[0],t[0]):this._context.moveTo(e[0],t[0]),n===2)this._context.lineTo(e[1],t[1]);else for(var r=Xh(e),i=Xh(t),a=0,o=1;o<n;++a,++o)this._context.bezierCurveTo(r[0][a],i[0][a],r[1][a],i[1][a],e[o],t[o]);(this._line||this._line!==0&&n===1)&&this._context.closePath(),this._line=1-this._line,this._x=this._y=null},point:function(e,t){this._x.push(+e),this._y.push(+t)}};function Xh(e){var t,n=e.length-1,r,i=new Array(n),a=new Array(n),o=new Array(n);for(i[0]=0,a[0]=2,o[0]=e[0]+2*e[1],t=1;t<n-1;++t)i[t]=1,a[t]=4,o[t]=4*e[t]+2*e[t+1];for(i[n-1]=2,a[n-1]=7,o[n-1]=8*e[n-1]+e[n],t=1;t<n;++t)r=i[t]/a[t-1],a[t]-=r,o[t]-=r*o[t-1];for(i[n-1]=o[n-1]/a[n-1],t=n-2;t>=0;--t)i[t]=(o[t]-i[t+1])/a[t];for(a[n-1]=(e[n]+i[n-1])/2,t=0;t<n-1;++t)a[t]=2*e[t+1]-i[t+1];return[i,a]}function M8(e){return new h3(e)}function Bs(e,t){this._context=e,this._t=t}Bs.prototype={areaStart:function(){this._line=0},areaEnd:function(){this._line=NaN},lineStart:function(){this._x=this._y=NaN,this._point=0},lineEnd:function(){0<this._t&&this._t<1&&this._point===2&&this._context.lineTo(this._x,this._y),(this._line||this._line!==0&&this._point===1)&&this._context.closePath(),this._line>=0&&(this._t=1-this._t,this._line=1-this._line)},point:function(e,t){switch(e=+e,t=+t,this._point){case 0:this._point=1,this._line?this._context.lineTo(e,t):this._context.moveTo(e,t);break;case 1:this._point=2;default:{if(this._t<=0)this._context.lineTo(this._x,t),this._context.lineTo(e,t);else{var n=this._x*(1-this._t)+e*this._t;this._context.lineTo(n,this._y),this._context.lineTo(n,t)}break}}this._x=e,this._y=t}};function w8(e){return new Bs(e,.5)}function L8(e){return new Bs(e,0)}function D8(e){return new Bs(e,1)}function ea(e,t){if((o=e.length)>1)for(var n=1,r,i,a=e[t[0]],o,u=a.length;n<o;++n)for(i=a,a=e[t[n]],r=0;r<u;++r)a[r][1]+=a[r][0]=isNaN(i[r][1])?i[r][0]:i[r][1]}function Sd(e){for(var t=e.length,n=new Array(t);--t>=0;)n[t]=t;return n}function _8(e,t){return e[t]}function C8(e){const t=[];return t.key=e,t}function $8(){var e=ve([]),t=Sd,n=ea,r=_8;function i(a){var o=Array.from(e.apply(this,arguments),C8),u,l=o.length,s=-1,f;for(const c of a)for(u=0,++s;u<l;++u)(o[u][s]=[0,+r(c,o[u].key,s,a)]).data=c;for(u=0,f=W1(t(o));u<l;++u)o[f[u]].index=u;return n(o,f),o}return i.keys=function(a){return arguments.length?(e=typeof a=="function"?a:ve(Array.from(a)),i):e},i.value=function(a){return arguments.length?(r=typeof a=="function"?a:ve(+a),i):r},i.order=function(a){return arguments.length?(t=a==null?Sd:typeof a=="function"?a:ve(Array.from(a)),i):t},i.offset=function(a){return arguments.length?(n=a??ea,i):n},i}function j8(e,t){if((r=e.length)>0){for(var n,r,i=0,a=e[0].length,o;i<a;++i){for(o=n=0;n<r;++n)o+=e[n][i][1]||0;if(o)for(n=0;n<r;++n)e[n][i][1]/=o}ea(e,t)}}function F8(e,t){if((i=e.length)>0){for(var n=0,r=e[t[0]],i,a=r.length;n<a;++n){for(var o=0,u=0;o<i;++o)u+=e[o][n][1]||0;r[n][1]+=r[n][0]=-u/2}ea(e,t)}}function k8(e,t){if(!(!((o=e.length)>0)||!((a=(i=e[t[0]]).length)>0))){for(var n=0,r=1,i,a,o;r<a;++r){for(var u=0,l=0,s=0;u<o;++u){for(var f=e[t[u]],c=f[r][1]||0,d=f[r-1][1]||0,p=(c-d)/2,A=0;A<u;++A){var h=e[t[A]],P=h[r][1]||0,y=h[r-1][1]||0;p+=P-y}l+=c,s+=p*c}i[r-1][1]+=i[r-1][0]=n,l&&(n-=s/l)}i[r-1][1]+=i[r-1][0]=n,ea(e,t)}}function Zo(e){"@babel/helpers - typeof";return Zo=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Zo(e)}var B8=["type","size","sizeType"];function Ed(){return Ed=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Ed.apply(this,arguments)}function Ih(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function Rh(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?Ih(Object(n),!0).forEach(function(r){Y8(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Ih(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function Y8(e,t,n){return t=U8(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function U8(e){var t=H8(e,"string");return Zo(t)=="symbol"?t:t+""}function H8(e,t){if(Zo(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Zo(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function V8(e,t){if(e==null)return{};var n=K8(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function K8(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}var A3={symbolCircle:J1,symbolCross:p8,symbolDiamond:A8,symbolSquare:v8,symbolStar:P8,symbolTriangle:T8,symbolWye:I8},Z8=Math.PI/180,z8=function(t){var n="symbol".concat(js(t));return A3[n]||J1},G8=function(t,n,r){if(n==="area")return t;switch(r){case"cross":return 5*t*t/9;case"diamond":return .5*t*t/Math.sqrt(3);case"square":return t*t;case"star":{var i=18*Z8;return 1.25*t*t*(Math.tan(i)-Math.tan(i*2)*Math.pow(Math.tan(i),2))}case"triangle":return Math.sqrt(3)*t*t/4;case"wye":return(21-10*Math.sqrt(3))*t*t/8;default:return Math.PI*t*t/4}},W8=function(t,n){A3["symbol".concat(js(t))]=n},q1=function(t){var n=t.type,r=n===void 0?"circle":n,i=t.size,a=i===void 0?64:i,o=t.sizeType,u=o===void 0?"area":o,l=V8(t,B8),s=Rh(Rh({},l),{},{type:r,size:a,sizeType:u}),f=function(){var P=z8(r),y=R8().type(P).size(G8(a,u,r));return y()},c=s.className,d=s.cx,p=s.cy,A=W(s,!0);return d===+d&&p===+p&&a===+a?E.createElement("path",Ed({},A,{className:te("recharts-symbols",c),transform:"translate(".concat(d,", ").concat(p,")"),d:f()})):null};q1.registerSymbol=W8;function ta(e){"@babel/helpers - typeof";return ta=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},ta(e)}function Od(){return Od=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Od.apply(this,arguments)}function Sh(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function J8(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?Sh(Object(n),!0).forEach(function(r){zo(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Sh(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function q8(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function Eh(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,y3(r.key),r)}}function Q8(e,t,n){return t&&Eh(e.prototype,t),n&&Eh(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function eN(e,t,n){return t=pl(t),tN(e,v3()?Reflect.construct(t,n||[],pl(e).constructor):t.apply(e,n))}function tN(e,t){if(t&&(ta(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return nN(e)}function nN(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function v3(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(v3=function(){return!!e})()}function pl(e){return pl=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},pl(e)}function rN(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&bd(e,t)}function bd(e,t){return bd=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},bd(e,t)}function zo(e,t,n){return t=y3(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function y3(e){var t=iN(e,"string");return ta(t)=="symbol"?t:t+""}function iN(e,t){if(ta(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(ta(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}var Ft=32,Q1=function(e){function t(){return q8(this,t),eN(this,t,arguments)}return rN(t,e),Q8(t,[{key:"renderIcon",value:function(r){var i=this.props.inactiveColor,a=Ft/2,o=Ft/6,u=Ft/3,l=r.inactive?i:r.color;if(r.type==="plainline")return E.createElement("line",{strokeWidth:4,fill:"none",stroke:l,strokeDasharray:r.payload.strokeDasharray,x1:0,y1:a,x2:Ft,y2:a,className:"recharts-legend-icon"});if(r.type==="line")return E.createElement("path",{strokeWidth:4,fill:"none",stroke:l,d:"M0,".concat(a,"h").concat(u,`
             A`).concat(o,",").concat(o,",0,1,1,").concat(2*u,",").concat(a,`
             H`).concat(Ft,"M").concat(2*u,",").concat(a,`
-            A`).concat(o,",").concat(o,",0,1,1,").concat(u,",").concat(a),className:"recharts-legend-icon"});if(r.type==="rect")return E.createElement("path",{stroke:"none",fill:l,d:"M0,".concat(Ft/8,"h").concat(Ft,"v").concat(Ft*3/4,"h").concat(-Ft,"z"),className:"recharts-legend-icon"});if(E.isValidElement(r.legendIcon)){var s=J8({},r);return delete s.legendIcon,E.cloneElement(r.legendIcon,s)}return E.createElement(q1,{fill:l,cx:a,cy:a,size:Ft,sizeType:"diameter",type:r.type})}},{key:"renderItems",value:function(){var r=this,i=this.props,a=i.payload,o=i.iconSize,u=i.layout,l=i.formatter,s=i.inactiveColor,f={x:0,y:0,width:Ft,height:Ft},c={display:u==="horizontal"?"inline-block":"block",marginRight:10},d={display:"inline-block",verticalAlign:"middle",marginRight:4};return a.map(function(p,A){var h=p.formatter||l,P=te(zo(zo({"recharts-legend-item":!0},"legend-item-".concat(A),!0),"inactive",p.inactive));if(p.type==="none")return null;var y=q(p.value)?null:p.value;cn(!q(p.value),`The name property is also required when using a function for the dataKey of a chart's cartesian components. Ex: <Bar name="Name of my Data"/>`);var v=p.inactive?s:p.color;return E.createElement("li",Od({className:P,style:c,key:"legend-item-".concat(A)},ri(r.props,p,A)),E.createElement(md,{width:o,height:o,viewBox:f,style:d},r.renderIcon(p)),E.createElement("span",{className:"recharts-legend-item-text",style:{color:v}},h?h(y,p,A):y))})}},{key:"render",value:function(){var r=this.props,i=r.payload,a=r.layout,o=r.align;if(!i||!i.length)return null;var u={padding:0,margin:0,textAlign:a==="horizontal"?o:"left"};return E.createElement("ul",{className:"recharts-default-legend",style:u},this.renderItems())}}])}(j.PureComponent);zo(Q1,"displayName","Legend");zo(Q1,"defaultProps",{iconSize:14,layout:"horizontal",align:"center",verticalAlign:"middle",inactiveColor:"#ccc"});var aN=Ss;function oN(){this.__data__=new aN,this.size=0}var uN=oN;function lN(e){var t=this.__data__,n=t.delete(e);return this.size=t.size,n}var sN=lN;function cN(e){return this.__data__.get(e)}var fN=cN;function dN(e){return this.__data__.has(e)}var pN=dN,hN=Ss,AN=k1,vN=B1,yN=200;function mN(e,t){var n=this.__data__;if(n instanceof hN){var r=n.__data__;if(!AN||r.length<yN-1)return r.push([e,t]),this.size=++n.size,this;n=this.__data__=new vN(r)}return n.set(e,t),this.size=n.size,this}var gN=mN,PN=Ss,TN=uN,XN=sN,IN=fN,RN=pN,SN=gN;function Ca(e){var t=this.__data__=new PN(e);this.size=t.size}Ca.prototype.clear=TN;Ca.prototype.delete=XN;Ca.prototype.get=IN;Ca.prototype.has=RN;Ca.prototype.set=SN;var m3=Ca,EN="__lodash_hash_undefined__";function ON(e){return this.__data__.set(e,EN),this}var bN=ON;function NN(e){return this.__data__.has(e)}var xN=NN,MN=B1,wN=bN,LN=xN;function hl(e){var t=-1,n=e==null?0:e.length;for(this.__data__=new MN;++t<n;)this.add(e[t])}hl.prototype.add=hl.prototype.push=wN;hl.prototype.has=LN;var g3=hl;function DN(e,t){for(var n=-1,r=e==null?0:e.length;++n<r;)if(t(e[n],n,e))return!0;return!1}var P3=DN;function _N(e,t){return e.has(t)}var T3=_N,CN=g3,$N=P3,jN=T3,FN=1,kN=2;function BN(e,t,n,r,i,a){var o=n&FN,u=e.length,l=t.length;if(u!=l&&!(o&&l>u))return!1;var s=a.get(e),f=a.get(t);if(s&&f)return s==t&&f==e;var c=-1,d=!0,p=n&kN?new CN:void 0;for(a.set(e,t),a.set(t,e);++c<u;){var A=e[c],h=t[c];if(r)var P=o?r(h,A,c,t,e,a):r(A,h,c,e,t,a);if(P!==void 0){if(P)continue;d=!1;break}if(p){if(!$N(t,function(y,v){if(!jN(p,v)&&(A===y||i(A,y,n,r,a)))return p.push(v)})){d=!1;break}}else if(!(A===h||i(A,h,n,r,a))){d=!1;break}}return a.delete(e),a.delete(t),d}var X3=BN,YN=Sn,UN=YN.Uint8Array,HN=UN;function VN(e){var t=-1,n=Array(e.size);return e.forEach(function(r,i){n[++t]=[i,r]}),n}var KN=VN;function ZN(e){var t=-1,n=Array(e.size);return e.forEach(function(r){n[++t]=r}),n}var e2=ZN,Oh=L0,bh=HN,zN=F1,GN=X3,WN=KN,JN=e2,qN=1,QN=2,e7="[object Boolean]",t7="[object Date]",n7="[object Error]",r7="[object Map]",i7="[object Number]",a7="[object RegExp]",o7="[object Set]",u7="[object String]",l7="[object Symbol]",s7="[object ArrayBuffer]",c7="[object DataView]",Nh=Oh?Oh.prototype:void 0,Gc=Nh?Nh.valueOf:void 0;function f7(e,t,n,r,i,a,o){switch(n){case c7:if(e.byteLength!=t.byteLength||e.byteOffset!=t.byteOffset)return!1;e=e.buffer,t=t.buffer;case s7:return!(e.byteLength!=t.byteLength||!a(new bh(e),new bh(t)));case e7:case t7:case i7:return zN(+e,+t);case n7:return e.name==t.name&&e.message==t.message;case a7:case u7:return e==t+"";case r7:var u=WN;case o7:var l=r&qN;if(u||(u=JN),e.size!=t.size&&!l)return!1;var s=o.get(e);if(s)return s==t;r|=QN,o.set(e,t);var f=GN(u(e),u(t),r,i,a,o);return o.delete(e),f;case l7:if(Gc)return Gc.call(e)==Gc.call(t)}return!1}var d7=f7;function p7(e,t){for(var n=-1,r=t.length,i=e.length;++n<r;)e[i+n]=t[n];return e}var I3=p7,h7=I3,A7=Xt;function v7(e,t,n){var r=t(e);return A7(e)?r:h7(r,n(e))}var y7=v7;function m7(e,t){for(var n=-1,r=e==null?0:e.length,i=0,a=[];++n<r;){var o=e[n];t(o,n,e)&&(a[i++]=o)}return a}var g7=m7;function P7(){return[]}var T7=P7,X7=g7,I7=T7,R7=Object.prototype,S7=R7.propertyIsEnumerable,xh=Object.getOwnPropertySymbols,E7=xh?function(e){return e==null?[]:(e=Object(e),X7(xh(e),function(t){return S7.call(e,t)}))}:I7,O7=E7;function b7(e,t){for(var n=-1,r=Array(e);++n<e;)r[n]=t(n);return r}var N7=b7,x7=Gn,M7=Wn,w7="[object Arguments]";function L7(e){return M7(e)&&x7(e)==w7}var D7=L7,Mh=D7,_7=Wn,R3=Object.prototype,C7=R3.hasOwnProperty,$7=R3.propertyIsEnumerable,j7=Mh(function(){return arguments}())?Mh:function(e){return _7(e)&&C7.call(e,"callee")&&!$7.call(e,"callee")},t2=j7,Al={exports:{}};function F7(){return!1}var k7=F7;Al.exports;(function(e,t){var n=Sn,r=k7,i=t&&!t.nodeType&&t,a=i&&!0&&e&&!e.nodeType&&e,o=a&&a.exports===i,u=o?n.Buffer:void 0,l=u?u.isBuffer:void 0,s=l||r;e.exports=s})(Al,Al.exports);var S3=Al.exports,B7=9007199254740991,Y7=/^(?:0|[1-9]\d*)$/;function U7(e,t){var n=typeof e;return t=t??B7,!!t&&(n=="number"||n!="symbol"&&Y7.test(e))&&e>-1&&e%1==0&&e<t}var n2=U7,H7=9007199254740991;function V7(e){return typeof e=="number"&&e>-1&&e%1==0&&e<=H7}var r2=V7,K7=Gn,Z7=r2,z7=Wn,G7="[object Arguments]",W7="[object Array]",J7="[object Boolean]",q7="[object Date]",Q7="[object Error]",ex="[object Function]",tx="[object Map]",nx="[object Number]",rx="[object Object]",ix="[object RegExp]",ax="[object Set]",ox="[object String]",ux="[object WeakMap]",lx="[object ArrayBuffer]",sx="[object DataView]",cx="[object Float32Array]",fx="[object Float64Array]",dx="[object Int8Array]",px="[object Int16Array]",hx="[object Int32Array]",Ax="[object Uint8Array]",vx="[object Uint8ClampedArray]",yx="[object Uint16Array]",mx="[object Uint32Array]",Pe={};Pe[cx]=Pe[fx]=Pe[dx]=Pe[px]=Pe[hx]=Pe[Ax]=Pe[vx]=Pe[yx]=Pe[mx]=!0;Pe[G7]=Pe[W7]=Pe[lx]=Pe[J7]=Pe[sx]=Pe[q7]=Pe[Q7]=Pe[ex]=Pe[tx]=Pe[nx]=Pe[rx]=Pe[ix]=Pe[ax]=Pe[ox]=Pe[ux]=!1;function gx(e){return z7(e)&&Z7(e.length)&&!!Pe[K7(e)]}var Px=gx;function Tx(e){return function(t){return e(t)}}var E3=Tx,vl={exports:{}};vl.exports;(function(e,t){var n=DP,r=t&&!t.nodeType&&t,i=r&&!0&&e&&!e.nodeType&&e,a=i&&i.exports===r,o=a&&n.process,u=function(){try{var l=i&&i.require&&i.require("util").types;return l||o&&o.binding&&o.binding("util")}catch{}}();e.exports=u})(vl,vl.exports);var Xx=vl.exports,Ix=Px,Rx=E3,wh=Xx,Lh=wh&&wh.isTypedArray,Sx=Lh?Rx(Lh):Ix,O3=Sx,Ex=N7,Ox=t2,bx=Xt,Nx=S3,xx=n2,Mx=O3,wx=Object.prototype,Lx=wx.hasOwnProperty;function Dx(e,t){var n=bx(e),r=!n&&Ox(e),i=!n&&!r&&Nx(e),a=!n&&!r&&!i&&Mx(e),o=n||r||i||a,u=o?Ex(e.length,String):[],l=u.length;for(var s in e)(t||Lx.call(e,s))&&!(o&&(s=="length"||i&&(s=="offset"||s=="parent")||a&&(s=="buffer"||s=="byteLength"||s=="byteOffset")||xx(s,l)))&&u.push(s);return u}var _x=Dx,Cx=Object.prototype;function $x(e){var t=e&&e.constructor,n=typeof t=="function"&&t.prototype||Cx;return e===n}var jx=$x;function Fx(e,t){return function(n){return e(t(n))}}var b3=Fx,kx=b3,Bx=kx(Object.keys,Object),Yx=Bx,Ux=jx,Hx=Yx,Vx=Object.prototype,Kx=Vx.hasOwnProperty;function Zx(e){if(!Ux(e))return Hx(e);var t=[];for(var n in Object(e))Kx.call(e,n)&&n!="constructor"&&t.push(n);return t}var zx=Zx,Gx=j1,Wx=r2;function Jx(e){return e!=null&&Wx(e.length)&&!Gx(e)}var _0=Jx,qx=_x,Qx=zx,eM=_0;function tM(e){return eM(e)?qx(e):Qx(e)}var Ys=tM,nM=y7,rM=O7,iM=Ys;function aM(e){return nM(e,iM,rM)}var oM=aM,Dh=oM,uM=1,lM=Object.prototype,sM=lM.hasOwnProperty;function cM(e,t,n,r,i,a){var o=n&uM,u=Dh(e),l=u.length,s=Dh(t),f=s.length;if(l!=f&&!o)return!1;for(var c=l;c--;){var d=u[c];if(!(o?d in t:sM.call(t,d)))return!1}var p=a.get(e),A=a.get(t);if(p&&A)return p==t&&A==e;var h=!0;a.set(e,t),a.set(t,e);for(var P=o;++c<l;){d=u[c];var y=e[d],v=t[d];if(r)var m=o?r(v,y,d,t,e,a):r(y,v,d,e,t,a);if(!(m===void 0?y===v||i(y,v,n,r,a):m)){h=!1;break}P||(P=d=="constructor")}if(h&&!P){var X=e.constructor,g=t.constructor;X!=g&&"constructor"in e&&"constructor"in t&&!(typeof X=="function"&&X instanceof X&&typeof g=="function"&&g instanceof g)&&(h=!1)}return a.delete(e),a.delete(t),h}var fM=cM,dM=fi,pM=Sn,hM=dM(pM,"DataView"),AM=hM,vM=fi,yM=Sn,mM=vM(yM,"Promise"),gM=mM,PM=fi,TM=Sn,XM=PM(TM,"Set"),N3=XM,IM=fi,RM=Sn,SM=IM(RM,"WeakMap"),EM=SM,Nd=AM,xd=k1,Md=gM,wd=N3,Ld=EM,x3=Gn,$a=CP,_h="[object Map]",OM="[object Object]",Ch="[object Promise]",$h="[object Set]",jh="[object WeakMap]",Fh="[object DataView]",bM=$a(Nd),NM=$a(xd),xM=$a(Md),MM=$a(wd),wM=$a(Ld),$r=x3;(Nd&&$r(new Nd(new ArrayBuffer(1)))!=Fh||xd&&$r(new xd)!=_h||Md&&$r(Md.resolve())!=Ch||wd&&$r(new wd)!=$h||Ld&&$r(new Ld)!=jh)&&($r=function(e){var t=x3(e),n=t==OM?e.constructor:void 0,r=n?$a(n):"";if(r)switch(r){case bM:return Fh;case NM:return _h;case xM:return Ch;case MM:return $h;case wM:return jh}return t});var LM=$r,Wc=m3,DM=X3,_M=d7,CM=fM,kh=LM,Bh=Xt,Yh=S3,$M=O3,jM=1,Uh="[object Arguments]",Hh="[object Array]",su="[object Object]",FM=Object.prototype,Vh=FM.hasOwnProperty;function kM(e,t,n,r,i,a){var o=Bh(e),u=Bh(t),l=o?Hh:kh(e),s=u?Hh:kh(t);l=l==Uh?su:l,s=s==Uh?su:s;var f=l==su,c=s==su,d=l==s;if(d&&Yh(e)){if(!Yh(t))return!1;o=!0,f=!1}if(d&&!f)return a||(a=new Wc),o||$M(e)?DM(e,t,n,r,i,a):_M(e,t,l,n,r,i,a);if(!(n&jM)){var p=f&&Vh.call(e,"__wrapped__"),A=c&&Vh.call(t,"__wrapped__");if(p||A){var h=p?e.value():e,P=A?t.value():t;return a||(a=new Wc),i(h,P,n,r,a)}}return d?(a||(a=new Wc),CM(e,t,n,r,i,a)):!1}var BM=kM,YM=BM,Kh=Wn;function M3(e,t,n,r,i){return e===t?!0:e==null||t==null||!Kh(e)&&!Kh(t)?e!==e&&t!==t:YM(e,t,n,r,M3,i)}var i2=M3,UM=m3,HM=i2,VM=1,KM=2;function ZM(e,t,n,r){var i=n.length,a=i,o=!r;if(e==null)return!a;for(e=Object(e);i--;){var u=n[i];if(o&&u[2]?u[1]!==e[u[0]]:!(u[0]in e))return!1}for(;++i<a;){u=n[i];var l=u[0],s=e[l],f=u[1];if(o&&u[2]){if(s===void 0&&!(l in e))return!1}else{var c=new UM;if(r)var d=r(s,f,l,e,t,c);if(!(d===void 0?HM(f,s,VM|KM,r,c):d))return!1}}return!0}var zM=ZM,GM=Sr;function WM(e){return e===e&&!GM(e)}var w3=WM,JM=w3,qM=Ys;function QM(e){for(var t=qM(e),n=t.length;n--;){var r=t[n],i=e[r];t[n]=[r,i,JM(i)]}return t}var ew=QM;function tw(e,t){return function(n){return n==null?!1:n[e]===t&&(t!==void 0||e in Object(n))}}var L3=tw,nw=zM,rw=ew,iw=L3;function aw(e){var t=rw(e);return t.length==1&&t[0][2]?iw(t[0][0],t[0][1]):function(n){return n===e||nw(n,e,t)}}var ow=aw;function uw(e,t){return e!=null&&t in Object(e)}var lw=uw,sw=BP,cw=t2,fw=Xt,dw=n2,pw=r2,hw=Os;function Aw(e,t,n){t=sw(t,e);for(var r=-1,i=t.length,a=!1;++r<i;){var o=hw(t[r]);if(!(a=e!=null&&n(e,o)))break;e=e[o]}return a||++r!=i?a:(i=e==null?0:e.length,!!i&&pw(i)&&dw(o,i)&&(fw(e)||cw(e)))}var vw=Aw,yw=lw,mw=vw;function gw(e,t){return e!=null&&mw(e,t,yw)}var Pw=gw,Tw=i2,Xw=YP,Iw=Pw,Rw=$1,Sw=w3,Ew=L3,Ow=Os,bw=1,Nw=2;function xw(e,t){return Rw(e)&&Sw(t)?Ew(Ow(e),t):function(n){var r=Xw(n,e);return r===void 0&&r===t?Iw(n,e):Tw(t,r,bw|Nw)}}var Mw=xw;function ww(e){return e}var ja=ww;function Lw(e){return function(t){return t==null?void 0:t[e]}}var Dw=Lw,_w=H1;function Cw(e){return function(t){return _w(t,e)}}var $w=Cw,jw=Dw,Fw=$w,kw=$1,Bw=Os;function Yw(e){return kw(e)?jw(Bw(e)):Fw(e)}var Uw=Yw,Hw=ow,Vw=Mw,Kw=ja,Zw=Xt,zw=Uw;function Gw(e){return typeof e=="function"?e:e==null?Kw:typeof e=="object"?Zw(e)?Vw(e[0],e[1]):Hw(e):zw(e)}var En=Gw;function Ww(e,t,n,r){for(var i=e.length,a=n+(r?1:-1);r?a--:++a<i;)if(t(e[a],a,e))return a;return-1}var D3=Ww;function Jw(e){return e!==e}var qw=Jw;function Qw(e,t,n){for(var r=n-1,i=e.length;++r<i;)if(e[r]===t)return r;return-1}var e9=Qw,t9=D3,n9=qw,r9=e9;function i9(e,t,n){return t===t?r9(e,t,n):t9(e,n9,n)}var a9=i9,o9=a9;function u9(e,t){var n=e==null?0:e.length;return!!n&&o9(e,t,0)>-1}var l9=u9;function s9(e,t,n){for(var r=-1,i=e==null?0:e.length;++r<i;)if(n(t,e[r]))return!0;return!1}var c9=s9;function f9(){}var d9=f9,Jc=N3,p9=d9,h9=e2,A9=1/0,v9=Jc&&1/h9(new Jc([,-0]))[1]==A9?function(e){return new Jc(e)}:p9,y9=v9,m9=g3,g9=l9,P9=c9,T9=T3,X9=y9,I9=e2,R9=200;function S9(e,t,n){var r=-1,i=g9,a=e.length,o=!0,u=[],l=u;if(n)o=!1,i=P9;else if(a>=R9){var s=t?null:X9(e);if(s)return I9(s);o=!1,i=T9,l=new m9}else l=t?[]:u;e:for(;++r<a;){var f=e[r],c=t?t(f):f;if(f=n||f!==0?f:0,o&&c===c){for(var d=l.length;d--;)if(l[d]===c)continue e;t&&l.push(c),u.push(f)}else i(l,c,n)||(l!==u&&l.push(c),u.push(f))}return u}var E9=S9,O9=En,b9=E9;function N9(e,t){return e&&e.length?b9(e,O9(t)):[]}var x9=N9;const Zh=fe(x9);function _3(e,t,n){return t===!0?Zh(e,n):q(t)?Zh(e,t):e}function na(e){"@babel/helpers - typeof";return na=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},na(e)}var M9=["ref"];function zh(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function On(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?zh(Object(n),!0).forEach(function(r){Us(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):zh(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function w9(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function Gh(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,$3(r.key),r)}}function L9(e,t,n){return t&&Gh(e.prototype,t),n&&Gh(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function D9(e,t,n){return t=yl(t),_9(e,C3()?Reflect.construct(t,n||[],yl(e).constructor):t.apply(e,n))}function _9(e,t){if(t&&(na(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return C9(e)}function C9(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function C3(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(C3=function(){return!!e})()}function yl(e){return yl=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},yl(e)}function $9(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Dd(e,t)}function Dd(e,t){return Dd=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},Dd(e,t)}function Us(e,t,n){return t=$3(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function $3(e){var t=j9(e,"string");return na(t)=="symbol"?t:t+""}function j9(e,t){if(na(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(na(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function F9(e,t){if(e==null)return{};var n=k9(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function k9(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function B9(e){return e.value}function Y9(e,t){if(E.isValidElement(e))return E.cloneElement(e,t);if(typeof e=="function")return E.createElement(e,t);t.ref;var n=F9(t,M9);return E.createElement(Q1,n)}var Wh=1,jn=function(e){function t(){var n;w9(this,t);for(var r=arguments.length,i=new Array(r),a=0;a<r;a++)i[a]=arguments[a];return n=D9(this,t,[].concat(i)),Us(n,"lastBoundingBox",{width:-1,height:-1}),n}return $9(t,e),L9(t,[{key:"componentDidMount",value:function(){this.updateBBox()}},{key:"componentDidUpdate",value:function(){this.updateBBox()}},{key:"getBBox",value:function(){if(this.wrapperNode&&this.wrapperNode.getBoundingClientRect){var r=this.wrapperNode.getBoundingClientRect();return r.height=this.wrapperNode.offsetHeight,r.width=this.wrapperNode.offsetWidth,r}return null}},{key:"updateBBox",value:function(){var r=this.props.onBBoxUpdate,i=this.getBBox();i?(Math.abs(i.width-this.lastBoundingBox.width)>Wh||Math.abs(i.height-this.lastBoundingBox.height)>Wh)&&(this.lastBoundingBox.width=i.width,this.lastBoundingBox.height=i.height,r&&r(i)):(this.lastBoundingBox.width!==-1||this.lastBoundingBox.height!==-1)&&(this.lastBoundingBox.width=-1,this.lastBoundingBox.height=-1,r&&r(null))}},{key:"getBBoxSnapshot",value:function(){return this.lastBoundingBox.width>=0&&this.lastBoundingBox.height>=0?On({},this.lastBoundingBox):{width:0,height:0}}},{key:"getDefaultPosition",value:function(r){var i=this.props,a=i.layout,o=i.align,u=i.verticalAlign,l=i.margin,s=i.chartWidth,f=i.chartHeight,c,d;if(!r||(r.left===void 0||r.left===null)&&(r.right===void 0||r.right===null))if(o==="center"&&a==="vertical"){var p=this.getBBoxSnapshot();c={left:((s||0)-p.width)/2}}else c=o==="right"?{right:l&&l.right||0}:{left:l&&l.left||0};if(!r||(r.top===void 0||r.top===null)&&(r.bottom===void 0||r.bottom===null))if(u==="middle"){var A=this.getBBoxSnapshot();d={top:((f||0)-A.height)/2}}else d=u==="bottom"?{bottom:l&&l.bottom||0}:{top:l&&l.top||0};return On(On({},c),d)}},{key:"render",value:function(){var r=this,i=this.props,a=i.content,o=i.width,u=i.height,l=i.wrapperStyle,s=i.payloadUniqBy,f=i.payload,c=On(On({position:"absolute",width:o||"auto",height:u||"auto"},this.getDefaultPosition(l)),l);return E.createElement("div",{className:"recharts-legend-wrapper",style:c,ref:function(p){r.wrapperNode=p}},Y9(a,On(On({},this.props),{},{payload:_3(f,s,B9)})))}}],[{key:"getWithHeight",value:function(r,i){var a=On(On({},this.defaultProps),r.props),o=a.layout;return o==="vertical"&&H(r.props.height)?{height:r.props.height}:o==="horizontal"?{width:r.props.width||i}:null}}])}(j.PureComponent);Us(jn,"displayName","Legend");Us(jn,"defaultProps",{iconSize:14,layout:"horizontal",align:"center",verticalAlign:"bottom"});var Jh=L0,U9=t2,H9=Xt,qh=Jh?Jh.isConcatSpreadable:void 0;function V9(e){return H9(e)||U9(e)||!!(qh&&e&&e[qh])}var K9=V9,Z9=I3,z9=K9;function j3(e,t,n,r,i){var a=-1,o=e.length;for(n||(n=z9),i||(i=[]);++a<o;){var u=e[a];t>0&&n(u)?t>1?j3(u,t-1,n,r,i):Z9(i,u):r||(i[i.length]=u)}return i}var F3=j3;function G9(e){return function(t,n,r){for(var i=-1,a=Object(t),o=r(t),u=o.length;u--;){var l=o[e?u:++i];if(n(a[l],l,a)===!1)break}return t}}var W9=G9,J9=W9,q9=J9(),Q9=q9,eL=Q9,tL=Ys;function nL(e,t){return e&&eL(e,t,tL)}var k3=nL,rL=_0;function iL(e,t){return function(n,r){if(n==null)return n;if(!rL(n))return e(n,r);for(var i=n.length,a=t?i:-1,o=Object(n);(t?a--:++a<i)&&r(o[a],a,o)!==!1;);return n}}var aL=iL,oL=k3,uL=aL,lL=uL(oL),a2=lL,sL=a2,cL=_0;function fL(e,t){var n=-1,r=cL(e)?Array(e.length):[];return sL(e,function(i,a,o){r[++n]=t(i,a,o)}),r}var B3=fL;function dL(e,t){var n=e.length;for(e.sort(t);n--;)e[n]=e[n].value;return e}var pL=dL,Qh=xa;function hL(e,t){if(e!==t){var n=e!==void 0,r=e===null,i=e===e,a=Qh(e),o=t!==void 0,u=t===null,l=t===t,s=Qh(t);if(!u&&!s&&!a&&e>t||a&&o&&l&&!u&&!s||r&&o&&l||!n&&l||!i)return 1;if(!r&&!a&&!s&&e<t||s&&n&&i&&!r&&!a||u&&n&&i||!o&&i||!l)return-1}return 0}var AL=hL,vL=AL;function yL(e,t,n){for(var r=-1,i=e.criteria,a=t.criteria,o=i.length,u=n.length;++r<o;){var l=vL(i[r],a[r]);if(l){if(r>=u)return l;var s=n[r];return l*(s=="desc"?-1:1)}}return e.index-t.index}var mL=yL,qc=U1,gL=H1,PL=En,TL=B3,XL=pL,IL=E3,RL=mL,SL=ja,EL=Xt;function OL(e,t,n){t.length?t=qc(t,function(a){return EL(a)?function(o){return gL(o,a.length===1?a[0]:a)}:a}):t=[SL];var r=-1;t=qc(t,IL(PL));var i=TL(e,function(a,o,u){var l=qc(t,function(s){return s(a)});return{criteria:l,index:++r,value:a}});return XL(i,function(a,o){return RL(a,o,n)})}var bL=OL;function NL(e,t,n){switch(n.length){case 0:return e.call(t);case 1:return e.call(t,n[0]);case 2:return e.call(t,n[0],n[1]);case 3:return e.call(t,n[0],n[1],n[2])}return e.apply(t,n)}var xL=NL,ML=xL,eA=Math.max;function wL(e,t,n){return t=eA(t===void 0?e.length-1:t,0),function(){for(var r=arguments,i=-1,a=eA(r.length-t,0),o=Array(a);++i<a;)o[i]=r[t+i];i=-1;for(var u=Array(t+1);++i<t;)u[i]=r[i];return u[t]=n(o),ML(e,this,u)}}var LL=wL;function DL(e){return function(){return e}}var _L=DL,CL=fi,$L=function(){try{var e=CL(Object,"defineProperty");return e({},"",{}),e}catch{}}(),Y3=$L,jL=_L,tA=Y3,FL=ja,kL=tA?function(e,t){return tA(e,"toString",{configurable:!0,enumerable:!1,value:jL(t),writable:!0})}:FL,BL=kL,YL=800,UL=16,HL=Date.now;function VL(e){var t=0,n=0;return function(){var r=HL(),i=UL-(r-n);if(n=r,i>0){if(++t>=YL)return arguments[0]}else t=0;return e.apply(void 0,arguments)}}var KL=VL,ZL=BL,zL=KL,GL=zL(ZL),WL=GL,JL=ja,qL=LL,QL=WL;function eD(e,t){return QL(qL(e,t,JL),e+"")}var tD=eD,nD=F1,rD=_0,iD=n2,aD=Sr;function oD(e,t,n){if(!aD(n))return!1;var r=typeof t;return(r=="number"?rD(n)&&iD(t,n.length):r=="string"&&t in n)?nD(n[t],e):!1}var Hs=oD,uD=F3,lD=bL,sD=tD,nA=Hs,cD=sD(function(e,t){if(e==null)return[];var n=t.length;return n>1&&nA(e,t[0],t[1])?t=[]:n>2&&nA(t[0],t[1],t[2])&&(t=[t[0]]),lD(e,uD(t,1),[])}),fD=cD;const o2=fe(fD);function Go(e){"@babel/helpers - typeof";return Go=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Go(e)}function _d(){return _d=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},_d.apply(this,arguments)}function dD(e,t){return vD(e)||AD(e,t)||hD(e,t)||pD()}function pD(){throw new TypeError(`Invalid attempt to destructure non-iterable instance.
+            A`).concat(o,",").concat(o,",0,1,1,").concat(u,",").concat(a),className:"recharts-legend-icon"});if(r.type==="rect")return E.createElement("path",{stroke:"none",fill:l,d:"M0,".concat(Ft/8,"h").concat(Ft,"v").concat(Ft*3/4,"h").concat(-Ft,"z"),className:"recharts-legend-icon"});if(E.isValidElement(r.legendIcon)){var s=J8({},r);return delete s.legendIcon,E.cloneElement(r.legendIcon,s)}return E.createElement(q1,{fill:l,cx:a,cy:a,size:Ft,sizeType:"diameter",type:r.type})}},{key:"renderItems",value:function(){var r=this,i=this.props,a=i.payload,o=i.iconSize,u=i.layout,l=i.formatter,s=i.inactiveColor,f={x:0,y:0,width:Ft,height:Ft},c={display:u==="horizontal"?"inline-block":"block",marginRight:10},d={display:"inline-block",verticalAlign:"middle",marginRight:4};return a.map(function(p,A){var h=p.formatter||l,P=te(zo(zo({"recharts-legend-item":!0},"legend-item-".concat(A),!0),"inactive",p.inactive));if(p.type==="none")return null;var y=q(p.value)?null:p.value;cn(!q(p.value),`The name property is also required when using a function for the dataKey of a chart's cartesian components. Ex: <Bar name="Name of my Data"/>`);var v=p.inactive?s:p.color;return E.createElement("li",Od({className:P,style:c,key:"legend-item-".concat(A)},ri(r.props,p,A)),E.createElement(md,{width:o,height:o,viewBox:f,style:d},r.renderIcon(p)),E.createElement("span",{className:"recharts-legend-item-text",style:{color:v}},h?h(y,p,A):y))})}},{key:"render",value:function(){var r=this.props,i=r.payload,a=r.layout,o=r.align;if(!i||!i.length)return null;var u={padding:0,margin:0,textAlign:a==="horizontal"?o:"left"};return E.createElement("ul",{className:"recharts-default-legend",style:u},this.renderItems())}}])}(j.PureComponent);zo(Q1,"displayName","Legend");zo(Q1,"defaultProps",{iconSize:14,layout:"horizontal",align:"center",verticalAlign:"middle",inactiveColor:"#ccc"});var aN=Ss;function oN(){this.__data__=new aN,this.size=0}var uN=oN;function lN(e){var t=this.__data__,n=t.delete(e);return this.size=t.size,n}var sN=lN;function cN(e){return this.__data__.get(e)}var fN=cN;function dN(e){return this.__data__.has(e)}var pN=dN,hN=Ss,AN=k1,vN=B1,yN=200;function mN(e,t){var n=this.__data__;if(n instanceof hN){var r=n.__data__;if(!AN||r.length<yN-1)return r.push([e,t]),this.size=++n.size,this;n=this.__data__=new vN(r)}return n.set(e,t),this.size=n.size,this}var gN=mN,PN=Ss,TN=uN,XN=sN,IN=fN,RN=pN,SN=gN;function Ca(e){var t=this.__data__=new PN(e);this.size=t.size}Ca.prototype.clear=TN;Ca.prototype.delete=XN;Ca.prototype.get=IN;Ca.prototype.has=RN;Ca.prototype.set=SN;var m3=Ca,EN="__lodash_hash_undefined__";function ON(e){return this.__data__.set(e,EN),this}var bN=ON;function NN(e){return this.__data__.has(e)}var xN=NN,MN=B1,wN=bN,LN=xN;function hl(e){var t=-1,n=e==null?0:e.length;for(this.__data__=new MN;++t<n;)this.add(e[t])}hl.prototype.add=hl.prototype.push=wN;hl.prototype.has=LN;var g3=hl;function DN(e,t){for(var n=-1,r=e==null?0:e.length;++n<r;)if(t(e[n],n,e))return!0;return!1}var P3=DN;function _N(e,t){return e.has(t)}var T3=_N,CN=g3,$N=P3,jN=T3,FN=1,kN=2;function BN(e,t,n,r,i,a){var o=n&FN,u=e.length,l=t.length;if(u!=l&&!(o&&l>u))return!1;var s=a.get(e),f=a.get(t);if(s&&f)return s==t&&f==e;var c=-1,d=!0,p=n&kN?new CN:void 0;for(a.set(e,t),a.set(t,e);++c<u;){var A=e[c],h=t[c];if(r)var P=o?r(h,A,c,t,e,a):r(A,h,c,e,t,a);if(P!==void 0){if(P)continue;d=!1;break}if(p){if(!$N(t,function(y,v){if(!jN(p,v)&&(A===y||i(A,y,n,r,a)))return p.push(v)})){d=!1;break}}else if(!(A===h||i(A,h,n,r,a))){d=!1;break}}return a.delete(e),a.delete(t),d}var X3=BN,YN=Sn,UN=YN.Uint8Array,HN=UN;function VN(e){var t=-1,n=Array(e.size);return e.forEach(function(r,i){n[++t]=[i,r]}),n}var KN=VN;function ZN(e){var t=-1,n=Array(e.size);return e.forEach(function(r){n[++t]=r}),n}var e2=ZN,Oh=L0,bh=HN,zN=F1,GN=X3,WN=KN,JN=e2,qN=1,QN=2,ex="[object Boolean]",tx="[object Date]",nx="[object Error]",rx="[object Map]",ix="[object Number]",ax="[object RegExp]",ox="[object Set]",ux="[object String]",lx="[object Symbol]",sx="[object ArrayBuffer]",cx="[object DataView]",Nh=Oh?Oh.prototype:void 0,Gc=Nh?Nh.valueOf:void 0;function fx(e,t,n,r,i,a,o){switch(n){case cx:if(e.byteLength!=t.byteLength||e.byteOffset!=t.byteOffset)return!1;e=e.buffer,t=t.buffer;case sx:return!(e.byteLength!=t.byteLength||!a(new bh(e),new bh(t)));case ex:case tx:case ix:return zN(+e,+t);case nx:return e.name==t.name&&e.message==t.message;case ax:case ux:return e==t+"";case rx:var u=WN;case ox:var l=r&qN;if(u||(u=JN),e.size!=t.size&&!l)return!1;var s=o.get(e);if(s)return s==t;r|=QN,o.set(e,t);var f=GN(u(e),u(t),r,i,a,o);return o.delete(e),f;case lx:if(Gc)return Gc.call(e)==Gc.call(t)}return!1}var dx=fx;function px(e,t){for(var n=-1,r=t.length,i=e.length;++n<r;)e[i+n]=t[n];return e}var I3=px,hx=I3,Ax=Xt;function vx(e,t,n){var r=t(e);return Ax(e)?r:hx(r,n(e))}var yx=vx;function mx(e,t){for(var n=-1,r=e==null?0:e.length,i=0,a=[];++n<r;){var o=e[n];t(o,n,e)&&(a[i++]=o)}return a}var gx=mx;function Px(){return[]}var Tx=Px,Xx=gx,Ix=Tx,Rx=Object.prototype,Sx=Rx.propertyIsEnumerable,xh=Object.getOwnPropertySymbols,Ex=xh?function(e){return e==null?[]:(e=Object(e),Xx(xh(e),function(t){return Sx.call(e,t)}))}:Ix,Ox=Ex;function bx(e,t){for(var n=-1,r=Array(e);++n<e;)r[n]=t(n);return r}var Nx=bx,xx=Gn,Mx=Wn,wx="[object Arguments]";function Lx(e){return Mx(e)&&xx(e)==wx}var Dx=Lx,Mh=Dx,_x=Wn,R3=Object.prototype,Cx=R3.hasOwnProperty,$x=R3.propertyIsEnumerable,jx=Mh(function(){return arguments}())?Mh:function(e){return _x(e)&&Cx.call(e,"callee")&&!$x.call(e,"callee")},t2=jx,Al={exports:{}};function Fx(){return!1}var kx=Fx;Al.exports;(function(e,t){var n=Sn,r=kx,i=t&&!t.nodeType&&t,a=i&&!0&&e&&!e.nodeType&&e,o=a&&a.exports===i,u=o?n.Buffer:void 0,l=u?u.isBuffer:void 0,s=l||r;e.exports=s})(Al,Al.exports);var S3=Al.exports,Bx=9007199254740991,Yx=/^(?:0|[1-9]\d*)$/;function Ux(e,t){var n=typeof e;return t=t??Bx,!!t&&(n=="number"||n!="symbol"&&Yx.test(e))&&e>-1&&e%1==0&&e<t}var n2=Ux,Hx=9007199254740991;function Vx(e){return typeof e=="number"&&e>-1&&e%1==0&&e<=Hx}var r2=Vx,Kx=Gn,Zx=r2,zx=Wn,Gx="[object Arguments]",Wx="[object Array]",Jx="[object Boolean]",qx="[object Date]",Qx="[object Error]",e7="[object Function]",t7="[object Map]",n7="[object Number]",r7="[object Object]",i7="[object RegExp]",a7="[object Set]",o7="[object String]",u7="[object WeakMap]",l7="[object ArrayBuffer]",s7="[object DataView]",c7="[object Float32Array]",f7="[object Float64Array]",d7="[object Int8Array]",p7="[object Int16Array]",h7="[object Int32Array]",A7="[object Uint8Array]",v7="[object Uint8ClampedArray]",y7="[object Uint16Array]",m7="[object Uint32Array]",Pe={};Pe[c7]=Pe[f7]=Pe[d7]=Pe[p7]=Pe[h7]=Pe[A7]=Pe[v7]=Pe[y7]=Pe[m7]=!0;Pe[Gx]=Pe[Wx]=Pe[l7]=Pe[Jx]=Pe[s7]=Pe[qx]=Pe[Qx]=Pe[e7]=Pe[t7]=Pe[n7]=Pe[r7]=Pe[i7]=Pe[a7]=Pe[o7]=Pe[u7]=!1;function g7(e){return zx(e)&&Zx(e.length)&&!!Pe[Kx(e)]}var P7=g7;function T7(e){return function(t){return e(t)}}var E3=T7,vl={exports:{}};vl.exports;(function(e,t){var n=DP,r=t&&!t.nodeType&&t,i=r&&!0&&e&&!e.nodeType&&e,a=i&&i.exports===r,o=a&&n.process,u=function(){try{var l=i&&i.require&&i.require("util").types;return l||o&&o.binding&&o.binding("util")}catch{}}();e.exports=u})(vl,vl.exports);var X7=vl.exports,I7=P7,R7=E3,wh=X7,Lh=wh&&wh.isTypedArray,S7=Lh?R7(Lh):I7,O3=S7,E7=Nx,O7=t2,b7=Xt,N7=S3,x7=n2,M7=O3,w7=Object.prototype,L7=w7.hasOwnProperty;function D7(e,t){var n=b7(e),r=!n&&O7(e),i=!n&&!r&&N7(e),a=!n&&!r&&!i&&M7(e),o=n||r||i||a,u=o?E7(e.length,String):[],l=u.length;for(var s in e)(t||L7.call(e,s))&&!(o&&(s=="length"||i&&(s=="offset"||s=="parent")||a&&(s=="buffer"||s=="byteLength"||s=="byteOffset")||x7(s,l)))&&u.push(s);return u}var _7=D7,C7=Object.prototype;function $7(e){var t=e&&e.constructor,n=typeof t=="function"&&t.prototype||C7;return e===n}var j7=$7;function F7(e,t){return function(n){return e(t(n))}}var b3=F7,k7=b3,B7=k7(Object.keys,Object),Y7=B7,U7=j7,H7=Y7,V7=Object.prototype,K7=V7.hasOwnProperty;function Z7(e){if(!U7(e))return H7(e);var t=[];for(var n in Object(e))K7.call(e,n)&&n!="constructor"&&t.push(n);return t}var z7=Z7,G7=j1,W7=r2;function J7(e){return e!=null&&W7(e.length)&&!G7(e)}var _0=J7,q7=_7,Q7=z7,eM=_0;function tM(e){return eM(e)?q7(e):Q7(e)}var Ys=tM,nM=yx,rM=Ox,iM=Ys;function aM(e){return nM(e,iM,rM)}var oM=aM,Dh=oM,uM=1,lM=Object.prototype,sM=lM.hasOwnProperty;function cM(e,t,n,r,i,a){var o=n&uM,u=Dh(e),l=u.length,s=Dh(t),f=s.length;if(l!=f&&!o)return!1;for(var c=l;c--;){var d=u[c];if(!(o?d in t:sM.call(t,d)))return!1}var p=a.get(e),A=a.get(t);if(p&&A)return p==t&&A==e;var h=!0;a.set(e,t),a.set(t,e);for(var P=o;++c<l;){d=u[c];var y=e[d],v=t[d];if(r)var m=o?r(v,y,d,t,e,a):r(y,v,d,e,t,a);if(!(m===void 0?y===v||i(y,v,n,r,a):m)){h=!1;break}P||(P=d=="constructor")}if(h&&!P){var X=e.constructor,g=t.constructor;X!=g&&"constructor"in e&&"constructor"in t&&!(typeof X=="function"&&X instanceof X&&typeof g=="function"&&g instanceof g)&&(h=!1)}return a.delete(e),a.delete(t),h}var fM=cM,dM=fi,pM=Sn,hM=dM(pM,"DataView"),AM=hM,vM=fi,yM=Sn,mM=vM(yM,"Promise"),gM=mM,PM=fi,TM=Sn,XM=PM(TM,"Set"),N3=XM,IM=fi,RM=Sn,SM=IM(RM,"WeakMap"),EM=SM,Nd=AM,xd=k1,Md=gM,wd=N3,Ld=EM,x3=Gn,$a=CP,_h="[object Map]",OM="[object Object]",Ch="[object Promise]",$h="[object Set]",jh="[object WeakMap]",Fh="[object DataView]",bM=$a(Nd),NM=$a(xd),xM=$a(Md),MM=$a(wd),wM=$a(Ld),$r=x3;(Nd&&$r(new Nd(new ArrayBuffer(1)))!=Fh||xd&&$r(new xd)!=_h||Md&&$r(Md.resolve())!=Ch||wd&&$r(new wd)!=$h||Ld&&$r(new Ld)!=jh)&&($r=function(e){var t=x3(e),n=t==OM?e.constructor:void 0,r=n?$a(n):"";if(r)switch(r){case bM:return Fh;case NM:return _h;case xM:return Ch;case MM:return $h;case wM:return jh}return t});var LM=$r,Wc=m3,DM=X3,_M=dx,CM=fM,kh=LM,Bh=Xt,Yh=S3,$M=O3,jM=1,Uh="[object Arguments]",Hh="[object Array]",su="[object Object]",FM=Object.prototype,Vh=FM.hasOwnProperty;function kM(e,t,n,r,i,a){var o=Bh(e),u=Bh(t),l=o?Hh:kh(e),s=u?Hh:kh(t);l=l==Uh?su:l,s=s==Uh?su:s;var f=l==su,c=s==su,d=l==s;if(d&&Yh(e)){if(!Yh(t))return!1;o=!0,f=!1}if(d&&!f)return a||(a=new Wc),o||$M(e)?DM(e,t,n,r,i,a):_M(e,t,l,n,r,i,a);if(!(n&jM)){var p=f&&Vh.call(e,"__wrapped__"),A=c&&Vh.call(t,"__wrapped__");if(p||A){var h=p?e.value():e,P=A?t.value():t;return a||(a=new Wc),i(h,P,n,r,a)}}return d?(a||(a=new Wc),CM(e,t,n,r,i,a)):!1}var BM=kM,YM=BM,Kh=Wn;function M3(e,t,n,r,i){return e===t?!0:e==null||t==null||!Kh(e)&&!Kh(t)?e!==e&&t!==t:YM(e,t,n,r,M3,i)}var i2=M3,UM=m3,HM=i2,VM=1,KM=2;function ZM(e,t,n,r){var i=n.length,a=i,o=!r;if(e==null)return!a;for(e=Object(e);i--;){var u=n[i];if(o&&u[2]?u[1]!==e[u[0]]:!(u[0]in e))return!1}for(;++i<a;){u=n[i];var l=u[0],s=e[l],f=u[1];if(o&&u[2]){if(s===void 0&&!(l in e))return!1}else{var c=new UM;if(r)var d=r(s,f,l,e,t,c);if(!(d===void 0?HM(f,s,VM|KM,r,c):d))return!1}}return!0}var zM=ZM,GM=Sr;function WM(e){return e===e&&!GM(e)}var w3=WM,JM=w3,qM=Ys;function QM(e){for(var t=qM(e),n=t.length;n--;){var r=t[n],i=e[r];t[n]=[r,i,JM(i)]}return t}var ew=QM;function tw(e,t){return function(n){return n==null?!1:n[e]===t&&(t!==void 0||e in Object(n))}}var L3=tw,nw=zM,rw=ew,iw=L3;function aw(e){var t=rw(e);return t.length==1&&t[0][2]?iw(t[0][0],t[0][1]):function(n){return n===e||nw(n,e,t)}}var ow=aw;function uw(e,t){return e!=null&&t in Object(e)}var lw=uw,sw=BP,cw=t2,fw=Xt,dw=n2,pw=r2,hw=Os;function Aw(e,t,n){t=sw(t,e);for(var r=-1,i=t.length,a=!1;++r<i;){var o=hw(t[r]);if(!(a=e!=null&&n(e,o)))break;e=e[o]}return a||++r!=i?a:(i=e==null?0:e.length,!!i&&pw(i)&&dw(o,i)&&(fw(e)||cw(e)))}var vw=Aw,yw=lw,mw=vw;function gw(e,t){return e!=null&&mw(e,t,yw)}var Pw=gw,Tw=i2,Xw=YP,Iw=Pw,Rw=$1,Sw=w3,Ew=L3,Ow=Os,bw=1,Nw=2;function xw(e,t){return Rw(e)&&Sw(t)?Ew(Ow(e),t):function(n){var r=Xw(n,e);return r===void 0&&r===t?Iw(n,e):Tw(t,r,bw|Nw)}}var Mw=xw;function ww(e){return e}var ja=ww;function Lw(e){return function(t){return t==null?void 0:t[e]}}var Dw=Lw,_w=H1;function Cw(e){return function(t){return _w(t,e)}}var $w=Cw,jw=Dw,Fw=$w,kw=$1,Bw=Os;function Yw(e){return kw(e)?jw(Bw(e)):Fw(e)}var Uw=Yw,Hw=ow,Vw=Mw,Kw=ja,Zw=Xt,zw=Uw;function Gw(e){return typeof e=="function"?e:e==null?Kw:typeof e=="object"?Zw(e)?Vw(e[0],e[1]):Hw(e):zw(e)}var En=Gw;function Ww(e,t,n,r){for(var i=e.length,a=n+(r?1:-1);r?a--:++a<i;)if(t(e[a],a,e))return a;return-1}var D3=Ww;function Jw(e){return e!==e}var qw=Jw;function Qw(e,t,n){for(var r=n-1,i=e.length;++r<i;)if(e[r]===t)return r;return-1}var e9=Qw,t9=D3,n9=qw,r9=e9;function i9(e,t,n){return t===t?r9(e,t,n):t9(e,n9,n)}var a9=i9,o9=a9;function u9(e,t){var n=e==null?0:e.length;return!!n&&o9(e,t,0)>-1}var l9=u9;function s9(e,t,n){for(var r=-1,i=e==null?0:e.length;++r<i;)if(n(t,e[r]))return!0;return!1}var c9=s9;function f9(){}var d9=f9,Jc=N3,p9=d9,h9=e2,A9=1/0,v9=Jc&&1/h9(new Jc([,-0]))[1]==A9?function(e){return new Jc(e)}:p9,y9=v9,m9=g3,g9=l9,P9=c9,T9=T3,X9=y9,I9=e2,R9=200;function S9(e,t,n){var r=-1,i=g9,a=e.length,o=!0,u=[],l=u;if(n)o=!1,i=P9;else if(a>=R9){var s=t?null:X9(e);if(s)return I9(s);o=!1,i=T9,l=new m9}else l=t?[]:u;e:for(;++r<a;){var f=e[r],c=t?t(f):f;if(f=n||f!==0?f:0,o&&c===c){for(var d=l.length;d--;)if(l[d]===c)continue e;t&&l.push(c),u.push(f)}else i(l,c,n)||(l!==u&&l.push(c),u.push(f))}return u}var E9=S9,O9=En,b9=E9;function N9(e,t){return e&&e.length?b9(e,O9(t)):[]}var x9=N9;const Zh=fe(x9);function _3(e,t,n){return t===!0?Zh(e,n):q(t)?Zh(e,t):e}function na(e){"@babel/helpers - typeof";return na=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},na(e)}var M9=["ref"];function zh(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function On(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?zh(Object(n),!0).forEach(function(r){Us(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):zh(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function w9(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function Gh(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,$3(r.key),r)}}function L9(e,t,n){return t&&Gh(e.prototype,t),n&&Gh(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function D9(e,t,n){return t=yl(t),_9(e,C3()?Reflect.construct(t,n||[],yl(e).constructor):t.apply(e,n))}function _9(e,t){if(t&&(na(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return C9(e)}function C9(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function C3(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(C3=function(){return!!e})()}function yl(e){return yl=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},yl(e)}function $9(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Dd(e,t)}function Dd(e,t){return Dd=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},Dd(e,t)}function Us(e,t,n){return t=$3(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function $3(e){var t=j9(e,"string");return na(t)=="symbol"?t:t+""}function j9(e,t){if(na(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(na(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function F9(e,t){if(e==null)return{};var n=k9(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function k9(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function B9(e){return e.value}function Y9(e,t){if(E.isValidElement(e))return E.cloneElement(e,t);if(typeof e=="function")return E.createElement(e,t);t.ref;var n=F9(t,M9);return E.createElement(Q1,n)}var Wh=1,jn=function(e){function t(){var n;w9(this,t);for(var r=arguments.length,i=new Array(r),a=0;a<r;a++)i[a]=arguments[a];return n=D9(this,t,[].concat(i)),Us(n,"lastBoundingBox",{width:-1,height:-1}),n}return $9(t,e),L9(t,[{key:"componentDidMount",value:function(){this.updateBBox()}},{key:"componentDidUpdate",value:function(){this.updateBBox()}},{key:"getBBox",value:function(){if(this.wrapperNode&&this.wrapperNode.getBoundingClientRect){var r=this.wrapperNode.getBoundingClientRect();return r.height=this.wrapperNode.offsetHeight,r.width=this.wrapperNode.offsetWidth,r}return null}},{key:"updateBBox",value:function(){var r=this.props.onBBoxUpdate,i=this.getBBox();i?(Math.abs(i.width-this.lastBoundingBox.width)>Wh||Math.abs(i.height-this.lastBoundingBox.height)>Wh)&&(this.lastBoundingBox.width=i.width,this.lastBoundingBox.height=i.height,r&&r(i)):(this.lastBoundingBox.width!==-1||this.lastBoundingBox.height!==-1)&&(this.lastBoundingBox.width=-1,this.lastBoundingBox.height=-1,r&&r(null))}},{key:"getBBoxSnapshot",value:function(){return this.lastBoundingBox.width>=0&&this.lastBoundingBox.height>=0?On({},this.lastBoundingBox):{width:0,height:0}}},{key:"getDefaultPosition",value:function(r){var i=this.props,a=i.layout,o=i.align,u=i.verticalAlign,l=i.margin,s=i.chartWidth,f=i.chartHeight,c,d;if(!r||(r.left===void 0||r.left===null)&&(r.right===void 0||r.right===null))if(o==="center"&&a==="vertical"){var p=this.getBBoxSnapshot();c={left:((s||0)-p.width)/2}}else c=o==="right"?{right:l&&l.right||0}:{left:l&&l.left||0};if(!r||(r.top===void 0||r.top===null)&&(r.bottom===void 0||r.bottom===null))if(u==="middle"){var A=this.getBBoxSnapshot();d={top:((f||0)-A.height)/2}}else d=u==="bottom"?{bottom:l&&l.bottom||0}:{top:l&&l.top||0};return On(On({},c),d)}},{key:"render",value:function(){var r=this,i=this.props,a=i.content,o=i.width,u=i.height,l=i.wrapperStyle,s=i.payloadUniqBy,f=i.payload,c=On(On({position:"absolute",width:o||"auto",height:u||"auto"},this.getDefaultPosition(l)),l);return E.createElement("div",{className:"recharts-legend-wrapper",style:c,ref:function(p){r.wrapperNode=p}},Y9(a,On(On({},this.props),{},{payload:_3(f,s,B9)})))}}],[{key:"getWithHeight",value:function(r,i){var a=On(On({},this.defaultProps),r.props),o=a.layout;return o==="vertical"&&H(r.props.height)?{height:r.props.height}:o==="horizontal"?{width:r.props.width||i}:null}}])}(j.PureComponent);Us(jn,"displayName","Legend");Us(jn,"defaultProps",{iconSize:14,layout:"horizontal",align:"center",verticalAlign:"bottom"});var Jh=L0,U9=t2,H9=Xt,qh=Jh?Jh.isConcatSpreadable:void 0;function V9(e){return H9(e)||U9(e)||!!(qh&&e&&e[qh])}var K9=V9,Z9=I3,z9=K9;function j3(e,t,n,r,i){var a=-1,o=e.length;for(n||(n=z9),i||(i=[]);++a<o;){var u=e[a];t>0&&n(u)?t>1?j3(u,t-1,n,r,i):Z9(i,u):r||(i[i.length]=u)}return i}var F3=j3;function G9(e){return function(t,n,r){for(var i=-1,a=Object(t),o=r(t),u=o.length;u--;){var l=o[e?u:++i];if(n(a[l],l,a)===!1)break}return t}}var W9=G9,J9=W9,q9=J9(),Q9=q9,eL=Q9,tL=Ys;function nL(e,t){return e&&eL(e,t,tL)}var k3=nL,rL=_0;function iL(e,t){return function(n,r){if(n==null)return n;if(!rL(n))return e(n,r);for(var i=n.length,a=t?i:-1,o=Object(n);(t?a--:++a<i)&&r(o[a],a,o)!==!1;);return n}}var aL=iL,oL=k3,uL=aL,lL=uL(oL),a2=lL,sL=a2,cL=_0;function fL(e,t){var n=-1,r=cL(e)?Array(e.length):[];return sL(e,function(i,a,o){r[++n]=t(i,a,o)}),r}var B3=fL;function dL(e,t){var n=e.length;for(e.sort(t);n--;)e[n]=e[n].value;return e}var pL=dL,Qh=xa;function hL(e,t){if(e!==t){var n=e!==void 0,r=e===null,i=e===e,a=Qh(e),o=t!==void 0,u=t===null,l=t===t,s=Qh(t);if(!u&&!s&&!a&&e>t||a&&o&&l&&!u&&!s||r&&o&&l||!n&&l||!i)return 1;if(!r&&!a&&!s&&e<t||s&&n&&i&&!r&&!a||u&&n&&i||!o&&i||!l)return-1}return 0}var AL=hL,vL=AL;function yL(e,t,n){for(var r=-1,i=e.criteria,a=t.criteria,o=i.length,u=n.length;++r<o;){var l=vL(i[r],a[r]);if(l){if(r>=u)return l;var s=n[r];return l*(s=="desc"?-1:1)}}return e.index-t.index}var mL=yL,qc=U1,gL=H1,PL=En,TL=B3,XL=pL,IL=E3,RL=mL,SL=ja,EL=Xt;function OL(e,t,n){t.length?t=qc(t,function(a){return EL(a)?function(o){return gL(o,a.length===1?a[0]:a)}:a}):t=[SL];var r=-1;t=qc(t,IL(PL));var i=TL(e,function(a,o,u){var l=qc(t,function(s){return s(a)});return{criteria:l,index:++r,value:a}});return XL(i,function(a,o){return RL(a,o,n)})}var bL=OL;function NL(e,t,n){switch(n.length){case 0:return e.call(t);case 1:return e.call(t,n[0]);case 2:return e.call(t,n[0],n[1]);case 3:return e.call(t,n[0],n[1],n[2])}return e.apply(t,n)}var xL=NL,ML=xL,eA=Math.max;function wL(e,t,n){return t=eA(t===void 0?e.length-1:t,0),function(){for(var r=arguments,i=-1,a=eA(r.length-t,0),o=Array(a);++i<a;)o[i]=r[t+i];i=-1;for(var u=Array(t+1);++i<t;)u[i]=r[i];return u[t]=n(o),ML(e,this,u)}}var LL=wL;function DL(e){return function(){return e}}var _L=DL,CL=fi,$L=function(){try{var e=CL(Object,"defineProperty");return e({},"",{}),e}catch{}}(),Y3=$L,jL=_L,tA=Y3,FL=ja,kL=tA?function(e,t){return tA(e,"toString",{configurable:!0,enumerable:!1,value:jL(t),writable:!0})}:FL,BL=kL,YL=800,UL=16,HL=Date.now;function VL(e){var t=0,n=0;return function(){var r=HL(),i=UL-(r-n);if(n=r,i>0){if(++t>=YL)return arguments[0]}else t=0;return e.apply(void 0,arguments)}}var KL=VL,ZL=BL,zL=KL,GL=zL(ZL),WL=GL,JL=ja,qL=LL,QL=WL;function eD(e,t){return QL(qL(e,t,JL),e+"")}var tD=eD,nD=F1,rD=_0,iD=n2,aD=Sr;function oD(e,t,n){if(!aD(n))return!1;var r=typeof t;return(r=="number"?rD(n)&&iD(t,n.length):r=="string"&&t in n)?nD(n[t],e):!1}var Hs=oD,uD=F3,lD=bL,sD=tD,nA=Hs,cD=sD(function(e,t){if(e==null)return[];var n=t.length;return n>1&&nA(e,t[0],t[1])?t=[]:n>2&&nA(t[0],t[1],t[2])&&(t=[t[0]]),lD(e,uD(t,1),[])}),fD=cD;const o2=fe(fD);function Go(e){"@babel/helpers - typeof";return Go=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Go(e)}function _d(){return _d=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},_d.apply(this,arguments)}function dD(e,t){return vD(e)||AD(e,t)||hD(e,t)||pD()}function pD(){throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function hD(e,t){if(e){if(typeof e=="string")return rA(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n==="Object"&&e.constructor&&(n=e.constructor.name),n==="Map"||n==="Set")return Array.from(e);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return rA(e,t)}}function rA(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function AD(e,t){var n=e==null?null:typeof Symbol<"u"&&e[Symbol.iterator]||e["@@iterator"];if(n!=null){var r,i,a,o,u=[],l=!0,s=!1;try{if(a=(n=n.call(e)).next,t===0){if(Object(n)!==n)return;l=!1}else for(;!(l=(r=a.call(n)).done)&&(u.push(r.value),u.length!==t);l=!0);}catch(f){s=!0,i=f}finally{try{if(!l&&n.return!=null&&(o=n.return(),Object(o)!==o))return}finally{if(s)throw i}}return u}}function vD(e){if(Array.isArray(e))return e}function iA(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function Qc(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?iA(Object(n),!0).forEach(function(r){yD(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):iA(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function yD(e,t,n){return t=mD(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function mD(e){var t=gD(e,"string");return Go(t)=="symbol"?t:t+""}function gD(e,t){if(Go(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Go(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function PD(e){return Array.isArray(e)&&He(e[0])&&He(e[1])?e.join(" ~ "):e}var TD=function(t){var n=t.separator,r=n===void 0?" : ":n,i=t.contentStyle,a=i===void 0?{}:i,o=t.itemStyle,u=o===void 0?{}:o,l=t.labelStyle,s=l===void 0?{}:l,f=t.payload,c=t.formatter,d=t.itemSorter,p=t.wrapperClassName,A=t.labelClassName,h=t.label,P=t.labelFormatter,y=t.accessibilityLayer,v=y===void 0?!1:y,m=function(){if(f&&f.length){var N={padding:0,margin:0},w=(d?o2(f,d):f).map(function(C,D){if(C.type==="none")return null;var $=Qc({display:"block",paddingTop:4,paddingBottom:4,color:C.color||"#000"},u),F=C.formatter||c||PD,M=C.value,_=C.name,B=M,V=_;if(F&&B!=null&&V!=null){var U=F(M,_,C,D,f);if(Array.isArray(U)){var G=dD(U,2);B=G[0],V=G[1]}else B=U}return E.createElement("li",{className:"recharts-tooltip-item",key:"tooltip-item-".concat(D),style:$},He(V)?E.createElement("span",{className:"recharts-tooltip-item-name"},V):null,He(V)?E.createElement("span",{className:"recharts-tooltip-item-separator"},r):null,E.createElement("span",{className:"recharts-tooltip-item-value"},B),E.createElement("span",{className:"recharts-tooltip-item-unit"},C.unit||""))});return E.createElement("ul",{className:"recharts-tooltip-item-list",style:N},w)}return null},X=Qc({margin:0,padding:10,backgroundColor:"#fff",border:"1px solid #ccc",whiteSpace:"nowrap"},a),g=Qc({margin:0},s),T=!Q(h),I=T?h:"",R=te("recharts-default-tooltip",p),S=te("recharts-tooltip-label",A);T&&P&&f!==void 0&&f!==null&&(I=P(h,f));var b=v?{role:"status","aria-live":"assertive"}:{};return E.createElement("div",_d({className:R,style:X},b),E.createElement("p",{className:S,style:g},E.isValidElement(I)?I:"".concat(I)),m())};function Wo(e){"@babel/helpers - typeof";return Wo=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Wo(e)}function cu(e,t,n){return t=XD(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function XD(e){var t=ID(e,"string");return Wo(t)=="symbol"?t:t+""}function ID(e,t){if(Wo(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Wo(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}var qa="recharts-tooltip-wrapper",RD={visibility:"hidden"};function SD(e){var t=e.coordinate,n=e.translateX,r=e.translateY;return te(qa,cu(cu(cu(cu({},"".concat(qa,"-right"),H(n)&&t&&H(t.x)&&n>=t.x),"".concat(qa,"-left"),H(n)&&t&&H(t.x)&&n<t.x),"".concat(qa,"-bottom"),H(r)&&t&&H(t.y)&&r>=t.y),"".concat(qa,"-top"),H(r)&&t&&H(t.y)&&r<t.y))}function aA(e){var t=e.allowEscapeViewBox,n=e.coordinate,r=e.key,i=e.offsetTopLeft,a=e.position,o=e.reverseDirection,u=e.tooltipDimension,l=e.viewBox,s=e.viewBoxDimension;if(a&&H(a[r]))return a[r];var f=n[r]-u-i,c=n[r]+i;if(t[r])return o[r]?f:c;if(o[r]){var d=f,p=l[r];return d<p?Math.max(c,l[r]):Math.max(f,l[r])}var A=c+u,h=l[r]+s;return A>h?Math.max(f,l[r]):Math.max(c,l[r])}function ED(e){var t=e.translateX,n=e.translateY,r=e.useTranslate3d;return{transform:r?"translate3d(".concat(t,"px, ").concat(n,"px, 0)"):"translate(".concat(t,"px, ").concat(n,"px)")}}function OD(e){var t=e.allowEscapeViewBox,n=e.coordinate,r=e.offsetTopLeft,i=e.position,a=e.reverseDirection,o=e.tooltipBox,u=e.useTranslate3d,l=e.viewBox,s,f,c;return o.height>0&&o.width>0&&n?(f=aA({allowEscapeViewBox:t,coordinate:n,key:"x",offsetTopLeft:r,position:i,reverseDirection:a,tooltipDimension:o.width,viewBox:l,viewBoxDimension:l.width}),c=aA({allowEscapeViewBox:t,coordinate:n,key:"y",offsetTopLeft:r,position:i,reverseDirection:a,tooltipDimension:o.height,viewBox:l,viewBoxDimension:l.height}),s=ED({translateX:f,translateY:c,useTranslate3d:u})):s=RD,{cssProperties:s,cssClasses:SD({translateX:f,translateY:c,coordinate:n})}}function ra(e){"@babel/helpers - typeof";return ra=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},ra(e)}function oA(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function uA(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?oA(Object(n),!0).forEach(function(r){$d(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):oA(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function bD(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function lA(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,H3(r.key),r)}}function ND(e,t,n){return t&&lA(e.prototype,t),n&&lA(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function xD(e,t,n){return t=ml(t),MD(e,U3()?Reflect.construct(t,n||[],ml(e).constructor):t.apply(e,n))}function MD(e,t){if(t&&(ra(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return wD(e)}function wD(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function U3(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(U3=function(){return!!e})()}function ml(e){return ml=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},ml(e)}function LD(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Cd(e,t)}function Cd(e,t){return Cd=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},Cd(e,t)}function $d(e,t,n){return t=H3(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function H3(e){var t=DD(e,"string");return ra(t)=="symbol"?t:t+""}function DD(e,t){if(ra(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(ra(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}var sA=1,_D=function(e){function t(){var n;bD(this,t);for(var r=arguments.length,i=new Array(r),a=0;a<r;a++)i[a]=arguments[a];return n=xD(this,t,[].concat(i)),$d(n,"state",{dismissed:!1,dismissedAtCoordinate:{x:0,y:0},lastBoundingBox:{width:-1,height:-1}}),$d(n,"handleKeyDown",function(o){if(o.key==="Escape"){var u,l,s,f;n.setState({dismissed:!0,dismissedAtCoordinate:{x:(u=(l=n.props.coordinate)===null||l===void 0?void 0:l.x)!==null&&u!==void 0?u:0,y:(s=(f=n.props.coordinate)===null||f===void 0?void 0:f.y)!==null&&s!==void 0?s:0}})}}),n}return LD(t,e),ND(t,[{key:"updateBBox",value:function(){if(this.wrapperNode&&this.wrapperNode.getBoundingClientRect){var r=this.wrapperNode.getBoundingClientRect();(Math.abs(r.width-this.state.lastBoundingBox.width)>sA||Math.abs(r.height-this.state.lastBoundingBox.height)>sA)&&this.setState({lastBoundingBox:{width:r.width,height:r.height}})}else(this.state.lastBoundingBox.width!==-1||this.state.lastBoundingBox.height!==-1)&&this.setState({lastBoundingBox:{width:-1,height:-1}})}},{key:"componentDidMount",value:function(){document.addEventListener("keydown",this.handleKeyDown),this.updateBBox()}},{key:"componentWillUnmount",value:function(){document.removeEventListener("keydown",this.handleKeyDown)}},{key:"componentDidUpdate",value:function(){var r,i;this.props.active&&this.updateBBox(),this.state.dismissed&&(((r=this.props.coordinate)===null||r===void 0?void 0:r.x)!==this.state.dismissedAtCoordinate.x||((i=this.props.coordinate)===null||i===void 0?void 0:i.y)!==this.state.dismissedAtCoordinate.y)&&(this.state.dismissed=!1)}},{key:"render",value:function(){var r=this,i=this.props,a=i.active,o=i.allowEscapeViewBox,u=i.animationDuration,l=i.animationEasing,s=i.children,f=i.coordinate,c=i.hasPayload,d=i.isAnimationActive,p=i.offset,A=i.position,h=i.reverseDirection,P=i.useTranslate3d,y=i.viewBox,v=i.wrapperStyle,m=OD({allowEscapeViewBox:o,coordinate:f,offsetTopLeft:p,position:A,reverseDirection:h,tooltipBox:this.state.lastBoundingBox,useTranslate3d:P,viewBox:y}),X=m.cssClasses,g=m.cssProperties,T=uA(uA({transition:d&&a?"transform ".concat(u,"ms ").concat(l):void 0},g),{},{pointerEvents:"none",visibility:!this.state.dismissed&&a&&c?"visible":"hidden",position:"absolute",top:0,left:0},v);return E.createElement("div",{tabIndex:-1,className:X,style:T,ref:function(R){r.wrapperNode=R}},s)}}])}(j.PureComponent),CD=function(){return!(typeof window<"u"&&window.document&&window.document.createElement&&window.setTimeout)},Tn={isSsr:CD(),get:function(t){return Tn[t]},set:function(t,n){if(typeof t=="string")Tn[t]=n;else{var r=Object.keys(t);r&&r.length&&r.forEach(function(i){Tn[i]=t[i]})}}};function ia(e){"@babel/helpers - typeof";return ia=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},ia(e)}function cA(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function fA(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?cA(Object(n),!0).forEach(function(r){u2(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):cA(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function $D(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function dA(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,K3(r.key),r)}}function jD(e,t,n){return t&&dA(e.prototype,t),n&&dA(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function FD(e,t,n){return t=gl(t),kD(e,V3()?Reflect.construct(t,n||[],gl(e).constructor):t.apply(e,n))}function kD(e,t){if(t&&(ia(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return BD(e)}function BD(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function V3(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(V3=function(){return!!e})()}function gl(e){return gl=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},gl(e)}function YD(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&jd(e,t)}function jd(e,t){return jd=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},jd(e,t)}function u2(e,t,n){return t=K3(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function K3(e){var t=UD(e,"string");return ia(t)=="symbol"?t:t+""}function UD(e,t){if(ia(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(ia(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function HD(e){return e.dataKey}function VD(e,t){return E.isValidElement(e)?E.cloneElement(e,t):typeof e=="function"?E.createElement(e,t):E.createElement(TD,t)}var kt=function(e){function t(){return $D(this,t),FD(this,t,arguments)}return YD(t,e),jD(t,[{key:"render",value:function(){var r=this,i=this.props,a=i.active,o=i.allowEscapeViewBox,u=i.animationDuration,l=i.animationEasing,s=i.content,f=i.coordinate,c=i.filterNull,d=i.isAnimationActive,p=i.offset,A=i.payload,h=i.payloadUniqBy,P=i.position,y=i.reverseDirection,v=i.useTranslate3d,m=i.viewBox,X=i.wrapperStyle,g=A??[];c&&g.length&&(g=_3(A.filter(function(I){return I.value!=null&&(I.hide!==!0||r.props.includeHidden)}),h,HD));var T=g.length>0;return E.createElement(_D,{allowEscapeViewBox:o,animationDuration:u,animationEasing:l,isAnimationActive:d,active:a,coordinate:f,hasPayload:T,offset:p,position:P,reverseDirection:y,useTranslate3d:v,viewBox:m,wrapperStyle:X},VD(s,fA(fA({},this.props),{},{payload:g})))}}])}(j.PureComponent);u2(kt,"displayName","Tooltip");u2(kt,"defaultProps",{accessibilityLayer:!1,allowEscapeViewBox:{x:!1,y:!1},animationDuration:400,animationEasing:"ease",contentStyle:{},coordinate:{x:0,y:0},cursor:!0,cursorStyle:{},filterNull:!0,isAnimationActive:!Tn.isSsr,itemStyle:{},labelStyle:{},offset:10,reverseDirection:{x:!1,y:!1},separator:" : ",trigger:"hover",useTranslate3d:!1,viewBox:{x:0,y:0,height:0,width:0},wrapperStyle:{}});var KD=Sn,ZD=function(){return KD.Date.now()},zD=ZD,GD=/\s/;function WD(e){for(var t=e.length;t--&&GD.test(e.charAt(t)););return t}var JD=WD,qD=JD,QD=/^\s+/;function e_(e){return e&&e.slice(0,qD(e)+1).replace(QD,"")}var t_=e_,n_=t_,pA=Sr,r_=xa,hA=0/0,i_=/^[-+]0x[0-9a-f]+$/i,a_=/^0b[01]+$/i,o_=/^0o[0-7]+$/i,u_=parseInt;function l_(e){if(typeof e=="number")return e;if(r_(e))return hA;if(pA(e)){var t=typeof e.valueOf=="function"?e.valueOf():e;e=pA(t)?t+"":t}if(typeof e!="string")return e===0?e:+e;e=n_(e);var n=a_.test(e);return n||o_.test(e)?u_(e.slice(2),n?2:8):i_.test(e)?hA:+e}var Z3=l_,s_=Sr,ef=zD,AA=Z3,c_="Expected a function",f_=Math.max,d_=Math.min;function p_(e,t,n){var r,i,a,o,u,l,s=0,f=!1,c=!1,d=!0;if(typeof e!="function")throw new TypeError(c_);t=AA(t)||0,s_(n)&&(f=!!n.leading,c="maxWait"in n,a=c?f_(AA(n.maxWait)||0,t):a,d="trailing"in n?!!n.trailing:d);function p(T){var I=r,R=i;return r=i=void 0,s=T,o=e.apply(R,I),o}function A(T){return s=T,u=setTimeout(y,t),f?p(T):o}function h(T){var I=T-l,R=T-s,S=t-I;return c?d_(S,a-R):S}function P(T){var I=T-l,R=T-s;return l===void 0||I>=t||I<0||c&&R>=a}function y(){var T=ef();if(P(T))return v(T);u=setTimeout(y,h(T))}function v(T){return u=void 0,d&&r?p(T):(r=i=void 0,o)}function m(){u!==void 0&&clearTimeout(u),s=0,r=l=i=u=void 0}function X(){return u===void 0?o:v(ef())}function g(){var T=ef(),I=P(T);if(r=arguments,i=this,l=T,I){if(u===void 0)return A(l);if(c)return clearTimeout(u),u=setTimeout(y,t),p(l)}return u===void 0&&(u=setTimeout(y,t)),o}return g.cancel=m,g.flush=X,g}var h_=p_,A_=h_,v_=Sr,y_="Expected a function";function m_(e,t,n){var r=!0,i=!0;if(typeof e!="function")throw new TypeError(y_);return v_(n)&&(r="leading"in n?!!n.leading:r,i="trailing"in n?!!n.trailing:i),A_(e,t,{leading:r,maxWait:t,trailing:i})}var g_=m_;const z3=fe(g_);function Jo(e){"@babel/helpers - typeof";return Jo=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Jo(e)}function vA(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function fu(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?vA(Object(n),!0).forEach(function(r){P_(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):vA(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function P_(e,t,n){return t=T_(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function T_(e){var t=X_(e,"string");return Jo(t)=="symbol"?t:t+""}function X_(e,t){if(Jo(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Jo(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function I_(e,t){return O_(e)||E_(e,t)||S_(e,t)||R_()}function R_(){throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function S_(e,t){if(e){if(typeof e=="string")return yA(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n==="Object"&&e.constructor&&(n=e.constructor.name),n==="Map"||n==="Set")return Array.from(e);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return yA(e,t)}}function yA(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function E_(e,t){var n=e==null?null:typeof Symbol<"u"&&e[Symbol.iterator]||e["@@iterator"];if(n!=null){var r,i,a,o,u=[],l=!0,s=!1;try{if(a=(n=n.call(e)).next,t===0){if(Object(n)!==n)return;l=!1}else for(;!(l=(r=a.call(n)).done)&&(u.push(r.value),u.length!==t);l=!0);}catch(f){s=!0,i=f}finally{try{if(!l&&n.return!=null&&(o=n.return(),Object(o)!==o))return}finally{if(s)throw i}}return u}}function O_(e){if(Array.isArray(e))return e}var tf=j.forwardRef(function(e,t){var n=e.aspect,r=e.initialDimension,i=r===void 0?{width:-1,height:-1}:r,a=e.width,o=a===void 0?"100%":a,u=e.height,l=u===void 0?"100%":u,s=e.minWidth,f=s===void 0?0:s,c=e.minHeight,d=e.maxHeight,p=e.children,A=e.debounce,h=A===void 0?0:A,P=e.id,y=e.className,v=e.onResize,m=e.style,X=m===void 0?{}:m,g=j.useRef(null),T=j.useRef();T.current=v,j.useImperativeHandle(t,function(){return Object.defineProperty(g.current,"current",{get:function(){return console.warn("The usage of ref.current.current is deprecated and will no longer be supported."),g.current},configurable:!0})});var I=j.useState({containerWidth:i.width,containerHeight:i.height}),R=I_(I,2),S=R[0],b=R[1],O=j.useCallback(function(w,C){b(function(D){var $=Math.round(w),F=Math.round(C);return D.containerWidth===$&&D.containerHeight===F?D:{containerWidth:$,containerHeight:F}})},[]);j.useEffect(function(){var w=function(_){var B,V=_[0].contentRect,U=V.width,G=V.height;O(U,G),(B=T.current)===null||B===void 0||B.call(T,U,G)};h>0&&(w=z3(w,h,{trailing:!0,leading:!1}));var C=new ResizeObserver(w),D=g.current.getBoundingClientRect(),$=D.width,F=D.height;return O($,F),C.observe(g.current),function(){C.disconnect()}},[O,h]);var N=j.useMemo(function(){var w=S.containerWidth,C=S.containerHeight;if(w<0||C<0)return null;cn(Ur(o)||Ur(l),`The width(%s) and height(%s) are both fixed numbers,
        maybe you don't need to use a ResponsiveContainer.`,o,l),cn(!n||n>0,"The aspect(%s) must be greater than zero.",n);var D=Ur(o)?w:o,$=Ur(l)?C:l;n&&n>0&&(D?$=D/n:$&&(D=$*n),d&&$>d&&($=d)),cn(D>0||$>0,`The width(%s) and height(%s) of chart should be greater than 0,
@@ -184,1091 +184,1090 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function Iz(e,t){if(e){if(typeof e=="string")return wp(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n==="Object"&&e.constructor&&(n=e.constructor.name),n==="Map"||n==="Set")return Array.from(e);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return wp(e,t)}}function Rz(e){if(typeof Symbol<"u"&&e[Symbol.iterator]!=null||e["@@iterator"]!=null)return Array.from(e)}function Sz(e){if(Array.isArray(e))return wp(e)}function wp(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function Ez(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function rm(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,aI(r.key),r)}}function Oz(e,t,n){return t&&rm(e.prototype,t),n&&rm(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function bz(e,t,n){return t=rs(t),Nz(e,iI()?Reflect.construct(t,n||[],rs(e).constructor):t.apply(e,n))}function Nz(e,t){if(t&&(Pa(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return xz(e)}function xz(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function iI(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(iI=function(){return!!e})()}function rs(e){return rs=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},rs(e)}function Mz(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Lp(e,t)}function Lp(e,t){return Lp=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},Lp(e,t)}function rn(e,t,n){return t=aI(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function aI(e){var t=wz(e,"string");return Pa(t)=="symbol"?t:t+""}function wz(e,t){if(Pa(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Pa(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}var Y0=function(e){function t(){var n;Ez(this,t);for(var r=arguments.length,i=new Array(r),a=0;a<r;a++)i[a]=arguments[a];return n=bz(this,t,[].concat(i)),rn(n,"state",{isAnimationFinished:!0,totalLength:0}),rn(n,"generateSimpleStrokeDasharray",function(o,u){return"".concat(u,"px ").concat(o-u,"px")}),rn(n,"getStrokeDasharray",function(o,u,l){var s=l.reduce(function(y,v){return y+v});if(!s)return n.generateSimpleStrokeDasharray(u,o);for(var f=Math.floor(o/s),c=o%s,d=u-o,p=[],A=0,h=0;A<l.length;h+=l[A],++A)if(h+l[A]>c){p=[].concat(Pi(l.slice(0,A)),[c-h]);break}var P=p.length%2===0?[0,d]:[d];return[].concat(Pi(t.repeat(l,f)),Pi(p),P).map(function(y){return"".concat(y,"px")}).join(", ")}),rn(n,"id",_a("recharts-line-")),rn(n,"pathRef",function(o){n.mainCurve=o}),rn(n,"handleAnimationEnd",function(){n.setState({isAnimationFinished:!0}),n.props.onAnimationEnd&&n.props.onAnimationEnd()}),rn(n,"handleAnimationStart",function(){n.setState({isAnimationFinished:!1}),n.props.onAnimationStart&&n.props.onAnimationStart()}),n}return Mz(t,e),Oz(t,[{key:"componentDidMount",value:function(){if(this.props.isAnimationActive){var r=this.getTotalLength();this.setState({totalLength:r})}}},{key:"componentDidUpdate",value:function(){if(this.props.isAnimationActive){var r=this.getTotalLength();r!==this.state.totalLength&&this.setState({totalLength:r})}}},{key:"getTotalLength",value:function(){var r=this.mainCurve;try{return r&&r.getTotalLength&&r.getTotalLength()||0}catch{return 0}}},{key:"renderErrorBar",value:function(r,i){if(this.props.isAnimationActive&&!this.state.isAnimationFinished)return null;var a=this.props,o=a.points,u=a.xAxis,l=a.yAxis,s=a.layout,f=a.children,c=wt(f,B0);if(!c)return null;var d=function(h,P){return{x:h.x,y:h.y,value:h.value,errorVal:Ye(h.payload,P)}},p={clipPath:r?"url(#clipPath-".concat(i,")"):null};return E.createElement(ue,p,c.map(function(A){return E.cloneElement(A,{key:"bar-".concat(A.props.dataKey),data:o,xAxis:u,yAxis:l,layout:s,dataPointFormatter:d})}))}},{key:"renderDots",value:function(r,i,a){var o=this.props.isAnimationActive;if(o&&!this.state.isAnimationFinished)return null;var u=this.props,l=u.dot,s=u.points,f=u.dataKey,c=W(this.props,!1),d=W(l,!0),p=s.map(function(h,P){var y=It(It(It({key:"dot-".concat(P),r:3},c),d),{},{index:P,cx:h.x,cy:h.y,value:h.value,dataKey:f,payload:h.payload,points:s});return t.renderDotItem(l,y)}),A={clipPath:r?"url(#clipPath-".concat(i?"":"dots-").concat(a,")"):null};return E.createElement(ue,No({className:"recharts-line-dots",key:"dots"},A),p)}},{key:"renderCurveStatically",value:function(r,i,a,o){var u=this.props,l=u.type,s=u.layout,f=u.connectNulls;u.ref;var c=tm(u,gz),d=It(It(It({},W(c,!0)),{},{fill:"none",className:"recharts-line-curve",clipPath:i?"url(#clipPath-".concat(a,")"):null,points:r},o),{},{type:l,layout:s,connectNulls:f});return E.createElement($l,No({},d,{pathRef:this.pathRef}))}},{key:"renderCurveWithAnimation",value:function(r,i){var a=this,o=this.props,u=o.points,l=o.strokeDasharray,s=o.isAnimationActive,f=o.animationBegin,c=o.animationDuration,d=o.animationEasing,p=o.animationId,A=o.animateNewValues,h=o.width,P=o.height,y=this.state,v=y.prevPoints,m=y.totalLength;return E.createElement(ui,{begin:f,duration:c,isActive:s,easing:d,from:{t:0},to:{t:1},key:"line-".concat(p),onAnimationEnd:this.handleAnimationEnd,onAnimationStart:this.handleAnimationStart},function(X){var g=X.t;if(v){var T=v.length/u.length,I=u.map(function(N,w){var C=Math.floor(w*T);if(v[C]){var D=v[C],$=Ot(D.x,N.x),F=Ot(D.y,N.y);return It(It({},N),{},{x:$(g),y:F(g)})}if(A){var M=Ot(h*2,N.x),_=Ot(P/2,N.y);return It(It({},N),{},{x:M(g),y:_(g)})}return It(It({},N),{},{x:N.x,y:N.y})});return a.renderCurveStatically(I,r,i)}var R=Ot(0,m),S=R(g),b;if(l){var O="".concat(l).split(/[,\s]+/gim).map(function(N){return parseFloat(N)});b=a.getStrokeDasharray(S,m,O)}else b=a.generateSimpleStrokeDasharray(m,S);return a.renderCurveStatically(u,r,i,{strokeDasharray:b})})}},{key:"renderCurve",value:function(r,i){var a=this.props,o=a.points,u=a.isAnimationActive,l=this.state,s=l.prevPoints,f=l.totalLength;return u&&o&&o.length&&(!s&&f>0||!k0(s,o))?this.renderCurveWithAnimation(r,i):this.renderCurveStatically(o,r,i)}},{key:"render",value:function(){var r,i=this.props,a=i.hide,o=i.dot,u=i.points,l=i.className,s=i.xAxis,f=i.yAxis,c=i.top,d=i.left,p=i.width,A=i.height,h=i.isAnimationActive,P=i.id;if(a||!u||!u.length)return null;var y=this.state.isAnimationFinished,v=u.length===1,m=te("recharts-line",l),X=s&&s.allowDataOverflow,g=f&&f.allowDataOverflow,T=X||g,I=Q(P)?this.id:P,R=(r=W(o,!1))!==null&&r!==void 0?r:{r:3,strokeWidth:2},S=R.r,b=S===void 0?3:S,O=R.strokeWidth,N=O===void 0?2:O,w=lb(o)?o:{},C=w.clipDot,D=C===void 0?!0:C,$=b*2+N;return E.createElement(ue,{className:m},X||g?E.createElement("defs",null,E.createElement("clipPath",{id:"clipPath-".concat(I)},E.createElement("rect",{x:X?d:d-p/2,y:g?c:c-A/2,width:X?p:p*2,height:g?A:A*2})),!D&&E.createElement("clipPath",{id:"clipPath-dots-".concat(I)},E.createElement("rect",{x:d-$/2,y:c-$/2,width:p+$,height:A+$}))):null,!v&&this.renderCurve(T,I),this.renderErrorBar(T,I),(v||o)&&this.renderDots(T,D,I),(!h||y)&&kn.renderCallByParent(this.props,u))}}],[{key:"getDerivedStateFromProps",value:function(r,i){return r.animationId!==i.prevAnimationId?{prevAnimationId:r.animationId,curPoints:r.points,prevPoints:i.curPoints}:r.points!==i.curPoints?{curPoints:r.points}:null}},{key:"repeat",value:function(r,i){for(var a=r.length%2!==0?[].concat(Pi(r),[0]):r,o=[],u=0;u<i;++u)o=[].concat(Pi(o),Pi(a));return o}},{key:"renderDotItem",value:function(r,i){var a;if(E.isValidElement(r))a=E.cloneElement(r,i);else if(q(r))a=r(i);else{var o=i.key,u=tm(i,Pz),l=te("recharts-line-dot",typeof r!="boolean"?r.className:"");a=E.createElement(ic,No({key:o},u,{className:l}))}return a}}])}(j.PureComponent);rn(Y0,"displayName","Line");rn(Y0,"defaultProps",{xAxisId:0,yAxisId:0,connectNulls:!1,activeDot:!0,dot:!0,legendType:"line",stroke:"#3182bd",strokeWidth:1,fill:"#fff",points:[],isAnimationActive:!Tn.isSsr,animateNewValues:!0,animationBegin:0,animationDuration:1500,animationEasing:"ease",hide:!1,label:!1});rn(Y0,"getComposedData",function(e){var t=e.props,n=e.xAxis,r=e.yAxis,i=e.xAxisTicks,a=e.yAxisTicks,o=e.dataKey,u=e.bandSize,l=e.displayedData,s=e.offset,f=t.layout,c=l.map(function(d,p){var A=Ye(d,o);return f==="horizontal"?{x:Iv({axis:n,ticks:i,bandSize:u,entry:d,index:p}),y:Q(A)?null:r.scale(A),value:A,payload:d}:{x:Q(A)?null:n.scale(A),y:Iv({axis:r,ticks:a,bandSize:u,entry:d,index:p}),value:A,payload:d}});return It({points:c,layout:f},s)});function Ta(e){"@babel/helpers - typeof";return Ta=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Ta(e)}function Lz(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function im(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,lI(r.key),r)}}function Dz(e,t,n){return t&&im(e.prototype,t),n&&im(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function _z(e,t,n){return t=is(t),Cz(e,oI()?Reflect.construct(t,n||[],is(e).constructor):t.apply(e,n))}function Cz(e,t){if(t&&(Ta(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return $z(e)}function $z(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function oI(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(oI=function(){return!!e})()}function is(e){return is=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},is(e)}function jz(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Dp(e,t)}function Dp(e,t){return Dp=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},Dp(e,t)}function uI(e,t,n){return t=lI(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function lI(e){var t=Fz(e,"string");return Ta(t)=="symbol"?t:t+""}function Fz(e,t){if(Ta(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Ta(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function _p(){return _p=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},_p.apply(this,arguments)}function kz(e){var t=e.xAxisId,n=$2(),r=j2(),i=KX(t);return i==null?null:j.createElement(Ya,_p({},i,{className:te("recharts-".concat(i.axisType," ").concat(i.axisType),i.className),viewBox:{x:0,y:0,width:n,height:r},ticksGenerator:function(o){return _n(o,!0)}}))}var Xa=function(e){function t(){return Lz(this,t),_z(this,t,arguments)}return jz(t,e),Dz(t,[{key:"render",value:function(){return j.createElement(kz,this.props)}}])}(j.Component);uI(Xa,"displayName","XAxis");uI(Xa,"defaultProps",{allowDecimals:!0,hide:!1,orientation:"bottom",width:0,height:30,mirror:!1,xAxisId:0,tickCount:5,type:"category",padding:{left:0,right:0},allowDataOverflow:!1,scale:"auto",reversed:!1,allowDuplicatedCategory:!0});function Ia(e){"@babel/helpers - typeof";return Ia=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Ia(e)}function Bz(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function am(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,fI(r.key),r)}}function Yz(e,t,n){return t&&am(e.prototype,t),n&&am(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function Uz(e,t,n){return t=as(t),Hz(e,sI()?Reflect.construct(t,n||[],as(e).constructor):t.apply(e,n))}function Hz(e,t){if(t&&(Ia(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return Vz(e)}function Vz(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function sI(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(sI=function(){return!!e})()}function as(e){return as=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},as(e)}function Kz(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Cp(e,t)}function Cp(e,t){return Cp=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},Cp(e,t)}function cI(e,t,n){return t=fI(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function fI(e){var t=Zz(e,"string");return Ia(t)=="symbol"?t:t+""}function Zz(e,t){if(Ia(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Ia(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function $p(){return $p=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},$p.apply(this,arguments)}var zz=function(t){var n=t.yAxisId,r=$2(),i=j2(),a=ZX(n);return a==null?null:j.createElement(Ya,$p({},a,{className:te("recharts-".concat(a.axisType," ").concat(a.axisType),a.className),viewBox:{x:0,y:0,width:r,height:i},ticksGenerator:function(u){return _n(u,!0)}}))},Ra=function(e){function t(){return Bz(this,t),Uz(this,t,arguments)}return Kz(t,e),Yz(t,[{key:"render",value:function(){return j.createElement(zz,this.props)}}])}(j.Component);cI(Ra,"displayName","YAxis");cI(Ra,"defaultProps",{allowDuplicatedCategory:!0,allowDecimals:!0,hide:!1,orientation:"left",width:60,height:0,mirror:!1,yAxisId:0,tickCount:5,type:"number",padding:{top:0,bottom:0},allowDataOverflow:!1,scale:"auto",reversed:!1});function om(e){return qz(e)||Jz(e)||Wz(e)||Gz()}function Gz(){throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function Wz(e,t){if(e){if(typeof e=="string")return jp(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n==="Object"&&e.constructor&&(n=e.constructor.name),n==="Map"||n==="Set")return Array.from(e);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return jp(e,t)}}function Jz(e){if(typeof Symbol<"u"&&e[Symbol.iterator]!=null||e["@@iterator"]!=null)return Array.from(e)}function qz(e){if(Array.isArray(e))return jp(e)}function jp(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var Fp=function(t,n,r,i,a){var o=wt(t,k2),u=wt(t,pc),l=[].concat(om(o),om(u)),s=wt(t,Ac),f="".concat(i,"Id"),c=i[0],d=n;if(l.length&&(d=l.reduce(function(h,P){if(P.props[f]===r&&In(P.props,"extendDomain")&&H(P.props[c])){var y=P.props[c];return[Math.min(h[0],y),Math.max(h[1],y)]}return h},d)),s.length){var p="".concat(c,"1"),A="".concat(c,"2");d=s.reduce(function(h,P){if(P.props[f]===r&&In(P.props,"extendDomain")&&H(P.props[p])&&H(P.props[A])){var y=P.props[p],v=P.props[A];return[Math.min(h[0],y,v),Math.max(h[1],y,v)]}return h},d)}return a&&a.length&&(d=a.reduce(function(h,P){return H(P)?[Math.min(h[0],P),Math.max(h[1],P)]:h},d)),d},dI={exports:{}};(function(e){var t=Object.prototype.hasOwnProperty,n="~";function r(){}Object.create&&(r.prototype=Object.create(null),new r().__proto__||(n=!1));function i(l,s,f){this.fn=l,this.context=s,this.once=f||!1}function a(l,s,f,c,d){if(typeof f!="function")throw new TypeError("The listener must be a function");var p=new i(f,c||l,d),A=n?n+s:s;return l._events[A]?l._events[A].fn?l._events[A]=[l._events[A],p]:l._events[A].push(p):(l._events[A]=p,l._eventsCount++),l}function o(l,s){--l._eventsCount===0?l._events=new r:delete l._events[s]}function u(){this._events=new r,this._eventsCount=0}u.prototype.eventNames=function(){var s=[],f,c;if(this._eventsCount===0)return s;for(c in f=this._events)t.call(f,c)&&s.push(n?c.slice(1):c);return Object.getOwnPropertySymbols?s.concat(Object.getOwnPropertySymbols(f)):s},u.prototype.listeners=function(s){var f=n?n+s:s,c=this._events[f];if(!c)return[];if(c.fn)return[c.fn];for(var d=0,p=c.length,A=new Array(p);d<p;d++)A[d]=c[d].fn;return A},u.prototype.listenerCount=function(s){var f=n?n+s:s,c=this._events[f];return c?c.fn?1:c.length:0},u.prototype.emit=function(s,f,c,d,p,A){var h=n?n+s:s;if(!this._events[h])return!1;var P=this._events[h],y=arguments.length,v,m;if(P.fn){switch(P.once&&this.removeListener(s,P.fn,void 0,!0),y){case 1:return P.fn.call(P.context),!0;case 2:return P.fn.call(P.context,f),!0;case 3:return P.fn.call(P.context,f,c),!0;case 4:return P.fn.call(P.context,f,c,d),!0;case 5:return P.fn.call(P.context,f,c,d,p),!0;case 6:return P.fn.call(P.context,f,c,d,p,A),!0}for(m=1,v=new Array(y-1);m<y;m++)v[m-1]=arguments[m];P.fn.apply(P.context,v)}else{var X=P.length,g;for(m=0;m<X;m++)switch(P[m].once&&this.removeListener(s,P[m].fn,void 0,!0),y){case 1:P[m].fn.call(P[m].context);break;case 2:P[m].fn.call(P[m].context,f);break;case 3:P[m].fn.call(P[m].context,f,c);break;case 4:P[m].fn.call(P[m].context,f,c,d);break;default:if(!v)for(g=1,v=new Array(y-1);g<y;g++)v[g-1]=arguments[g];P[m].fn.apply(P[m].context,v)}}return!0},u.prototype.on=function(s,f,c){return a(this,s,f,c,!1)},u.prototype.once=function(s,f,c){return a(this,s,f,c,!0)},u.prototype.removeListener=function(s,f,c,d){var p=n?n+s:s;if(!this._events[p])return this;if(!f)return o(this,p),this;var A=this._events[p];if(A.fn)A.fn===f&&(!d||A.once)&&(!c||A.context===c)&&o(this,p);else{for(var h=0,P=[],y=A.length;h<y;h++)(A[h].fn!==f||d&&!A[h].once||c&&A[h].context!==c)&&P.push(A[h]);P.length?this._events[p]=P.length===1?P[0]:P:o(this,p)}return this},u.prototype.removeAllListeners=function(s){var f;return s?(f=n?n+s:s,this._events[f]&&o(this,f)):(this._events=new r,this._eventsCount=0),this},u.prototype.off=u.prototype.removeListener,u.prototype.addListener=u.prototype.on,u.prefixed=n,u.EventEmitter=u,e.exports=u})(dI);var Qz=dI.exports;const eG=fe(Qz);var mf=new eG,gf="recharts.syncMouseEvents";function E0(e){"@babel/helpers - typeof";return E0=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},E0(e)}function tG(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function um(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,pI(r.key),r)}}function nG(e,t,n){return t&&um(e.prototype,t),n&&um(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function Pf(e,t,n){return t=pI(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function pI(e){var t=rG(e,"string");return E0(t)=="symbol"?t:t+""}function rG(e,t){if(E0(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(E0(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}var iG=function(){function e(){tG(this,e),Pf(this,"activeIndex",0),Pf(this,"coordinateList",[]),Pf(this,"layout","horizontal")}return nG(e,[{key:"setDetails",value:function(n){var r,i=n.coordinateList,a=i===void 0?null:i,o=n.container,u=o===void 0?null:o,l=n.layout,s=l===void 0?null:l,f=n.offset,c=f===void 0?null:f,d=n.mouseHandlerCallback,p=d===void 0?null:d;this.coordinateList=(r=a??this.coordinateList)!==null&&r!==void 0?r:[],this.container=u??this.container,this.layout=s??this.layout,this.offset=c??this.offset,this.mouseHandlerCallback=p??this.mouseHandlerCallback,this.activeIndex=Math.min(Math.max(this.activeIndex,0),this.coordinateList.length-1)}},{key:"focus",value:function(){this.spoofMouse()}},{key:"keyboardEvent",value:function(n){if(this.coordinateList.length!==0)switch(n.key){case"ArrowRight":{if(this.layout!=="horizontal")return;this.activeIndex=Math.min(this.activeIndex+1,this.coordinateList.length-1),this.spoofMouse();break}case"ArrowLeft":{if(this.layout!=="horizontal")return;this.activeIndex=Math.max(this.activeIndex-1,0),this.spoofMouse();break}}}},{key:"setIndex",value:function(n){this.activeIndex=n}},{key:"spoofMouse",value:function(){var n,r;if(this.layout==="horizontal"&&this.coordinateList.length!==0){var i=this.container.getBoundingClientRect(),a=i.x,o=i.y,u=i.height,l=this.coordinateList[this.activeIndex].coordinate,s=((n=window)===null||n===void 0?void 0:n.scrollX)||0,f=((r=window)===null||r===void 0?void 0:r.scrollY)||0,c=a+l+s,d=o+this.offset.top+u/2+f;this.mouseHandlerCallback({pageX:c,pageY:d})}}}])}();function aG(e,t,n){if(n==="number"&&t===!0&&Array.isArray(e)){var r=e==null?void 0:e[0],i=e==null?void 0:e[1];if(r&&i&&H(r)&&H(i))return!0}return!1}function oG(e,t,n,r){var i=r/2;return{stroke:"none",fill:"#ccc",x:e==="horizontal"?t.x-i:n.left+.5,y:e==="horizontal"?n.top+.5:t.y-i,width:e==="horizontal"?r:n.width-1,height:e==="horizontal"?n.height-1:r}}function hI(e){var t=e.cx,n=e.cy,r=e.radius,i=e.startAngle,a=e.endAngle,o=me(t,n,r,i),u=me(t,n,r,a);return{points:[o,u],cx:t,cy:n,radius:r,startAngle:i,endAngle:a}}function uG(e,t,n){var r,i,a,o;if(e==="horizontal")r=t.x,a=r,i=n.top,o=n.top+n.height;else if(e==="vertical")i=t.y,o=i,r=n.left,a=n.left+n.width;else if(t.cx!=null&&t.cy!=null)if(e==="centric"){var u=t.cx,l=t.cy,s=t.innerRadius,f=t.outerRadius,c=t.angle,d=me(u,l,s,c),p=me(u,l,f,c);r=d.x,i=d.y,a=p.x,o=p.y}else return hI(t);return[{x:r,y:i},{x:a,y:o}]}function O0(e){"@babel/helpers - typeof";return O0=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},O0(e)}function lm(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function Pu(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?lm(Object(n),!0).forEach(function(r){lG(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):lm(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function lG(e,t,n){return t=sG(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function sG(e){var t=cG(e,"string");return O0(t)=="symbol"?t:t+""}function cG(e,t){if(O0(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(O0(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function fG(e){var t,n,r=e.element,i=e.tooltipEventType,a=e.isActive,o=e.activeCoordinate,u=e.activePayload,l=e.offset,s=e.activeTooltipIndex,f=e.tooltipAxisBandSize,c=e.layout,d=e.chartName,p=(t=r.props.cursor)!==null&&t!==void 0?t:(n=r.type.defaultProps)===null||n===void 0?void 0:n.cursor;if(!r||!p||!a||!o||d!=="ScatterChart"&&i!=="axis")return null;var A,h=$l;if(d==="ScatterChart")A=o,h=_U;else if(d==="BarChart")A=oG(c,o,l,f),h=L2;else if(c==="radial"){var P=hI(o),y=P.cx,v=P.cy,m=P.radius,X=P.startAngle,g=P.endAngle;A={cx:y,cy:v,startAngle:X,endAngle:g,innerRadius:m,outerRadius:m},h=cX}else A={points:uG(c,o,l)},h=$l;var T=Pu(Pu(Pu(Pu({stroke:"#ccc",pointerEvents:"none"},l),A),W(p,!1)),{},{payload:u,payloadIndex:s,className:te("recharts-tooltip-cursor",p.className)});return j.isValidElement(p)?j.cloneElement(p,T):j.createElement(h,T)}var dG=["item"],pG=["children","className","width","height","style","compact","title","desc"];function Sa(e){"@babel/helpers - typeof";return Sa=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(t){return typeof t}:function(t){return t&&typeof Symbol=="function"&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},Sa(e)}function $i(){return $i=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},$i.apply(this,arguments)}function sm(e,t){return vG(e)||AG(e,t)||vI(e,t)||hG()}function hG(){throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function AG(e,t){var n=e==null?null:typeof Symbol<"u"&&e[Symbol.iterator]||e["@@iterator"];if(n!=null){var r,i,a,o,u=[],l=!0,s=!1;try{if(a=(n=n.call(e)).next,t===0){if(Object(n)!==n)return;l=!1}else for(;!(l=(r=a.call(n)).done)&&(u.push(r.value),u.length!==t);l=!0);}catch(f){s=!0,i=f}finally{try{if(!l&&n.return!=null&&(o=n.return(),Object(o)!==o))return}finally{if(s)throw i}}return u}}function vG(e){if(Array.isArray(e))return e}function cm(e,t){if(e==null)return{};var n=yG(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function yG(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function mG(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function fm(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,yI(r.key),r)}}function gG(e,t,n){return t&&fm(e.prototype,t),n&&fm(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function PG(e,t,n){return t=os(t),TG(e,AI()?Reflect.construct(t,n||[],os(e).constructor):t.apply(e,n))}function TG(e,t){if(t&&(Sa(t)==="object"||typeof t=="function"))return t;if(t!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return XG(e)}function XG(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function AI(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(AI=function(){return!!e})()}function os(e){return os=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},os(e)}function IG(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&kp(e,t)}function kp(e,t){return kp=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,i){return r.__proto__=i,r},kp(e,t)}function Ea(e){return EG(e)||SG(e)||vI(e)||RG()}function RG(){throw new TypeError(`Invalid attempt to spread non-iterable instance.
-In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function vI(e,t){if(e){if(typeof e=="string")return Bp(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n==="Object"&&e.constructor&&(n=e.constructor.name),n==="Map"||n==="Set")return Array.from(e);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return Bp(e,t)}}function SG(e){if(typeof Symbol<"u"&&e[Symbol.iterator]!=null||e["@@iterator"]!=null)return Array.from(e)}function EG(e){if(Array.isArray(e))return Bp(e)}function Bp(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function dm(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function L(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?dm(Object(n),!0).forEach(function(r){J(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):dm(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function J(e,t,n){return t=yI(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function yI(e){var t=OG(e,"string");return Sa(t)=="symbol"?t:t+""}function OG(e,t){if(Sa(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Sa(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}var bG={xAxis:["bottom","top"],yAxis:["left","right"]},NG={width:"100%",height:"100%"},mI={x:0,y:0};function Tu(e){return e}var xG=function(t,n){return n==="horizontal"?t.x:n==="vertical"?t.y:n==="centric"?t.angle:t.radius},MG=function(t,n,r,i){var a=n.find(function(f){return f&&f.index===r});if(a){if(t==="horizontal")return{x:a.coordinate,y:i.y};if(t==="vertical")return{x:i.x,y:a.coordinate};if(t==="centric"){var o=a.coordinate,u=i.radius;return L(L(L({},i),me(i.cx,i.cy,u,o)),{},{angle:o,radius:u})}var l=a.coordinate,s=i.angle;return L(L(L({},i),me(i.cx,i.cy,l,s)),{},{angle:s,radius:l})}return mI},vc=function(t,n){var r=n.graphicalItems,i=n.dataStartIndex,a=n.dataEndIndex,o=(r??[]).reduce(function(u,l){var s=l.props.data;return s&&s.length?[].concat(Ea(u),Ea(s)):u},[]);return o.length>0?o:t&&t.length&&H(i)&&H(a)?t.slice(i,a+1):[]};function gI(e){return e==="number"?[0,"auto"]:void 0}var Yp=function(t,n,r,i){var a=t.graphicalItems,o=t.tooltipAxis,u=vc(n,t);return r<0||!a||!a.length||r>=u.length?null:a.reduce(function(l,s){var f,c=(f=s.props.data)!==null&&f!==void 0?f:n;c&&t.dataStartIndex+t.dataEndIndex!==0&&t.dataEndIndex-t.dataStartIndex>=r&&(c=c.slice(t.dataStartIndex,t.dataEndIndex+1));var d;if(o.dataKey&&!o.allowDuplicatedCategory){var p=c===void 0?u:c;d=ol(p,o.dataKey,i)}else d=c&&c[r]||u[r];return d?[].concat(Ea(l),[iX(s,d)]):l},[])},pm=function(t,n,r,i){var a=i||{x:t.chartX,y:t.chartY},o=xG(a,r),u=t.orderedTooltipTicks,l=t.tooltipAxis,s=t.tooltipTicks,f=ok(o,u,s,l);if(f>=0&&s){var c=s[f]&&s[f].value,d=Yp(t,n,f,c),p=MG(r,u,f,a);return{activeTooltipIndex:f,activeLabel:c,activePayload:d,activeCoordinate:p}}return null},wG=function(t,n){var r=n.axes,i=n.graphicalItems,a=n.axisType,o=n.axisIdKey,u=n.stackGroups,l=n.dataStartIndex,s=n.dataEndIndex,f=t.layout,c=t.children,d=t.stackOffset,p=qT(f,a);return r.reduce(function(A,h){var P,y=h.type.defaultProps!==void 0?L(L({},h.type.defaultProps),h.props):h.props,v=y.type,m=y.dataKey,X=y.allowDataOverflow,g=y.allowDuplicatedCategory,T=y.scale,I=y.ticks,R=y.includeHidden,S=y[o];if(A[S])return A;var b=vc(t.data,{graphicalItems:i.filter(function(U){var G,ie=o in U.props?U.props[o]:(G=U.type.defaultProps)===null||G===void 0?void 0:G[o];return ie===S}),dataStartIndex:l,dataEndIndex:s}),O=b.length,N,w,C;aG(y.domain,X,v)&&(N=tp(y.domain,null,X),p&&(v==="number"||T!=="auto")&&(C=So(b,m,"category")));var D=gI(v);if(!N||N.length===0){var $,F=($=y.domain)!==null&&$!==void 0?$:D;if(m){if(N=So(b,m,v),v==="category"&&p){var M=qO(N);g&&M?(w=N,N=Zl(0,O)):g||(N=Ov(F,N,h).reduce(function(U,G){return U.indexOf(G)>=0?U:[].concat(Ea(U),[G])},[]))}else if(v==="category")g?N=N.filter(function(U){return U!==""&&!Q(U)}):N=Ov(F,N,h).reduce(function(U,G){return U.indexOf(G)>=0||G===""||Q(G)?U:[].concat(Ea(U),[G])},[]);else if(v==="number"){var _=fk(b,i.filter(function(U){var G,ie,Ie=o in U.props?U.props[o]:(G=U.type.defaultProps)===null||G===void 0?void 0:G[o],we="hide"in U.props?U.props.hide:(ie=U.type.defaultProps)===null||ie===void 0?void 0:ie.hide;return Ie===S&&(R||!we)}),m,a,f);_&&(N=_)}p&&(v==="number"||T!=="auto")&&(C=So(b,m,"category"))}else p?N=Zl(0,O):u&&u[S]&&u[S].hasStack&&v==="number"?N=d==="expand"?[0,1]:rX(u[S].stackGroups,l,s):N=JT(b,i.filter(function(U){var G=o in U.props?U.props[o]:U.type.defaultProps[o],ie="hide"in U.props?U.props.hide:U.type.defaultProps.hide;return G===S&&(R||!ie)}),v,f,!0);if(v==="number")N=Fp(c,N,S,a,I),F&&(N=tp(F,N,X));else if(v==="category"&&F){var B=F,V=N.every(function(U){return B.indexOf(U)>=0});V&&(N=B)}}return L(L({},A),{},J({},S,L(L({},y),{},{axisType:a,domain:N,categoricalDomain:C,duplicateDomain:w,originalDomain:(P=y.domain)!==null&&P!==void 0?P:D,isCategorical:p,layout:f})))},{})},LG=function(t,n){var r=n.graphicalItems,i=n.Axis,a=n.axisType,o=n.axisIdKey,u=n.stackGroups,l=n.dataStartIndex,s=n.dataEndIndex,f=t.layout,c=t.children,d=vc(t.data,{graphicalItems:r,dataStartIndex:l,dataEndIndex:s}),p=d.length,A=qT(f,a),h=-1;return r.reduce(function(P,y){var v=y.type.defaultProps!==void 0?L(L({},y.type.defaultProps),y.props):y.props,m=v[o],X=gI("number");if(!P[m]){h++;var g;return A?g=Zl(0,p):u&&u[m]&&u[m].hasStack?(g=rX(u[m].stackGroups,l,s),g=Fp(c,g,m,a)):(g=tp(X,JT(d,r.filter(function(T){var I,R,S=o in T.props?T.props[o]:(I=T.type.defaultProps)===null||I===void 0?void 0:I[o],b="hide"in T.props?T.props.hide:(R=T.type.defaultProps)===null||R===void 0?void 0:R.hide;return S===m&&!b}),"number",f),i.defaultProps.allowDataOverflow),g=Fp(c,g,m,a)),L(L({},P),{},J({},m,L(L({axisType:a},i.defaultProps),{},{hide:!0,orientation:Mt(bG,"".concat(a,".").concat(h%2),null),domain:g,originalDomain:X,isCategorical:A,layout:f})))}return P},{})},DG=function(t,n){var r=n.axisType,i=r===void 0?"xAxis":r,a=n.AxisComp,o=n.graphicalItems,u=n.stackGroups,l=n.dataStartIndex,s=n.dataEndIndex,f=t.children,c="".concat(i,"Id"),d=wt(f,a),p={};return d&&d.length?p=wG(t,{axes:d,graphicalItems:o,axisType:i,axisIdKey:c,stackGroups:u,dataStartIndex:l,dataEndIndex:s}):o&&o.length&&(p=LG(t,{Axis:a,graphicalItems:o,axisType:i,axisIdKey:c,stackGroups:u,dataStartIndex:l,dataEndIndex:s})),p},_G=function(t){var n=or(t),r=_n(n,!1,!0);return{tooltipTicks:r,orderedTooltipTicks:o2(r,function(i){return i.coordinate}),tooltipAxis:n,tooltipAxisBandSize:Dl(n,r)}},hm=function(t){var n=t.children,r=t.defaultShowTooltip,i=Et(n,ha),a=0,o=0;return t.data&&t.data.length!==0&&(o=t.data.length-1),i&&i.props&&(i.props.startIndex>=0&&(a=i.props.startIndex),i.props.endIndex>=0&&(o=i.props.endIndex)),{chartX:0,chartY:0,dataStartIndex:a,dataEndIndex:o,activeTooltipIndex:-1,isTooltipActive:!!r}},CG=function(t){return!t||!t.length?!1:t.some(function(n){var r=$n(n&&n.type);return r&&r.indexOf("Bar")>=0})},Am=function(t){return t==="horizontal"?{numericAxisName:"yAxis",cateAxisName:"xAxis"}:t==="vertical"?{numericAxisName:"xAxis",cateAxisName:"yAxis"}:t==="centric"?{numericAxisName:"radiusAxis",cateAxisName:"angleAxis"}:{numericAxisName:"angleAxis",cateAxisName:"radiusAxis"}},$G=function(t,n){var r=t.props,i=t.graphicalItems,a=t.xAxisMap,o=a===void 0?{}:a,u=t.yAxisMap,l=u===void 0?{}:u,s=r.width,f=r.height,c=r.children,d=r.margin||{},p=Et(c,ha),A=Et(c,jn),h=Object.keys(l).reduce(function(g,T){var I=l[T],R=I.orientation;return!I.mirror&&!I.hide?L(L({},g),{},J({},R,g[R]+I.width)):g},{left:d.left||0,right:d.right||0}),P=Object.keys(o).reduce(function(g,T){var I=o[T],R=I.orientation;return!I.mirror&&!I.hide?L(L({},g),{},J({},R,Mt(g,"".concat(R))+I.height)):g},{top:d.top||0,bottom:d.bottom||0}),y=L(L({},P),h),v=y.bottom;p&&(y.bottom+=p.props.height||ha.defaultProps.height),A&&n&&(y=sk(y,i,r,n));var m=s-y.left-y.right,X=f-y.top-y.bottom;return L(L({brushBottom:v},y),{},{width:Math.max(m,0),height:Math.max(X,0)})},jG=function(t,n){if(n==="xAxis")return t[n].width;if(n==="yAxis")return t[n].height},U2=function(t){var n=t.chartName,r=t.GraphicalChild,i=t.defaultTooltipEventType,a=i===void 0?"axis":i,o=t.validateTooltipEventTypes,u=o===void 0?["axis"]:o,l=t.axisComponents,s=t.legendContent,f=t.formatAxisMap,c=t.defaultProps,d=function(y,v){var m=v.graphicalItems,X=v.stackGroups,g=v.offset,T=v.updateId,I=v.dataStartIndex,R=v.dataEndIndex,S=y.barSize,b=y.layout,O=y.barGap,N=y.barCategoryGap,w=y.maxBarSize,C=Am(b),D=C.numericAxisName,$=C.cateAxisName,F=CG(m),M=[];return m.forEach(function(_,B){var V=vc(y.data,{graphicalItems:[_],dataStartIndex:I,dataEndIndex:R}),U=_.type.defaultProps!==void 0?L(L({},_.type.defaultProps),_.props):_.props,G=U.dataKey,ie=U.maxBarSize,Ie=U["".concat(D,"Id")],we=U["".concat($,"Id")],Ct={},ht=l.reduce(function(Nr,xr){var yc=v["".concat(xr.axisType,"Map")],H2=U["".concat(xr.axisType,"Id")];yc&&yc[H2]||xr.axisType==="zAxis"||oi(!1);var V2=yc[H2];return L(L({},Nr),{},J(J({},xr.axisType,V2),"".concat(xr.axisType,"Ticks"),_n(V2)))},Ct),K=ht[$],ee=ht["".concat($,"Ticks")],ne=X&&X[Ie]&&X[Ie].hasStack&&Pk(_,X[Ie].stackGroups),k=$n(_.type).indexOf("Bar")>=0,Ne=Dl(K,ee),ae=[],$e=F&&uk({barSize:S,stackGroups:X,totalSize:jG(ht,$)});if(k){var je,At,Qn=Q(ie)?w:ie,Ai=(je=(At=Dl(K,ee,!0))!==null&&At!==void 0?At:Qn)!==null&&je!==void 0?je:0;ae=lk({barGap:O,barCategoryGap:N,bandSize:Ai!==Ne?Ai:Ne,sizeList:$e[we],maxBarSize:Qn}),Ai!==Ne&&(ae=ae.map(function(Nr){return L(L({},Nr),{},{position:L(L({},Nr.position),{},{offset:Nr.position.offset-Ai/2})})}))}var U0=_&&_.type&&_.type.getComposedData;U0&&M.push({props:L(L({},U0(L(L({},ht),{},{displayedData:V,props:y,dataKey:G,item:_,bandSize:Ne,barPosition:ae,offset:g,stackedData:ne,layout:b,dataStartIndex:I,dataEndIndex:R}))),{},J(J(J({key:_.key||"item-".concat(B)},D,ht[D]),$,ht[$]),"animationId",T)),childIndex:fb(_,y.children),item:_})}),M},p=function(y,v){var m=y.props,X=y.dataStartIndex,g=y.dataEndIndex,T=y.updateId;if(!vh({props:m}))return null;var I=m.children,R=m.layout,S=m.stackOffset,b=m.data,O=m.reverseStackOrder,N=Am(R),w=N.numericAxisName,C=N.cateAxisName,D=wt(I,r),$=mk(b,D,"".concat(w,"Id"),"".concat(C,"Id"),S,O),F=l.reduce(function(U,G){var ie="".concat(G.axisType,"Map");return L(L({},U),{},J({},ie,DG(m,L(L({},G),{},{graphicalItems:D,stackGroups:G.axisType===w&&$,dataStartIndex:X,dataEndIndex:g}))))},{}),M=$G(L(L({},F),{},{props:m,graphicalItems:D}),v==null?void 0:v.legendBBox);Object.keys(F).forEach(function(U){F[U]=f(m,F[U],M,U.replace("Map",""),n)});var _=F["".concat(C,"Map")],B=_G(_),V=d(m,L(L({},F),{},{dataStartIndex:X,dataEndIndex:g,updateId:T,graphicalItems:D,stackGroups:$,offset:M}));return L(L({formattedGraphicalItems:V,graphicalItems:D,offset:M,stackGroups:$},B),F)},A=function(P){function y(v){var m,X,g;return mG(this,y),g=PG(this,y,[v]),J(g,"eventEmitterSymbol",Symbol("rechartsEventEmitter")),J(g,"accessibilityManager",new iG),J(g,"handleLegendBBoxUpdate",function(T){if(T){var I=g.state,R=I.dataStartIndex,S=I.dataEndIndex,b=I.updateId;g.setState(L({legendBBox:T},p({props:g.props,dataStartIndex:R,dataEndIndex:S,updateId:b},L(L({},g.state),{},{legendBBox:T}))))}}),J(g,"handleReceiveSyncEvent",function(T,I,R){if(g.props.syncId===T){if(R===g.eventEmitterSymbol&&typeof g.props.syncMethod!="function")return;g.applySyncEvent(I)}}),J(g,"handleBrushChange",function(T){var I=T.startIndex,R=T.endIndex;if(I!==g.state.dataStartIndex||R!==g.state.dataEndIndex){var S=g.state.updateId;g.setState(function(){return L({dataStartIndex:I,dataEndIndex:R},p({props:g.props,dataStartIndex:I,dataEndIndex:R,updateId:S},g.state))}),g.triggerSyncEvent({dataStartIndex:I,dataEndIndex:R})}}),J(g,"handleMouseEnter",function(T){var I=g.getMouseInfo(T);if(I){var R=L(L({},I),{},{isTooltipActive:!0});g.setState(R),g.triggerSyncEvent(R);var S=g.props.onMouseEnter;q(S)&&S(R,T)}}),J(g,"triggeredAfterMouseMove",function(T){var I=g.getMouseInfo(T),R=I?L(L({},I),{},{isTooltipActive:!0}):{isTooltipActive:!1};g.setState(R),g.triggerSyncEvent(R);var S=g.props.onMouseMove;q(S)&&S(R,T)}),J(g,"handleItemMouseEnter",function(T){g.setState(function(){return{isTooltipActive:!0,activeItem:T,activePayload:T.tooltipPayload,activeCoordinate:T.tooltipPosition||{x:T.cx,y:T.cy}}})}),J(g,"handleItemMouseLeave",function(){g.setState(function(){return{isTooltipActive:!1}})}),J(g,"handleMouseMove",function(T){T.persist(),g.throttleTriggeredAfterMouseMove(T)}),J(g,"handleMouseLeave",function(T){g.throttleTriggeredAfterMouseMove.cancel();var I={isTooltipActive:!1};g.setState(I),g.triggerSyncEvent(I);var R=g.props.onMouseLeave;q(R)&&R(I,T)}),J(g,"handleOuterEvent",function(T){var I=cb(T),R=Mt(g.props,"".concat(I));if(I&&q(R)){var S,b;/.*touch.*/i.test(I)?b=g.getMouseInfo(T.changedTouches[0]):b=g.getMouseInfo(T),R((S=b)!==null&&S!==void 0?S:{},T)}}),J(g,"handleClick",function(T){var I=g.getMouseInfo(T);if(I){var R=L(L({},I),{},{isTooltipActive:!0});g.setState(R),g.triggerSyncEvent(R);var S=g.props.onClick;q(S)&&S(R,T)}}),J(g,"handleMouseDown",function(T){var I=g.props.onMouseDown;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"handleMouseUp",function(T){var I=g.props.onMouseUp;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"handleTouchMove",function(T){T.changedTouches!=null&&T.changedTouches.length>0&&g.throttleTriggeredAfterMouseMove(T.changedTouches[0])}),J(g,"handleTouchStart",function(T){T.changedTouches!=null&&T.changedTouches.length>0&&g.handleMouseDown(T.changedTouches[0])}),J(g,"handleTouchEnd",function(T){T.changedTouches!=null&&T.changedTouches.length>0&&g.handleMouseUp(T.changedTouches[0])}),J(g,"handleDoubleClick",function(T){var I=g.props.onDoubleClick;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"handleContextMenu",function(T){var I=g.props.onContextMenu;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"triggerSyncEvent",function(T){g.props.syncId!==void 0&&mf.emit(gf,g.props.syncId,T,g.eventEmitterSymbol)}),J(g,"applySyncEvent",function(T){var I=g.props,R=I.layout,S=I.syncMethod,b=g.state.updateId,O=T.dataStartIndex,N=T.dataEndIndex;if(T.dataStartIndex!==void 0||T.dataEndIndex!==void 0)g.setState(L({dataStartIndex:O,dataEndIndex:N},p({props:g.props,dataStartIndex:O,dataEndIndex:N,updateId:b},g.state)));else if(T.activeTooltipIndex!==void 0){var w=T.chartX,C=T.chartY,D=T.activeTooltipIndex,$=g.state,F=$.offset,M=$.tooltipTicks;if(!F)return;if(typeof S=="function")D=S(M,T);else if(S==="value"){D=-1;for(var _=0;_<M.length;_++)if(M[_].value===T.activeLabel){D=_;break}}var B=L(L({},F),{},{x:F.left,y:F.top}),V=Math.min(w,B.x+B.width),U=Math.min(C,B.y+B.height),G=M[D]&&M[D].value,ie=Yp(g.state,g.props.data,D),Ie=M[D]?{x:R==="horizontal"?M[D].coordinate:V,y:R==="horizontal"?U:M[D].coordinate}:mI;g.setState(L(L({},T),{},{activeLabel:G,activeCoordinate:Ie,activePayload:ie,activeTooltipIndex:D}))}else g.setState(T)}),J(g,"renderCursor",function(T){var I,R=g.state,S=R.isTooltipActive,b=R.activeCoordinate,O=R.activePayload,N=R.offset,w=R.activeTooltipIndex,C=R.tooltipAxisBandSize,D=g.getTooltipEventType(),$=(I=T.props.active)!==null&&I!==void 0?I:S,F=g.props.layout,M=T.key||"_recharts-cursor";return E.createElement(fG,{key:M,activeCoordinate:b,activePayload:O,activeTooltipIndex:w,chartName:n,element:T,isActive:$,layout:F,offset:N,tooltipAxisBandSize:C,tooltipEventType:D})}),J(g,"renderPolarAxis",function(T,I,R){var S=Mt(T,"type.axisType"),b=Mt(g.state,"".concat(S,"Map")),O=T.type.defaultProps,N=O!==void 0?L(L({},O),T.props):T.props,w=b&&b[N["".concat(S,"Id")]];return j.cloneElement(T,L(L({},w),{},{className:te(S,w.className),key:T.key||"".concat(I,"-").concat(R),ticks:_n(w,!0)}))}),J(g,"renderPolarGrid",function(T){var I=T.props,R=I.radialLines,S=I.polarAngles,b=I.polarRadius,O=g.state,N=O.radiusAxisMap,w=O.angleAxisMap,C=or(N),D=or(w),$=D.cx,F=D.cy,M=D.innerRadius,_=D.outerRadius;return j.cloneElement(T,{polarAngles:Array.isArray(S)?S:_n(D,!0).map(function(B){return B.coordinate}),polarRadius:Array.isArray(b)?b:_n(C,!0).map(function(B){return B.coordinate}),cx:$,cy:F,innerRadius:M,outerRadius:_,key:T.key||"polar-grid",radialLines:R})}),J(g,"renderLegend",function(){var T=g.state.formattedGraphicalItems,I=g.props,R=I.children,S=I.width,b=I.height,O=g.props.margin||{},N=S-(O.left||0)-(O.right||0),w=GT({children:R,formattedGraphicalItems:T,legendWidth:N,legendContent:s});if(!w)return null;var C=w.item,D=cm(w,dG);return j.cloneElement(C,L(L({},D),{},{chartWidth:S,chartHeight:b,margin:O,onBBoxUpdate:g.handleLegendBBoxUpdate}))}),J(g,"renderTooltip",function(){var T,I=g.props,R=I.children,S=I.accessibilityLayer,b=Et(R,kt);if(!b)return null;var O=g.state,N=O.isTooltipActive,w=O.activeCoordinate,C=O.activePayload,D=O.activeLabel,$=O.offset,F=(T=b.props.active)!==null&&T!==void 0?T:N;return j.cloneElement(b,{viewBox:L(L({},$),{},{x:$.left,y:$.top}),active:F,label:D,payload:F?C:[],coordinate:w,accessibilityLayer:S})}),J(g,"renderBrush",function(T){var I=g.props,R=I.margin,S=I.data,b=g.state,O=b.offset,N=b.dataStartIndex,w=b.dataEndIndex,C=b.updateId;return j.cloneElement(T,{key:T.key||"_recharts-brush",onChange:vu(g.handleBrushChange,T.props.onChange),data:S,x:H(T.props.x)?T.props.x:O.left,y:H(T.props.y)?T.props.y:O.top+O.height+O.brushBottom-(R.bottom||0),width:H(T.props.width)?T.props.width:O.width,startIndex:N,endIndex:w,updateId:"brush-".concat(C)})}),J(g,"renderReferenceElement",function(T,I,R){if(!T)return null;var S=g,b=S.clipPathId,O=g.state,N=O.xAxisMap,w=O.yAxisMap,C=O.offset,D=T.type.defaultProps||{},$=T.props,F=$.xAxisId,M=F===void 0?D.xAxisId:F,_=$.yAxisId,B=_===void 0?D.yAxisId:_;return j.cloneElement(T,{key:T.key||"".concat(I,"-").concat(R),xAxis:N[M],yAxis:w[B],viewBox:{x:C.left,y:C.top,width:C.width,height:C.height},clipPathId:b})}),J(g,"renderActivePoints",function(T){var I=T.item,R=T.activePoint,S=T.basePoint,b=T.childIndex,O=T.isRange,N=[],w=I.props.key,C=I.item.type.defaultProps!==void 0?L(L({},I.item.type.defaultProps),I.item.props):I.item.props,D=C.activeDot,$=C.dataKey,F=L(L({index:b,dataKey:$,cx:R.x,cy:R.y,r:4,fill:w2(I.item),strokeWidth:2,stroke:"#fff",payload:R.payload,value:R.value},W(D,!1)),ul(D));return N.push(y.renderActiveDot(D,F,"".concat(w,"-activePoint-").concat(b))),S?N.push(y.renderActiveDot(D,L(L({},F),{},{cx:S.x,cy:S.y}),"".concat(w,"-basePoint-").concat(b))):O&&N.push(null),N}),J(g,"renderGraphicChild",function(T,I,R){var S=g.filterFormatItem(T,I,R);if(!S)return null;var b=g.getTooltipEventType(),O=g.state,N=O.isTooltipActive,w=O.tooltipAxis,C=O.activeTooltipIndex,D=O.activeLabel,$=g.props.children,F=Et($,kt),M=S.props,_=M.points,B=M.isRange,V=M.baseLine,U=S.item.type.defaultProps!==void 0?L(L({},S.item.type.defaultProps),S.item.props):S.item.props,G=U.activeDot,ie=U.hide,Ie=U.activeBar,we=U.activeShape,Ct=!!(!ie&&N&&F&&(G||Ie||we)),ht={};b!=="axis"&&F&&F.props.trigger==="click"?ht={onClick:vu(g.handleItemMouseEnter,T.props.onClick)}:b!=="axis"&&(ht={onMouseLeave:vu(g.handleItemMouseLeave,T.props.onMouseLeave),onMouseEnter:vu(g.handleItemMouseEnter,T.props.onMouseEnter)});var K=j.cloneElement(T,L(L({},S.props),ht));function ee(xr){return typeof w.dataKey=="function"?w.dataKey(xr.payload):null}if(Ct)if(C>=0){var ne,k;if(w.dataKey&&!w.allowDuplicatedCategory){var Ne=typeof w.dataKey=="function"?ee:"payload.".concat(w.dataKey.toString());ne=ol(_,Ne,D),k=B&&V&&ol(V,Ne,D)}else ne=_==null?void 0:_[C],k=B&&V&&V[C];if(we||Ie){var ae=T.props.activeIndex!==void 0?T.props.activeIndex:C;return[j.cloneElement(T,L(L(L({},S.props),ht),{},{activeIndex:ae})),null,null]}if(!Q(ne))return[K].concat(Ea(g.renderActivePoints({item:S,activePoint:ne,basePoint:k,childIndex:C,isRange:B})))}else{var $e,je=($e=g.getItemByXY(g.state.activeCoordinate))!==null&&$e!==void 0?$e:{graphicalItem:K},At=je.graphicalItem,Qn=At.item,Ai=Qn===void 0?T:Qn,U0=At.childIndex,Nr=L(L(L({},S.props),ht),{},{activeIndex:U0});return[j.cloneElement(Ai,Nr),null,null]}return B?[K,null,null]:[K,null]}),J(g,"renderCustomized",function(T,I,R){return j.cloneElement(T,L(L({key:"recharts-customized-".concat(R)},g.props),g.state))}),J(g,"renderMap",{CartesianGrid:{handler:Tu,once:!0},ReferenceArea:{handler:g.renderReferenceElement},ReferenceLine:{handler:Tu},ReferenceDot:{handler:g.renderReferenceElement},XAxis:{handler:Tu},YAxis:{handler:Tu},Brush:{handler:g.renderBrush,once:!0},Bar:{handler:g.renderGraphicChild},Line:{handler:g.renderGraphicChild},Area:{handler:g.renderGraphicChild},Radar:{handler:g.renderGraphicChild},RadialBar:{handler:g.renderGraphicChild},Scatter:{handler:g.renderGraphicChild},Pie:{handler:g.renderGraphicChild},Funnel:{handler:g.renderGraphicChild},Tooltip:{handler:g.renderCursor,once:!0},PolarGrid:{handler:g.renderPolarGrid,once:!0},PolarAngleAxis:{handler:g.renderPolarAxis},PolarRadiusAxis:{handler:g.renderPolarAxis},Customized:{handler:g.renderCustomized}}),g.clipPathId="".concat((m=v.id)!==null&&m!==void 0?m:_a("recharts"),"-clip"),g.throttleTriggeredAfterMouseMove=z3(g.triggeredAfterMouseMove,(X=v.throttleDelay)!==null&&X!==void 0?X:1e3/60),g.state={},g}return IG(y,P),gG(y,[{key:"componentDidMount",value:function(){var m,X;this.addListener(),this.accessibilityManager.setDetails({container:this.container,offset:{left:(m=this.props.margin.left)!==null&&m!==void 0?m:0,top:(X=this.props.margin.top)!==null&&X!==void 0?X:0},coordinateList:this.state.tooltipTicks,mouseHandlerCallback:this.triggeredAfterMouseMove,layout:this.props.layout}),this.displayDefaultTooltip()}},{key:"displayDefaultTooltip",value:function(){var m=this.props,X=m.children,g=m.data,T=m.height,I=m.layout,R=Et(X,kt);if(R){var S=R.props.defaultIndex;if(!(typeof S!="number"||S<0||S>this.state.tooltipTicks.length-1)){var b=this.state.tooltipTicks[S]&&this.state.tooltipTicks[S].value,O=Yp(this.state,g,S,b),N=this.state.tooltipTicks[S].coordinate,w=(this.state.offset.top+T)/2,C=I==="horizontal",D=C?{x:N,y:w}:{y:N,x:w},$=this.state.formattedGraphicalItems.find(function(M){var _=M.item;return _.type.name==="Scatter"});$&&(D=L(L({},D),$.props.points[S].tooltipPosition),O=$.props.points[S].tooltipPayload);var F={activeTooltipIndex:S,isTooltipActive:!0,activeLabel:b,activePayload:O,activeCoordinate:D};this.setState(F),this.renderCursor(R),this.accessibilityManager.setIndex(S)}}}},{key:"getSnapshotBeforeUpdate",value:function(m,X){if(!this.props.accessibilityLayer)return null;if(this.state.tooltipTicks!==X.tooltipTicks&&this.accessibilityManager.setDetails({coordinateList:this.state.tooltipTicks}),this.props.layout!==m.layout&&this.accessibilityManager.setDetails({layout:this.props.layout}),this.props.margin!==m.margin){var g,T;this.accessibilityManager.setDetails({offset:{left:(g=this.props.margin.left)!==null&&g!==void 0?g:0,top:(T=this.props.margin.top)!==null&&T!==void 0?T:0}})}return null}},{key:"componentDidUpdate",value:function(m){vd([Et(m.children,kt)],[Et(this.props.children,kt)])||this.displayDefaultTooltip()}},{key:"componentWillUnmount",value:function(){this.removeListener(),this.throttleTriggeredAfterMouseMove.cancel()}},{key:"getTooltipEventType",value:function(){var m=Et(this.props.children,kt);if(m&&typeof m.props.shared=="boolean"){var X=m.props.shared?"axis":"item";return u.indexOf(X)>=0?X:a}return a}},{key:"getMouseInfo",value:function(m){if(!this.container)return null;var X=this.container,g=X.getBoundingClientRect(),T=D_(g),I={chartX:Math.round(m.pageX-T.left),chartY:Math.round(m.pageY-T.top)},R=g.width/X.offsetWidth||1,S=this.inRange(I.chartX,I.chartY,R);if(!S)return null;var b=this.state,O=b.xAxisMap,N=b.yAxisMap,w=this.getTooltipEventType(),C=pm(this.state,this.props.data,this.props.layout,S);if(w!=="axis"&&O&&N){var D=or(O).scale,$=or(N).scale,F=D&&D.invert?D.invert(I.chartX):null,M=$&&$.invert?$.invert(I.chartY):null;return L(L({},I),{},{xValue:F,yValue:M},C)}return C?L(L({},I),C):null}},{key:"inRange",value:function(m,X){var g=arguments.length>2&&arguments[2]!==void 0?arguments[2]:1,T=this.props.layout,I=m/g,R=X/g;if(T==="horizontal"||T==="vertical"){var S=this.state.offset,b=I>=S.left&&I<=S.left+S.width&&R>=S.top&&R<=S.top+S.height;return b?{x:I,y:R}:null}var O=this.state,N=O.angleAxisMap,w=O.radiusAxisMap;if(N&&w){var C=or(N);return xv({x:I,y:R},C)}return null}},{key:"parseEventsOfWrapper",value:function(){var m=this.props.children,X=this.getTooltipEventType(),g=Et(m,kt),T={};g&&X==="axis"&&(g.props.trigger==="click"?T={onClick:this.handleClick}:T={onMouseEnter:this.handleMouseEnter,onDoubleClick:this.handleDoubleClick,onMouseMove:this.handleMouseMove,onMouseLeave:this.handleMouseLeave,onTouchMove:this.handleTouchMove,onTouchStart:this.handleTouchStart,onTouchEnd:this.handleTouchEnd,onContextMenu:this.handleContextMenu});var I=ul(this.props,this.handleOuterEvent);return L(L({},I),T)}},{key:"addListener",value:function(){mf.on(gf,this.handleReceiveSyncEvent)}},{key:"removeListener",value:function(){mf.removeListener(gf,this.handleReceiveSyncEvent)}},{key:"filterFormatItem",value:function(m,X,g){for(var T=this.state.formattedGraphicalItems,I=0,R=T.length;I<R;I++){var S=T[I];if(S.item===m||S.props.key===m.key||X===$n(S.item.type)&&g===S.childIndex)return S}return null}},{key:"renderClipPath",value:function(){var m=this.clipPathId,X=this.state.offset,g=X.left,T=X.top,I=X.height,R=X.width;return E.createElement("defs",null,E.createElement("clipPath",{id:m},E.createElement("rect",{x:g,y:T,height:I,width:R})))}},{key:"getXScales",value:function(){var m=this.state.xAxisMap;return m?Object.entries(m).reduce(function(X,g){var T=sm(g,2),I=T[0],R=T[1];return L(L({},X),{},J({},I,R.scale))},{}):null}},{key:"getYScales",value:function(){var m=this.state.yAxisMap;return m?Object.entries(m).reduce(function(X,g){var T=sm(g,2),I=T[0],R=T[1];return L(L({},X),{},J({},I,R.scale))},{}):null}},{key:"getXScaleByAxisId",value:function(m){var X;return(X=this.state.xAxisMap)===null||X===void 0||(X=X[m])===null||X===void 0?void 0:X.scale}},{key:"getYScaleByAxisId",value:function(m){var X;return(X=this.state.yAxisMap)===null||X===void 0||(X=X[m])===null||X===void 0?void 0:X.scale}},{key:"getItemByXY",value:function(m){var X=this.state,g=X.formattedGraphicalItems,T=X.activeItem;if(g&&g.length)for(var I=0,R=g.length;I<R;I++){var S=g[I],b=S.props,O=S.item,N=O.type.defaultProps!==void 0?L(L({},O.type.defaultProps),O.props):O.props,w=$n(O.type);if(w==="Bar"){var C=(b.data||[]).find(function(M){return AU(m,M)});if(C)return{graphicalItem:S,payload:C}}else if(w==="RadialBar"){var D=(b.data||[]).find(function(M){return xv(m,M)});if(D)return{graphicalItem:S,payload:D}}else if(sc(S,T)||cc(S,T)||T0(S,T)){var $=rV({graphicalItem:S,activeTooltipItem:T,itemData:N.data}),F=N.activeIndex===void 0?$:N.activeIndex;return{graphicalItem:L(L({},S),{},{childIndex:F}),payload:T0(S,T)?N.data[$]:S.props.data[$]}}}return null}},{key:"render",value:function(){var m=this;if(!vh(this))return null;var X=this.props,g=X.children,T=X.className,I=X.width,R=X.height,S=X.style,b=X.compact,O=X.title,N=X.desc,w=cm(X,pG),C=W(w,!1);if(b)return E.createElement(Fy,{state:this.state,width:this.props.width,height:this.props.height,clipPathId:this.clipPathId},E.createElement(md,$i({},C,{width:I,height:R,title:O,desc:N}),this.renderClipPath(),mh(g,this.renderMap)));if(this.props.accessibilityLayer){var D,$;C.tabIndex=(D=this.props.tabIndex)!==null&&D!==void 0?D:0,C.role=($=this.props.role)!==null&&$!==void 0?$:"application",C.onKeyDown=function(M){m.accessibilityManager.keyboardEvent(M)},C.onFocus=function(){m.accessibilityManager.focus()}}var F=this.parseEventsOfWrapper();return E.createElement(Fy,{state:this.state,width:this.props.width,height:this.props.height,clipPathId:this.clipPathId},E.createElement("div",$i({className:te("recharts-wrapper",T),style:L({position:"relative",cursor:"default",width:I,height:R},S)},F,{ref:function(_){m.container=_}}),E.createElement(md,$i({},C,{width:I,height:R,title:O,desc:N,style:NG}),this.renderClipPath(),mh(g,this.renderMap)),this.renderLegend(),this.renderTooltip()))}}])}(j.Component);J(A,"displayName",n),J(A,"defaultProps",L({layout:"horizontal",stackOffset:"none",barCategoryGap:"10%",barGap:4,margin:{top:5,right:5,bottom:5,left:5},reverseStackOrder:!1,syncMethod:"index"},c)),J(A,"getDerivedStateFromProps",function(P,y){var v=P.dataKey,m=P.data,X=P.children,g=P.width,T=P.height,I=P.layout,R=P.stackOffset,S=P.margin,b=y.dataStartIndex,O=y.dataEndIndex;if(y.updateId===void 0){var N=hm(P);return L(L(L({},N),{},{updateId:0},p(L(L({props:P},N),{},{updateId:0}),y)),{},{prevDataKey:v,prevData:m,prevWidth:g,prevHeight:T,prevLayout:I,prevStackOffset:R,prevMargin:S,prevChildren:X})}if(v!==y.prevDataKey||m!==y.prevData||g!==y.prevWidth||T!==y.prevHeight||I!==y.prevLayout||R!==y.prevStackOffset||!Hi(S,y.prevMargin)){var w=hm(P),C={chartX:y.chartX,chartY:y.chartY,isTooltipActive:y.isTooltipActive},D=L(L({},pm(y,m,I)),{},{updateId:y.updateId+1}),$=L(L(L({},w),C),D);return L(L(L({},$),p(L({props:P},$),y)),{},{prevDataKey:v,prevData:m,prevWidth:g,prevHeight:T,prevLayout:I,prevStackOffset:R,prevMargin:S,prevChildren:X})}if(!vd(X,y.prevChildren)){var F,M,_,B,V=Et(X,ha),U=V&&(F=(M=V.props)===null||M===void 0?void 0:M.startIndex)!==null&&F!==void 0?F:b,G=V&&(_=(B=V.props)===null||B===void 0?void 0:B.endIndex)!==null&&_!==void 0?_:O,ie=U!==b||G!==O,Ie=!Q(m),we=Ie&&!ie?y.updateId:y.updateId+1;return L(L({updateId:we},p(L(L({props:P},y),{},{updateId:we,dataStartIndex:U,dataEndIndex:G}),y)),{},{prevChildren:X,dataStartIndex:U,dataEndIndex:G})}return null}),J(A,"renderActiveDot",function(P,y,v){var m;return j.isValidElement(P)?m=j.cloneElement(P,y):q(P)?m=P(y):m=E.createElement(ic,y),E.createElement(ue,{className:"recharts-active-dot",key:v},m)});var h=j.forwardRef(function(y,v){return E.createElement(A,$i({},y,{ref:v}))});return h.displayName=A.displayName,h},FG=U2({chartName:"LineChart",GraphicalChild:Y0,axisComponents:[{axisType:"xAxis",AxisComp:Xa},{axisType:"yAxis",AxisComp:Ra}],formatAxisMap:jX}),kG=U2({chartName:"BarChart",GraphicalChild:Tr,defaultTooltipEventType:"axis",validateTooltipEventTypes:["axis","item"],axisComponents:[{axisType:"xAxis",AxisComp:Xa},{axisType:"yAxis",AxisComp:Ra}],formatAxisMap:jX}),BG=U2({chartName:"PieChart",GraphicalChild:qn,validateTooltipEventTypes:["item"],defaultTooltipEventType:"item",legendContent:"children",axisComponents:[{axisType:"angleAxis",AxisComp:lc},{axisType:"radiusAxis",AxisComp:oc}],formatAxisMap:xk,defaultProps:{layout:"centric",startAngle:0,endAngle:360,cx:"50%",cy:"50%",innerRadius:0,outerRadius:"80%"}});const vm=`08/01/25,GIREESH KUMAR R-GIREESH,0000500806072620,08/01/25,,3700,
-08/01/25,311 DECEMBER 2024,0000500873882307,08/01/25,,3700,
-08/01/25,GORIGE MADHU MARAIAH-MADHUMARAIAH MAINTENANCE,0000412484281281,08/01/25,,3700,
-08/01/25,FAKIR MOHAN SAHOO-SAHOO,0000500827092677,08/01/25,,3700,
-08/01/25,SARASIJA GHOSH 512 DEC SARASIJA,0000500873868365,08/01/25,,3700,
-08/01/25,ESWARA VARA PRASAD N 605 DEC MAINTENANC,0000500820939472,08/01/25,,3700,
-09/01/25,NARAYANA  NIMMAGADDA FLAT G5 DEC MMC,0000500923573256,09/01/25,,3700,
-09/01/25,KRISHNACHAITANYA AMJ,0000537580256376,09/01/25,,3700,
-09/01/25,GAURAV LAKHERA DEC MAINTENANC,0000033740764681,09/01/25,,3700,
-09/01/25,THIRUMAZHISAI SANKAR FLAT 310 DEC M,0000195976588436,09/01/25,,3700,
-09/01/25,I  WILSON BAKYARAJ-WILSON.ERIC DEC 2024,0000500925413568,09/01/25,,3700,
-09/01/25,RANJAN KUMAR PATI-URS.RANJANPATI 606 RANJAN DE,0000500981081787,09/01/25,,3700,
-09/01/25,KISHORE KUMAR-KISHORE,0000500989463946,09/01/25,,3700,
-09/01/25,ASHISH KUMAR SINGH-ASHISH.LEO FROM PHONE,0000396546794409,09/01/25,,3700,
-09/01/25,UDITA  JOHRI DEC 2024 MAINT,0000576270598707,09/01/25,,3700,
-09/01/25,MOUTUSHI GHOSH DEYSA FLAT 610 MAINTENAN,0000500929978100,09/01/25,,3700,
-09/01/25,JERIN JOSE FROM PHONE,0000308706086505,09/01/25,,3700,
-09/01/25,CHANDRAKANT RENAKE FROM PHONE,0000610153825178,09/01/25,,3700,
-09/01/25,MALLU JAYA KISHORE R 211 MAINTENAN,0000589778686569,09/01/25,,3700,
-09/01/25,VISA GOLD-HIMANSHUPATHAK,0000537572839518,09/01/25,,3700,
-09/01/25,SANTOSH KUMAR NANDI-SANTOSHNANDI NANDI 205,0000500907422533,09/01/25,,3700,
-09/01/25,RESHMA R-RESHRA MAINTAINANCE D,0000537514653010,09/01/25,,3700,
-09/01/25,SOUMYA DHANAVANT HAJ FOR NOV AND DE,0000268729797884,09/01/25,,7400,
-09/01/25,PRASANNA KUMAR FROM PHONE,0000743231316265,09/01/25,,3700,
-10/01/25,SWAGAT SUKLA,0000501012392947,10/01/25,,2000,
-10/01/25,SWAGAT SUKLA,0000501012395018,10/01/25,,1700,
-10/01/25,ARITRA RANJAN DAS-ARITRA BY WHATSAPP,0000501025159975,10/01/25,,3700,
-10/01/25,ABHISHEK DEWANGAN,0000501026425421,10/01/25,,3700,
-10/01/25,RAVI  PRAJAPATI FROM PHONE,0000927783547643,10/01/25,,3700,
-10/01/25,SHANKAR RAI-SHANKARRAI FLAT 4,0000501037453546,10/01/25,,3700,
-10/01/25,SOURAV NANDI 403 DEC24 MAI,0000657431402127,10/01/25,,3700,
-10/01/25,HARI  OM FROM PHONE,0000644062602781,10/01/25,,3700,
-10/01/25,SAIKRISHNA VARMA KOT-KSKVARMA SAIKRISHNA VAR,0000501078415947,10/01/25,,3700,
-10/01/25,DUTTALA LAKSHMI NARA-REDDY.YGD 515 NARASIMHA,0000537651347412,10/01/25,,3700,
-10/01/25,SANTHANA BALAJEE FROM PHONE,0000208968453411,10/01/25,,3700,
-10/01/25,SHAKTI PRASAD MAHALI MAINTENANCE DE,0000668119108552,10/01/25,,3700,
-10/01/25,SUTARAM SURESH,0000543367082166,10/01/25,,3700,
-10/01/25,N SIVA PRASAD REDDY FROM PHONE,0000522453652622,10/01/25,,3700,
-10/01/25,VIJAY KUMAR PANDEY DECEMBER MAINT,0000497051764549,10/01/25,,3700,
-10/01/25,PRASANNA P SHANBHAG-PRASNU,0000501045939360,10/01/25,,3700,
-10/01/25,VAMSHI KRISHNA REDDY FROM PHONE,0000886680014917,10/01/25,,3700,
-10/01/25,KUNAL SINGH-KUNALSINGHBLR MAINTENANCE 61,0000501047754572,10/01/25,,3700,
-10/01/25,A UDAY KIRAN P FLAT  604 TRA,0000312465880535,10/01/25,,3700,
-10/01/25,S AJEETH-SRIAJEETH DEC MAINTENANC,0000501056250428,10/01/25,,3700,
-10/01/25,SUKESH BHARAMA PEDNE SUKESH DEC MON,0000643299567776,10/01/25,,3700,
-11/01/25,DASARI VIKRAM CHOWDA-DASARI,0000546323430115,11/01/25,,2000,
-11/01/25,PUTLURU MANOHAR REDD G6 DECEMBER MAINTE,0000501108656626,11/01/25,,3700,
-11/01/25,PATIL PURUSHOTHAM RE USING PAYTM U,0000501109986567,11/01/25,,3700,
-11/01/25,ALOK  MISHRA,0000501112080479,11/01/25,,3700,
-11/01/25,BAVIRISETTI VENKATA  DEC MAINTENANCE,0000243539677063,11/01/25,,3700,
-11/01/25,S K SHABEER BASHA FROM PHONE,0000248509153602,11/01/25,,3700,
-11/01/25,ANIL KUMAR DASARI FROM PHONE,0000680642518496,11/01/25,,3700,
-11/01/25,SONALI SURAJITA MOHANTY-NOD-RAJILESH CBR-UTIBN62025011157785696,UTIBN62025011157785696,11/01/25,,3700,
-11/01/25,SMITA BHEEMAPPA GANI CBR SARASTHIRA,0000442780635475,11/01/25,,3700,
-11/01/25,SREENATH  KADITHAMPA-SREEKOTAK 508,0000908716684113,11/01/25,,3700,
-12/01/25,KAPADAM SUDEER KUMAR FROM PHONE,0000334371113933,12/01/25,,3700,
-12/01/25,ROHIT KUMAR UPI,0000501218062178,12/01/25,,3700,
-12/01/25,RAGHURAMAN A UPI,0000501219523559,12/01/25,,3700,
-12/01/25,VENKATA MADHUSUDHAN  103 MAINTENANCE,0000501219698085,12/01/25,,3700,
-12/01/25,GAJENDRA KUMAR MANGA MEINTENAC,0000262661353882,12/01/25,,3700,
-12/01/25,ARTI SILORI-ARTISILORI,0000537881539030,12/01/25,,3700,
-12/01/25,YASODARAM TARIGONDA FROM PHONE,0000426876006771,12/01/25,,3700,
-12/01/25,MANOZ KUMAR MAMIDELA 613  MANOZ  D,0000738093471319,12/01/25,,3700,
-12/01/25,SANTOSH KUMAR BEHERA FROM PHONE,0000951592658909,12/01/25,,2000,
-12/01/25,SANTOSH KUMAR BEHERA FROM PHONE,0000728117907905,12/01/25,,1700,
-12/01/25,MURAMUTLA DANIEL FROM PHONE,0000351130532570,12/01/25,,3700,
-12/01/25,RAJILESH P-RAJILESHPANOLI DEC MAINTENANC,0000501262047754,12/01/25,,3700,
-12/01/25,RAJILESH P-RAJILESHPANOLI SAI,0000501262244692,12/01/25,,3700,
-12/01/25,BINEET KUMAR GUPTA-BINEET.GUPTA,0000501262571490,12/01/25,,3700,
-13/01/25,PUNEET SRIVASTAVA 314 MAINTENAN,0000501383352783,13/01/25,,3700,
-13/01/25,DASARI VIKRAM CHOWDA-DASARI,0000776457570135,13/01/25,,1700,
-13/01/25,UTKARSH GUPTA-UTKARSHGUPTA JAN 2025 MAINT,0000501329503794,13/01/25,,3700,
-13/01/25,RAMESH  THOLAM MAINTENAN,0000501307644424,13/01/25,,3700,
-14/01/25,AMAZON PAY YOU ARE PAYING FOR,0000501428172371,14/01/25,8016,,
-14/01/25,AMAZON PAY YOU ARE PAYING FOR,0000501460171606,14/01/25,20386,,
-14/01/25,AMAZON INDIA,0000501460171920,14/01/25,,20386,
-14/01/25,AMAZON PAY YOU ARE PAYING FOR,0000501403337572,14/01/25,20386,,
-14/01/25,AMAZON PAY YOU ARE PAYING FOR,0000501485080184,14/01/25,12102,,
-14/01/25,RAGIPINDI RAMAKRISHN-KRISHNASCCM NO 707,0000538048175319,14/01/25,,3700,
-14/01/25,AMAZON PAY-AMAZONPAYHFC@YAPL-YESB0APL501473841973-YOU ARE PAYING FOR,0000501473841973,14/01/25,19105,,
-14/01/25,ZHDFJYC0AS556O/BILLDKBESCOM,0000250143740183,14/01/25,62395.54,,
-15/01/25,SANDIP BINAY SARKAR NO 214 DEC MA,0000501505633651,15/01/25,,3700,
-15/01/25,SHYAM SUNDER PRASAD -SSPSINHA 703,0000501510709010,15/01/25,,3700,
-15/01/25,VINODA  L C-VINODGOWDA DEC,0000501583223076,15/01/25,9000,,
-15/01/25,KRISHNA REDDY KEESAR DEC STP CBR,0000501584044655,15/01/25,32000,,
-15/01/25,KALINGA KESHARI ROUT FLAT 713 FOR DEC M,0000501597027762,15/01/25,,3700,
-16/01/25,KALLUTLA VENKATA NAR-KVNR538.CSE,0000501604584748,16/01/25,,3700,
-16/01/25,N SIVA PRASAD REDDY FROM PHONE,0000906045145935,16/01/25,,3700,
-16/01/25,NISHANT MOHAN KHATAL-KHATALNISHANT FROM PHONE,0000754806067083,16/01/25,,3700,
-16/01/25,KRISHNADHAWAL ANIL M MAINTENAN,0000501685919823,16/01/25,,3700,
-17/01/25,GANAPATHI-PATHY DEC GARDEN MAI,0000501753120232,17/01/25,16000,,
-17/01/25,GADE DEEPAK MURTY PAYMENT FROM PHONE,0000277461419154,17/01/25,,3700,
-18/01/25,SURESH T FROM PHONE,0000441968173531,18/01/25,,3700,
-18/01/25,RAJILESH P-RAJILESHPANOLI DEC MAIN,0000501882489615,18/01/25,,3700,
-19/01/25,ALBIN JOSE-WAIT4.ALBIN 305,0000501959885110,19/01/25,,3700,
-19/01/25,RAJESH DONEPUDI FROM PHONE,0000301409102852,19/01/25,,3700,
-19/01/25,SAIKRISHNA VARMA KOT-KSKVARMA ACCOUNT D,0000501974555946,19/01/25,,15000,
-19/01/25,CHERUKURI  VIGNESWAR-CHERUKURI BY WHATSAPP,0000501957378753,19/01/25,,3700,
-20/01/25,MAISKAR APPARAO CBR MAINTENANCE,0000619632365066,20/01/25,,3700,
-20/01/25,HIMANSU SEKHAR PANDA,0000502093977780,20/01/25,,3700,
-20/01/25,MR ANSUMAN DAS FROM PHONE,0000037908238479,20/01/25,,3700,
-20/01/25,KONA HARI MURALIDHAR MAINTENANCE,0000660452777156,20/01/25,,3700,
-20/01/25,IMPS-502012183406-DORAI RAJ-SBIN-XXXXXXX0215-FOR CBR CAPRICO DECEMBER PARTIAL,0000502012183406,20/01/25,50000,,
-20/01/25,K A NASARATHULLAH NASARATH 204 DEC M,0000179585879767,20/01/25,,3700,
-21/01/25,SAIKRISHNA VARMA KOT-KSKVARMA,0000502190021387,21/01/25,,3500,
-21/01/25,"NEFT DR-SBIN0004926-DORAI RAJ-NETBANK, MUM-HDFCN52025012115168456-CBR CAPRICO DEC",HDFCN52025012115168456,21/01/25,100000,,
-21/01/25,BHAWNA SOOD-BHAWNA 413 MAINTENAN,0000502166136471,21/01/25,,3700,
-22/01/25,RAJILESH P PAYMENT FROM PHONE,0000454201566499,22/01/25,,3700,
-23/01/25,RAJILESH P PAYMENT FROM PHONE,0000515433340106,23/01/25,,3700,
-24/01/25,GUTTA VENU GOPAL FROM PHONE,0000866407917420,24/01/25,,3700,
-25/01/25,IMPS-502528169957-APIBANKING-RATN-XXXXXXXXXXXX0168-ACCOUNTVALIDATION,0000502528169957,25/01/25,,1,
-25/01/25,RAJILESH P-RAJILESHPANOLI,0000502535386375,25/01/25,1,,
-25/01/25,KRISHNA REDDY KEESAR UPI,0000502535813822,25/01/25,4000,,
-25/01/25,RAJILESH P-RAJILESHPANOLI,0000539118574845,25/01/25,,1,
-26/01/25,ANUBHAV SWAIN-ANUBHAV AND 715 2 MONT,0000502666016996,26/01/25,,14800,
-26/01/25,AKITHA  R,0000502689279882,26/01/25,3500,,
-27/01/25,RAJILESH P-RAJILESHPANOLI,0000502709033674,27/01/25,,50,
-27/01/25,RAJILESH P-RAJILESHPANOLI,0000502709779945,27/01/25,50,,
-27/01/25,INK MY WEB-BASISPAY,0000502725426330,27/01/25,500,,
-27/01/25,RAJILESH P-RAJILESHPANOLI,0000502725692138,27/01/25,3500,,
-28/01/25,RAJILESH P-RAJILESHPANOLI,0000502857118505,28/01/25,,4000,
-28/01/25,VEDAGIRI CHITTIBABU CBR MOTOR REPAIR,0000502857217535,28/01/25,20000,,
-28/01/25,PRASANNA KUMAR FROM PHONE,0000648409182456,28/01/25,,10000,
-28/01/25,PAWAN ELECTRICAL AND-PAYTMQR2810050501011W4KXJ3X839Z@PAYTM-YESB0PTM502871924875-UPI,0000502871924875,28/01/25,550,,
-28/01/25,RAJILESH P-RAJILESHPANOLI WORK,0000502897957469,28/01/25,,55400,
-28/01/25,"NEFT DR-SBIN0004926-DORAI RAJ-NETBANK, MUM-HDFCN52025012826378344-CAPRICO DEC MAINTE",HDFCN52025012826378344,28/01/25,60029,,
-28/01/25,RAJILESH P-RAJILESHPANOLI,0000502895561456,28/01/25,4286.3,,
-30/01/25,OCTDEC24 INSTAALERTCHG 4 SMS 140125-MIR2502823655870,MIR2502823655870,30/01/25,0.94,,
-30/01/25,.IMPS P2P 502012183406#20/01/2025 200125-MIR2503033567833,MIR2503033567833,30/01/25,5.9,,
-31/01/25,VEDAGIRI CHITTIBABU CBR MOTOR REPAIR,0000503126332125,31/01/25,15000,,
-31/01/25,BAVUSANI SAI SUMANTH-SUMANTHREDDY.SAI,0000539753192965,31/01/25,,3700,
-01/02/25,SNIGDHA  SWAIN FROM PHONE,0000141975567600,01/02/25,,3700,
-01/02/25,DUTTALA LAKSHMI NARA-REDDY.YGD,0000539874163609,01/02/25,,4056,
-01/02/25,KAPADAM SUDEER KUMAR-KAPADAM,0000891760260325,01/02/25,,4056,
-01/02/25,A UDAY KIRAN P FROM PHONE,0000463886861768,01/02/25,,4056,
-01/02/25,SANTHANA BALAJEE FROM PHONE,0000589120799156,01/02/25,,4056,
-01/02/25,MOUTUSHI GHOSH DEYSA 610 MAINTENANCE,0000539842764991,01/02/25,,4056,
-01/02/25,SWAGAT SUKLA,0000503220860109,01/02/25,,4056,
-01/02/25,SHISHU KRISHNA,0000503241319072,01/02/25,,11456,
-01/02/25,RAGHURAMAN A UPI,0000503283404390,01/02/25,,4056,
-01/02/25,GAJENDRA KUMAR MANGA MEINTENANCE 20,0000783574198206,01/02/25,,4056,
-01/02/25,VENKATA NARAYANA RED FROM PHONE,0000065083998952,01/02/25,,4056,
-01/02/25,S K SHABEER BASHA FROM PHONE,0000796536989041,01/02/25,,4056,
-01/02/25,THIRUMAZHISAI SANKAR FROM PHONE,0000235597498355,01/02/25,,4056,
-01/02/25,VISA GOLD-HIMANSHUPATHAK 501 JAN 2025,0000503267959796,01/02/25,,4056,
-01/02/25,VIKAS FROM PHONE,0000958460643838,01/02/25,,4056,
-01/02/25,ABHISHEK DEWANGAN,0000503292522521,01/02/25,,4056,
-01/02/25,RANJITH  VARIJAKSHAN-RANJU.RANJITH MAINTENANCE G,0000503242872749,01/02/25,,4056,
-01/02/25,VIJAY KUMAR PANDEY JAN MAINTENANC,0000294203069112,01/02/25,,4056,
-01/02/25,KRISHNACHAITANYA AMJ,0000503219884904,01/02/25,,4056,
-01/02/25,MADHU MARAIAH  GORIG MAINTENANCE,0000260517951491,01/02/25,,4056,
-02/02/25,BINEET KUMAR GUPTA-BINEET.GUPTA NO 409,0000503395665956,02/02/25,,4056,
-02/02/25,N SIVA PRASAD REDDY 608,0000119535054673,02/02/25,,4056,
-02/02/25,ASHISH KUMAR SINGH-ASHISH.LEO FROM PHONE,0000766528642477,02/02/25,,4056,
-02/02/25,VENKATA MADHUSUDHAN  UPI,0000503397355253,02/02/25,,4056,
-02/02/25,KISHORE KUMAR-KISHORE,0000539910886492,02/02/25,,4056,
-02/02/25,VAMSHI KRISHNA REDDY FLAT JAN25 MAI,0000812764986425,02/02/25,,4056,
-02/02/25,FAKIR MOHAN SAHOO-SAHOO,0000503354778522,02/02/25,,4056,
-02/02/25,MAISKAR APPARAO G7 MAINTENANCE,0000874253327228,02/02/25,,4056,
-02/02/25,HARI  OM FROM PHONE,0000734512014593,02/02/25,,4056,
-02/02/25,SHANKAR RAI-SHANKARRAI 407  JAN MAIN,0000503306492200,02/02/25,,4056,
-02/02/25,RANJAN KUMAR PATI-URS.RANJANPATI 606 JAN MONTH,0000503311400663,02/02/25,,4056,
-02/02/25,KAVYA KRISHNAN R-KAVYARPILLAI,0000539966615786,02/02/25,,4056,
-02/02/25,SONALI SURAJITA MOHANTY-RAJILESH CBR-UTIBN62025020280803339,UTIBN62025020280803339,02/02/25,,4056,
-02/02/25,I  WILSON BAKYARAJ-WILSON.ERIC JAN 2025,0000503354183816,02/02/25,,4056,
-02/02/25,ARITRA RANJAN DAS-A.R.DAS,0000503335849764,02/02/25,,4056,
-02/02/25,ARTI SILORI-ARTISILORI,0000539995755605,02/02/25,,4056,
-02/02/25,AYUSH  MISHRA FLAT 414 JAN MAINT,0000503359028097,02/02/25,,4056,
-02/02/25,DEEPAK PATEL 303 MAINTENAN,0000312450773146,02/02/25,,4056,
-02/02/25,SHAKTI PRASAD MAHALI,0000286128656682,02/02/25,,4056,
-02/02/25,SANTOSH KUMAR NANDI-SANTOSHNANDI,0000503344417775,02/02/25,,4056,
-02/02/25,FLAT NO 110,0000539997747036,02/02/25,,4056,
-03/02/25,PRASANNA P SHANBHAG-PRASNU,0000503448646671,03/02/25,,4056,
-03/02/25,SNIGDHA  SWAIN FROM PHONE,0000575706358544,03/02/25,,4056,
-03/02/25,SOURAV NANDI 403 JAN MAINT,0000056499388296,03/02/25,,4056,
-03/02/25,RAJESH DONEPUDI FROM PHONE,0000495939416534,03/02/25,,4056,
-03/02/25,HIMANSU SEKHAR PANDA,0000503449339974,03/02/25,,4056,
-03/02/25,GADE DEEPAK MURTY PAYMENT FROM PHONE,0000739005889609,03/02/25,,4056,
-03/02/25,GIREESH KUMAR R UPI,0000503449859794,03/02/25,,4056,
-03/02/25,PATIL PURUSHOTHAM RE FLAT JAN MAINT,0000503455021198,03/02/25,,4056,
-03/02/25,ANIL KUMAR DASARI FROM PHONE,0000198507443951,03/02/25,,4056,
-03/02/25,SARASIJA GHOSH 512,0000503458079567,03/02/25,,4056,
-03/02/25,MALLU JAYA KISHORE R-JAYAKISHORE 211 FEB MAINT,0000503494583072,03/02/25,,4056,
-03/02/25,SWAGAT SUKLA-SHUKLA.SWAGAT,0000503495355562,03/02/25,2820,,
-03/02/25,SWAGAT SUKLA-SHUKLA.SWAGAT,0000503495640782,04/02/25,9142,,
-04/02/25,FLAT G5 MMC FOR JA,0000503524854645,04/02/25,,4056,
-04/02/25,KONA HARI MURALIDHAR MAINTENANCE,0000418885402853,04/02/25,,4056,
-04/02/25,RAGIPINDI RAMAKRISHN-KRISHNASCCM,0000540102327208,04/02/25,,4056,
-04/02/25,ABBURU MOHAN KRISHNA FROM PHONE,0000977673722955,04/02/25,,4056,
-04/02/25,KUNAL SINGH-KUNALSINGHBLR MAINTENANCE,0000503527852125,04/02/25,,4056,
-04/02/25,RAJILESH P PAYMENT FROM PHONE,0000761781017945,04/02/25,,3700,
-04/02/25,RAJILESH P PAYMENT FROM PHONE,0000093235882501,04/02/25,,356,
-04/02/25,R SUSHMA,0000503535425812,04/02/25,,4056,
-04/02/25,REHANA RASHEED K R-REHANARASHEED,0000540181453819,04/02/25,,4056,
-05/02/25,KESANA BABU CHAND-BABUCHANDK,0000540261856558,05/02/25,,4056,
-05/02/25,RAVI  PRAJAPATI FROM PHONE,0000246687672847,05/02/25,,4056,
-05/02/25,XXXPGN KOTAK STP FKY DEC JAN,0000503649525790,05/02/25,4000,,
-05/02/25,C S NARASIMHA  RAJAN-C BY WHATSAPP,0000503653896047,05/02/25,,4056,
-05/02/25,SREENATH KADITHAMPAL 508,0000952602366066,05/02/25,,4056,
-05/02/25,SMITA BHEEMAPPA GANI SARASTHIRA,0000319640208394,05/02/25,,4056,
-05/02/25,DASARI VIKRAM CHOWDA-DASARI,0000307402710365,05/02/25,,4056,
-05/02/25,SHYAM SUNDER PRASAD -SHYAM BY WHATSAPP,0000503656231209,05/02/25,,4056,
-05/02/25,MANOZ KUMAR MAMIDELA FROM PHONE,0000747580116158,05/02/25,,4056,
-05/02/25,S AJEETH-SRIAJEETH,0000540206469058,05/02/25,,4056,
-05/02/25,BAVIRISETTI VENKATA  MAINTENANCE,0000501138736826,05/02/25,,4056,
-05/02/25,NALLAGUNDLA ESWARA V-NEVPRASAD MAINTENANCE 60,0000288856587133,05/02/25,,4056,
-05/02/25,PUTLURU MANOHAR REDD FROM PHONE,0000224956223382,05/02/25,,4056,
-05/02/25,KRISHNADHAWAL ANIL M-MEHTA.KRISHNA MMC FOR G1,0000540260594809,05/02/25,,4056,
-05/02/25,BHAWNA  SOOD-BHAWNA,0000540281798969,05/02/25,,4056,
-05/02/25,CHANDRAKANT RENAKE FROM PHONE,0000162927428531,05/02/25,,4056,
-05/02/25,PUNEET SRIVASTAVA USING PAYTM U,0000503650583495,05/02/25,,4056,
-05/02/25,SUKESH BHARAMA PEDNE JAN MAINTE,0000293814044554,05/02/25,,4056,
-05/02/25,UDITA  JOHRI JAN MAINTENANC,0000272372007179,05/02/25,,4056,
-05/02/25,SANTOSH KUMAR BEHERA TO RAJILES,0000503669195582,05/02/25,,4056,
-05/02/25,MURAMUTLA DANIEL FROM PHONE,0000119176200596,05/02/25,,4056,
-06/02/25,SANDIP BINAY SARKAR USING PAYTM U,0000503705027434,06/02/25,,4056,
-06/02/25,ANSUMAN DAS-DASANSUMAN FROM PHONE,0000248147729012,06/02/25,,4056,
-06/02/25,GAURAV LAKHERA FROM PHONE,0000413978724838,06/02/25,,4056,
-06/02/25,ROHIT KUMAR UPI,0000503795820516,06/02/25,,4056,
-06/02/25,RAJITHA  BANKA-RAMIREDDY.SAPFI FROM PHONE,0000496310115945,06/02/25,,2056,
-06/02/25,ALBIN JOSE-WAIT4.ALBIN CBR 305,0000503783823745,06/02/25,,4056,
-06/02/25,SOUMYA DHANAVANT HAJ  MAINTENANCE F,0000676560172003,06/02/25,,4056,
-06/02/25,SATYENDRA KUMAR BINS CBR,0000503709909819,06/02/25,2788,,
-06/02/25,NISHANT MOHAN KHATAL FROM PHONE,0000893780914269,06/02/25,,4056,
-06/02/25,SUTARAM SURESH,0000166230120437,06/02/25,,4056,
-06/02/25,RAMA KISHORE CH-RAMA BY WHATSAPP,0000503732559163,06/02/25,,4056,
-06/02/25,GPAY UTIB0000553 - 503743903494,0000503743903494,07/02/25,71482,,
-06/02/25,GPAY UTIB0000553 - 503743918751,0000503743918751,07/02/25,18034,,
-07/02/25,BOMMAJI KISHOR KUMAR MAINTENANC,0000337968644344,07/02/25,,4056,
-07/02/25,KALINGA KESHARI ROUT FLAT 713 MMC FEB,0000503866648455,07/02/25,,4056,
-08/02/25,SURESH T FROM PHONE,0000377126660469,08/02/25,,4056,
-08/02/25,KRISHNA REDDY KEESAR STP,0000503904646648,08/02/25,32000,,
-08/02/25,GPAY UTIB0000553 - 503904701009,0000503904701009,08/02/25,12161,,
-08/02/25,GPAY UTIB0000553 - 503904718315,0000503904718315,08/02/25,17095,,
-08/02/25,GPAY UTIB0000553 - 503904723679,0000503904723679,08/02/25,8319,,
-08/02/25,GANAPATHI-PATHY JAN 2025,0000503906674905,08/02/25,16000,,
-08/02/25,VINODA  L C-VINODGOWDA CBR,0000503907118468,08/02/25,9000,,
-08/02/25,RAMESH THOLAM NO 404 MAINTE,0000503979734247,08/02/25,,4056,
-09/02/25,"NEFT DR-UBIN0910465-SHOBHA B-NETBANK, MUM-HDFCN52025020952197563-CBR JAN 2025",HDFCN52025020952197563,09/02/25,100000,,
-09/02/25,RAJILESH P PAYMENT FROM PHONE,0000884620783985,09/02/25,,4056,
-09/02/25,K A NASARATHULLAH NASARATH 204 MAINT,0000535788470166,10/02/25,,4056,
-10/02/25,YASODARAM TARIGONDA FROM PHONE,0000685179499193,10/02/25,,4056,
-12/02/25,UTKARSH GUPTA-UTKARSHGUPTA,0000540925971257,12/02/25,,4056,
-12/02/25,"NEFT DR-UBIN0910465-SHOBHA B-NETBANK, MUM-HDFCN52025021258740289-CAPRICO JAN BALANC",HDFCN52025021258740289,12/02/25,67773.06,,
-12/02/25,RAJILESH P-RAJILESHPANOLI,0000504316521006,12/02/25,3423.94,,
-13/02/25,BHAWANI  SINGH,0000504480469060,13/02/25,7089,,
-13/02/25,SAIKRISHNA VARMA KOT-KSKVARMA,0000504461631429,13/02/25,,4056,
-15/02/25,SATYENDRA KUMAR,0000100104306784,15/02/25,985,,
-16/02/25,GLOBAL EXIM INSTITUT,0000100155903265,17/02/25,11800,,
-17/02/25,SWAGAT SUKLA-SHUKLA.SWAGAT,0000100156141764,17/02/25,10922,,
-18/02/25,CBDT K2504930748100 - 25021800002527HDFC,0250218090000317,18/02/25,4286,,
-18/02/25,CBDT K2504930748341 - 25021800002610HDFC,0250218090000381,18/02/25,3424,,
-18/02/25,RAJILESH P-RAJILESHPANOLI,0000100215683956,18/02/25,,11800,
-18/02/25,RAJILESH P-RAJILESHPANOLI,0000504936965058,18/02/25,,7520,
-18/02/25,RAJILESH P-RAJILESHPANOLI,0000541565964063,18/02/25,,17700,
-18/02/25,GLOBAL EXIM INSTITUT,0000100247459112,18/02/25,17700,,
-22/02/25,BHAWANI  SINGH MATERIALSAL,0000100408875354,22/02/25,6314,,
-23/02/25,GUTTA VENU GOPAL-GUTTAVENUGOPALCHOWDARY,0000505487759101,23/02/25,,4056,
-24/02/25,CHINNARAJU C-CHINNARAJUC,0000100513717711,24/02/25,50,,
-01/03/25,SWAGAT SUKLA-SHUKLA.SWAGAT,0000100757358829,01/03/25,18048,,
-03/03/25,ALBIN JOSE-WAIT4.ALBIN 305 FEB 2025,0000506255945624,03/03/25,,3620,
-03/03/25,RAGIPINDI RAMAKRISHN-KRISHNASCCM NO 707,0000506203622801,03/03/25,,3620,
-03/03/25,B P  SATHYAJIT G3,0000542811794759,03/03/25,,3620,
-04/03/25,NAGENDRA PRASAD C A VIA CRED AND,0000506329746938,04/03/25,,3620,
-04/03/25,MADHU MARAIAH  GORIG MAINTENANCE,0000635669935154,04/03/25,,3620,
-04/03/25,GADE DEEPAK MURTY PAYMENT FROM PHONE,0000845406847803,04/03/25,,3620,
-04/03/25,SWADHIN NARAYAN,0000506374174670,04/03/25,,7676,
-04/03/25,KALLUTLA VENKATA NAR-KVNR538.CSE,0000100907330522,04/03/25,,3620,
-04/03/25,MOUTUSHI GHOSH DEYSA MAINTENANCE 610,0000506383335457,04/03/25,,3620,
-04/03/25,ASHISH KUMAR SINGH-ASHISH.LEO FROM PHONE,0000846966651715,04/03/25,,3620,
-04/03/25,PRASANNA KUMAR FROM PHONE,0000213079780855,04/03/25,,3620,
-04/03/25,DUTTALA LAKSHMI NARA-REDDY.YGD,0000506316131134,04/03/25,,3620,
-04/03/25,N SIVA PRASAD REDDY,0000594711414009,04/03/25,,3620,
-04/03/25,KISHORE KUMAR-KISHORE,0000506308544242,04/03/25,,3620,
-04/03/25,VIJAY KUMAR PANDEY FEB MAINTENANC,0000051740999794,04/03/25,,3620,
-04/03/25,GIREESH KUMAR R-GIREESH,0000506374302622,04/03/25,,3620,
-04/03/25,PATIL PURUSHOTHAM RE 513 FEB MAINT,0000542901440797,04/03/25,,3620,
-04/03/25,SATYENDRA KUMAR VIA SUPERMONE,0000542901483947,04/03/25,,3620,
-04/03/25,BOMMAJI KISHOR KUMAR  FEB 2025,0000404078161147,04/03/25,,3620,
-04/03/25,SNIGDHA  SWAIN FROM PHONE,0000549582662840,04/03/25,,3620,
-04/03/25,RAJESH DONEPUDI FROM PHONE,0000674304712812,04/03/25,,3620,
-04/03/25,SOURAV NANDI FROM PHONE,0000928632410662,04/03/25,,3620,
-04/03/25,PUTLURU MANOHAR REDD FEB MAINTENANCE,0000741081432872,04/03/25,,3620,
-04/03/25,GAJENDRA KUMAR MANGA MEINTENANCE,0000446161705969,04/03/25,,3620,
-04/03/25,VAMSHI KRISHNA REDDY MAINTENANCE FO,0000125468918918,04/03/25,,3620,
-04/03/25,RAJILESH P PAYMENT FROM PHONE,0000584545113931,04/03/25,,1,
-04/03/25,RAJILESH P-RAJILESHPANOLI,0000100917411663,04/03/25,1,,
-04/03/25,GPAY UTIB0000553 - 100926778429,0000100926778429,04/03/25,58138,,
-04/03/25,GPAY UTIB0000553 - 100926821944,0000100926821944,04/03/25,17168,,
-04/03/25,GPAY UTIB0000553 - 100926866171,0000100926866171,04/03/25,9386,,
-04/03/25,AMAZON PAY YOU ARE PAYING FOR,0000100931813259,04/03/25,2399,,
-04/03/25,IMPS-506317148477-KAPADAM SUDEER KUMAR-KKBK-XXXXXX1388-313,0000506317148477,04/03/25,,3620,
-04/03/25,SATYA DEV KHADAYAT-SATYADEV,0000100953250369,04/03/25,145,,
-04/03/25,50100216976031-TPT-T-RAGHURAMAN A,0000000143830570,04/03/25,,3620,
-04/03/25,IMPS-506323232239-S K SHABEER BASHA-ICIC-XXXXXXXX7486-IMPS TRANSACTION,0000506323232239,05/03/25,,3620,
-05/03/25,SHANKAR  RAI 407 FEB MAINT,0000506406439245,05/03/25,,3620,
-05/03/25,FAKIR MOHAN SAHOO-SAHOO FEB MAINTENANC,0000543022629573,05/03/25,,3620,
-05/03/25,BINEET KUMAR GUPTA-BINEET.GUPTA,0000100958712595,05/03/25,,3620,
-05/03/25,SARASIJA GHOSH 512,0000100958890652,05/03/25,,3620,
-05/03/25,PRASANNA P SHANBHAG-PRASNU,0000100959140642,05/03/25,,3620,
-05/03/25,ANIL KUMAR DASARI FROM PHONE,0000885115260893,05/03/25,,3620,
-05/03/25,IMPS-506406995938-I WILSON BAKYARAJ-SBIN-XXXXXXX8977-CBR MAINTENANCE FEB 2025,0000506406995938,05/03/25,,3620,
-05/03/25,JERIN JOSE A-JERINJS FROM PHONE,0000814030521810,05/03/25,,3620,
-05/03/25,KRISHNACHAITANYA AMJ,0000506428188575,05/03/25,,3620,
-05/03/25,ARITRA RANJAN DAS-A.R.DAS,0000100961989529,05/03/25,,3620,
-05/03/25,VISA GOLD-HIMANSHUPATHAK,0000543078243306,05/03/25,,3620,
-05/03/25,KESANA BABU CHAND-BABUCHANDK,0000506450997486,05/03/25,,3620,
-05/03/25,GAURAV LAKHERA MAINTENANCE,0000691367382472,05/03/25,,3620,
-05/03/25,DEEPAK PATEL-DEEPAKPATEL FLAT 303 FEB M,0000100962989355,05/03/25,,3620,
-05/03/25,VIKAS FROM PHONE,0000563540929325,05/03/25,,3620,
-05/03/25,KUNAL SINGH-KUNALSINGHBLR,0000100963151429,05/03/25,,3620,
-05/03/25,SHAKTI PRASAD MAHALI MAINTENANCE,0000124683465937,05/03/25,,3620,
-05/03/25,SANTOSH KUMAR BEHERA TO RAJILES,0000506469604789,05/03/25,,3620,
-05/03/25,SONALI SURAJITA MOHANTY-RAJILESH CBR-UTIBN62025030581698258,UTIBN62025030581698258,05/03/25,,3620,
-05/03/25,KHUSHBOO MEHTA-KK MAINTENANCE,0000100964415682,05/03/25,,3620,
-05/03/25,RAJITHA  BANKA-RAMIREDDY.SAPFI FROM PHONE,0000907736369444,05/03/25,,3620,
-05/03/25,ARTI SILORI-ARTISILORI,0000543044742962,05/03/25,,3620,
-05/03/25,SANTOSH KUMAR NANDI-SANTOSHNANDI,0000100966270793,05/03/25,,3620,
-05/03/25,VENKATA MADHUSUDHAN  UPI,0000100966410918,05/03/25,,3620,
-05/03/25,NARAYANA  NIMMAGADDA-NARAYANACHOW G5 MMC FOR FE,0000543051653532,05/03/25,,3620,
-05/03/25,MAISKAR APPARAO FROM PHONE,0000504141889579,05/03/25,,3620,
-05/03/25,KOTHURU VENKATA SUBB-KOTHURU,0000509047260645,05/03/25,,3620,
-05/03/25,50100560456011-TPT-FLAT 310  FEB MAINTENANCE-TAMILSELVAN SANKARALINGAM,0000000172836655,05/03/25,,3620,
-05/03/25,GANAPATHI-PATHY FEB 2025,0000100984367105,05/03/25,16000,,
-05/03/25,VINODA  L C-VINODGOWDA FEB 2025,0000100984472161,05/03/25,9000,,
-05/03/25,KRISHNA REDDY KEESAR STO FEB 2025,0000100986521672,05/03/25,32000,,
-05/03/25,XXXPGN KOTAK STP FKY,0000100986715313,05/03/25,3000,,
-05/03/25,IMPS-506420386485-KAVYAKRISHNANR-UTIB-XXXXXXXXXXX0189-IMPS,0000506420386485,05/03/25,,3620,
-06/03/25,GOOGLE INDIA DIGITAL REVERSAL1009268661,0000578792620655,06/03/25,,9386,
-06/03/25,SHISHU KRISHNA USING PAYTM U,0000506597767484,06/03/25,,3620,
-06/03/25,MALLU JAYA KISHORE R-JAYAKISHORE,0000101014216026,06/03/25,,3620,
-06/03/25,RANJAN KUMAR PATI-URS.RANJANPATI MAINTENANCE FL,0000101015325870,06/03/25,,3620,
-06/03/25,AYUSH  MISHRA FLAT 414 FEB MAINT,0000506594752308,06/03/25,,3620,
-06/03/25,SANTHANA BALAJEE FROM PHONE,0000762282855457,06/03/25,,3620,
-06/03/25,MANOZ KUMAR MAMIDELA 613  FEB 2025,0000447695547670,06/03/25,,3620,
-06/03/25,GPAY UTIB0000553 - 101017243057,0000101017243057,06/03/25,9386,,
-06/03/25,S AJEETH-SRIAJEETH,0000506563422879,06/03/25,,3620,
-06/03/25,SUKESH BHARAMA PEDNE FLAT 406 FEB MONTH,0000101018673179,06/03/25,,3620,
-06/03/25,SREENATH KADITHAMPAL,0000476988387910,06/03/25,,3620,
-06/03/25,KALINGA KESHARI ROUT UPI,0000101019966991,06/03/25,,3620,
-06/03/25,ABHISHEK DEWANGAN,0000101023023188,06/03/25,,3620,
-06/03/25,UPI,0000506584235152,06/03/25,,3620,
-06/03/25,SOUMYA DHANAVANT HAJ  MAINTENANCE F,0000255983345611,06/03/25,,3620,
-06/03/25,BHANU PRAKASH SINGH-BHANU 413,0000543195167410,06/03/25,,3620,
-06/03/25,311 MARCH25 MAINTA,0000506581851448,06/03/25,,3620,
-06/03/25,BAVIRISETTI VENKATA  FEB MAINTENANCE,0000829697717816,06/03/25,,3620,
-06/03/25,RANJITH  VARIJAKSHAN-RANJU.RANJITH 11 FEB MAINTENAN,0000506505081186,06/03/25,,3620,
-06/03/25,RAMA KISHORE CH-RAMA BY WHATSAPP,0000101051020921,06/03/25,,3620,
-06/03/25,RAMA KISHORE CH-RAMA BY WHATSAPP,0000101051136285,06/03/25,,700,
-07/03/25,RAGIPINDI RAMAKRISHN-KRISHNASCCM TAPE,0000101073756024,07/03/25,40,,
-07/03/25,SUTARAM SURESH,0000827655601312,07/03/25,,3620,
-07/03/25,SHYAM SUNDER PRASAD -SSPSINHA,0000506656721066,07/03/25,,3620,
-07/03/25,SWAGAT SUKLA VIA CRED AND,0000543224296526,07/03/25,,3620,
-08/03/25,MURAMUTLA DANIEL MONTH MAI,0000276393449742,08/03/25,,3620,
-08/03/25,KONA HARI MURALIDHAR  G8,0000850358683343,08/03/25,,3620,
-08/03/25,SMITA BHEEMAPPA GANI CBR SARASTHIRA,0000789673176627,08/03/25,,3620,
-08/03/25,PUNEET SRIVASTAVA USING PAYTM U,0000506722997511,08/03/25,,3620,
-08/03/25,RAGIPINDI RAMAKRISHN-KRISHNASCCM,0000506755971639,08/03/25,,4100,
-08/03/25,REHANA RASHEED K R-REHANARASHEED,0000506777773014,08/03/25,,3620,
-08/03/25,CHINNARAJU C-CHINNARAJUC,0000101138637605,08/03/25,120,,
-08/03/25,CHINNARAJU C-CHINNARAJUC,0000101138701510,08/03/25,120,,
-08/03/25,RAVI  PRAJAPATI FROM PHONE,0000368000845025,08/03/25,,3620,
-08/03/25,AMBU MAHESWARA REDDY-AMBU,0000506799126536,08/03/25,,3620,
-08/03/25,RAMESH THOLAM NO 404 MAINTE,0000506745797618,08/03/25,,3620,
-08/03/25,DASARI VIKRAM CHOWDA-DASARI,0000867254870675,08/03/25,,3000,
-08/03/25,SANDIP BINAY SARKAR - 214,0000506766248308,08/03/25,,3620,
-08/03/25,HARI  OM FROM PHONE,0000181238637817,08/03/25,,3620,
-08/03/25,CHANDRAKANT RENAKE FROM PHONE,0000412835812068,08/03/25,,3620,
-09/03/25,ANSUMAN DAS-DASANSUMAN FROM PHONE,0000914214329469,09/03/25,,3620,
-09/03/25,UDITA  JOHRI FEB MAINTENANC,0000455595798510,09/03/25,,3620,
-09/03/25,YASHWANTH GOWDA N-YASHYASHWANTHGOWDAN,0000101193764753,09/03/25,4800,,
-10/03/25,CHINNARAJU C-CHINNARAJUC MOTOR REPAIR,0000101248094898,10/03/25,8000,,
-10/03/25,"NEFT DR-FDRL0002165-GEETHA P-NETBANK, MUM-HDFCN52025031009930687-SB FACI FEB 2025",HDFCN52025031009930687,10/03/25,93100,,
-10/03/25,GPAY UTIB0000553 - 101257378842,0000101257378842,10/03/25,7657,,
-10/03/25,GPAY UTIB0000553 - 101257464975,0000101257464975,10/03/25,14372,,
-10/03/25,ABBURU MOHAN KRISHNA,0000830848803161,10/03/25,,3620,
-10/03/25,YASODARAM TARIGONDA FROM PHONE,0000799113127928,10/03/25,,3620,
-10/03/25,SURESH T FROM PHONE,0000804906205108,10/03/25,,3620,
-10/03/25,CHINNARAJU C-CHINNARAJUC FIXING,0000101280674048,10/03/25,9000,,
-11/03/25,SUTARAM SURESH,0000449078528155,11/03/25,,500,
-11/03/25,SUTARAM SURESH,0000101294636795,11/03/25,500,,
-11/03/25,NISHANT MOHAN KHATAL-KHATALNISHANT FROM PHONE,0000806164969426,11/03/25,,3620,
-11/03/25,K A NASARATHULLAH 204 FEB MAINTENANC,0000249521458856,11/03/25,,3620,
-11/03/25,DEBIT CARD ANNUAL FEE-FEB-2025 210225-MIR2507019189929,MIR2507019189929,11/03/25,1003,,
-12/03/25,NALLAGUNDLA ESWARA V-NEVPRASAD MAINTENANCE 60,0000543758802396,12/03/25,,3620,
-12/03/25,SHANKAR RAO G-RAOS REPAIR,0000101372221038,12/03/25,5000,,
-13/03/25,CHINNARAJU C-CHINNARAJUC,0000101402729162,13/03/25,720,,
-13/03/25,CHINNARAJU C-CHINNARAJUC,0000507245185131,13/03/25,,120,
-13/03/25,BHAWANI  SINGH,0000101441951159,13/03/25,2856,,
-15/03/25,HIMANSU SEKHAR PANDA,0000101498186962,15/03/25,,3620,
-15/03/25,"NEFT DR-UBIN0910465-SHOBHA B-NETBANK, MUM-HDFCN52025031520562483-CAPRICO FEB",HDFCN52025031520562483,15/03/25,44637,,
-16/03/25,SWAGAT SUKLA-SHUKLA.SWAGAT,0000507572190776,16/03/25,,1001,
-16/03/25,FAKIR MOHAN SAHOO-SAHOO,0000101558455973,16/03/25,733,,
-17/03/25,RAJILESH P-RAJILESHPANOLI,0000101615436800,17/03/25,,733,
-17/03/25,ROHIT KUMAR UPI,0000101615697781,17/03/25,,3620,
-17/03/25,UTKARSH GUPTA-UTKARSHGUPTA MARCH 2025 MAI,0000507684256308,17/03/25,,3620,
-20/03/25,SAIKRISHNA VARMA KOT-KSKVARMA,0000544534780343,20/03/25,,3620,
-20/03/25,IMPS-507914167567-INNOVA DIESEL-SBIN-XXXXXXX4102-DG MAINTENANCE,0000507914167567,20/03/25,11425,,
-20/03/25,SIR MANJUNATH ENTERP-PAYTMQR10DD2D@PAYTM-YESB0PTM101765906724-CHENICALS,0000101765906724,20/03/25,1100,,
-20/03/25,AMAZON PAY INDIA PVT,0000287247340795,20/03/25,,2399,
-21/03/25,IMPS-508012696445-PHONEPEPRIVATELIMI-UTIB-XXXXXXXXXXX8981-F13PHONEPEVERIFICATIONTXNT25032112474727996410,0000508012696445,21/03/25,,1,
-21/03/25,CASHFREE PAYMENTS ESCROW ACCOUNT-SOANCE INNOVATIONS LLP-IDFBN52025032180457672,IDFBN52025032180457672,21/03/25,,16000,
-23/03/25,M AJAY KUMAR-NAYAN MARCH,0000101909521273,23/03/25,6000,,
-23/03/25,RAGIPINDI RAMAKRISHN-KRISHNASCCM,0000101943623763,23/03/25,340,,
-23/03/25,TREIS SOLUTIONS LLP PAY,0000101947514686,23/03/25,15384.1,,
-27/03/25,RAJILESH P-RAJILESHPANOLI GARDEN DIESEL,0000102115565617,27/03/25,500,,
-27/03/25,RAJILESH P-RAJILESHPANOLI,0000102119786730,27/03/25,6189.03,,
-27/03/25,RAJILESH P-RAJILESHPANOLI,0000102119848315,27/03/25,,6183.03,
-29/03/25,S  KESAVULU-SKESAVULU REPAIR,0000102226926536,29/03/25,4850,,
-30/03/25,RAJILESH P-RAJILESHPANOLI,0000102303005311,30/03/25,5509.48,,
-31/03/25,PRASANNA KUMAR OF EXTRA AM,0000102340374263,31/03/25,2544,,
-31/03/25,RAJILESH P-RAJILESHPANOLI,0000102348900432,31/03/25,,549,
-31/03/25,UDEMY INDIA LLP-UDEMY.ADYEN@HDFCBANK-HDFC0MER100264187053-UPI COLLECT FLOW,0000100264187053,31/03/25,549,,
-31/03/25,DASARI VIKRAM CHOWDA-DASARI,0000603222580905,31/03/25,,620,
-02/04/25,LEELAVATHI KOLEKAR B-MAB,0000102470801463,02/04/25,2530,,
-02/04/25,MOHMMAD NABAB-BHARATPE TO BHARATPE ME,0000102495846561,02/04/25,300,,
-03/04/25,RAJILESH P-RAJILESHPANOLI,0000102506257460,03/04/25,,2530,
-03/04/25,RAJILESH P-RAJILESHPANOLI,0000102506342667,03/04/25,,300,
-03/04/25,IMPS-509327238639-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTAPRIL,0000509327238639,03/04/25,,4140,
-03/04/25,IMPS-509328238962-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTAPRIL,0000509328238962,03/04/25,,4140,
-03/04/25,IMPS-509326238880-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTAPRIL,0000509326238880,03/04/25,,4140,
-03/04/25,IMPS-509325450985-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT712APTAPRIL,0000509325450985,03/04/25,,4140,
-03/04/25,IMPS-509326240410-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT103APTAPRIL,0000509326240410,03/04/25,,4140,
-03/04/25,IMPS-509328241435-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTAPRIL,0000509328241435,03/04/25,,4140,
-03/04/25,IMPS-509327244228-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTAPRIL,0000509327244228,03/04/25,,4140,
-03/04/25,IMPS-509327255425-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTAPRIL,0000509327255425,03/04/25,,4140,
-03/04/25,IMPS-509325484517-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTAPRIL,0000509325484517,03/04/25,,4140,
-03/04/25,IMPS-509325488895-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT209APTAPRIL,0000509325488895,03/04/25,,4140,
-03/04/25,IMPS-509328262679-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTAPRIL,0000509328262679,03/04/25,,4140,
-03/04/25,IMPS-509326266264-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTAPRIL,0000509326266264,03/04/25,,4140,
-03/04/25,IMPS-509325508344-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT405APTAPRIL,0000509325508344,03/04/25,,4140,
-03/04/25,IMPS-509325509389-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTAPRIL,0000509325509389,03/04/25,,4140,
-03/04/25,IMPS-509326271365-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTAPRIL,0000509326271365,03/04/25,,4140,
-03/04/25,IMPS-509327274118-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTAPRIL,0000509327274118,03/04/25,,4140,
-03/04/25,IMPS-509326275076-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT309APTAPRIL,0000509326275076,03/04/25,,4140,
-03/04/25,IMPS-509325524274-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTAPRIL,0000509325524274,03/04/25,,4140,
-03/04/25,IMPS-509325526409-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTAPRIL,0000509325526409,03/04/25,,4140,
-03/04/25,IMPS-509321450823-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT302APTAPRIL,0000509321450823,03/04/25,,4140,
-03/04/25,IMPS-509323614251-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT208APTAPRIL,0000509323614251,03/04/25,,4140,
-03/04/25,IMPS-509323638253-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT507APTAPRIL,0000509323638253,04/04/25,,4140,
-04/04/25,IMPS-509428000143-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTAPRIL,0000509428000143,04/04/25,,4140,
-04/04/25,IMPS-509428036399-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTAPRIL,0000509428036399,04/04/25,,4140,
-04/04/25,IMPS-509425087367-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTAPRIL,0000509425087367,04/04/25,,4140,
-04/04/25,IMPS-509426048280-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTAPRIL,0000509426048280,04/04/25,,4140,
-04/04/25,IMPS-509426056844-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT102APTAPRIL,0000509426056844,04/04/25,,4140,
-04/04/25,IMPS-509425116222-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT406APTAPRIL,0000509425116222,04/04/25,,4140,
-04/04/25,IMPS-509426073381-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT112APTAPRIL,0000509426073381,04/04/25,,4140,
-04/04/25,IMPS-509409916204-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG01APTAPRIL,0000509409916204,04/04/25,,4140,
-04/04/25,IMPS-509425171028-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTAPRIL,0000509425171028,04/04/25,,4140,
-04/04/25,IMPS-509425237637-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT505APTAPRIL,0000509425237637,04/04/25,,4140,
-04/04/25,IMPS-509428137508-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTAPRIL,0000509428137508,04/04/25,,4140,
-04/04/25,IMPS-509413384635-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT407APTAPRIL,0000509413384635,04/04/25,,4140,
-04/04/25,IMPS-509413401253-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG06APTAPRIL,0000509413401253,04/04/25,,4140,
-04/04/25,IMPS-509413407237-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT606APTAPRIL,0000509413407237,04/04/25,,4140,
-04/04/25,IMPS-509413410855-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT703APTAPRIL,0000509413410855,04/04/25,,4140,
-04/04/25,IMPS-509413421396-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT612APTAPRIL,0000509413421396,04/04/25,,4140,
-04/04/25,IMPS-509427156655-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTAPRIL,0000509427156655,04/04/25,,4140,
-04/04/25,IMPS-509425329991-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTAPRIL,0000509425329991,04/04/25,,4140,
-04/04/25,IMPS-509425383388-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT412APTAPRIL,0000509425383388,04/04/25,,4140,
-04/04/25,IMPS-509425419659-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTAPRIL,0000509425419659,04/04/25,,4140,
-04/04/25,IMPS-509426226755-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTAPRIL,0000509426226755,04/04/25,,4140,
-04/04/25,IMPS-509427266001-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTAPRIL,0000509427266001,04/04/25,,4140,
-04/04/25,IMPS-509425515638-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTAPRIL,0000509425515638,04/04/25,,4140,
-05/04/25,IMPS-509527037398-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTAPRIL,0000509527037398,05/04/25,,4140,
-05/04/25,IMPS-509525106421-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTAPRIL,0000509525106421,05/04/25,,4140,
-05/04/25,IMPS-509526057565-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTAPRIL,0000509526057565,05/04/25,,4140,
-05/04/25,IMPS-509526067386-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTAPRIL,0000509526067386,05/04/25,,4140,
-05/04/25,IMPS-509525136663-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTAPRIL,0000509525136663,05/04/25,,4140,
-05/04/25,IMPS-509527071312-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTAPRIL,0000509527071312,05/04/25,,4140,
-05/04/25,IMPS-509525142154-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTAPRIL,0000509525142154,05/04/25,,4140,
-05/04/25,IMPS-509527075414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTAPRIL,0000509527075414,05/04/25,,4140,
-05/04/25,IMPS-509525198780-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTAPRIL,0000509525198780,05/04/25,,4140,
-05/04/25,IMPS-509527152940-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTAPRIL,0000509527152940,05/04/25,,4140,
-05/04/25,IMPS-509521289994-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT607APTAPRIL,0000509521289994,05/04/25,,4140,
-05/04/25,IMPS-509527356334-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT106APTAPRIL,0000509527356334,05/04/25,,4140,
-05/04/25,IMPS-509526229742-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTAPRIL,0000509526229742,05/04/25,,4140,
-06/04/25,IMPS-509627061063-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTAPRIL,0000509627061063,06/04/25,,4140,
-06/04/25,IMPS-509628075577-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTAPRIL,0000509628075577,06/04/25,,4140,
-06/04/25,IMPS-509625169351-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTAPRIL,0000509625169351,06/04/25,,4140,
-06/04/25,IMPS-509625171740-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTAPRIL,0000509625171740,06/04/25,,4140,
-06/04/25,IMPS-509625178715-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT113APTAPRIL,0000509625178715,06/04/25,,4140,
-06/04/25,IMPS-509626110269-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT304APTAPRIL,0000509626110269,06/04/25,,4140,
-06/04/25,IMPS-509627156433-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTAPRIL,0000509627156433,06/04/25,,4140,
-06/04/25,IMPS-509627239543-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTAPRIL,0000509627239543,06/04/25,,4140,
-06/04/25,IMPS-509625548622-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTAPRIL,0000509625548622,06/04/25,,4140,
-07/04/25,IMPS-509725113712-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTAPRIL,0000509725113712,07/04/25,,4140,
-07/04/25,IMPS-509726094699-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTAPRIL,0000509726094699,07/04/25,,4140,
-07/04/25,IMPS-509727096909-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTAPRIL,0000509727096909,07/04/25,,4140,
-07/04/25,IMPS-509726105105-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTAPRIL,0000509726105105,07/04/25,,4140,
-07/04/25,GPAY UTIB0000553 - 102742194544,0000102742194544,07/04/25,60501,,
-07/04/25,IMPS-509727106485-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT512APTAPRIL,0000509727106485,07/04/25,,4140,
-07/04/25,GPAY UTIB0000553 - 102742277705,0000102742277705,07/04/25,17924,,
-07/04/25,GPAY UTIB0000553 - 102742362369,0000102742362369,07/04/25,6306,,
-07/04/25,GPAY UTIB0000553 - 102742408376,0000102742408376,07/04/25,12434,,
-07/04/25,IMPS-509727108217-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT210APTAPRIL,0000509727108217,07/04/25,,4140,
-07/04/25,IMPS-509725247689-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTAPRIL,0000509725247689,07/04/25,,4140,
-07/04/25,CBDT K2509732689243 - 25040700146446HDFC,0250407120017912,07/04/25,1900,,
-07/04/25,CBDT K2509732690011 - 25040700151850HDFC,0250407120022585,07/04/25,911,,
-07/04/25,.IMPS P2P 507914167567#20/03/2025 200325-MIR2609481457913,MIR2609481457913,07/04/25,5.9,,
-07/04/25,IMPS-509728162751-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTAPRIL,0000509728162751,07/04/25,,4140,
-07/04/25,IMPS-509725400923-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT104APTAPRIL,0000509725400923,07/04/25,,4140,
-07/04/25,IMPS-509725404195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTAPRIL,0000509725404195,07/04/25,,4140,
-07/04/25,IMPS-509725445114-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTAPRIL,0000509725445114,07/04/25,,4140,
-07/04/25,GUTTA VENU GOPAL-GUTTAVENUGOPALCHOWDARY NO 705,0000509791728964,07/04/25,,4140,
-07/04/25,IMPS-509725580607-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTAPRIL,0000509725580607,07/04/25,,4140,
-07/04/25,RAJILESH P-RAJILESHPANOLI,0000546391994690,07/04/25,,5509.48,
-08/04/25,IMPS-509826063171-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTAPRIL,0000509826063171,08/04/25,,4140,
-08/04/25,IMPS-509828078907-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTAPRIL,0000509828078907,08/04/25,,4140,
-08/04/25,IMPS-509825196653-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTAPRIL,0000509825196653,08/04/25,,4140,
-08/04/25,IMPS-509828157393-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG15APTAPRIL,0000509828157393,08/04/25,,4140,
-08/04/25,GUTTA VENU GOPAL-GUTTAVENUGOPALCHOWDARY FOR FEB,0000102812782597,08/04/25,520,,
-08/04/25,GPAY UTIB0000553 - 102815851143,0000102815851143,08/04/25,8221,,
-08/04/25,IMPS-509828211951-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTAPRIL,0000509828211951,08/04/25,,4140,
-09/04/25,IMPS-509927108921-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTAPRIL,0000509927108921,09/04/25,,4140,
-09/04/25,IMPS-509926109732-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT114APTAPRIL,0000509926109732,09/04/25,,4140,
-09/04/25,IMPS-509928456663-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTAPRIL,0000509928456663,09/04/25,,4140,
-09/04/25,IMPS-509912166515-GEETHA P-FDRL-XXXXXXXXXX3964-MARCH SALARY,0000509912166515,09/04/25,176495.06,,
-09/04/25,CCTV,0000102882121353,09/04/25,1050,,
-09/04/25,IMPS-509925475086-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTAPRIL,0000509925475086,09/04/25,,4140,
-09/04/25,IMPS-509925482285-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTAPRIL,0000509925482285,09/04/25,,4140,
-09/04/25,IMPS-509928616848-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTAPRIL,0000509928616848,09/04/25,,4140,
-09/04/25,IMPS-509927278655-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTAPRIL,0000509927278655,09/04/25,,4140,
-10/04/25,IMPS-510026045176-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT101APTAPRIL,0000510026045176,10/04/25,,4140,
-10/04/25,IMPS-510025096501-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT604APTAPRIL,0000510025096501,10/04/25,,4140,
-10/04/25,IMPS-510028060502-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTAPRIL,0000510028060502,10/04/25,,4140,
-10/04/25,IMPS-510008314011-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT313APTAPRIL,0000510008314011,10/04/25,,4140,
-10/04/25,IMPS-510025134066-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTAPRIL,0000510025134066,10/04/25,,4140,
-10/04/25,IMPS-510027096284-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT705APTAPRIL,0000510027096284,10/04/25,,4140,
-10/04/25,IMPS-510027103517-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT214APTAPRIL,0000510027103517,10/04/25,,4140,
-10/04/25,XXXXXX4043-CNRB0002727-102930909297-WATER,0000102930909297,10/04/25,28050,,
-10/04/25,IMPS-510025399122-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTAPRIL,0000510025399122,10/04/25,,4140,
-11/04/25,IMPS-510126115758-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTAPRIL,0000510126115758,11/04/25,,4140,
-11/04/25,IMPS-510125439820-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTAPRIL,0000510125439820,11/04/25,,4140,
-12/04/25,IMPS-510227211396-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTAPRIL,0000510227211396,12/04/25,,4140,
-14/04/25,KRISHNA REDDY KEESAR STP,0000103146537678,14/04/25,32000,,
-14/04/25,NAHEEDA BEGUM-MMUSKANBEGUM,0000103155772192,14/04/25,4000,,
-16/04/25,NAHEEDA BEGUM-MMUSKANBEGUM,0000103263461894,16/04/25,2600,,
-18/04/25,IMPS-510825201685-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTAPRIL,0000510825201685,18/04/25,,4140,
-18/04/25,PRAKASH PAUDYAL-PRAKASH.PAUDEL,0000103386299298,18/04/25,5259,,
-21/04/25,SUBINA  P UPI,0000103556184778,21/04/25,,800,
-23/04/25,SHAILA-MANJU.MS COLLECTION,0000103633601860,23/04/25,9000,,
-25/04/25,RAGIPINDI RAMAKRISHN-KRISHNASCCM BLOCK MATE,0000103747431415,25/04/25,1080,,
-28/04/25,.IMPS P2P 509912166515#09/04/2025 090425-MIR2611643629812,MIR2611643629812,28/04/25,17.7,,
-01/05/25,RAJILESH P-RAJILESHPANOLI,0000104079586968,01/05/25,800,,
-01/05/25,RAJILESH P-RAJILESHPANOLI PAID,0000104083156203,01/05/25,2811,,
-01/05/25,RAJILESH P-RAJILESHPANOLI,0000104083286390,01/05/25,,23.6,
-03/05/25,GOVIND KUMAR-BHARATPE TO BHARATPE ME,0000104196218470,03/05/25,470,,
-04/05/25,IMPS-512427247498-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTMAY,0000512427247498,04/05/25,,3361,
-04/05/25,IMPS-512428248385-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTMAY,0000512428248385,04/05/25,,3361,
-04/05/25,IMPS-512426250403-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTMAY,0000512426250403,04/05/25,,3361,
-04/05/25,IMPS-512427253533-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTMAY,0000512427253533,04/05/25,,3361,
-04/05/25,IMPS-512427254040-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTMAY,0000512427254040,04/05/25,,3361,
-04/05/25,IMPS-512427254444-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT210APTMAY,0000512427254444,04/05/25,,3361,
-04/05/25,IMPS-512428254960-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT302APTMAY,0000512428254960,04/05/25,,3361,
-04/05/25,IMPS-512425494911-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTMAY,0000512425494911,04/05/25,,3361,
-04/05/25,IMPS-512428256061-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTMAY,0000512428256061,04/05/25,,3361,
-04/05/25,IMPS-512428257073-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTMAY,0000512428257073,04/05/25,,3361,
-04/05/25,IMPS-512428257215-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTMAY,0000512428257215,04/05/25,,3361,
-04/05/25,IMPS-512426257942-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTMAY,0000512426257942,04/05/25,,3361,
-04/05/25,IMPS-512428259672-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT412APTMAY,0000512428259672,04/05/25,,3361,
-04/05/25,IMPS-512425504236-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTMAY,0000512425504236,04/05/25,,3361,
-04/05/25,IMPS-512427262023-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT106APTMAY,0000512427262023,04/05/25,,3361,
-04/05/25,IMPS-512425516269-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT103APTMAY,0000512425516269,04/05/25,,3361,
-04/05/25,IMPS-512427267176-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT208APTMAY,0000512427267176,04/05/25,,3361,
-04/05/25,IMPS-512425523409-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTMAY,0000512425523409,04/05/25,,3361,
-04/05/25,IMPS-512425529870-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT405APTMAY,0000512425529870,04/05/25,,3361,
-04/05/25,IMPS-512427275679-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT407APTMAY,0000512427275679,04/05/25,,3361,
-04/05/25,IMPS-512426276519-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT102APTMAY,0000512426276519,04/05/25,,3361,
-04/05/25,IMPS-512425537833-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTMAY,0000512425537833,04/05/25,,3361,
-04/05/25,IMPS-512426278956-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT612APTMAY,0000512426278956,04/05/25,,3361,
-04/05/25,IMPS-512427280587-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTMAY,0000512427280587,04/05/25,,3361,
-04/05/25,IMPS-512425549247-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT505APTMAY,0000512425549247,04/05/25,,3361,
-04/05/25,IMPS-512425550636-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT703APTMAY,0000512425550636,04/05/25,,3361,
-04/05/25,IMPS-512425557924-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTMAY,0000512425557924,04/05/25,,3361,
-04/05/25,IMPS-512427298481-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT512APTMAY,0000512427298481,04/05/25,,3361,
-04/05/25,IMPS-512428299955-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTMAY,0000512428299955,04/05/25,,3361,
-04/05/25,IMPS-512428300293-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTMAY,0000512428300293,04/05/25,,3361,
-04/05/25,IMPS-512428302590-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT309APTMAY,0000512428302590,04/05/25,,3361,
-04/05/25,IMPS-512427310702-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTMAY,0000512427310702,04/05/25,,3361,
-04/05/25,IMPS-512428315936-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTMAY,0000512428315936,04/05/25,,3361,
-04/05/25,IMPS-512426336811-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTMAY,0000512426336811,04/05/25,,3361,
-04/05/25,IMPS-512425657739-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG06APTMAY,0000512425657739,04/05/25,,3361,
-04/05/25,IMPS-512425662598-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTMAY,0000512425662598,04/05/25,,3361,
-04/05/25,IMPS-512425674214-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT209APTMAY,0000512425674214,04/05/25,,3361,
-04/05/25,IMPS-512425711722-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTMAY,0000512425711722,04/05/25,,3361,
-04/05/25,IMPS-512425725134-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTMAY,0000512425725134,04/05/25,,3361,
-04/05/25,IMPS-512427382414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT606APTMAY,0000512427382414,04/05/25,,3361,
-04/05/25,IMPS-512425761808-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTMAY,0000512425761808,04/05/25,,3361,
-05/05/25,IMPS-512525149117-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTMAY,0000512525149117,05/05/25,,3361,
-05/05/25,IMPS-512526085996-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG01APTMAY,0000512526085996,05/05/25,,3361,
-05/05/25,IMPS-512525189059-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTMAY,0000512525189059,05/05/25,,3361,
-05/05/25,IMPS-512525202564-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTMAY,0000512525202564,05/05/25,,3361,
-05/05/25,IMPS-512510785839-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT112APTMAY,0000512510785839,05/05/25,,3361,
-05/05/25,IMPS-512525232834-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTMAY,0000512525232834,05/05/25,,3361,
-05/05/25,IMPS-512525252153-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTMAY,0000512525252153,05/05/25,,3361,
-05/05/25,IMPS-512528136657-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTMAY,0000512528136657,05/05/25,,3361,
-05/05/25,IMPS-512525291088-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTMAY,0000512525291088,05/05/25,,3361,
-05/05/25,IMPS-512525305195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTMAY,0000512525305195,05/05/25,,3361,
-05/05/25,IMPS-512527186780-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTMAY,0000512527186780,05/05/25,,3361,
-05/05/25,IMPS-512526247376-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTMAY,0000512526247376,05/05/25,,3361,
-05/05/25,IMPS-512527272874-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTMAY,0000512527272874,05/05/25,,3361,
-05/05/25,IMPS-512528288279-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTMAY,0000512528288279,05/05/25,,3361,
-06/05/25,IMPS-512625008349-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT607APTMAY,0000512625008349,06/05/25,,3361,
-06/05/25,IMPS-512628087771-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTMAY,0000512628087771,06/05/25,,3361,
-06/05/25,IMPS-512626088888-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTMAY,0000512626088888,06/05/25,,3361,
-06/05/25,IMPS-512626096508-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTMAY,0000512626096508,06/05/25,,3361,
-06/05/25,IMPS-512628140284-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT604APTMAY,0000512628140284,06/05/25,,3361,
-06/05/25,IMPS-512626159635-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT101APTMAY,0000512626159635,06/05/25,,3361,
-06/05/25,IMPS-512626183607-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTMAY,0000512626183607,06/05/25,,3361,
-06/05/25,IMPS-512627341233-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT507APTMAY,0000512627341233,06/05/25,,3361,
-06/05/25,XXXXXX4043-CNRB0002727-104390753011-WATER,0000104390753011,06/05/25,10000,,
-06/05/25,IMPS-512625700996-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTMAY,0000512625700996,06/05/25,,3361,
-06/05/25,IMPS-512627367741-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT104APTMAY,0000512627367741,06/05/25,,3361,
-07/05/25,IMPS-512726063581-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTMAY,0000512726063581,07/05/25,,3361,
-07/05/25,IMPS-512725137627-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTMAY,0000512725137627,07/05/25,,3361,
-07/05/25,IMPS-512728072029-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTMAY,0000512728072029,07/05/25,,3361,
-07/05/25,IMPS-512725157277-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTMAY,0000512725157277,07/05/25,,3361,
-07/05/25,IMPS-512728163933-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTMAY,0000512728163933,07/05/25,,3361,
-07/05/25,IMPS-512726227786-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTMAY,0000512726227786,07/05/25,,3361,
-07/05/25,IMPS-512728250229-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT406APTMAY,0000512728250229,07/05/25,,3361,
-07/05/25,IMPS-512726291086-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTMAY,0000512726291086,07/05/25,,3361,
-08/05/25,GPAY UTIB0000553 - 104455106607,0000104455106607,08/05/25,8679,,
-08/05/25,GOOGLE INDIA DIGITAL UPI,0000104455171858,08/05/25,12186,,
-08/05/25,GPAY UTIB0000553 - 104455187813,0000104455187813,08/05/25,6933,,
-08/05/25,GPAY UTIB0000553 - 104455203036,0000104455203036,08/05/25,20548,,
-08/05/25,SB SALARY,HDFCR52025050868705756,08/05/25,210863.66,,
-08/05/25,IMPS-512827127105-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTMAY,0000512827127105,08/05/25,,3361,
-08/05/25,IMPS-512826207426-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTMAY,0000512826207426,08/05/25,,3361,
-08/05/25,IMPS-512825522579-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTMAY,0000512825522579,08/05/25,,3361,
-09/05/25,IMPS-512928020512-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT304APTMAY,0000512928020512,09/05/25,,3361,
-09/05/25,IMPS-512925047672-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT313APTMAY,0000512925047672,09/05/25,,3361,
-09/05/25,VIJAY KUMAR-VIJAYA6966KUMAR CBR,0000104511279489,09/05/25,9800,,
-09/05/25,TREIS SOLUTIONS LLP PAY,0000104512031038,09/05/25,15726,,
-09/05/25,IMPS-512925514740-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT214APTMAY,0000512925514740,09/05/25,,3361,
-09/05/25,IMPS-512925536454-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT712APTMAY,0000512925536454,09/05/25,,3361,
-09/05/25,GPAY UTIB0000553 - 104560897072,0000104560897072,09/05/25,55528,,
-10/05/25,IMPS-513025066479-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG15APTMAY,0000513025066479,10/05/25,,3361,
-10/05/25,IMPS-513025068297-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTMAY,0000513025068297,10/05/25,,3361,
-10/05/25,IMPS-513025084514-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTMAY,0000513025084514,10/05/25,,3361,
-10/05/25,IMPS-513025101291-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTMAY,0000513025101291,10/05/25,,3361,
-10/05/25,IMPS-513025102326-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTMAY,0000513025102326,10/05/25,,3361,
-10/05/25,IMPS-513028054883-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT114APTMAY,0000513028054883,10/05/25,,3361,
-10/05/25,IMPS-513027077016-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTMAY,0000513027077016,10/05/25,,3361,
-10/05/25,IMPS-513027088002-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTMAY,0000513027088002,10/05/25,,3361,
-10/05/25,IMPS-513026130527-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTMAY,0000513026130527,10/05/25,,3361,
-10/05/25,IMPS-513027142614-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTMAY,0000513027142614,10/05/25,,3361,
-10/05/25,IMPS-513025280254-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTMAY,0000513025280254,10/05/25,,3361,
-10/05/25,IMPS-513027205916-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTMAY,0000513027205916,10/05/25,,3361,
-10/05/25,IMPS-513025406933-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTMAY,0000513025406933,10/05/25,,3361,
-10/05/25,IMPS-513025495559-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTMAY,0000513025495559,10/05/25,,3361,
-10/05/25,IMPS-513026285914-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTMAY,0000513026285914,10/05/25,,3361,
-10/05/25,IMPS-513027300536-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTMAY,0000513027300536,10/05/25,,3361,
-11/05/25,IMPS-513126095756-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTMAY,0000513126095756,11/05/25,,3411,
-11/05/25,IMPS-513126148116-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTMAY,0000513126148116,11/05/25,,3411,
-11/05/25,IMPS-513127172332-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTMAY,0000513127172332,11/05/25,,3411,
-11/05/25,GOOGLE INDIA DIGITAL-GOOG UPI,0000396652911315,11/05/25,,6,
-12/05/25,SHAILA-MANJU.MS GARBAGE COLLEC,0000104680646243,12/05/25,9000,,
-12/05/25,IMPS-513227208126-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT113APTMAY,0000513227208126,12/05/25,,3461,
-12/05/25,CASHFREE PAYMENTS ESCROW ACCOUNT-SOANCE INNOVATIONS LLP-IDFBN52025051232931347,IDFBN52025051232931347,12/05/25,,7000,
-13/05/25,CBDT K2513334350064 - 25051300033167HDFC,0250513120009841,13/05/25,4304,,
-13/05/25,CBDT K2513334350174 - 25051300035289HDFC,0250513130001665,13/05/25,3602,,
-13/05/25,YASHWANTH GOWDA N-YASHYASHWANTHGOWDAN,0000104766302865,13/05/25,1200,,
-14/05/25,CHINNARAJU C-CHINNARAJUC,0000104803075131,14/05/25,1250,,
-14/05/25,SHANKAR RAO G-RAOS PULLING,0000104816439369,14/05/25,17000,,
-14/05/25,MR MUNEGOWDA  V R CAMERA,0000104822965310,14/05/25,1200,,
-15/05/25,IMPS-513511842899-BAVUSANI SAI SUMANTH REDDY-KKBK-XXXXXX7341-KKBKTRANSFER,0000513511842899,15/05/25,,100,
-15/05/25,IMPS-513511859049-BAVUSANI SAI SUMANTH REDDY-KKBK-XXXXXX7341-JAN AND FEB MAINTENANCE,0000513511859049,15/05/25,,7576,
-15/05/25,IMPS-513514987737-BAVUSANI SAI SUMANTH REDDY-KKBK-XXXXXX7341-JAN AND FEB MAINTENANCE,0000513514987737,15/05/25,,6402,
-15/05/25,BAVUSANI SAI SUMANTH-SUMANTHREDDY.SAI,0000104855661617,15/05/25,6402,,
-16/05/25,MADHAV JOSHI-ANITHAHARIKUMAR,0000104899889857,16/05/25,10000,,
-16/05/25,IMPS-513628151609-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT503APTMAY,0000513628151609,16/05/25,,9201,
-18/05/25,MADHAV JOSHI-ANITHAHARIKUMAR,0000105020479946,18/05/25,11000,,
-18/05/25,CHINNARAJU C-CHINNARAJUC CLEANING,0000105021201673,18/05/25,2000,,
-18/05/25,IMPS-513827230626-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTMAY,0000513827230626,18/05/25,,4511,
-19/05/25,IMPS-513927060564-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTMAY,0000513927060564,19/05/25,,3811,
-19/05/25,YASHWANTH GOWDA N-YASHYASHWANTHGOWDAN CAMERA TE,0000105058057167,19/05/25,1200,,
-19/05/25,MADHAV JOSHI-ANITHAHARIKUMAR BOREWELL,0000105071314670,19/05/25,5000,,
-21/05/25,ASHOK-ASHOKPOOJ,0000105154681353,21/05/25,1550,,
-21/05/25,MRS ASHWINI-AASWINI,0000105171597607,21/05/25,3374,,
-23/05/25,TREIS SOLUTIONS LLP PAY,0000105255426638,23/05/25,15726,,
-24/05/25,HARIJANA  ESTHERAMMA-HVEERENDRA,0000105315584022,24/05/25,2729.7,,
-25/05/25,MRS ASHWINI-AASWINI,0000105369152288,25/05/25,3340.24,,
-26/05/25,MRS ASHWINI-AASWINI,0000105417468183,26/05/25,3301.12,,
-30/05/25,MAHENDRA ENTERPRISES-PAYTMQR2810050501011KTX76S52IE,0000105617388295,30/05/25,540,,
-31/05/25,RAJILESH P-RAJILESHPANOLI,0000105667331650,31/05/25,,9860,
-31/05/25,RAJILESH P-RAJILESHPANOLI,0000105669326012,31/05/25,9860,,
-01/06/25,IMPS-515226101486-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT301APTJUNE,0000515226101486,01/06/25,,10001,
-04/06/25,IMPS-515526234204-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTJUNE,0000515526234204,04/06/25,,4890,
-04/06/25,IMPS-515527236023-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT505APTJUNE,0000515527236023,04/06/25,,4890,
-04/06/25,IMPS-515525473490-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT112APTJUNE,0000515525473490,04/06/25,,4890,
-04/06/25,IMPS-515527244962-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT507APTJUNE,0000515527244962,04/06/25,,4890,
-04/06/25,IMPS-515526245077-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTJUNE,0000515526245077,04/06/25,,4890,
-04/06/25,IMPS-515525474324-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT209APTJUNE,0000515525474324,04/06/25,,4890,
-04/06/25,IMPS-515526246788-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT302APTJUNE,0000515526246788,04/06/25,,4890,
-04/06/25,IMPS-515528248106-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT208APTJUNE,0000515528248106,04/06/25,,4890,
-04/06/25,IMPS-515525502289-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT102APTJUNE,0000515525502289,04/06/25,,4890,
-04/06/25,IMPS-515526261910-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTJUNE,0000515526261910,04/06/25,,4890,
-04/06/25,IMPS-515527270510-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT106APTJUNE,0000515527270510,04/06/25,,4890,
-04/06/25,IMPS-515528282029-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTJUNE,0000515528282029,04/06/25,,4890,
-04/06/25,IMPS-515525546448-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTJUNE,0000515525546448,04/06/25,,4890,
-04/06/25,IMPS-515525549674-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTJUNE,0000515525549674,04/06/25,,4890,
-04/06/25,IMPS-515526314509-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTJUNE,0000515526314509,04/06/25,,4890,
-05/06/25,IMPS-515627000044-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTJUNE,0000515627000044,05/06/25,,4890,
-05/06/25,IMPS-515628002199-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTJUNE,0000515628002199,05/06/25,,4890,
-05/06/25,IMPS-515627037179-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG01APTJUNE,0000515627037179,05/06/25,,4890,
-05/06/25,IMPS-515625081179-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTJUNE,0000515625081179,05/06/25,,4890,
-05/06/25,IMPS-515627042855-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTJUNE,0000515627042855,05/06/25,,4890,
-05/06/25,IMPS-515627044681-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT407APTJUNE,0000515627044681,05/06/25,,4890,
-05/06/25,IMPS-515628045446-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTJUNE,0000515628045446,05/06/25,,4890,
-05/06/25,IMPS-515625115864-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTJUNE,0000515625115864,05/06/25,,4890,
-05/06/25,IMPS-515625121437-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT309APTJUNE,0000515625121437,05/06/25,,4890,
-05/06/25,IMPS-515625127063-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTJUNE,0000515625127063,05/06/25,,4890,
-05/06/25,IMPS-515625149003-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTJUNE,0000515625149003,05/06/25,,4890,
-05/06/25,JANMAR25 INSTAALERTCHG 2 SMS 040425-MIR2615421038625,MIR2615421038625,05/06/25,0.47,,
-05/06/25,IMPS-515626084579-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTJUNE,0000515626084579,05/06/25,,4890,
-05/06/25,IMPS-515627093669-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT103APTJUNE,0000515627093669,05/06/25,,4890,
-05/06/25,IMPS-515626093891-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTJUNE,0000515626093891,05/06/25,,4890,
-05/06/25,IMPS-515627094437-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTJUNE,0000515627094437,05/06/25,,4890,
-05/06/25,IMPS-515626161195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTJUNE,0000515626161195,05/06/25,,4890,
-05/06/25,IMPS-515627169688-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTJUNE,0000515627169688,05/06/25,,4890,
-05/06/25,IMPS-515628195440-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT512APTJUNE,0000515628195440,05/06/25,,4890,
-05/06/25,IMPS-515628218113-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTJUNE,0000515628218113,05/06/25,,4890,
-06/06/25,IMPS-515725165113-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT503APTJUNE,0000515725165113,06/06/25,,4890,
-06/06/25,IMPS-515727089586-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTJUNE,0000515727089586,06/06/25,,4890,
-06/06/25,IMPS-515727107709-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTJUNE,0000515727107709,06/06/25,,4890,
-06/06/25,IMPS-515725215211-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTJUNE,0000515725215211,06/06/25,,4890,
-06/06/25,IMPS-515726122736-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT606APTJUNE,0000515726122736,06/06/25,,4890,
-06/06/25,IMPS-515726129827-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTJUNE,0000515726129827,06/06/25,,4890,
-06/06/25,IMPS-515726130247-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTJUNE,0000515726130247,06/06/25,,4890,
-06/06/25,IMPS-515725344208-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTJUNE,0000515725344208,06/06/25,,4890,
-06/06/25,IMPS-515725355352-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTJUNE,0000515725355352,06/06/25,,4890,
-06/06/25,IMPS-515726185846-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTJUNE,0000515726185846,06/06/25,,4890,
-06/06/25,IMPS-515722922840-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT406APTJUNE,0000515722922840,06/06/25,,4890,
-06/06/25,IMPS-515727272835-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTJUNE,0000515727272835,06/06/25,,4890,
-07/06/25,IMPS-515828010597-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT703APTJUNE,0000515828010597,07/06/25,,4890,
-07/06/25,IMPS-515825069554-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTJUNE,0000515825069554,07/06/25,,4890,
-07/06/25,IMPS-515826043786-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTJUNE,0000515826043786,07/06/25,,4890,
-07/06/25,IMPS-515826058888-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTJUNE,0000515826058888,07/06/25,,4890,
-07/06/25,IMPS-515825118207-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTJUNE,0000515825118207,07/06/25,,4890,
-07/06/25,IMPS-515825119179-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTJUNE,0000515825119179,07/06/25,,4890,
-07/06/25,IMPS-515825130804-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTJUNE,0000515825130804,07/06/25,,4890,
-07/06/25,IMPS-515826089129-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTJUNE,0000515826089129,07/06/25,,4890,
-07/06/25,IMPS-515825176727-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT612APTJUNE,0000515825176727,07/06/25,,4890,
-07/06/25,IMPS-515825239561-NOBROKER-RATN-XXXXXXXX0617-FLAT412APTJUNE,0000515825239561,07/06/25,,4890,
-08/06/25,IMPS-515926037420-NOBROKER-RATN-XXXXXXXX0617-FLAT712APTJUNE,0000515926037420,08/06/25,,4890,
-08/06/25,IMPS-515926093371-NOBROKER-RATN-XXXXXXXX0617-FLAT604APTJUNE,0000515926093371,08/06/25,,4890,
-08/06/25,IMPS-515925182918-NOBROKER-RATN-XXXXXXXX0617-FLAT405APTJUNE,0000515925182918,08/06/25,,4890,
-08/06/25,IMPS-515926110829-NOBROKER-RATN-XXXXXXXX0617-FLAT104APTJUNE,0000515926110829,08/06/25,,4890,
-08/06/25,IMPS-515925236433-NOBROKER-RATN-XXXXXXXX0617-FLAT101APTJUNE,0000515925236433,08/06/25,,4890,
-08/06/25,IMPS-515925242634-NOBROKER-RATN-XXXXXXXX0617-FLAT214APTJUNE,0000515925242634,08/06/25,,4890,
-09/06/25,IMPS-516003126818-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT210APTJUNE,0000516003126818,09/06/25,,4890,
-09/06/25,IMPS-516003126966-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT304APTJUNE,0000516003126966,09/06/25,,4890,
-09/06/25,IMPS-516004130631-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG06APTJUNE,0000516004130631,09/06/25,,4890,
-09/06/25,CASHFREE PAYMENTS ESCROW ACCOUNT-SOANCE INNOVATIONS LLP-IDFBN52025060960581093,IDFBN52025060960581093,09/06/25,,22500,
-09/06/25,IMPS-516028024062-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT113APTJUNE,0000516028024062,09/06/25,,4890,
-09/06/25,IMPS-516026024133-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTJUNE,0000516026024133,09/06/25,,4890,
-09/06/25,IMPS-516025053708-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT715APTJUNE,0000516025053708,09/06/25,,11267,
-09/06/25,IMPS-516026029623-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTJUNE,0000516026029623,09/06/25,,4890,
-09/06/25,IMPS-516026038604-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTJUNE,0000516026038604,09/06/25,,4890,
-09/06/25,IMPS-516027039089-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT701APTJUNE,0000516027039089,09/06/25,,11267,
-09/06/25,IMPS-516009249206-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT114APTJUNE,0000516009249206,09/06/25,,4890,
-09/06/25,IMPS-516025099953-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTJUNE,0000516025099953,09/06/25,,4890,
-09/06/25,ASHOK-ASHOKPOOJA,0000106170967608,09/06/25,2306,,
-09/06/25,IMPS-516025112208-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTJUNE,0000516025112208,09/06/25,,4890,
-09/06/25,IMPS-516026060692-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTJUNE,0000516026060692,09/06/25,,4890,
-09/06/25,IMPS-516027076921-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTJUNE,0000516027076921,09/06/25,,4890,
-09/06/25,IMPS-516026091414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT607APTJUNE,0000516026091414,09/06/25,,4890,
-09/06/25,IMPS-516027098146-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTJUNE,0000516027098146,09/06/25,,4890,
-09/06/25,IMPS-516026159530-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTJUNE,0000516026159530,09/06/25,,4890,
-09/06/25,IMPS-516027159781-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTJUNE,0000516027159781,09/06/25,,4890,
-09/06/25,IMPS-516027161567-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTJUNE,0000516027161567,09/06/25,,4890,
-09/06/25,IMPS-516027162011-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTJUNE,0000516027162011,09/06/25,,4890,
-09/06/25,IMPS-516027203299-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTJUNE,0000516027203299,09/06/25,,4890,
-09/06/25,IMPS-516026258902-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTJUNE,0000516026258902,09/06/25,,4890,
-09/06/25,IMPS-516027292011-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTJUNE,0000516027292011,10/06/25,,4890,
-10/06/25,SB SALARY MAY,HDFCR52025061079317556,10/06/25,208771.36,,
-10/06/25,GPAY UTIB0000553 - 106222714368,0000106222714368,10/06/25,6882,,
-10/06/25,GPAY UTIB0000553 - 106222757711,0000106222757711,10/06/25,6686,,
-10/06/25,GPAY UTIB0000553 - 106222879549,0000106222879549,10/06/25,5052,,
-10/06/25,GPAY UTIB0000553 - 106222975504,0000106222975504,10/06/25,21459,,
-10/06/25,GPAY UTIB0000553 - 106223170695,0000106223170695,10/06/25,34065,,
-10/06/25,MANJUNATHA-MANJU.MS COLLECTION,0000106223454949,10/06/25,9000,,
-10/06/25,IMPS-516125113198-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTJUNE,0000516125113198,10/06/25,,4890,
-10/06/25,IMPS-516127072128-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTJUNE,0000516127072128,10/06/25,,4890,
-10/06/25,IMPS-516128073790-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTJUNE,0000516128073790,10/06/25,,4890,
-10/06/25,IMPS-516128108022-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT313APTJUNE,0000516128108022,10/06/25,,4890,
-10/06/25,IMPS-516128141572-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTJUNE,0000516128141572,10/06/25,,4890,
-10/06/25,IMPS-516125328456-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTJUNE,0000516125328456,10/06/25,,4890,
-10/06/25,IMPS-516127234453-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTJUNE,0000516127234453,10/06/25,,4890,
-10/06/25,IMPS-516128246390-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTJUNE,0000516128246390,10/06/25,,4890,
-10/06/25,IMPS-516126253975-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTJUNE,0000516126253975,10/06/25,,4890,
-10/06/25,IMPS-516128258028-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTJUNE,0000516128258028,10/06/25,,4890,
-10/06/25,IMPS-516127265463-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTJUNE,0000516127265463,10/06/25,,1529,
-10/06/25,IMPS-516127305895-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTJUNE,0000516127305895,11/06/25,,4890,
-11/06/25,IMPS-516225009153-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTJUNE,0000516225009153,11/06/25,,4390,
-11/06/25,IMPS-516227050126-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTJUNE,0000516227050126,11/06/25,,4940,
-11/06/25,IMPS-516225110825-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTJUNE,0000516225110825,11/06/25,,4940,
-11/06/25,IMPS-516228066286-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTJUNE,0000516228066286,11/06/25,,4940,
-11/06/25,IMPS-516211576695-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG15APTJUNE,0000516211576695,11/06/25,,4940,
-11/06/25,IMPS-516226115731-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT301APTJUNE,0000516226115731,11/06/25,,4940,
-11/06/25,IMPS-516225537652-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTJUNE,0000516225537652,11/06/25,,4940,
-11/06/25,IMPS-516227292021-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTJUNE,0000516227292021,11/06/25,,4940,
-11/06/25,WATER,HDFCN52025061190822221,11/06/25,105600,,
-12/06/25,GURUKRIPA TRADING CO MATERIALS,0000106331291285,12/06/25,440,,
-12/06/25,BHAWANI  SINGH,0000106367440873,12/06/25,7702,,
-13/06/25,IMPS-516426037869-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTJUNE,0000516426037869,13/06/25,,5040,
-16/06/25,REFUND,HDFCN52025061696815099,16/06/25,22500,,
-16/06/25,CHINNARAJU C-CHINNARAJUC CLEANING,0000106546960999,16/06/25,2500,,
-19/06/25,TREIS SOLUTIONS LLP PAY,0000106715851080,19/06/25,18460.89,,
-20/06/25,GONAPADU SHAKUNTALA-SOMALINGAREDDY,0000106782198822,20/06/25,1200,,
-22/06/25,IMPS-517328224755-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTJUNE,0000517328224755,22/06/25,,3961,
-23/06/25,SIR MANJUNATH ENTERP-PAYTMQR10DD2D@PAYTM-YESB0PTM106913252731-FERTILISER,0000106913252731,23/06/25,1030,,
-29/06/25,CHINNARAJU C-CHINNARAJUC,0000107240768978,29/06/25,120,,
-06/07/25,IMPS-518725173084-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTJULY,0000518725173084,06/07/25,,4749,
-06/07/25,IMPS-518728088370-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTJULY,0000518728088370,06/07/25,,4749,
-06/07/25,IMPS-518725173664-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT210APTJULY,0000518725173664,06/07/25,,4749,
-06/07/25,IMPS-518709673531-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT209APTJULY,0000518709673531,06/07/25,,4749,
-06/07/25,IMPS-518709682314-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT102APTJULY,0000518709682314,06/07/25,,4749,
-06/07/25,IMPS-518709684515-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT103APTJULY,0000518709684515,06/07/25,,4749,
-06/07/25,IMPS-518709687045-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT309APTJULY,0000518709687045,06/07/25,,4749,
-06/07/25,IMPS-518709687133-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT512APTJULY,0000518709687133,06/07/25,,4749,
-06/07/25,IMPS-518710697717-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT106APTJULY,0000518710697717,06/07/25,,4749,
-06/07/25,IMPS-518710700262-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT505APTJULY,0000518710700262,06/07/25,,4749,
-06/07/25,IMPS-518728103970-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTJULY,0000518728103970,06/07/25,,4749,
-06/07/25,IMPS-518726104366-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTJULY,0000518726104366,06/07/25,,4749,
-06/07/25,IMPS-518725204816-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTJULY,0000518725204816,06/07/25,,4749,
-06/07/25,IMPS-518725204967-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTJULY,0000518725204967,06/07/25,,4749,
-06/07/25,IMPS-518725205174-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTJULY,0000518725205174,06/07/25,,4749,
-06/07/25,IMPS-518725205477-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTJULY,0000518725205477,06/07/25,,4749,
-06/07/25,IMPS-518726105883-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT701APTJULY,0000518726105883,06/07/25,,3349,
-06/07/25,IMPS-518725207264-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT208APTJULY,0000518725207264,06/07/25,,4749,
-06/07/25,IMPS-518725210489-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTJULY,0000518725210489,06/07/25,,4749,
-06/07/25,IMPS-518725210571-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTJULY,0000518725210571,06/07/25,,4749,
-06/07/25,IMPS-518725210818-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTJULY,0000518725210818,06/07/25,,4749,
-06/07/25,IMPS-518725213794-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTJULY,0000518725213794,06/07/25,,4749,
-06/07/25,IMPS-518728110520-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTJULY,0000518728110520,06/07/25,,4749,
-06/07/25,IMPS-518725219831-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTJULY,0000518725219831,06/07/25,,4749,
-06/07/25,IMPS-518725220771-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTJULY,0000518725220771,06/07/25,,4749,
-06/07/25,IMPS-518726115067-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTJULY,0000518726115067,06/07/25,,4749,
-06/07/25,IMPS-518725225029-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT407APTJULY,0000518725225029,06/07/25,,4749,
-06/07/25,IMPS-518726118177-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTJULY,0000518726118177,06/07/25,,4749,
-06/07/25,IMPS-518725234959-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTJULY,0000518725234959,06/07/25,,4749,
-06/07/25,IMPS-518726123510-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTJULY,0000518726123510,06/07/25,,4749,
-06/07/25,IMPS-518726126181-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT412APTJULY,0000518726126181,06/07/25,,4749,
-06/07/25,IMPS-518725254578-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTJULY,0000518725254578,06/07/25,,4749,
-06/07/25,IMPS-518725254936-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTJULY,0000518725254936,06/07/25,,4749,
-06/07/25,IMPS-518725255607-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTJULY,0000518725255607,06/07/25,,4749,
-06/07/25,IMPS-518725257450-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTJULY,0000518725257450,06/07/25,,4749,
-06/07/25,IMPS-518726134311-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTJULY,0000518726134311,06/07/25,,4749,
-06/07/25,IMPS-518725287995-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTJULY,0000518725287995,06/07/25,,4749,
-06/07/25,IMPS-518726150165-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG01APTJULY,0000518726150165,06/07/25,,4749,
-06/07/25,IMPS-518725360552-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG06APTJULY,0000518725360552,06/07/25,,4749,
-06/07/25,IMPS-518725367911-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTJULY,0000518725367911,06/07/25,,4749,
-06/07/25,IMPS-518727197998-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTJULY,0000518727197998,06/07/25,,4749,
-06/07/25,IMPS-518726207088-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT612APTJULY,0000518726207088,06/07/25,,4749,
-06/07/25,IMPS-518728223566-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTJULY,0000518728223566,06/07/25,,4749,
-06/07/25,IMPS-518728225441-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTJULY,0000518728225441,06/07/25,,4749,
-06/07/25,IMPS-518726232233-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTJULY,0000518726232233,06/07/25,,4749,
-06/07/25,IMPS-518726233295-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT604APTJULY,0000518726233295,06/07/25,,4749,
-06/07/25,IMPS-518726251588-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTJULY,0000518726251588,06/07/25,,4749,
-06/07/25,IMPS-518726279190-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT715APTJULY,0000518726279190,06/07/25,,3349,
-06/07/25,IMPS-518728280795-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTJULY,0000518728280795,06/07/25,,4749,
-06/07/25,IMPS-518726285642-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT406APTJULY,0000518726285642,06/07/25,,4749,
-07/07/25,IMPS-518828077487-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT112APTJULY,0000518828077487,07/07/25,,4749,
-07/07/25,IMPS-518825212170-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTJULY,0000518825212170,07/07/25,,4749,
-07/07/25,IMPS-518827152958-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT703APTJULY,0000518827152958,07/07/25,,4749,
-07/07/25,IMPS-518825300345-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTJULY,0000518825300345,07/07/25,,4749,
-07/07/25,IMPS-518825396217-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT405APTJULY,0000518825396217,07/07/25,,4749,
-07/07/25,IMPS-518825397456-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTJULY,0000518825397456,07/07/25,,4749,
-07/07/25,IMPS-518825406613-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTJULY,0000518825406613,07/07/25,,4749,
-07/07/25,IMPS-518825425093-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTJULY,0000518825425093,07/07/25,,4749,
-07/07/25,IMPS-518825435879-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTJULY,0000518825435879,07/07/25,,4749,
-07/07/25,TREIS SOLUTIONS LLP PAY,0000107710317003,07/07/25,15726,,
-08/07/25,IMPS-518925104500-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT313APTJULY,0000518925104500,08/07/25,,4749,
-08/07/25,IMPS-518928055887-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT712APTJULY,0000518928055887,08/07/25,,4749,
-08/07/25,IMPS-518926064717-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTJULY,0000518926064717,08/07/25,,4749,
-08/07/25,IMPS-518927070253-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTJULY,0000518927070253,08/07/25,,4749,
-08/07/25,IMPS-518926072299-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTJULY,0000518926072299,08/07/25,,4749,
-08/07/25,IMPS-518927083133-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTJULY,0000518927083133,08/07/25,,4749,
-08/07/25,IMPS-518925296330-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTJULY,0000518925296330,08/07/25,,4149,
-08/07/25,IMPS-518927219643-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT304APTJULY,0000518927219643,08/07/25,,4749,
-08/07/25,IMPS-518928233423-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT101APTJULY,0000518928233423,08/07/25,,4749,
-08/07/25,IMPS-518926256973-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTJULY,0000518926256973,08/07/25,,4749,
-08/07/25,IMPS-518928267777-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTJULY,0000518928267777,08/07/25,,4749,
-08/07/25,IMPS-518927269614-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT214APTJULY,0000518927269614,08/07/25,,4749,
-09/07/25,IMPS-519026005087-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT607APTJULY,0000519026005087,09/07/25,,4749,
-09/07/25,IMPS-519027058097-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTJULY,0000519027058097,09/07/25,,4749,
-09/07/25,IMPS-519027064613-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTJULY,0000519027064613,09/07/25,,4749,
-09/07/25,IMPS-519026106899-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG15APTJULY,0000519026106899,09/07/25,,4749,
-09/07/25,IMPS-519025376627-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTJULY,0000519025376627,09/07/25,,4749,
-09/07/25,IMPS-519025411151-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTJULY,0000519025411151,09/07/25,,4749,
-09/07/25,IMPS-519027221082-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTJULY,0000519027221082,09/07/25,,4749,
-09/07/25,IMPS-519026227624-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTJULY,0000519026227624,09/07/25,,4749,
-09/07/25,IMPS-519025480900-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTJULY,0000519025480900,09/07/25,,4749,
-09/07/25,IMPS-519027279303-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT606APTJULY,0000519027279303,09/07/25,,4749,
-10/07/25,IMPS-519127011765-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT507APTJULY,0000519127011765,10/07/25,,4749,
-10/07/25,IMPS-519125062867-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTJULY,0000519125062867,10/07/25,,4749,
-10/07/25,IMPS-519125063386-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT114APTJULY,0000519125063386,10/07/25,,4749,
-10/07/25,IMPS-519125073414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTJULY,0000519125073414,10/07/25,,4749,
-10/07/25,IMPS-519125085516-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTJULY,0000519125085516,10/07/25,,4749,
-10/07/25,IMPS-519125200275-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTJULY,0000519125200275,10/07/25,,4749,
-10/07/25,IMPS-519128313122-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTJULY,0000519128313122,10/07/25,,4749,
-10/07/25,IMPS-519125601288-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTJULY,0000519125601288,10/07/25,,4749,
-10/07/25,IMPS-519125621627-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTJULY,0000519125621627,11/07/25,,4749,
-11/07/25,IMPS-519225067616-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTJULY,0000519225067616,11/07/25,,4749,
-11/07/25,SB SALARY,HDFCR52025071189846223,11/07/25,210242.34,,
-11/07/25,IMPS-519225216395-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTJULY,0000519225216395,11/07/25,,4749,
-11/07/25,IMPS-519228118562-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT104APTJULY,0000519228118562,11/07/25,,4749,
-11/07/25,IMPS-519228119988-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT302APTJULY,0000519228119988,11/07/25,,4749,
-11/07/25,IMPS-519227154230-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTJULY,0000519227154230,11/07/25,,4749,
-11/07/25,IMPS-519228174195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTJULY,0000519228174195,11/07/25,,4749,
-11/07/25,IMPS-519228290663-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTJULY,0000519228290663,11/07/25,,4749,
-11/07/25,IMPS-519225545401-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTJULY,0000519225545401,11/07/25,,4749,
-12/07/25,IMPS-519327006385-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTJULY,0000519327006385,12/07/25,,4799,
-12/07/25,IMPS-519327043223-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTJULY,0000519327043223,12/07/25,,4799,
-12/07/25,IMPS-519325465450-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTJULY,0000519325465450,12/07/25,,4799,
-13/07/25,IMPS-519425172599-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTJULY,0000519425172599,13/07/25,,4849,
-13/07/25,IMPS-519428112396-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT503APTJULY,0000519428112396,13/07/25,,4849,
-13/07/25,WATER,HDFCN52025071352770033,13/07/25,165000,,
-13/07/25,MANJUNATHA-MANJU.MS,0000108040538069,13/07/25,9000,,
-13/07/25,GPAY UTIB0000553 - 108040708996,0000108040708996,13/07/25,9186,,
-13/07/25,GPAY UTIB0000553 - 108040773141,0000108040773141,13/07/25,11078,,
-13/07/25,GPAY UTIB0000553 - 108040852231,0000108040852231,13/07/25,6961,,
-13/07/25,GPAY UTIB0000553 - 108040974211,0000108040974211,13/07/25,24325,,
-13/07/25,GPAY UTIB0000553 - 108041277399,0000108041277399,13/07/25,21166,,
-13/07/25,IMPS-519425435445-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT301APTJULY,0000519425435445,13/07/25,,4849,
-14/07/25,IMPS-519525590509-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTJULY,0000519525590509,14/07/25,,4899,
-16/07/25,GANGAVARAPU SAI KRIS-GSAIKRISHNA,0000519781541152,16/07/25,,3620,
-18/07/25,YASHAS GRAPHICS-PAYTMQR6CWMF,0000108307859393,18/07/25,500,,
-18/07/25,CHINNARAJU C-CHINNARAJUC,0000108334797165,18/07/25,1000,,
-19/07/25,YASHAS GRAPHICS-PAYTMQR6CWMF,0000108347275481,19/07/25,460,,
-19/07/25,TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025071900599588,SCBLN52025071900599588,19/07/25,,14,
-19/07/25,TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025071900599605,SCBLN52025071900599605,19/07/25,,2,
-20/07/25,RAZORPAY IDFBN52025072001772457,IDFBN52025072001772457,20/07/25,,5199,
-20/07/25,GUTTA VENU GOPAL,0000108414102364,20/07/25,13000,,
-21/07/25,RAZORPAY IDFBN52025072102032696,IDFBN52025072102032696,21/07/25,,16600,
-22/07/25,RAJILESH P-RAJILESHPANOLI,0000108502094709,22/07/25,,13000,
-22/07/25,TREIS SOLUTIONS LLP PAY,0000108506852325,22/07/25,15726,,
-23/07/25,SRI VENKATESHWARA EL-GPAY MOTOR,0000108575167939,23/07/25,17000,,
-25/07/25,IMPS-520609388365-NOBROKER TECHNOLOGIES SOLUTIONS PRIVATE LIMIT-HSBC-XXXXXXXX7001-NB43654C20500021903000B,0000520609388365,25/07/25,,3000,
-25/07/25,PP ENTERPRISES-BOISM QR,0000108667990186,25/07/25,285,,
-25/07/25,SONALI SURAJITA MOHA-SONALI.MOHANTY LIFT ADS,0000108678488320,25/07/25,3000,,
-27/07/25,CBDT K2520836750649 - 25072700028328HDFC,0250727110009464,27/07/25,4291,,
-28/07/25,IMPS-520918234638-BRAVIRAJU-UBIN-XXXXXXXXXXX4226-FLAT 308 MAINTENANCE,0000520918234638,28/07/25,,21000,
-29/07/25,G RAVI KUMAR HEAD,0000108891563648,29/07/25,3200,,
-30/07/25,MITESH NITIN SANGHAN CBR VEHICLE STICKE,0000108961588547,30/07/25,6000,,
-30/07/25,SONALI SURAJITA MOHANTY-RAJILESH CBR-UTIBN62025073093818150,UTIBN62025073093818150,30/07/25,,6000,
-05/08/25,RAZORPAY IDFBN52025080517551054,IDFBN52025080517551054,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517551489,IDFBN52025080517551489,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517551501,IDFBN52025080517551501,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517551691,IDFBN52025080517551691,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517552092,IDFBN52025080517552092,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517552559,IDFBN52025080517552559,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517553744,IDFBN52025080517553744,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517555538,IDFBN52025080517555538,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517560601,IDFBN52025080517560601,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517563644,IDFBN52025080517563644,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517565353,IDFBN52025080517565353,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517566235,IDFBN52025080517566235,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517574160,IDFBN52025080517574160,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517594092,IDFBN52025080517594092,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517598157,IDFBN52025080517598157,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517601458,IDFBN52025080517601458,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517609216,IDFBN52025080517609216,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517618729,IDFBN52025080517618729,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517653555,IDFBN52025080517653555,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517660616,IDFBN52025080517660616,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517675698,IDFBN52025080517675698,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517699229,IDFBN52025080517699229,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517706843,IDFBN52025080517706843,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517707383,IDFBN52025080517707383,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517712889,IDFBN52025080517712889,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517714310,IDFBN52025080517714310,05/08/25,,4593,
-05/08/25,RAZORPAY IDFBN52025080517714825,IDFBN52025080517714825,05/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080517716574,IDFBN52025080517716574,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618721652,IDFBN52025080618721652,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618727514,IDFBN52025080618727514,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618728013,IDFBN52025080618728013,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618728654,IDFBN52025080618728654,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618728745,IDFBN52025080618728745,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618728994,IDFBN52025080618728994,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618729068,IDFBN52025080618729068,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618729412,IDFBN52025080618729412,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618732894,IDFBN52025080618732894,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618733196,IDFBN52025080618733196,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618733709,IDFBN52025080618733709,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618738548,IDFBN52025080618738548,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618740710,IDFBN52025080618740710,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618741349,IDFBN52025080618741349,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618743457,IDFBN52025080618743457,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618764723,IDFBN52025080618764723,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618765190,IDFBN52025080618765190,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618772546,IDFBN52025080618772546,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618773281,IDFBN52025080618773281,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618774198,IDFBN52025080618774198,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618775505,IDFBN52025080618775505,06/08/25,,4593,
-06/08/25,SHINDE  MARUTI FILTER,0000109337754942,06/08/25,200,,
-06/08/25,RAZORPAY IDFBN52025080618794804,IDFBN52025080618794804,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618796040,IDFBN52025080618796040,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618846053,IDFBN52025080618846053,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618853814,IDFBN52025080618853814,06/08/25,,4593,
-06/08/25,DHARANI  BEHERA-DHARANIBEHERA BOXES,0000109353182013,06/08/25,8456,,
-06/08/25,RAZORPAY IDFBN52025080618885855,IDFBN52025080618885855,06/08/25,,4593,
-06/08/25,RAZORPAY IDFBN52025080618934937,IDFBN52025080618934937,06/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719957915,IDFBN52025080719957915,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719972398,IDFBN52025080719972398,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719979934,IDFBN52025080719979934,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719018257,IDFBN52025080719018257,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719020801,IDFBN52025080719020801,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719022223,IDFBN52025080719022223,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719022519,IDFBN52025080719022519,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719023520,IDFBN52025080719023520,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719044490,IDFBN52025080719044490,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719049452,IDFBN52025080719049452,07/08/25,,4593,
-07/08/25,CHINNARAJU C-CHINNARAJUC,0000109405095471,07/08/25,100,,
-07/08/25,RAZORPAY IDFBN52025080719057018,IDFBN52025080719057018,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719060881,IDFBN52025080719060881,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719067768,IDFBN52025080719067768,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719100641,IDFBN52025080719100641,07/08/25,,4593,
-07/08/25,RAZORPAY IDFBN52025080719101255,IDFBN52025080719101255,07/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820296223,IDFBN52025080820296223,08/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820296871,IDFBN52025080820296871,08/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820298597,IDFBN52025080820298597,08/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820301269,IDFBN52025080820301269,08/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820305559,IDFBN52025080820305559,08/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820313840,IDFBN52025080820313840,08/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820326946,IDFBN52025080820326946,08/08/25,,4593,
-08/08/25,"IMPS-522012605384-BRAVIRAJU-UBIN-XXXXXXXXXXX4226-F 308, MAINTANANCE JULY25",0000522012605384,08/08/25,,3000,
-08/08/25,RAZORPAY IDFBN52025080820329909,IDFBN52025080820329909,08/08/25,,4593,
-08/08/25,RAZORPAY IDFBN52025080820341879,IDFBN52025080820341879,08/08/25,,4593,
-08/08/25,SB SALARY,HDFCR52025080899245916,08/08/25,211680,,
-09/08/25,RAZORPAY IDFBN52025080921560318,IDFBN52025080921560318,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921575560,IDFBN52025080921575560,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921581392,IDFBN52025080921581392,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921582764,IDFBN52025080921582764,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921589793,IDFBN52025080921589793,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921606973,IDFBN52025080921606973,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921615635,IDFBN52025080921615635,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921625248,IDFBN52025080921625248,09/08/25,,4593,
-09/08/25,RAZORPAY IDFBN52025080921635793,IDFBN52025080921635793,09/08/25,,4593,
-09/08/25,TREIS SOLUTIONS LLP PAY,0000109551166099,09/08/25,15844.35,,
-10/08/25,RAZORPAY IDFBN52025081022663445,IDFBN52025081022663445,10/08/25,,4593,
-10/08/25,RADHEY ENTERPRISES-VYAPAR,0000109558955640,10/08/25,370,,
-10/08/25,RAZORPAY IDFBN52025081022666009,IDFBN52025081022666009,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022666726,IDFBN52025081022666726,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022666863,IDFBN52025081022666863,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022667407,IDFBN52025081022667407,10/08/25,,4593,
-10/08/25,WATER SENSIR,0000109562067834,10/08/25,22000,,
-10/08/25,RAZORPAY IDFBN52025081022670008,IDFBN52025081022670008,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022679002,IDFBN52025081022679002,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022686889,IDFBN52025081022686889,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022690882,IDFBN52025081022690882,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022702834,IDFBN52025081022702834,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022703818,IDFBN52025081022703818,10/08/25,,4593,
-10/08/25,RAZORPAY IDFBN52025081022720283,IDFBN52025081022720283,11/08/25,,4593,
-11/08/25,RATNN52025081133997866,RATNN52025081133997866,11/08/25,,4593,
-11/08/25,RAZORPAY IDFBN52025081123752858,IDFBN52025081123752858,11/08/25,,4643,
-11/08/25,GPAY UTIB0000553 - 109622923583,0000109622923583,11/08/25,9467,,
-11/08/25,GPAY UTIB0000553 - 109622989790,0000109622989790,11/08/25,11811,,
-11/08/25,GPAY UTIB0000553 - 109623108775,0000109623108775,11/08/25,7108,,
-11/08/25,GPAY UTIB0000553 - 109623212787,0000109623212787,11/08/25,26036,,
-11/08/25,GPAY UTIB0000553 - 109623354246,0000109623354246,11/08/25,23275,,
-11/08/25,RAZORPAY IDFBN52025081123786170,IDFBN52025081123786170,11/08/25,,4643,
-12/08/25,WATER,HDFCN52025081210557019,12/08/25,153600,,
-12/08/25,GARBAGE,HDFCN52025081210563965,12/08/25,9000,,
-12/08/25,RAZORPAY IDFBN52025081224993968,IDFBN52025081224993968,12/08/25,,4693,
-12/08/25,RAZORPAY IDFBN52025081224004408,IDFBN52025081224004408,12/08/25,,4693,
-13/08/25,RAZORPAY IDFBN52025081325124336,IDFBN52025081325124336,13/08/25,,14179,
-14/08/25,MAHENDRA ENTERPRISES-PAYTMQR5VFS5Y@PTYS-YESB0PTM109785699189-MATERIALS,0000109785699189,14/08/25,110,,
-14/08/25,SARASWATHI ELECTRICA-SARASWAHI,0000109786067137,14/08/25,320,,
-14/08/25,RAZORPAY IDFBN52025081426305284,IDFBN52025081426305284,14/08/25,,4793,
-14/08/25,CHINNARAJU C-CHINNARAJUC FOR LEAK,0000109806191307,14/08/25,230,,
-16/08/25,GPAY UTIB0000553 - 109899272126,0000109899272126,16/08/25,2520,,
-16/08/25,GPAY UTIB0000553 - 109899359458,0000109899359458,16/08/25,4610,,
-16/08/25,GPAY UTIB0000553 - 109899467220,0000109899467220,16/08/25,25450,,
-19/08/25,PAWAN ELECTRICAL AND,0000110018325209,19/08/25,760,,
-19/08/25,SALT,HDFCN52025081921092345,19/08/25,21600,,
-26/08/25,TREIS SOLUTIONS LLP PAY,0000110343473573,26/08/25,15844.07,,
-27/08/25,NPCI BHIM BHIMCASHBACK,0000101300887554,27/08/25,,7,
-27/08/25,RAJARAM DEWASI-RAJDEVASI,0000110397329215,27/08/25,800,,
-27/08/25,RAJARAM DEWASI-RAJDEVASI,0000110400006046,27/08/25,250,,
-27/08/25,TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623633,SCBLN52025082700623633,27/08/25,,16,
-27/08/25,TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623652,SCBLN52025082700623652,27/08/25,,8,
-27/08/25,TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623648,SCBLN52025082700623648,27/08/25,,109,
-27/08/25,TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623644,SCBLN52025082700623644,27/08/25,,54,
-28/08/25,RAJARAM DEWASI-RAJDEVASI,0000110433515127,28/08/25,250,,
-04/09/25,CBDT K2524738305137 - 25090400006368HDFC,0250904060000772,04/09/25,4320,,`,mn=(e,t="INR")=>(e??0)===0&&e!==0?"":new Intl.NumberFormat("en-IN",{style:"currency",currency:t}).format(Number(e||0));function ym(e){if(!e)return null;const t=String(e).trim().match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{2,4})$/);if(!t)return null;let[n,r,i,a]=t;r=parseInt(r,10),i=parseInt(i,10)-1,a=parseInt(a,10),a<100&&(a+=2e3);const o=new Date(a,i,r);return isNaN(o.getTime())?null:o}function YG(e){if(!e)return"Unknown";const t=e.getFullYear(),n=e.getMonth()+1;return`${t}-${String(n).padStart(2,"0")}`}function mm(e){if(e==null)return 0;const t=String(e).trim();if(!t||t.toUpperCase()==="NA")return 0;const n=t.replace(/[^0-9.-]/g,""),r=parseFloat(n);return isNaN(r)?0:r}function UG(e){return e.includes("	")?"	":e.includes(",")?",":"	"}function HG(e){if(!e)return[];const t=e.split(/\r?\n/).map(r=>r.trim()).filter(Boolean);if(t.length===0)return[];const n=UG(t[0]);return t.map((r,i)=>{const a=r.split(n).map(A=>A.trim()),[o,u,l,s,f,c]=[a[0],a[1],a[2],a[3],a[4],a[5]],d=ym(o),p=ym(s);return{id:`${i}-${l||Math.random().toString(36).slice(2,8)}`,txnDate:d,valueDate:p||d,txnDateStr:o,valueDateStr:s,description:u||"",refNo:l||"",debit:mm(f),credit:mm(c)}})}function VG(e){const t=new Map;for(const n of e){const r=YG(n.valueDate||n.txnDate);t.has(r)||t.set(r,[]),t.get(r).push(n)}for(const[n,r]of t)r.sort((i,a)=>(i.valueDate||i.txnDate)-(a.valueDate||a.txnDate));return new Map([...t.entries()].sort())}function KG(e,t=0){const n=[];let r=t;for(const[i,a]of e){const o=a.reduce((f,c)=>f+(c.credit||0),0),u=a.reduce((f,c)=>f+(c.debit||0),0),l=r,s=l+o-u;n.push({key:i,opening:l,income:o,expense:u,closing:s,entries:a}),r=s}return{months:n,finalBalance:r}}function gm(e,t){const n=document.createElement("a");n.setAttribute("href","data:text/plain;charset=utf-8,"+encodeURIComponent(t)),n.setAttribute("download",e),n.style.display="none",document.body.appendChild(n),n.click(),document.body.removeChild(n)}function on({children:e,className:t=""}){return x.jsx("div",{className:`rounded-2xl shadow-sm border border-gray-200 bg-white p-4 ${t}`,children:e})}function Xu({label:e,value:t,sub:n}){return x.jsxs("div",{children:[x.jsx("div",{className:"text-sm text-gray-500",children:e}),x.jsx("div",{className:"text-2xl font-semibold",children:t}),n&&x.jsx("div",{className:"text-xs text-gray-400 mt-1",children:n})]})}function uo(e,t){const[n,r]=j.useState(()=>{try{const i=localStorage.getItem(e);return i?JSON.parse(i):t}catch{return t}});return j.useEffect(()=>{try{localStorage.setItem(e,JSON.stringify(n))}catch{}},[e,n]),[n,r]}function ZG({search:e,setSearch:t,monthFrom:n,setMonthFrom:r,monthTo:i,setMonthTo:a}){return x.jsxs("div",{className:"flex flex-col md:flex-row gap-3 items-stretch",children:[x.jsxs("div",{className:"flex items-center gap-2 bg-white border rounded-2xl px-3 py-2 flex-1",children:[x.jsx(fS,{className:"w-4 h-4 text-gray-400"}),x.jsx("input",{className:"w-full outline-none text-sm",placeholder:"Search description or ref no.",value:e,onChange:o=>t(o.target.value)})]}),x.jsxs("div",{className:"flex items-center gap-2 bg-white border rounded-2xl px-3 py-2",children:[x.jsx("label",{className:"text-xs text-gray-500",children:"From"}),x.jsx("input",{type:"month",className:"text-sm",value:n,onChange:o=>r(o.target.value)})]}),x.jsxs("div",{className:"flex items-center gap-2 bg-white border rounded-2xl px-3 py-2",children:[x.jsx("label",{className:"text-xs text-gray-500",children:"To"}),x.jsx("input",{type:"month",className:"text-sm",value:i,onChange:o=>a(o.target.value)})]})]})}function zG({entries:e}){const[t,n]=j.useState(1),r=15,i=Math.max(1,Math.ceil(e.length/r));j.useEffect(()=>{t>i&&n(1)},[e,i]);const a=e.slice((t-1)*r,t*r);return x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center justify-between mb-3",children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700",children:[x.jsx(AS,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Transactions"})," ",x.jsxs("span",{className:"text-xs text-gray-400",children:["(",e.length,")"]})]}),x.jsxs("div",{className:"flex items-center gap-2 text-sm",children:[x.jsx("button",{className:"px-3 py-1.5 rounded-xl border",onClick:()=>n(o=>Math.max(1,o-1)),children:"Prev"}),x.jsxs("div",{className:"text-xs text-gray-500",children:["Page ",t," / ",i]}),x.jsx("button",{className:"px-3 py-1.5 rounded-xl border",onClick:()=>n(o=>Math.min(i,o+1)),children:"Next"})]})]}),x.jsx("div",{className:"overflow-auto",children:x.jsxs("table",{className:"w-full text-sm",children:[x.jsx("thead",{children:x.jsxs("tr",{className:"text-left border-b bg-gray-50",children:[x.jsx("th",{className:"p-2 whitespace-nowrap",children:"Value Date"}),x.jsx("th",{className:"p-2",children:"Description"}),x.jsx("th",{className:"p-2 whitespace-nowrap",children:"Ref No"}),x.jsx("th",{className:"p-2 text-right",children:"Debit"}),x.jsx("th",{className:"p-2 text-right",children:"Credit"})]})}),x.jsx("tbody",{children:a.map(o=>x.jsxs("tr",{className:"border-b last:border-0",children:[x.jsx("td",{className:"p-2 whitespace-nowrap",children:o.valueDate?o.valueDate.toLocaleDateString():o.txnDateStr}),x.jsx("td",{className:"p-2",children:o.description}),x.jsx("td",{className:"p-2 whitespace-nowrap font-mono text-xs",children:o.refNo}),x.jsx("td",{className:"p-2 text-right tabular-nums",children:o.debit?mn(o.debit):""}),x.jsx("td",{className:"p-2 text-right tabular-nums",children:o.credit?mn(o.credit):""})]},o.id))})]})})]})}function GG({months:e}){return x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(uS,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Month‑wise Opening / Closing"})]}),x.jsx("div",{className:"overflow-auto",children:x.jsxs("table",{className:"w-full text-sm",children:[x.jsx("thead",{children:x.jsxs("tr",{className:"text-left border-b bg-gray-50",children:[x.jsx("th",{className:"p-2",children:"Month"}),x.jsx("th",{className:"p-2 text-right",children:"Opening"}),x.jsx("th",{className:"p-2 text-right",children:"Income"}),x.jsx("th",{className:"p-2 text-right",children:"Expense"}),x.jsx("th",{className:"p-2 text-right",children:"Closing"}),x.jsx("th",{className:"p-2 text-right",children:"Txns"})]})}),x.jsx("tbody",{children:e.map(t=>x.jsxs("tr",{className:"border-b last:border-0",children:[x.jsx("td",{className:"p-2 whitespace-nowrap",children:t.key}),x.jsx("td",{className:"p-2 text-right",children:mn(t.opening)}),x.jsx("td",{className:"p-2 text-right text-emerald-600",children:mn(t.income)}),x.jsx("td",{className:"p-2 text-right text-rose-600",children:mn(t.expense)}),x.jsx("td",{className:"p-2 text-right font-medium",children:mn(t.closing)}),x.jsx("td",{className:"p-2 text-right",children:t.entries.length})]},t.key))})]})})]})}function WG({months:e}){const t=e.map(o=>({month:o.key,Income:Number(o.income.toFixed(2)),Expense:Number(o.expense.toFixed(2))}));let n=0;const r=e.map(o=>(n=o.closing,{month:o.key,Balance:Number(n.toFixed(2))})),i=e.reduce((o,u)=>({income:o.income+u.income,expense:o.expense+u.expense}),{income:0,expense:0}),a=[{name:"Income",value:Number(i.income.toFixed(2))},{name:"Expense",value:Number(i.expense.toFixed(2))}];return x.jsxs("div",{className:"grid grid-cols-1 xl:grid-cols-3 gap-4",children:[x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(nh,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Monthly Income vs Expense"})]}),x.jsx("div",{className:"h-64",children:x.jsx(tf,{width:"100%",height:"100%",children:x.jsxs(kG,{data:t,children:[x.jsx(Mp,{strokeDasharray:"3 3"}),x.jsx(Xa,{dataKey:"month"}),x.jsx(Ra,{}),x.jsx(kt,{}),x.jsx(jn,{}),x.jsx(Tr,{dataKey:"Income"}),x.jsx(Tr,{dataKey:"Expense"})]})})})]}),x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(nh,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Cumulative Balance"})]}),x.jsx("div",{className:"h-64",children:x.jsx(tf,{width:"100%",height:"100%",children:x.jsxs(FG,{data:r,children:[x.jsx(Mp,{strokeDasharray:"3 3"}),x.jsx(Xa,{dataKey:"month"}),x.jsx(Ra,{}),x.jsx(kt,{}),x.jsx(jn,{}),x.jsx(Y0,{type:"monotone",dataKey:"Balance"})]})})})]}),x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(Q4,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Income vs Expense"})]}),x.jsx("div",{className:"h-64",children:x.jsx(tf,{width:"100%",height:"100%",children:x.jsxs(BG,{children:[x.jsx(kt,{}),x.jsx(jn,{}),x.jsx(qn,{dataKey:"value",data:a,nameKey:"name",cx:"50%",cy:"50%",outerRadius:80,label:!0,children:a.map((o,u)=>x.jsx(Vs,{},`cell-${u}`))})]})})})]})]})}function JG(){var g,T,I,R;const[e,t]=uo("asv_rawText",vm),[n,r]=uo("asv_initialBalance",0),[i,a]=uo("asv_search",""),[o,u]=uo("asv_mfrom",""),[l,s]=uo("asv_mto",""),f=j.useMemo(()=>HG(e),[e]),c=j.useMemo(()=>{let S=f;if(i){const b=i.toLowerCase();S=S.filter(O=>(O.description||"").toLowerCase().includes(b)||(O.refNo||"").toLowerCase().includes(b))}if(o){const[b,O]=o.split("-").map(Number),N=new Date(b,O-1,1);S=S.filter(w=>(w.valueDate||w.txnDate)>=N)}if(l){const[b,O]=l.split("-").map(Number),N=new Date(b,O,0,23,59,59,999);S=S.filter(w=>(w.valueDate||w.txnDate)<=N)}return[...S].sort((b,O)=>(b.valueDate||b.txnDate)-(O.valueDate||O.txnDate))},[f,i,o,l]),d=j.useMemo(()=>VG(c),[c]),{months:p,finalBalance:A}=j.useMemo(()=>KG(d,Number(n||0)),[d,n]),h=j.useMemo(()=>{const S=c.reduce((O,N)=>O+(N.credit||0),0),b=c.reduce((O,N)=>O+(N.debit||0),0);return{income:S,expense:b,net:S-b}},[c]);function P(S){var N;const b=(N=S.target.files)==null?void 0:N[0];if(!b)return;const O=new FileReader;O.onload=()=>t(String(O.result||"")),O.readAsText(b)}function y(){const S=["ValueDate","TxnDate","Description","RefNo","Debit","Credit"].join(","),b=c.map(O=>[O.valueDate?O.valueDate.toLocaleDateString("en-GB"):O.valueDateStr,O.txnDate?O.txnDate.toLocaleDateString("en-GB"):O.txnDateStr,'"'+(O.description||"").replaceAll('"','""')+'"','"'+(O.refNo||"")+'"',O.debit||0,O.credit||0].join(","));gm(`statement_export_${Date.now()}.csv`,[S,...b].join(`
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function vI(e,t){if(e){if(typeof e=="string")return Bp(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(n==="Object"&&e.constructor&&(n=e.constructor.name),n==="Map"||n==="Set")return Array.from(e);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return Bp(e,t)}}function SG(e){if(typeof Symbol<"u"&&e[Symbol.iterator]!=null||e["@@iterator"]!=null)return Array.from(e)}function EG(e){if(Array.isArray(e))return Bp(e)}function Bp(e,t){(t==null||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function dm(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),n.push.apply(n,r)}return n}function L(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?dm(Object(n),!0).forEach(function(r){J(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):dm(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function J(e,t,n){return t=yI(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function yI(e){var t=OG(e,"string");return Sa(t)=="symbol"?t:t+""}function OG(e,t){if(Sa(e)!="object"||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(Sa(r)!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}var bG={xAxis:["bottom","top"],yAxis:["left","right"]},NG={width:"100%",height:"100%"},mI={x:0,y:0};function Tu(e){return e}var xG=function(t,n){return n==="horizontal"?t.x:n==="vertical"?t.y:n==="centric"?t.angle:t.radius},MG=function(t,n,r,i){var a=n.find(function(f){return f&&f.index===r});if(a){if(t==="horizontal")return{x:a.coordinate,y:i.y};if(t==="vertical")return{x:i.x,y:a.coordinate};if(t==="centric"){var o=a.coordinate,u=i.radius;return L(L(L({},i),me(i.cx,i.cy,u,o)),{},{angle:o,radius:u})}var l=a.coordinate,s=i.angle;return L(L(L({},i),me(i.cx,i.cy,l,s)),{},{angle:s,radius:l})}return mI},vc=function(t,n){var r=n.graphicalItems,i=n.dataStartIndex,a=n.dataEndIndex,o=(r??[]).reduce(function(u,l){var s=l.props.data;return s&&s.length?[].concat(Ea(u),Ea(s)):u},[]);return o.length>0?o:t&&t.length&&H(i)&&H(a)?t.slice(i,a+1):[]};function gI(e){return e==="number"?[0,"auto"]:void 0}var Yp=function(t,n,r,i){var a=t.graphicalItems,o=t.tooltipAxis,u=vc(n,t);return r<0||!a||!a.length||r>=u.length?null:a.reduce(function(l,s){var f,c=(f=s.props.data)!==null&&f!==void 0?f:n;c&&t.dataStartIndex+t.dataEndIndex!==0&&t.dataEndIndex-t.dataStartIndex>=r&&(c=c.slice(t.dataStartIndex,t.dataEndIndex+1));var d;if(o.dataKey&&!o.allowDuplicatedCategory){var p=c===void 0?u:c;d=ol(p,o.dataKey,i)}else d=c&&c[r]||u[r];return d?[].concat(Ea(l),[iX(s,d)]):l},[])},pm=function(t,n,r,i){var a=i||{x:t.chartX,y:t.chartY},o=xG(a,r),u=t.orderedTooltipTicks,l=t.tooltipAxis,s=t.tooltipTicks,f=ok(o,u,s,l);if(f>=0&&s){var c=s[f]&&s[f].value,d=Yp(t,n,f,c),p=MG(r,u,f,a);return{activeTooltipIndex:f,activeLabel:c,activePayload:d,activeCoordinate:p}}return null},wG=function(t,n){var r=n.axes,i=n.graphicalItems,a=n.axisType,o=n.axisIdKey,u=n.stackGroups,l=n.dataStartIndex,s=n.dataEndIndex,f=t.layout,c=t.children,d=t.stackOffset,p=qT(f,a);return r.reduce(function(A,h){var P,y=h.type.defaultProps!==void 0?L(L({},h.type.defaultProps),h.props):h.props,v=y.type,m=y.dataKey,X=y.allowDataOverflow,g=y.allowDuplicatedCategory,T=y.scale,I=y.ticks,R=y.includeHidden,S=y[o];if(A[S])return A;var b=vc(t.data,{graphicalItems:i.filter(function(U){var G,ie=o in U.props?U.props[o]:(G=U.type.defaultProps)===null||G===void 0?void 0:G[o];return ie===S}),dataStartIndex:l,dataEndIndex:s}),O=b.length,N,w,C;aG(y.domain,X,v)&&(N=tp(y.domain,null,X),p&&(v==="number"||T!=="auto")&&(C=So(b,m,"category")));var D=gI(v);if(!N||N.length===0){var $,F=($=y.domain)!==null&&$!==void 0?$:D;if(m){if(N=So(b,m,v),v==="category"&&p){var M=qO(N);g&&M?(w=N,N=Zl(0,O)):g||(N=Ov(F,N,h).reduce(function(U,G){return U.indexOf(G)>=0?U:[].concat(Ea(U),[G])},[]))}else if(v==="category")g?N=N.filter(function(U){return U!==""&&!Q(U)}):N=Ov(F,N,h).reduce(function(U,G){return U.indexOf(G)>=0||G===""||Q(G)?U:[].concat(Ea(U),[G])},[]);else if(v==="number"){var _=fk(b,i.filter(function(U){var G,ie,Ie=o in U.props?U.props[o]:(G=U.type.defaultProps)===null||G===void 0?void 0:G[o],we="hide"in U.props?U.props.hide:(ie=U.type.defaultProps)===null||ie===void 0?void 0:ie.hide;return Ie===S&&(R||!we)}),m,a,f);_&&(N=_)}p&&(v==="number"||T!=="auto")&&(C=So(b,m,"category"))}else p?N=Zl(0,O):u&&u[S]&&u[S].hasStack&&v==="number"?N=d==="expand"?[0,1]:rX(u[S].stackGroups,l,s):N=JT(b,i.filter(function(U){var G=o in U.props?U.props[o]:U.type.defaultProps[o],ie="hide"in U.props?U.props.hide:U.type.defaultProps.hide;return G===S&&(R||!ie)}),v,f,!0);if(v==="number")N=Fp(c,N,S,a,I),F&&(N=tp(F,N,X));else if(v==="category"&&F){var B=F,V=N.every(function(U){return B.indexOf(U)>=0});V&&(N=B)}}return L(L({},A),{},J({},S,L(L({},y),{},{axisType:a,domain:N,categoricalDomain:C,duplicateDomain:w,originalDomain:(P=y.domain)!==null&&P!==void 0?P:D,isCategorical:p,layout:f})))},{})},LG=function(t,n){var r=n.graphicalItems,i=n.Axis,a=n.axisType,o=n.axisIdKey,u=n.stackGroups,l=n.dataStartIndex,s=n.dataEndIndex,f=t.layout,c=t.children,d=vc(t.data,{graphicalItems:r,dataStartIndex:l,dataEndIndex:s}),p=d.length,A=qT(f,a),h=-1;return r.reduce(function(P,y){var v=y.type.defaultProps!==void 0?L(L({},y.type.defaultProps),y.props):y.props,m=v[o],X=gI("number");if(!P[m]){h++;var g;return A?g=Zl(0,p):u&&u[m]&&u[m].hasStack?(g=rX(u[m].stackGroups,l,s),g=Fp(c,g,m,a)):(g=tp(X,JT(d,r.filter(function(T){var I,R,S=o in T.props?T.props[o]:(I=T.type.defaultProps)===null||I===void 0?void 0:I[o],b="hide"in T.props?T.props.hide:(R=T.type.defaultProps)===null||R===void 0?void 0:R.hide;return S===m&&!b}),"number",f),i.defaultProps.allowDataOverflow),g=Fp(c,g,m,a)),L(L({},P),{},J({},m,L(L({axisType:a},i.defaultProps),{},{hide:!0,orientation:Mt(bG,"".concat(a,".").concat(h%2),null),domain:g,originalDomain:X,isCategorical:A,layout:f})))}return P},{})},DG=function(t,n){var r=n.axisType,i=r===void 0?"xAxis":r,a=n.AxisComp,o=n.graphicalItems,u=n.stackGroups,l=n.dataStartIndex,s=n.dataEndIndex,f=t.children,c="".concat(i,"Id"),d=wt(f,a),p={};return d&&d.length?p=wG(t,{axes:d,graphicalItems:o,axisType:i,axisIdKey:c,stackGroups:u,dataStartIndex:l,dataEndIndex:s}):o&&o.length&&(p=LG(t,{Axis:a,graphicalItems:o,axisType:i,axisIdKey:c,stackGroups:u,dataStartIndex:l,dataEndIndex:s})),p},_G=function(t){var n=or(t),r=_n(n,!1,!0);return{tooltipTicks:r,orderedTooltipTicks:o2(r,function(i){return i.coordinate}),tooltipAxis:n,tooltipAxisBandSize:Dl(n,r)}},hm=function(t){var n=t.children,r=t.defaultShowTooltip,i=Et(n,ha),a=0,o=0;return t.data&&t.data.length!==0&&(o=t.data.length-1),i&&i.props&&(i.props.startIndex>=0&&(a=i.props.startIndex),i.props.endIndex>=0&&(o=i.props.endIndex)),{chartX:0,chartY:0,dataStartIndex:a,dataEndIndex:o,activeTooltipIndex:-1,isTooltipActive:!!r}},CG=function(t){return!t||!t.length?!1:t.some(function(n){var r=$n(n&&n.type);return r&&r.indexOf("Bar")>=0})},Am=function(t){return t==="horizontal"?{numericAxisName:"yAxis",cateAxisName:"xAxis"}:t==="vertical"?{numericAxisName:"xAxis",cateAxisName:"yAxis"}:t==="centric"?{numericAxisName:"radiusAxis",cateAxisName:"angleAxis"}:{numericAxisName:"angleAxis",cateAxisName:"radiusAxis"}},$G=function(t,n){var r=t.props,i=t.graphicalItems,a=t.xAxisMap,o=a===void 0?{}:a,u=t.yAxisMap,l=u===void 0?{}:u,s=r.width,f=r.height,c=r.children,d=r.margin||{},p=Et(c,ha),A=Et(c,jn),h=Object.keys(l).reduce(function(g,T){var I=l[T],R=I.orientation;return!I.mirror&&!I.hide?L(L({},g),{},J({},R,g[R]+I.width)):g},{left:d.left||0,right:d.right||0}),P=Object.keys(o).reduce(function(g,T){var I=o[T],R=I.orientation;return!I.mirror&&!I.hide?L(L({},g),{},J({},R,Mt(g,"".concat(R))+I.height)):g},{top:d.top||0,bottom:d.bottom||0}),y=L(L({},P),h),v=y.bottom;p&&(y.bottom+=p.props.height||ha.defaultProps.height),A&&n&&(y=sk(y,i,r,n));var m=s-y.left-y.right,X=f-y.top-y.bottom;return L(L({brushBottom:v},y),{},{width:Math.max(m,0),height:Math.max(X,0)})},jG=function(t,n){if(n==="xAxis")return t[n].width;if(n==="yAxis")return t[n].height},U2=function(t){var n=t.chartName,r=t.GraphicalChild,i=t.defaultTooltipEventType,a=i===void 0?"axis":i,o=t.validateTooltipEventTypes,u=o===void 0?["axis"]:o,l=t.axisComponents,s=t.legendContent,f=t.formatAxisMap,c=t.defaultProps,d=function(y,v){var m=v.graphicalItems,X=v.stackGroups,g=v.offset,T=v.updateId,I=v.dataStartIndex,R=v.dataEndIndex,S=y.barSize,b=y.layout,O=y.barGap,N=y.barCategoryGap,w=y.maxBarSize,C=Am(b),D=C.numericAxisName,$=C.cateAxisName,F=CG(m),M=[];return m.forEach(function(_,B){var V=vc(y.data,{graphicalItems:[_],dataStartIndex:I,dataEndIndex:R}),U=_.type.defaultProps!==void 0?L(L({},_.type.defaultProps),_.props):_.props,G=U.dataKey,ie=U.maxBarSize,Ie=U["".concat(D,"Id")],we=U["".concat($,"Id")],Ct={},ht=l.reduce(function(Nr,xr){var yc=v["".concat(xr.axisType,"Map")],H2=U["".concat(xr.axisType,"Id")];yc&&yc[H2]||xr.axisType==="zAxis"||oi(!1);var V2=yc[H2];return L(L({},Nr),{},J(J({},xr.axisType,V2),"".concat(xr.axisType,"Ticks"),_n(V2)))},Ct),K=ht[$],ee=ht["".concat($,"Ticks")],ne=X&&X[Ie]&&X[Ie].hasStack&&Pk(_,X[Ie].stackGroups),k=$n(_.type).indexOf("Bar")>=0,Ne=Dl(K,ee),ae=[],$e=F&&uk({barSize:S,stackGroups:X,totalSize:jG(ht,$)});if(k){var je,At,Qn=Q(ie)?w:ie,Ai=(je=(At=Dl(K,ee,!0))!==null&&At!==void 0?At:Qn)!==null&&je!==void 0?je:0;ae=lk({barGap:O,barCategoryGap:N,bandSize:Ai!==Ne?Ai:Ne,sizeList:$e[we],maxBarSize:Qn}),Ai!==Ne&&(ae=ae.map(function(Nr){return L(L({},Nr),{},{position:L(L({},Nr.position),{},{offset:Nr.position.offset-Ai/2})})}))}var U0=_&&_.type&&_.type.getComposedData;U0&&M.push({props:L(L({},U0(L(L({},ht),{},{displayedData:V,props:y,dataKey:G,item:_,bandSize:Ne,barPosition:ae,offset:g,stackedData:ne,layout:b,dataStartIndex:I,dataEndIndex:R}))),{},J(J(J({key:_.key||"item-".concat(B)},D,ht[D]),$,ht[$]),"animationId",T)),childIndex:fb(_,y.children),item:_})}),M},p=function(y,v){var m=y.props,X=y.dataStartIndex,g=y.dataEndIndex,T=y.updateId;if(!vh({props:m}))return null;var I=m.children,R=m.layout,S=m.stackOffset,b=m.data,O=m.reverseStackOrder,N=Am(R),w=N.numericAxisName,C=N.cateAxisName,D=wt(I,r),$=mk(b,D,"".concat(w,"Id"),"".concat(C,"Id"),S,O),F=l.reduce(function(U,G){var ie="".concat(G.axisType,"Map");return L(L({},U),{},J({},ie,DG(m,L(L({},G),{},{graphicalItems:D,stackGroups:G.axisType===w&&$,dataStartIndex:X,dataEndIndex:g}))))},{}),M=$G(L(L({},F),{},{props:m,graphicalItems:D}),v==null?void 0:v.legendBBox);Object.keys(F).forEach(function(U){F[U]=f(m,F[U],M,U.replace("Map",""),n)});var _=F["".concat(C,"Map")],B=_G(_),V=d(m,L(L({},F),{},{dataStartIndex:X,dataEndIndex:g,updateId:T,graphicalItems:D,stackGroups:$,offset:M}));return L(L({formattedGraphicalItems:V,graphicalItems:D,offset:M,stackGroups:$},B),F)},A=function(P){function y(v){var m,X,g;return mG(this,y),g=PG(this,y,[v]),J(g,"eventEmitterSymbol",Symbol("rechartsEventEmitter")),J(g,"accessibilityManager",new iG),J(g,"handleLegendBBoxUpdate",function(T){if(T){var I=g.state,R=I.dataStartIndex,S=I.dataEndIndex,b=I.updateId;g.setState(L({legendBBox:T},p({props:g.props,dataStartIndex:R,dataEndIndex:S,updateId:b},L(L({},g.state),{},{legendBBox:T}))))}}),J(g,"handleReceiveSyncEvent",function(T,I,R){if(g.props.syncId===T){if(R===g.eventEmitterSymbol&&typeof g.props.syncMethod!="function")return;g.applySyncEvent(I)}}),J(g,"handleBrushChange",function(T){var I=T.startIndex,R=T.endIndex;if(I!==g.state.dataStartIndex||R!==g.state.dataEndIndex){var S=g.state.updateId;g.setState(function(){return L({dataStartIndex:I,dataEndIndex:R},p({props:g.props,dataStartIndex:I,dataEndIndex:R,updateId:S},g.state))}),g.triggerSyncEvent({dataStartIndex:I,dataEndIndex:R})}}),J(g,"handleMouseEnter",function(T){var I=g.getMouseInfo(T);if(I){var R=L(L({},I),{},{isTooltipActive:!0});g.setState(R),g.triggerSyncEvent(R);var S=g.props.onMouseEnter;q(S)&&S(R,T)}}),J(g,"triggeredAfterMouseMove",function(T){var I=g.getMouseInfo(T),R=I?L(L({},I),{},{isTooltipActive:!0}):{isTooltipActive:!1};g.setState(R),g.triggerSyncEvent(R);var S=g.props.onMouseMove;q(S)&&S(R,T)}),J(g,"handleItemMouseEnter",function(T){g.setState(function(){return{isTooltipActive:!0,activeItem:T,activePayload:T.tooltipPayload,activeCoordinate:T.tooltipPosition||{x:T.cx,y:T.cy}}})}),J(g,"handleItemMouseLeave",function(){g.setState(function(){return{isTooltipActive:!1}})}),J(g,"handleMouseMove",function(T){T.persist(),g.throttleTriggeredAfterMouseMove(T)}),J(g,"handleMouseLeave",function(T){g.throttleTriggeredAfterMouseMove.cancel();var I={isTooltipActive:!1};g.setState(I),g.triggerSyncEvent(I);var R=g.props.onMouseLeave;q(R)&&R(I,T)}),J(g,"handleOuterEvent",function(T){var I=cb(T),R=Mt(g.props,"".concat(I));if(I&&q(R)){var S,b;/.*touch.*/i.test(I)?b=g.getMouseInfo(T.changedTouches[0]):b=g.getMouseInfo(T),R((S=b)!==null&&S!==void 0?S:{},T)}}),J(g,"handleClick",function(T){var I=g.getMouseInfo(T);if(I){var R=L(L({},I),{},{isTooltipActive:!0});g.setState(R),g.triggerSyncEvent(R);var S=g.props.onClick;q(S)&&S(R,T)}}),J(g,"handleMouseDown",function(T){var I=g.props.onMouseDown;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"handleMouseUp",function(T){var I=g.props.onMouseUp;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"handleTouchMove",function(T){T.changedTouches!=null&&T.changedTouches.length>0&&g.throttleTriggeredAfterMouseMove(T.changedTouches[0])}),J(g,"handleTouchStart",function(T){T.changedTouches!=null&&T.changedTouches.length>0&&g.handleMouseDown(T.changedTouches[0])}),J(g,"handleTouchEnd",function(T){T.changedTouches!=null&&T.changedTouches.length>0&&g.handleMouseUp(T.changedTouches[0])}),J(g,"handleDoubleClick",function(T){var I=g.props.onDoubleClick;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"handleContextMenu",function(T){var I=g.props.onContextMenu;if(q(I)){var R=g.getMouseInfo(T);I(R,T)}}),J(g,"triggerSyncEvent",function(T){g.props.syncId!==void 0&&mf.emit(gf,g.props.syncId,T,g.eventEmitterSymbol)}),J(g,"applySyncEvent",function(T){var I=g.props,R=I.layout,S=I.syncMethod,b=g.state.updateId,O=T.dataStartIndex,N=T.dataEndIndex;if(T.dataStartIndex!==void 0||T.dataEndIndex!==void 0)g.setState(L({dataStartIndex:O,dataEndIndex:N},p({props:g.props,dataStartIndex:O,dataEndIndex:N,updateId:b},g.state)));else if(T.activeTooltipIndex!==void 0){var w=T.chartX,C=T.chartY,D=T.activeTooltipIndex,$=g.state,F=$.offset,M=$.tooltipTicks;if(!F)return;if(typeof S=="function")D=S(M,T);else if(S==="value"){D=-1;for(var _=0;_<M.length;_++)if(M[_].value===T.activeLabel){D=_;break}}var B=L(L({},F),{},{x:F.left,y:F.top}),V=Math.min(w,B.x+B.width),U=Math.min(C,B.y+B.height),G=M[D]&&M[D].value,ie=Yp(g.state,g.props.data,D),Ie=M[D]?{x:R==="horizontal"?M[D].coordinate:V,y:R==="horizontal"?U:M[D].coordinate}:mI;g.setState(L(L({},T),{},{activeLabel:G,activeCoordinate:Ie,activePayload:ie,activeTooltipIndex:D}))}else g.setState(T)}),J(g,"renderCursor",function(T){var I,R=g.state,S=R.isTooltipActive,b=R.activeCoordinate,O=R.activePayload,N=R.offset,w=R.activeTooltipIndex,C=R.tooltipAxisBandSize,D=g.getTooltipEventType(),$=(I=T.props.active)!==null&&I!==void 0?I:S,F=g.props.layout,M=T.key||"_recharts-cursor";return E.createElement(fG,{key:M,activeCoordinate:b,activePayload:O,activeTooltipIndex:w,chartName:n,element:T,isActive:$,layout:F,offset:N,tooltipAxisBandSize:C,tooltipEventType:D})}),J(g,"renderPolarAxis",function(T,I,R){var S=Mt(T,"type.axisType"),b=Mt(g.state,"".concat(S,"Map")),O=T.type.defaultProps,N=O!==void 0?L(L({},O),T.props):T.props,w=b&&b[N["".concat(S,"Id")]];return j.cloneElement(T,L(L({},w),{},{className:te(S,w.className),key:T.key||"".concat(I,"-").concat(R),ticks:_n(w,!0)}))}),J(g,"renderPolarGrid",function(T){var I=T.props,R=I.radialLines,S=I.polarAngles,b=I.polarRadius,O=g.state,N=O.radiusAxisMap,w=O.angleAxisMap,C=or(N),D=or(w),$=D.cx,F=D.cy,M=D.innerRadius,_=D.outerRadius;return j.cloneElement(T,{polarAngles:Array.isArray(S)?S:_n(D,!0).map(function(B){return B.coordinate}),polarRadius:Array.isArray(b)?b:_n(C,!0).map(function(B){return B.coordinate}),cx:$,cy:F,innerRadius:M,outerRadius:_,key:T.key||"polar-grid",radialLines:R})}),J(g,"renderLegend",function(){var T=g.state.formattedGraphicalItems,I=g.props,R=I.children,S=I.width,b=I.height,O=g.props.margin||{},N=S-(O.left||0)-(O.right||0),w=GT({children:R,formattedGraphicalItems:T,legendWidth:N,legendContent:s});if(!w)return null;var C=w.item,D=cm(w,dG);return j.cloneElement(C,L(L({},D),{},{chartWidth:S,chartHeight:b,margin:O,onBBoxUpdate:g.handleLegendBBoxUpdate}))}),J(g,"renderTooltip",function(){var T,I=g.props,R=I.children,S=I.accessibilityLayer,b=Et(R,kt);if(!b)return null;var O=g.state,N=O.isTooltipActive,w=O.activeCoordinate,C=O.activePayload,D=O.activeLabel,$=O.offset,F=(T=b.props.active)!==null&&T!==void 0?T:N;return j.cloneElement(b,{viewBox:L(L({},$),{},{x:$.left,y:$.top}),active:F,label:D,payload:F?C:[],coordinate:w,accessibilityLayer:S})}),J(g,"renderBrush",function(T){var I=g.props,R=I.margin,S=I.data,b=g.state,O=b.offset,N=b.dataStartIndex,w=b.dataEndIndex,C=b.updateId;return j.cloneElement(T,{key:T.key||"_recharts-brush",onChange:vu(g.handleBrushChange,T.props.onChange),data:S,x:H(T.props.x)?T.props.x:O.left,y:H(T.props.y)?T.props.y:O.top+O.height+O.brushBottom-(R.bottom||0),width:H(T.props.width)?T.props.width:O.width,startIndex:N,endIndex:w,updateId:"brush-".concat(C)})}),J(g,"renderReferenceElement",function(T,I,R){if(!T)return null;var S=g,b=S.clipPathId,O=g.state,N=O.xAxisMap,w=O.yAxisMap,C=O.offset,D=T.type.defaultProps||{},$=T.props,F=$.xAxisId,M=F===void 0?D.xAxisId:F,_=$.yAxisId,B=_===void 0?D.yAxisId:_;return j.cloneElement(T,{key:T.key||"".concat(I,"-").concat(R),xAxis:N[M],yAxis:w[B],viewBox:{x:C.left,y:C.top,width:C.width,height:C.height},clipPathId:b})}),J(g,"renderActivePoints",function(T){var I=T.item,R=T.activePoint,S=T.basePoint,b=T.childIndex,O=T.isRange,N=[],w=I.props.key,C=I.item.type.defaultProps!==void 0?L(L({},I.item.type.defaultProps),I.item.props):I.item.props,D=C.activeDot,$=C.dataKey,F=L(L({index:b,dataKey:$,cx:R.x,cy:R.y,r:4,fill:w2(I.item),strokeWidth:2,stroke:"#fff",payload:R.payload,value:R.value},W(D,!1)),ul(D));return N.push(y.renderActiveDot(D,F,"".concat(w,"-activePoint-").concat(b))),S?N.push(y.renderActiveDot(D,L(L({},F),{},{cx:S.x,cy:S.y}),"".concat(w,"-basePoint-").concat(b))):O&&N.push(null),N}),J(g,"renderGraphicChild",function(T,I,R){var S=g.filterFormatItem(T,I,R);if(!S)return null;var b=g.getTooltipEventType(),O=g.state,N=O.isTooltipActive,w=O.tooltipAxis,C=O.activeTooltipIndex,D=O.activeLabel,$=g.props.children,F=Et($,kt),M=S.props,_=M.points,B=M.isRange,V=M.baseLine,U=S.item.type.defaultProps!==void 0?L(L({},S.item.type.defaultProps),S.item.props):S.item.props,G=U.activeDot,ie=U.hide,Ie=U.activeBar,we=U.activeShape,Ct=!!(!ie&&N&&F&&(G||Ie||we)),ht={};b!=="axis"&&F&&F.props.trigger==="click"?ht={onClick:vu(g.handleItemMouseEnter,T.props.onClick)}:b!=="axis"&&(ht={onMouseLeave:vu(g.handleItemMouseLeave,T.props.onMouseLeave),onMouseEnter:vu(g.handleItemMouseEnter,T.props.onMouseEnter)});var K=j.cloneElement(T,L(L({},S.props),ht));function ee(xr){return typeof w.dataKey=="function"?w.dataKey(xr.payload):null}if(Ct)if(C>=0){var ne,k;if(w.dataKey&&!w.allowDuplicatedCategory){var Ne=typeof w.dataKey=="function"?ee:"payload.".concat(w.dataKey.toString());ne=ol(_,Ne,D),k=B&&V&&ol(V,Ne,D)}else ne=_==null?void 0:_[C],k=B&&V&&V[C];if(we||Ie){var ae=T.props.activeIndex!==void 0?T.props.activeIndex:C;return[j.cloneElement(T,L(L(L({},S.props),ht),{},{activeIndex:ae})),null,null]}if(!Q(ne))return[K].concat(Ea(g.renderActivePoints({item:S,activePoint:ne,basePoint:k,childIndex:C,isRange:B})))}else{var $e,je=($e=g.getItemByXY(g.state.activeCoordinate))!==null&&$e!==void 0?$e:{graphicalItem:K},At=je.graphicalItem,Qn=At.item,Ai=Qn===void 0?T:Qn,U0=At.childIndex,Nr=L(L(L({},S.props),ht),{},{activeIndex:U0});return[j.cloneElement(Ai,Nr),null,null]}return B?[K,null,null]:[K,null]}),J(g,"renderCustomized",function(T,I,R){return j.cloneElement(T,L(L({key:"recharts-customized-".concat(R)},g.props),g.state))}),J(g,"renderMap",{CartesianGrid:{handler:Tu,once:!0},ReferenceArea:{handler:g.renderReferenceElement},ReferenceLine:{handler:Tu},ReferenceDot:{handler:g.renderReferenceElement},XAxis:{handler:Tu},YAxis:{handler:Tu},Brush:{handler:g.renderBrush,once:!0},Bar:{handler:g.renderGraphicChild},Line:{handler:g.renderGraphicChild},Area:{handler:g.renderGraphicChild},Radar:{handler:g.renderGraphicChild},RadialBar:{handler:g.renderGraphicChild},Scatter:{handler:g.renderGraphicChild},Pie:{handler:g.renderGraphicChild},Funnel:{handler:g.renderGraphicChild},Tooltip:{handler:g.renderCursor,once:!0},PolarGrid:{handler:g.renderPolarGrid,once:!0},PolarAngleAxis:{handler:g.renderPolarAxis},PolarRadiusAxis:{handler:g.renderPolarAxis},Customized:{handler:g.renderCustomized}}),g.clipPathId="".concat((m=v.id)!==null&&m!==void 0?m:_a("recharts"),"-clip"),g.throttleTriggeredAfterMouseMove=z3(g.triggeredAfterMouseMove,(X=v.throttleDelay)!==null&&X!==void 0?X:1e3/60),g.state={},g}return IG(y,P),gG(y,[{key:"componentDidMount",value:function(){var m,X;this.addListener(),this.accessibilityManager.setDetails({container:this.container,offset:{left:(m=this.props.margin.left)!==null&&m!==void 0?m:0,top:(X=this.props.margin.top)!==null&&X!==void 0?X:0},coordinateList:this.state.tooltipTicks,mouseHandlerCallback:this.triggeredAfterMouseMove,layout:this.props.layout}),this.displayDefaultTooltip()}},{key:"displayDefaultTooltip",value:function(){var m=this.props,X=m.children,g=m.data,T=m.height,I=m.layout,R=Et(X,kt);if(R){var S=R.props.defaultIndex;if(!(typeof S!="number"||S<0||S>this.state.tooltipTicks.length-1)){var b=this.state.tooltipTicks[S]&&this.state.tooltipTicks[S].value,O=Yp(this.state,g,S,b),N=this.state.tooltipTicks[S].coordinate,w=(this.state.offset.top+T)/2,C=I==="horizontal",D=C?{x:N,y:w}:{y:N,x:w},$=this.state.formattedGraphicalItems.find(function(M){var _=M.item;return _.type.name==="Scatter"});$&&(D=L(L({},D),$.props.points[S].tooltipPosition),O=$.props.points[S].tooltipPayload);var F={activeTooltipIndex:S,isTooltipActive:!0,activeLabel:b,activePayload:O,activeCoordinate:D};this.setState(F),this.renderCursor(R),this.accessibilityManager.setIndex(S)}}}},{key:"getSnapshotBeforeUpdate",value:function(m,X){if(!this.props.accessibilityLayer)return null;if(this.state.tooltipTicks!==X.tooltipTicks&&this.accessibilityManager.setDetails({coordinateList:this.state.tooltipTicks}),this.props.layout!==m.layout&&this.accessibilityManager.setDetails({layout:this.props.layout}),this.props.margin!==m.margin){var g,T;this.accessibilityManager.setDetails({offset:{left:(g=this.props.margin.left)!==null&&g!==void 0?g:0,top:(T=this.props.margin.top)!==null&&T!==void 0?T:0}})}return null}},{key:"componentDidUpdate",value:function(m){vd([Et(m.children,kt)],[Et(this.props.children,kt)])||this.displayDefaultTooltip()}},{key:"componentWillUnmount",value:function(){this.removeListener(),this.throttleTriggeredAfterMouseMove.cancel()}},{key:"getTooltipEventType",value:function(){var m=Et(this.props.children,kt);if(m&&typeof m.props.shared=="boolean"){var X=m.props.shared?"axis":"item";return u.indexOf(X)>=0?X:a}return a}},{key:"getMouseInfo",value:function(m){if(!this.container)return null;var X=this.container,g=X.getBoundingClientRect(),T=D_(g),I={chartX:Math.round(m.pageX-T.left),chartY:Math.round(m.pageY-T.top)},R=g.width/X.offsetWidth||1,S=this.inRange(I.chartX,I.chartY,R);if(!S)return null;var b=this.state,O=b.xAxisMap,N=b.yAxisMap,w=this.getTooltipEventType(),C=pm(this.state,this.props.data,this.props.layout,S);if(w!=="axis"&&O&&N){var D=or(O).scale,$=or(N).scale,F=D&&D.invert?D.invert(I.chartX):null,M=$&&$.invert?$.invert(I.chartY):null;return L(L({},I),{},{xValue:F,yValue:M},C)}return C?L(L({},I),C):null}},{key:"inRange",value:function(m,X){var g=arguments.length>2&&arguments[2]!==void 0?arguments[2]:1,T=this.props.layout,I=m/g,R=X/g;if(T==="horizontal"||T==="vertical"){var S=this.state.offset,b=I>=S.left&&I<=S.left+S.width&&R>=S.top&&R<=S.top+S.height;return b?{x:I,y:R}:null}var O=this.state,N=O.angleAxisMap,w=O.radiusAxisMap;if(N&&w){var C=or(N);return xv({x:I,y:R},C)}return null}},{key:"parseEventsOfWrapper",value:function(){var m=this.props.children,X=this.getTooltipEventType(),g=Et(m,kt),T={};g&&X==="axis"&&(g.props.trigger==="click"?T={onClick:this.handleClick}:T={onMouseEnter:this.handleMouseEnter,onDoubleClick:this.handleDoubleClick,onMouseMove:this.handleMouseMove,onMouseLeave:this.handleMouseLeave,onTouchMove:this.handleTouchMove,onTouchStart:this.handleTouchStart,onTouchEnd:this.handleTouchEnd,onContextMenu:this.handleContextMenu});var I=ul(this.props,this.handleOuterEvent);return L(L({},I),T)}},{key:"addListener",value:function(){mf.on(gf,this.handleReceiveSyncEvent)}},{key:"removeListener",value:function(){mf.removeListener(gf,this.handleReceiveSyncEvent)}},{key:"filterFormatItem",value:function(m,X,g){for(var T=this.state.formattedGraphicalItems,I=0,R=T.length;I<R;I++){var S=T[I];if(S.item===m||S.props.key===m.key||X===$n(S.item.type)&&g===S.childIndex)return S}return null}},{key:"renderClipPath",value:function(){var m=this.clipPathId,X=this.state.offset,g=X.left,T=X.top,I=X.height,R=X.width;return E.createElement("defs",null,E.createElement("clipPath",{id:m},E.createElement("rect",{x:g,y:T,height:I,width:R})))}},{key:"getXScales",value:function(){var m=this.state.xAxisMap;return m?Object.entries(m).reduce(function(X,g){var T=sm(g,2),I=T[0],R=T[1];return L(L({},X),{},J({},I,R.scale))},{}):null}},{key:"getYScales",value:function(){var m=this.state.yAxisMap;return m?Object.entries(m).reduce(function(X,g){var T=sm(g,2),I=T[0],R=T[1];return L(L({},X),{},J({},I,R.scale))},{}):null}},{key:"getXScaleByAxisId",value:function(m){var X;return(X=this.state.xAxisMap)===null||X===void 0||(X=X[m])===null||X===void 0?void 0:X.scale}},{key:"getYScaleByAxisId",value:function(m){var X;return(X=this.state.yAxisMap)===null||X===void 0||(X=X[m])===null||X===void 0?void 0:X.scale}},{key:"getItemByXY",value:function(m){var X=this.state,g=X.formattedGraphicalItems,T=X.activeItem;if(g&&g.length)for(var I=0,R=g.length;I<R;I++){var S=g[I],b=S.props,O=S.item,N=O.type.defaultProps!==void 0?L(L({},O.type.defaultProps),O.props):O.props,w=$n(O.type);if(w==="Bar"){var C=(b.data||[]).find(function(M){return AU(m,M)});if(C)return{graphicalItem:S,payload:C}}else if(w==="RadialBar"){var D=(b.data||[]).find(function(M){return xv(m,M)});if(D)return{graphicalItem:S,payload:D}}else if(sc(S,T)||cc(S,T)||T0(S,T)){var $=rV({graphicalItem:S,activeTooltipItem:T,itemData:N.data}),F=N.activeIndex===void 0?$:N.activeIndex;return{graphicalItem:L(L({},S),{},{childIndex:F}),payload:T0(S,T)?N.data[$]:S.props.data[$]}}}return null}},{key:"render",value:function(){var m=this;if(!vh(this))return null;var X=this.props,g=X.children,T=X.className,I=X.width,R=X.height,S=X.style,b=X.compact,O=X.title,N=X.desc,w=cm(X,pG),C=W(w,!1);if(b)return E.createElement(Fy,{state:this.state,width:this.props.width,height:this.props.height,clipPathId:this.clipPathId},E.createElement(md,$i({},C,{width:I,height:R,title:O,desc:N}),this.renderClipPath(),mh(g,this.renderMap)));if(this.props.accessibilityLayer){var D,$;C.tabIndex=(D=this.props.tabIndex)!==null&&D!==void 0?D:0,C.role=($=this.props.role)!==null&&$!==void 0?$:"application",C.onKeyDown=function(M){m.accessibilityManager.keyboardEvent(M)},C.onFocus=function(){m.accessibilityManager.focus()}}var F=this.parseEventsOfWrapper();return E.createElement(Fy,{state:this.state,width:this.props.width,height:this.props.height,clipPathId:this.clipPathId},E.createElement("div",$i({className:te("recharts-wrapper",T),style:L({position:"relative",cursor:"default",width:I,height:R},S)},F,{ref:function(_){m.container=_}}),E.createElement(md,$i({},C,{width:I,height:R,title:O,desc:N,style:NG}),this.renderClipPath(),mh(g,this.renderMap)),this.renderLegend(),this.renderTooltip()))}}])}(j.Component);J(A,"displayName",n),J(A,"defaultProps",L({layout:"horizontal",stackOffset:"none",barCategoryGap:"10%",barGap:4,margin:{top:5,right:5,bottom:5,left:5},reverseStackOrder:!1,syncMethod:"index"},c)),J(A,"getDerivedStateFromProps",function(P,y){var v=P.dataKey,m=P.data,X=P.children,g=P.width,T=P.height,I=P.layout,R=P.stackOffset,S=P.margin,b=y.dataStartIndex,O=y.dataEndIndex;if(y.updateId===void 0){var N=hm(P);return L(L(L({},N),{},{updateId:0},p(L(L({props:P},N),{},{updateId:0}),y)),{},{prevDataKey:v,prevData:m,prevWidth:g,prevHeight:T,prevLayout:I,prevStackOffset:R,prevMargin:S,prevChildren:X})}if(v!==y.prevDataKey||m!==y.prevData||g!==y.prevWidth||T!==y.prevHeight||I!==y.prevLayout||R!==y.prevStackOffset||!Hi(S,y.prevMargin)){var w=hm(P),C={chartX:y.chartX,chartY:y.chartY,isTooltipActive:y.isTooltipActive},D=L(L({},pm(y,m,I)),{},{updateId:y.updateId+1}),$=L(L(L({},w),C),D);return L(L(L({},$),p(L({props:P},$),y)),{},{prevDataKey:v,prevData:m,prevWidth:g,prevHeight:T,prevLayout:I,prevStackOffset:R,prevMargin:S,prevChildren:X})}if(!vd(X,y.prevChildren)){var F,M,_,B,V=Et(X,ha),U=V&&(F=(M=V.props)===null||M===void 0?void 0:M.startIndex)!==null&&F!==void 0?F:b,G=V&&(_=(B=V.props)===null||B===void 0?void 0:B.endIndex)!==null&&_!==void 0?_:O,ie=U!==b||G!==O,Ie=!Q(m),we=Ie&&!ie?y.updateId:y.updateId+1;return L(L({updateId:we},p(L(L({props:P},y),{},{updateId:we,dataStartIndex:U,dataEndIndex:G}),y)),{},{prevChildren:X,dataStartIndex:U,dataEndIndex:G})}return null}),J(A,"renderActiveDot",function(P,y,v){var m;return j.isValidElement(P)?m=j.cloneElement(P,y):q(P)?m=P(y):m=E.createElement(ic,y),E.createElement(ue,{className:"recharts-active-dot",key:v},m)});var h=j.forwardRef(function(y,v){return E.createElement(A,$i({},y,{ref:v}))});return h.displayName=A.displayName,h},FG=U2({chartName:"LineChart",GraphicalChild:Y0,axisComponents:[{axisType:"xAxis",AxisComp:Xa},{axisType:"yAxis",AxisComp:Ra}],formatAxisMap:jX}),kG=U2({chartName:"BarChart",GraphicalChild:Tr,defaultTooltipEventType:"axis",validateTooltipEventTypes:["axis","item"],axisComponents:[{axisType:"xAxis",AxisComp:Xa},{axisType:"yAxis",AxisComp:Ra}],formatAxisMap:jX}),BG=U2({chartName:"PieChart",GraphicalChild:qn,validateTooltipEventTypes:["item"],defaultTooltipEventType:"item",legendContent:"children",axisComponents:[{axisType:"angleAxis",AxisComp:lc},{axisType:"radiusAxis",AxisComp:oc}],formatAxisMap:xk,defaultProps:{layout:"centric",startAngle:0,endAngle:360,cx:"50%",cy:"50%",innerRadius:0,outerRadius:"80%"}});const vm=`08/01/25	311 DECEMBER 2024	0000500873882307	08/01/25		3700
+08/01/25	GORIGE MADHU MARAIAH-MADHUMARAIAH MAINTENANCE	0000412484281281	08/01/25		3700
+08/01/25	FAKIR MOHAN SAHOO-SAHOO	0000500827092677	08/01/25		3700
+08/01/25	SARASIJA GHOSH 512 DEC SARASIJA	0000500873868365	08/01/25		3700
+08/01/25	ESWARA VARA PRASAD N 605 DEC MAINTENANC	0000500820939472	08/01/25		3700
+09/01/25	NARAYANA  NIMMAGADDA FLAT G5 DEC MMC	0000500923573256	09/01/25		3700
+09/01/25	KRISHNACHAITANYA AMJ	0000537580256376	09/01/25		3700
+09/01/25	GAURAV LAKHERA DEC MAINTENANC	0000033740764681	09/01/25		3700
+09/01/25	THIRUMAZHISAI SANKAR FLAT 310 DEC M	0000195976588436	09/01/25		3700
+09/01/25	I  WILSON BAKYARAJ-WILSON.ERIC DEC 2024	0000500925413568	09/01/25		3700
+09/01/25	RANJAN KUMAR PATI-URS.RANJANPATI 606 RANJAN DE	0000500981081787	09/01/25		3700
+09/01/25	KISHORE KUMAR-KISHORE	0000500989463946	09/01/25		3700
+09/01/25	ASHISH KUMAR SINGH-ASHISH.LEO FROM PHONE	0000396546794409	09/01/25		3700
+09/01/25	UDITA  JOHRI DEC 2024 MAINT	0000576270598707	09/01/25		3700
+09/01/25	MOUTUSHI GHOSH DEYSA FLAT 610 MAINTENAN	0000500929978100	09/01/25		3700
+09/01/25	JERIN JOSE FROM PHONE	0000308706086505	09/01/25		3700
+09/01/25	CHANDRAKANT RENAKE FROM PHONE	0000610153825178	09/01/25		3700
+09/01/25	MALLU JAYA KISHORE R 211 MAINTENAN	0000589778686569	09/01/25		3700
+09/01/25	VISA GOLD-HIMANSHUPATHAK	0000537572839518	09/01/25		3700
+09/01/25	SANTOSH KUMAR NANDI-SANTOSHNANDI NANDI 205	0000500907422533	09/01/25		3700
+09/01/25	RESHMA R-RESHRA MAINTAINANCE D	0000537514653010	09/01/25		3700
+09/01/25	SOUMYA DHANAVANT HAJ FOR NOV AND DE	0000268729797884	09/01/25		7400
+09/01/25	PRASANNA KUMAR FROM PHONE	0000743231316265	09/01/25		3700
+10/01/25	SWAGAT SUKLA	0000501012392947	10/01/25		2000
+10/01/25	SWAGAT SUKLA	0000501012395018	10/01/25		1700
+10/01/25	ARITRA RANJAN DAS-ARITRA BY WHATSAPP	0000501025159975	10/01/25		3700
+10/01/25	ABHISHEK DEWANGAN	0000501026425421	10/01/25		3700
+10/01/25	RAVI  PRAJAPATI FROM PHONE	0000927783547643	10/01/25		3700
+10/01/25	SHANKAR RAI-SHANKARRAI FLAT 4	0000501037453546	10/01/25		3700
+10/01/25	SOURAV NANDI 403 DEC24 MAI	0000657431402127	10/01/25		3700
+10/01/25	HARI  OM FROM PHONE	0000644062602781	10/01/25		3700
+10/01/25	SAIKRISHNA VARMA KOT-KSKVARMA SAIKRISHNA VAR	0000501078415947	10/01/25		3700
+10/01/25	DUTTALA LAKSHMI NARA-REDDY.YGD 515 NARASIMHA	0000537651347412	10/01/25		3700
+10/01/25	SANTHANA BALAJEE FROM PHONE	0000208968453411	10/01/25		3700
+10/01/25	SHAKTI PRASAD MAHALI MAINTENANCE DE	0000668119108552	10/01/25		3700
+10/01/25	SUTARAM SURESH	0000543367082166	10/01/25		3700
+10/01/25	N SIVA PRASAD REDDY FROM PHONE	0000522453652622	10/01/25		3700
+10/01/25	VIJAY KUMAR PANDEY DECEMBER MAINT	0000497051764549	10/01/25		3700
+10/01/25	PRASANNA P SHANBHAG-PRASNU	0000501045939360	10/01/25		3700
+10/01/25	VAMSHI KRISHNA REDDY FROM PHONE	0000886680014917	10/01/25		3700
+10/01/25	KUNAL SINGH-KUNALSINGHBLR MAINTENANCE 61	0000501047754572	10/01/25		3700
+10/01/25	A UDAY KIRAN P FLAT  604 TRA	0000312465880535	10/01/25		3700
+10/01/25	S AJEETH-SRIAJEETH DEC MAINTENANC	0000501056250428	10/01/25		3700
+10/01/25	SUKESH BHARAMA PEDNE SUKESH DEC MON	0000643299567776	10/01/25		3700
+11/01/25	DASARI VIKRAM CHOWDA-DASARI	0000546323430115	11/01/25		2000
+11/01/25	PUTLURU MANOHAR REDD G6 DECEMBER MAINTE	0000501108656626	11/01/25		3700
+11/01/25	PATIL PURUSHOTHAM RE USING PAYTM U	0000501109986567	11/01/25		3700
+11/01/25	ALOK  MISHRA	0000501112080479	11/01/25		3700
+11/01/25	BAVIRISETTI VENKATA  DEC MAINTENANCE	0000243539677063	11/01/25		3700
+11/01/25	S K SHABEER BASHA FROM PHONE	0000248509153602	11/01/25		3700
+11/01/25	ANIL KUMAR DASARI FROM PHONE	0000680642518496	11/01/25		3700
+11/01/25	SONALI SURAJITA MOHANTY-NOD-RAJILESH CBR-UTIBN62025011157785696	UTIBN62025011157785696	11/01/25		3700
+11/01/25	SMITA BHEEMAPPA GANI CBR SARASTHIRA	0000442780635475	11/01/25		3700
+11/01/25	SREENATH  KADITHAMPA-SREEKOTAK 508	0000908716684113	11/01/25		3700
+12/01/25	KAPADAM SUDEER KUMAR FROM PHONE	0000334371113933	12/01/25		3700
+12/01/25	ROHIT KUMAR UPI	0000501218062178	12/01/25		3700
+12/01/25	RAGHURAMAN A UPI	0000501219523559	12/01/25		3700
+12/01/25	VENKATA MADHUSUDHAN  103 MAINTENANCE	0000501219698085	12/01/25		3700
+12/01/25	GAJENDRA KUMAR MANGA MEINTENAC	0000262661353882	12/01/25		3700
+12/01/25	ARTI SILORI-ARTISILORI	0000537881539030	12/01/25		3700
+12/01/25	YASODARAM TARIGONDA FROM PHONE	0000426876006771	12/01/25		3700
+12/01/25	MANOZ KUMAR MAMIDELA 613  MANOZ  D	0000738093471319	12/01/25		3700
+12/01/25	SANTOSH KUMAR BEHERA FROM PHONE	0000951592658909	12/01/25		2000
+12/01/25	SANTOSH KUMAR BEHERA FROM PHONE	0000728117907905	12/01/25		1700
+12/01/25	MURAMUTLA DANIEL FROM PHONE	0000351130532570	12/01/25		3700
+12/01/25	RAJILESH P-RAJILESHPANOLI DEC MAINTENANC	0000501262047754	12/01/25		3700
+12/01/25	RAJILESH P-RAJILESHPANOLI SAI	0000501262244692	12/01/25		3700
+12/01/25	BINEET KUMAR GUPTA-BINEET.GUPTA	0000501262571490	12/01/25		3700
+13/01/25	PUNEET SRIVASTAVA 314 MAINTENAN	0000501383352783	13/01/25		3700
+13/01/25	DASARI VIKRAM CHOWDA-DASARI	0000776457570135	13/01/25		1700
+13/01/25	UTKARSH GUPTA-UTKARSHGUPTA JAN 2025 MAINT	0000501329503794	13/01/25		3700
+13/01/25	RAMESH  THOLAM MAINTENAN	0000501307644424	13/01/25		3700
+14/01/25	AMAZON PAY YOU ARE PAYING FOR	0000501428172371	14/01/25	8016	
+14/01/25	AMAZON PAY YOU ARE PAYING FOR	0000501460171606	14/01/25	20386	
+14/01/25	AMAZON INDIA	0000501460171920	14/01/25		20386
+14/01/25	AMAZON PAY YOU ARE PAYING FOR	0000501403337572	14/01/25	20386	
+14/01/25	AMAZON PAY YOU ARE PAYING FOR	0000501485080184	14/01/25	12102	
+14/01/25	RAGIPINDI RAMAKRISHN-KRISHNASCCM NO 707	0000538048175319	14/01/25		3700
+14/01/25	AMAZON PAY-AMAZONPAYHFC@YAPL-YESB0APL501473841973-YOU ARE PAYING FOR	0000501473841973	14/01/25	19105	
+14/01/25	ZHDFJYC0AS556O/BILLDKBESCOM	0000250143740183	14/01/25	62395.54	
+15/01/25	SANDIP BINAY SARKAR NO 214 DEC MA	0000501505633651	15/01/25		3700
+15/01/25	SHYAM SUNDER PRASAD -SSPSINHA 703	0000501510709010	15/01/25		3700
+15/01/25	VINODA  L C-VINODGOWDA DEC	0000501583223076	15/01/25	9000	
+15/01/25	KRISHNA REDDY KEESAR DEC STP CBR	0000501584044655	15/01/25	32000	
+15/01/25	KALINGA KESHARI ROUT FLAT 713 FOR DEC M	0000501597027762	15/01/25		3700
+16/01/25	KALLUTLA VENKATA NAR-KVNR538.CSE	0000501604584748	16/01/25		3700
+16/01/25	N SIVA PRASAD REDDY FROM PHONE	0000906045145935	16/01/25		3700
+16/01/25	NISHANT MOHAN KHATAL-KHATALNISHANT FROM PHONE	0000754806067083	16/01/25		3700
+16/01/25	KRISHNADHAWAL ANIL M MAINTENAN	0000501685919823	16/01/25		3700
+17/01/25	GANAPATHI-PATHY DEC GARDEN MAI	0000501753120232	17/01/25	16000	
+17/01/25	GADE DEEPAK MURTY PAYMENT FROM PHONE	0000277461419154	17/01/25		3700
+18/01/25	SURESH T FROM PHONE	0000441968173531	18/01/25		3700
+18/01/25	RAJILESH P-RAJILESHPANOLI DEC MAIN	0000501882489615	18/01/25		3700
+19/01/25	ALBIN JOSE-WAIT4.ALBIN 305	0000501959885110	19/01/25		3700
+19/01/25	RAJESH DONEPUDI FROM PHONE	0000301409102852	19/01/25		3700
+19/01/25	SAIKRISHNA VARMA KOT-KSKVARMA ACCOUNT D	0000501974555946	19/01/25		15000
+19/01/25	CHERUKURI  VIGNESWAR-CHERUKURI BY WHATSAPP	0000501957378753	19/01/25		3700
+20/01/25	MAISKAR APPARAO CBR MAINTENANCE	0000619632365066	20/01/25		3700
+20/01/25	HIMANSU SEKHAR PANDA	0000502093977780	20/01/25		3700
+20/01/25	MR ANSUMAN DAS FROM PHONE	0000037908238479	20/01/25		3700
+20/01/25	KONA HARI MURALIDHAR MAINTENANCE	0000660452777156	20/01/25		3700
+20/01/25	IMPS-502012183406-DORAI RAJ-SBIN-XXXXXXX0215-FOR CBR CAPRICO DECEMBER PARTIAL	0000502012183406	20/01/25	50000	
+20/01/25	K A NASARATHULLAH NASARATH 204 DEC M	0000179585879767	20/01/25		3700
+21/01/25	SAIKRISHNA VARMA KOT-KSKVARMA	0000502190021387	21/01/25		3500
+21/01/25	NEFT DR-SBIN0004926-DORAI RAJ-NETBANK, MUM-HDFCN52025012115168456-CBR CAPRICO DEC	HDFCN52025012115168456	21/01/25	100000	
+21/01/25	BHAWNA SOOD-BHAWNA 413 MAINTENAN	0000502166136471	21/01/25		3700
+22/01/25	RAJILESH P PAYMENT FROM PHONE	0000454201566499	22/01/25		3700
+23/01/25	RAJILESH P PAYMENT FROM PHONE	0000515433340106	23/01/25		3700
+24/01/25	GUTTA VENU GOPAL FROM PHONE	0000866407917420	24/01/25		3700
+25/01/25	IMPS-502528169957-APIBANKING-RATN-XXXXXXXXXXXX0168-ACCOUNTVALIDATION	0000502528169957	25/01/25		1
+25/01/25	RAJILESH P-RAJILESHPANOLI	0000502535386375	25/01/25	1	
+25/01/25	KRISHNA REDDY KEESAR UPI	0000502535813822	25/01/25	4000	
+25/01/25	RAJILESH P-RAJILESHPANOLI	0000539118574845	25/01/25		1
+26/01/25	ANUBHAV SWAIN-ANUBHAV AND 715 2 MONT	0000502666016996	26/01/25		14800
+26/01/25	AKITHA  R	0000502689279882	26/01/25	3500	
+27/01/25	RAJILESH P-RAJILESHPANOLI	0000502709033674	27/01/25		50
+27/01/25	RAJILESH P-RAJILESHPANOLI	0000502709779945	27/01/25	50	
+27/01/25	INK MY WEB-BASISPAY	0000502725426330	27/01/25	500	
+27/01/25	RAJILESH P-RAJILESHPANOLI	0000502725692138	27/01/25	3500	
+28/01/25	RAJILESH P-RAJILESHPANOLI	0000502857118505	28/01/25		4000
+28/01/25	VEDAGIRI CHITTIBABU CBR MOTOR REPAIR	0000502857217535	28/01/25	20000	
+28/01/25	PRASANNA KUMAR FROM PHONE	0000648409182456	28/01/25		10000
+28/01/25	PAWAN ELECTRICAL AND-PAYTMQR2810050501011W4KXJ3X839Z@PAYTM-YESB0PTM502871924875-UPI	0000502871924875	28/01/25	550	
+28/01/25	RAJILESH P-RAJILESHPANOLI WORK	0000502897957469	28/01/25		55400
+28/01/25	NEFT DR-SBIN0004926-DORAI RAJ-NETBANK, MUM-HDFCN52025012826378344-CAPRICO DEC MAINTE	HDFCN52025012826378344	28/01/25	60029	
+28/01/25	RAJILESH P-RAJILESHPANOLI	0000502895561456	28/01/25	4286.3	
+30/01/25	OCTDEC24 INSTAALERTCHG 4 SMS 140125-MIR2502823655870	MIR2502823655870	30/01/25	0.94	
+30/01/25	.IMPS P2P 502012183406#20/01/2025 200125-MIR2503033567833	MIR2503033567833	30/01/25	5.9	
+31/01/25	VEDAGIRI CHITTIBABU CBR MOTOR REPAIR	0000503126332125	31/01/25	15000	
+31/01/25	BAVUSANI SAI SUMANTH-SUMANTHREDDY.SAI	0000539753192965	31/01/25		3700
+01/02/25	SNIGDHA  SWAIN FROM PHONE	0000141975567600	01/02/25		3700
+01/02/25	DUTTALA LAKSHMI NARA-REDDY.YGD	0000539874163609	01/02/25		4056
+01/02/25	KAPADAM SUDEER KUMAR-KAPADAM	0000891760260325	01/02/25		4056
+01/02/25	A UDAY KIRAN P FROM PHONE	0000463886861768	01/02/25		4056
+01/02/25	SANTHANA BALAJEE FROM PHONE	0000589120799156	01/02/25		4056
+01/02/25	MOUTUSHI GHOSH DEYSA 610 MAINTENANCE	0000539842764991	01/02/25		4056
+01/02/25	SWAGAT SUKLA	0000503220860109	01/02/25		4056
+01/02/25	SHISHU KRISHNA	0000503241319072	01/02/25		11456
+01/02/25	RAGHURAMAN A UPI	0000503283404390	01/02/25		4056
+01/02/25	GAJENDRA KUMAR MANGA MEINTENANCE 20	0000783574198206	01/02/25		4056
+01/02/25	VENKATA NARAYANA RED FROM PHONE	0000065083998952	01/02/25		4056
+01/02/25	S K SHABEER BASHA FROM PHONE	0000796536989041	01/02/25		4056
+01/02/25	THIRUMAZHISAI SANKAR FROM PHONE	0000235597498355	01/02/25		4056
+01/02/25	VISA GOLD-HIMANSHUPATHAK 501 JAN 2025	0000503267959796	01/02/25		4056
+01/02/25	VIKAS FROM PHONE	0000958460643838	01/02/25		4056
+01/02/25	ABHISHEK DEWANGAN	0000503292522521	01/02/25		4056
+01/02/25	RANJITH  VARIJAKSHAN-RANJU.RANJITH MAINTENANCE G	0000503242872749	01/02/25		4056
+01/02/25	VIJAY KUMAR PANDEY JAN MAINTENANC	0000294203069112	01/02/25		4056
+01/02/25	KRISHNACHAITANYA AMJ	0000503219884904	01/02/25		4056
+01/02/25	MADHU MARAIAH  GORIG MAINTENANCE	0000260517951491	01/02/25		4056
+02/02/25	BINEET KUMAR GUPTA-BINEET.GUPTA NO 409	0000503395665956	02/02/25		4056
+02/02/25	N SIVA PRASAD REDDY 608	0000119535054673	02/02/25		4056
+02/02/25	ASHISH KUMAR SINGH-ASHISH.LEO FROM PHONE	0000766528642477	02/02/25		4056
+02/02/25	VENKATA MADHUSUDHAN  UPI	0000503397355253	02/02/25		4056
+02/02/25	KISHORE KUMAR-KISHORE	0000539910886492	02/02/25		4056
+02/02/25	VAMSHI KRISHNA REDDY FLAT JAN25 MAI	0000812764986425	02/02/25		4056
+02/02/25	FAKIR MOHAN SAHOO-SAHOO	0000503354778522	02/02/25		4056
+02/02/25	MAISKAR APPARAO G7 MAINTENANCE	0000874253327228	02/02/25		4056
+02/02/25	HARI  OM FROM PHONE	0000734512014593	02/02/25		4056
+02/02/25	SHANKAR RAI-SHANKARRAI 407  JAN MAIN	0000503306492200	02/02/25		4056
+02/02/25	RANJAN KUMAR PATI-URS.RANJANPATI 606 JAN MONTH	0000503311400663	02/02/25		4056
+02/02/25	KAVYA KRISHNAN R-KAVYARPILLAI	0000539966615786	02/02/25		4056
+02/02/25	SONALI SURAJITA MOHANTY-RAJILESH CBR-UTIBN62025020280803339	UTIBN62025020280803339	02/02/25		4056
+02/02/25	I  WILSON BAKYARAJ-WILSON.ERIC JAN 2025	0000503354183816	02/02/25		4056
+02/02/25	ARITRA RANJAN DAS-A.R.DAS	0000503335849764	02/02/25		4056
+02/02/25	ARTI SILORI-ARTISILORI	0000539995755605	02/02/25		4056
+02/02/25	AYUSH  MISHRA FLAT 414 JAN MAINT	0000503359028097	02/02/25		4056
+02/02/25	DEEPAK PATEL 303 MAINTENAN	0000312450773146	02/02/25		4056
+02/02/25	SHAKTI PRASAD MAHALI	0000286128656682	02/02/25		4056
+02/02/25	SANTOSH KUMAR NANDI-SANTOSHNANDI	0000503344417775	02/02/25		4056
+02/02/25	FLAT NO 110	0000539997747036	02/02/25		4056
+03/02/25	PRASANNA P SHANBHAG-PRASNU	0000503448646671	03/02/25		4056
+03/02/25	SNIGDHA  SWAIN FROM PHONE	0000575706358544	03/02/25		4056
+03/02/25	SOURAV NANDI 403 JAN MAINT	0000056499388296	03/02/25		4056
+03/02/25	RAJESH DONEPUDI FROM PHONE	0000495939416534	03/02/25		4056
+03/02/25	HIMANSU SEKHAR PANDA	0000503449339974	03/02/25		4056
+03/02/25	GADE DEEPAK MURTY PAYMENT FROM PHONE	0000739005889609	03/02/25		4056
+03/02/25	GIREESH KUMAR R UPI	0000503449859794	03/02/25		4056
+03/02/25	PATIL PURUSHOTHAM RE FLAT JAN MAINT	0000503455021198	03/02/25		4056
+03/02/25	ANIL KUMAR DASARI FROM PHONE	0000198507443951	03/02/25		4056
+03/02/25	SARASIJA GHOSH 512	0000503458079567	03/02/25		4056
+03/02/25	MALLU JAYA KISHORE R-JAYAKISHORE 211 FEB MAINT	0000503494583072	03/02/25		4056
+03/02/25	SWAGAT SUKLA-SHUKLA.SWAGAT	0000503495355562	03/02/25	2820	
+03/02/25	SWAGAT SUKLA-SHUKLA.SWAGAT	0000503495640782	04/02/25	9142	
+04/02/25	FLAT G5 MMC FOR JA	0000503524854645	04/02/25		4056
+04/02/25	KONA HARI MURALIDHAR MAINTENANCE	0000418885402853	04/02/25		4056
+04/02/25	RAGIPINDI RAMAKRISHN-KRISHNASCCM	0000540102327208	04/02/25		4056
+04/02/25	ABBURU MOHAN KRISHNA FROM PHONE	0000977673722955	04/02/25		4056
+04/02/25	KUNAL SINGH-KUNALSINGHBLR MAINTENANCE	0000503527852125	04/02/25		4056
+04/02/25	RAJILESH P PAYMENT FROM PHONE	0000761781017945	04/02/25		3700
+04/02/25	RAJILESH P PAYMENT FROM PHONE	0000093235882501	04/02/25		356
+04/02/25	R SUSHMA	0000503535425812	04/02/25		4056
+04/02/25	REHANA RASHEED K R-REHANARASHEED	0000540181453819	04/02/25		4056
+05/02/25	KESANA BABU CHAND-BABUCHANDK	0000540261856558	05/02/25		4056
+05/02/25	RAVI  PRAJAPATI FROM PHONE	0000246687672847	05/02/25		4056
+05/02/25	XXXPGN KOTAK STP FKY DEC JAN	0000503649525790	05/02/25	4000	
+05/02/25	C S NARASIMHA  RAJAN-C BY WHATSAPP	0000503653896047	05/02/25		4056
+05/02/25	SREENATH KADITHAMPAL 508	0000952602366066	05/02/25		4056
+05/02/25	SMITA BHEEMAPPA GANI SARASTHIRA	0000319640208394	05/02/25		4056
+05/02/25	DASARI VIKRAM CHOWDA-DASARI	0000307402710365	05/02/25		4056
+05/02/25	SHYAM SUNDER PRASAD -SHYAM BY WHATSAPP	0000503656231209	05/02/25		4056
+05/02/25	MANOZ KUMAR MAMIDELA FROM PHONE	0000747580116158	05/02/25		4056
+05/02/25	S AJEETH-SRIAJEETH	0000540206469058	05/02/25		4056
+05/02/25	BAVIRISETTI VENKATA  MAINTENANCE	0000501138736826	05/02/25		4056
+05/02/25	NALLAGUNDLA ESWARA V-NEVPRASAD MAINTENANCE 60	0000288856587133	05/02/25		4056
+05/02/25	PUTLURU MANOHAR REDD FROM PHONE	0000224956223382	05/02/25		4056
+05/02/25	KRISHNADHAWAL ANIL M-MEHTA.KRISHNA MMC FOR G1	0000540260594809	05/02/25		4056
+05/02/25	BHAWNA  SOOD-BHAWNA	0000540281798969	05/02/25		4056
+05/02/25	CHANDRAKANT RENAKE FROM PHONE	0000162927428531	05/02/25		4056
+05/02/25	PUNEET SRIVASTAVA USING PAYTM U	0000503650583495	05/02/25		4056
+05/02/25	SUKESH BHARAMA PEDNE JAN MAINTE	0000293814044554	05/02/25		4056
+05/02/25	UDITA  JOHRI JAN MAINTENANC	0000272372007179	05/02/25		4056
+05/02/25	SANTOSH KUMAR BEHERA TO RAJILES	0000503669195582	05/02/25		4056
+05/02/25	MURAMUTLA DANIEL FROM PHONE	0000119176200596	05/02/25		4056
+06/02/25	SANDIP BINAY SARKAR USING PAYTM U	0000503705027434	06/02/25		4056
+06/02/25	ANSUMAN DAS-DASANSUMAN FROM PHONE	0000248147729012	06/02/25		4056
+06/02/25	GAURAV LAKHERA FROM PHONE	0000413978724838	06/02/25		4056
+06/02/25	ROHIT KUMAR UPI	0000503795820516	06/02/25		4056
+06/02/25	RAJITHA  BANKA-RAMIREDDY.SAPFI FROM PHONE	0000496310115945	06/02/25		2056
+06/02/25	ALBIN JOSE-WAIT4.ALBIN CBR 305	0000503783823745	06/02/25		4056
+06/02/25	SOUMYA DHANAVANT HAJ  MAINTENANCE F	0000676560172003	06/02/25		4056
+06/02/25	SATYENDRA KUMAR BINS CBR	0000503709909819	06/02/25	2788	
+06/02/25	NISHANT MOHAN KHATAL FROM PHONE	0000893780914269	06/02/25		4056
+06/02/25	SUTARAM SURESH	0000166230120437	06/02/25		4056
+06/02/25	RAMA KISHORE CH-RAMA BY WHATSAPP	0000503732559163	06/02/25		4056
+06/02/25	GPAY UTIB0000553 - 503743903494	0000503743903494	07/02/25	71482	
+06/02/25	GPAY UTIB0000553 - 503743918751	0000503743918751	07/02/25	18034	
+07/02/25	BOMMAJI KISHOR KUMAR MAINTENANC	0000337968644344	07/02/25		4056
+07/02/25	KALINGA KESHARI ROUT FLAT 713 MMC FEB	0000503866648455	07/02/25		4056
+08/02/25	SURESH T FROM PHONE	0000377126660469	08/02/25		4056
+08/02/25	KRISHNA REDDY KEESAR STP	0000503904646648	08/02/25	32000	
+08/02/25	GPAY UTIB0000553 - 503904701009	0000503904701009	08/02/25	12161	
+08/02/25	GPAY UTIB0000553 - 503904718315	0000503904718315	08/02/25	17095	
+08/02/25	GPAY UTIB0000553 - 503904723679	0000503904723679	08/02/25	8319	
+08/02/25	GANAPATHI-PATHY JAN 2025	0000503906674905	08/02/25	16000	
+08/02/25	VINODA  L C-VINODGOWDA CBR	0000503907118468	08/02/25	9000	
+08/02/25	RAMESH THOLAM NO 404 MAINTE	0000503979734247	08/02/25		4056
+09/02/25	NEFT DR-UBIN0910465-SHOBHA B-NETBANK, MUM-HDFCN52025020952197563-CBR JAN 2025	HDFCN52025020952197563	09/02/25	100000	
+09/02/25	RAJILESH P PAYMENT FROM PHONE	0000884620783985	09/02/25		4056
+09/02/25	K A NASARATHULLAH NASARATH 204 MAINT	0000535788470166	10/02/25		4056
+10/02/25	YASODARAM TARIGONDA FROM PHONE	0000685179499193	10/02/25		4056
+12/02/25	UTKARSH GUPTA-UTKARSHGUPTA	0000540925971257	12/02/25		4056
+12/02/25	NEFT DR-UBIN0910465-SHOBHA B-NETBANK, MUM-HDFCN52025021258740289-CAPRICO JAN BALANC	HDFCN52025021258740289	12/02/25	67773.06	
+12/02/25	RAJILESH P-RAJILESHPANOLI	0000504316521006	12/02/25	3423.94	
+13/02/25	BHAWANI  SINGH	0000504480469060	13/02/25	7089	
+13/02/25	SAIKRISHNA VARMA KOT-KSKVARMA	0000504461631429	13/02/25		4056
+15/02/25	SATYENDRA KUMAR	0000100104306784	15/02/25	985	
+16/02/25	GLOBAL EXIM INSTITUT	0000100155903265	17/02/25	11800	
+17/02/25	SWAGAT SUKLA-SHUKLA.SWAGAT	0000100156141764	17/02/25	10922	
+18/02/25	CBDT K2504930748100 - 25021800002527HDFC	0250218090000317	18/02/25	4286	
+18/02/25	CBDT K2504930748341 - 25021800002610HDFC	0250218090000381	18/02/25	3424	
+18/02/25	RAJILESH P-RAJILESHPANOLI	0000100215683956	18/02/25		11800
+18/02/25	RAJILESH P-RAJILESHPANOLI	0000504936965058	18/02/25		7520
+18/02/25	RAJILESH P-RAJILESHPANOLI	0000541565964063	18/02/25		17700
+18/02/25	GLOBAL EXIM INSTITUT	0000100247459112	18/02/25	17700	
+22/02/25	BHAWANI  SINGH MATERIALSAL	0000100408875354	22/02/25	6314	
+23/02/25	GUTTA VENU GOPAL-GUTTAVENUGOPALCHOWDARY	0000505487759101	23/02/25		4056
+24/02/25	CHINNARAJU C-CHINNARAJUC	0000100513717711	24/02/25	50	
+01/03/25	SWAGAT SUKLA-SHUKLA.SWAGAT	0000100757358829	01/03/25	18048	
+03/03/25	ALBIN JOSE-WAIT4.ALBIN 305 FEB 2025	0000506255945624	03/03/25		3620
+03/03/25	RAGIPINDI RAMAKRISHN-KRISHNASCCM NO 707	0000506203622801	03/03/25		3620
+03/03/25	B P  SATHYAJIT G3	0000542811794759	03/03/25		3620
+04/03/25	NAGENDRA PRASAD C A VIA CRED AND	0000506329746938	04/03/25		3620
+04/03/25	MADHU MARAIAH  GORIG MAINTENANCE	0000635669935154	04/03/25		3620
+04/03/25	GADE DEEPAK MURTY PAYMENT FROM PHONE	0000845406847803	04/03/25		3620
+04/03/25	SWADHIN NARAYAN	0000506374174670	04/03/25		7676
+04/03/25	KALLUTLA VENKATA NAR-KVNR538.CSE	0000100907330522	04/03/25		3620
+04/03/25	MOUTUSHI GHOSH DEYSA MAINTENANCE 610	0000506383335457	04/03/25		3620
+04/03/25	ASHISH KUMAR SINGH-ASHISH.LEO FROM PHONE	0000846966651715	04/03/25		3620
+04/03/25	PRASANNA KUMAR FROM PHONE	0000213079780855	04/03/25		3620
+04/03/25	DUTTALA LAKSHMI NARA-REDDY.YGD	0000506316131134	04/03/25		3620
+04/03/25	N SIVA PRASAD REDDY	0000594711414009	04/03/25		3620
+04/03/25	KISHORE KUMAR-KISHORE	0000506308544242	04/03/25		3620
+04/03/25	VIJAY KUMAR PANDEY FEB MAINTENANC	0000051740999794	04/03/25		3620
+04/03/25	GIREESH KUMAR R-GIREESH	0000506374302622	04/03/25		3620
+04/03/25	PATIL PURUSHOTHAM RE 513 FEB MAINT	0000542901440797	04/03/25		3620
+04/03/25	SATYENDRA KUMAR VIA SUPERMONE	0000542901483947	04/03/25		3620
+04/03/25	BOMMAJI KISHOR KUMAR  FEB 2025	0000404078161147	04/03/25		3620
+04/03/25	SNIGDHA  SWAIN FROM PHONE	0000549582662840	04/03/25		3620
+04/03/25	RAJESH DONEPUDI FROM PHONE	0000674304712812	04/03/25		3620
+04/03/25	SOURAV NANDI FROM PHONE	0000928632410662	04/03/25		3620
+04/03/25	PUTLURU MANOHAR REDD FEB MAINTENANCE	0000741081432872	04/03/25		3620
+04/03/25	GAJENDRA KUMAR MANGA MEINTENANCE	0000446161705969	04/03/25		3620
+04/03/25	VAMSHI KRISHNA REDDY MAINTENANCE FO	0000125468918918	04/03/25		3620
+04/03/25	RAJILESH P PAYMENT FROM PHONE	0000584545113931	04/03/25		1
+04/03/25	RAJILESH P-RAJILESHPANOLI	0000100917411663	04/03/25	1	
+04/03/25	GPAY UTIB0000553 - 100926778429	0000100926778429	04/03/25	58138	
+04/03/25	GPAY UTIB0000553 - 100926821944	0000100926821944	04/03/25	17168	
+04/03/25	GPAY UTIB0000553 - 100926866171	0000100926866171	04/03/25	9386	
+04/03/25	AMAZON PAY YOU ARE PAYING FOR	0000100931813259	04/03/25	2399	
+04/03/25	IMPS-506317148477-KAPADAM SUDEER KUMAR-KKBK-XXXXXX1388-313	0000506317148477	04/03/25		3620
+04/03/25	SATYA DEV KHADAYAT-SATYADEV	0000100953250369	04/03/25	145	
+04/03/25	50100216976031-TPT-T-RAGHURAMAN A	0000000143830570	04/03/25		3620
+04/03/25	IMPS-506323232239-S K SHABEER BASHA-ICIC-XXXXXXXX7486-IMPS TRANSACTION	0000506323232239	05/03/25		3620
+05/03/25	SHANKAR  RAI 407 FEB MAINT	0000506406439245	05/03/25		3620
+05/03/25	FAKIR MOHAN SAHOO-SAHOO FEB MAINTENANC	0000543022629573	05/03/25		3620
+05/03/25	BINEET KUMAR GUPTA-BINEET.GUPTA	0000100958712595	05/03/25		3620
+05/03/25	SARASIJA GHOSH 512	0000100958890652	05/03/25		3620
+05/03/25	PRASANNA P SHANBHAG-PRASNU	0000100959140642	05/03/25		3620
+05/03/25	ANIL KUMAR DASARI FROM PHONE	0000885115260893	05/03/25		3620
+05/03/25	IMPS-506406995938-I WILSON BAKYARAJ-SBIN-XXXXXXX8977-CBR MAINTENANCE FEB 2025	0000506406995938	05/03/25		3620
+05/03/25	JERIN JOSE A-JERINJS FROM PHONE	0000814030521810	05/03/25		3620
+05/03/25	KRISHNACHAITANYA AMJ	0000506428188575	05/03/25		3620
+05/03/25	ARITRA RANJAN DAS-A.R.DAS	0000100961989529	05/03/25		3620
+05/03/25	VISA GOLD-HIMANSHUPATHAK	0000543078243306	05/03/25		3620
+05/03/25	KESANA BABU CHAND-BABUCHANDK	0000506450997486	05/03/25		3620
+05/03/25	GAURAV LAKHERA MAINTENANCE	0000691367382472	05/03/25		3620
+05/03/25	DEEPAK PATEL-DEEPAKPATEL FLAT 303 FEB M	0000100962989355	05/03/25		3620
+05/03/25	VIKAS FROM PHONE	0000563540929325	05/03/25		3620
+05/03/25	KUNAL SINGH-KUNALSINGHBLR	0000100963151429	05/03/25		3620
+05/03/25	SHAKTI PRASAD MAHALI MAINTENANCE	0000124683465937	05/03/25		3620
+05/03/25	SANTOSH KUMAR BEHERA TO RAJILES	0000506469604789	05/03/25		3620
+05/03/25	SONALI SURAJITA MOHANTY-RAJILESH CBR-UTIBN62025030581698258	UTIBN62025030581698258	05/03/25		3620
+05/03/25	KHUSHBOO MEHTA-KK MAINTENANCE	0000100964415682	05/03/25		3620
+05/03/25	RAJITHA  BANKA-RAMIREDDY.SAPFI FROM PHONE	0000907736369444	05/03/25		3620
+05/03/25	ARTI SILORI-ARTISILORI	0000543044742962	05/03/25		3620
+05/03/25	SANTOSH KUMAR NANDI-SANTOSHNANDI	0000100966270793	05/03/25		3620
+05/03/25	VENKATA MADHUSUDHAN  UPI	0000100966410918	05/03/25		3620
+05/03/25	NARAYANA  NIMMAGADDA-NARAYANACHOW G5 MMC FOR FE	0000543051653532	05/03/25		3620
+05/03/25	MAISKAR APPARAO FROM PHONE	0000504141889579	05/03/25		3620
+05/03/25	KOTHURU VENKATA SUBB-KOTHURU	0000509047260645	05/03/25		3620
+05/03/25	50100560456011-TPT-FLAT 310  FEB MAINTENANCE-TAMILSELVAN SANKARALINGAM	0000000172836655	05/03/25		3620
+05/03/25	GANAPATHI-PATHY FEB 2025	0000100984367105	05/03/25	16000	
+05/03/25	VINODA  L C-VINODGOWDA FEB 2025	0000100984472161	05/03/25	9000	
+05/03/25	KRISHNA REDDY KEESAR STO FEB 2025	0000100986521672	05/03/25	32000	
+05/03/25	XXXPGN KOTAK STP FKY	0000100986715313	05/03/25	3000	
+05/03/25	IMPS-506420386485-KAVYAKRISHNANR-UTIB-XXXXXXXXXXX0189-IMPS	0000506420386485	05/03/25		3620
+06/03/25	GOOGLE INDIA DIGITAL REVERSAL1009268661	0000578792620655	06/03/25		9386
+06/03/25	SHISHU KRISHNA USING PAYTM U	0000506597767484	06/03/25		3620
+06/03/25	MALLU JAYA KISHORE R-JAYAKISHORE	0000101014216026	06/03/25		3620
+06/03/25	RANJAN KUMAR PATI-URS.RANJANPATI MAINTENANCE FL	0000101015325870	06/03/25		3620
+06/03/25	AYUSH  MISHRA FLAT 414 FEB MAINT	0000506594752308	06/03/25		3620
+06/03/25	SANTHANA BALAJEE FROM PHONE	0000762282855457	06/03/25		3620
+06/03/25	MANOZ KUMAR MAMIDELA 613  FEB 2025	0000447695547670	06/03/25		3620
+06/03/25	GPAY UTIB0000553 - 101017243057	0000101017243057	06/03/25	9386	
+06/03/25	S AJEETH-SRIAJEETH	0000506563422879	06/03/25		3620
+06/03/25	SUKESH BHARAMA PEDNE FLAT 406 FEB MONTH	0000101018673179	06/03/25		3620
+06/03/25	SREENATH KADITHAMPAL	0000476988387910	06/03/25		3620
+06/03/25	KALINGA KESHARI ROUT UPI	0000101019966991	06/03/25		3620
+06/03/25	ABHISHEK DEWANGAN	0000101023023188	06/03/25		3620
+06/03/25	UPI	0000506584235152	06/03/25		3620
+06/03/25	SOUMYA DHANAVANT HAJ  MAINTENANCE F	0000255983345611	06/03/25		3620
+06/03/25	BHANU PRAKASH SINGH-BHANU 413	0000543195167410	06/03/25		3620
+06/03/25	311 MARCH25 MAINTA	0000506581851448	06/03/25		3620
+06/03/25	BAVIRISETTI VENKATA  FEB MAINTENANCE	0000829697717816	06/03/25		3620
+06/03/25	RANJITH  VARIJAKSHAN-RANJU.RANJITH 11 FEB MAINTENAN	0000506505081186	06/03/25		3620
+06/03/25	RAMA KISHORE CH-RAMA BY WHATSAPP	0000101051020921	06/03/25		3620
+06/03/25	RAMA KISHORE CH-RAMA BY WHATSAPP	0000101051136285	06/03/25		700
+07/03/25	RAGIPINDI RAMAKRISHN-KRISHNASCCM TAPE	0000101073756024	07/03/25	40	
+07/03/25	SUTARAM SURESH	0000827655601312	07/03/25		3620
+07/03/25	SHYAM SUNDER PRASAD -SSPSINHA	0000506656721066	07/03/25		3620
+07/03/25	SWAGAT SUKLA VIA CRED AND	0000543224296526	07/03/25		3620
+08/03/25	MURAMUTLA DANIEL MONTH MAI	0000276393449742	08/03/25		3620
+08/03/25	KONA HARI MURALIDHAR  G8	0000850358683343	08/03/25		3620
+08/03/25	SMITA BHEEMAPPA GANI CBR SARASTHIRA	0000789673176627	08/03/25		3620
+08/03/25	PUNEET SRIVASTAVA USING PAYTM U	0000506722997511	08/03/25		3620
+08/03/25	RAGIPINDI RAMAKRISHN-KRISHNASCCM	0000506755971639	08/03/25		4100
+08/03/25	REHANA RASHEED K R-REHANARASHEED	0000506777773014	08/03/25		3620
+08/03/25	CHINNARAJU C-CHINNARAJUC	0000101138637605	08/03/25	120	
+08/03/25	CHINNARAJU C-CHINNARAJUC	0000101138701510	08/03/25	120	
+08/03/25	RAVI  PRAJAPATI FROM PHONE	0000368000845025	08/03/25		3620
+08/03/25	AMBU MAHESWARA REDDY-AMBU	0000506799126536	08/03/25		3620
+08/03/25	RAMESH THOLAM NO 404 MAINTE	0000506745797618	08/03/25		3620
+08/03/25	DASARI VIKRAM CHOWDA-DASARI	0000867254870675	08/03/25		3000
+08/03/25	SANDIP BINAY SARKAR - 214	0000506766248308	08/03/25		3620
+08/03/25	HARI  OM FROM PHONE	0000181238637817	08/03/25		3620
+08/03/25	CHANDRAKANT RENAKE FROM PHONE	0000412835812068	08/03/25		3620
+09/03/25	ANSUMAN DAS-DASANSUMAN FROM PHONE	0000914214329469	09/03/25		3620
+09/03/25	UDITA  JOHRI FEB MAINTENANC	0000455595798510	09/03/25		3620
+09/03/25	YASHWANTH GOWDA N-YASHYASHWANTHGOWDAN	0000101193764753	09/03/25	4800	
+10/03/25	CHINNARAJU C-CHINNARAJUC MOTOR REPAIR	0000101248094898	10/03/25	8000	
+10/03/25	NEFT DR-FDRL0002165-GEETHA P-NETBANK, MUM-HDFCN52025031009930687-SB FACI FEB 2025	HDFCN52025031009930687	10/03/25	93100	
+10/03/25	GPAY UTIB0000553 - 101257378842	0000101257378842	10/03/25	7657	
+10/03/25	GPAY UTIB0000553 - 101257464975	0000101257464975	10/03/25	14372	
+10/03/25	ABBURU MOHAN KRISHNA	0000830848803161	10/03/25		3620
+10/03/25	YASODARAM TARIGONDA FROM PHONE	0000799113127928	10/03/25		3620
+10/03/25	SURESH T FROM PHONE	0000804906205108	10/03/25		3620
+10/03/25	CHINNARAJU C-CHINNARAJUC FIXING	0000101280674048	10/03/25	9000	
+11/03/25	SUTARAM SURESH	0000449078528155	11/03/25		500
+11/03/25	SUTARAM SURESH	0000101294636795	11/03/25	500	
+11/03/25	NISHANT MOHAN KHATAL-KHATALNISHANT FROM PHONE	0000806164969426	11/03/25		3620
+11/03/25	K A NASARATHULLAH 204 FEB MAINTENANC	0000249521458856	11/03/25		3620
+11/03/25	DEBIT CARD ANNUAL FEE-FEB-2025 210225-MIR2507019189929	MIR2507019189929	11/03/25	1003	
+12/03/25	NALLAGUNDLA ESWARA V-NEVPRASAD MAINTENANCE 60	0000543758802396	12/03/25		3620
+12/03/25	SHANKAR RAO G-RAOS REPAIR	0000101372221038	12/03/25	5000	
+13/03/25	CHINNARAJU C-CHINNARAJUC	0000101402729162	13/03/25	720	
+13/03/25	CHINNARAJU C-CHINNARAJUC	0000507245185131	13/03/25		120
+13/03/25	BHAWANI  SINGH	0000101441951159	13/03/25	2856	
+15/03/25	HIMANSU SEKHAR PANDA	0000101498186962	15/03/25		3620
+15/03/25	NEFT DR-UBIN0910465-SHOBHA B-NETBANK, MUM-HDFCN52025031520562483-CAPRICO FEB	HDFCN52025031520562483	15/03/25	44637	
+16/03/25	SWAGAT SUKLA-SHUKLA.SWAGAT	0000507572190776	16/03/25		1001
+16/03/25	FAKIR MOHAN SAHOO-SAHOO	0000101558455973	16/03/25	733	
+17/03/25	RAJILESH P-RAJILESHPANOLI	0000101615436800	17/03/25		733
+17/03/25	ROHIT KUMAR UPI	0000101615697781	17/03/25		3620
+17/03/25	UTKARSH GUPTA-UTKARSHGUPTA MARCH 2025 MAI	0000507684256308	17/03/25		3620
+20/03/25	SAIKRISHNA VARMA KOT-KSKVARMA	0000544534780343	20/03/25		3620
+20/03/25	IMPS-507914167567-INNOVA DIESEL-SBIN-XXXXXXX4102-DG MAINTENANCE	0000507914167567	20/03/25	11425	
+20/03/25	SIR MANJUNATH ENTERP-PAYTMQR10DD2D@PAYTM-YESB0PTM101765906724-CHENICALS	0000101765906724	20/03/25	1100	
+20/03/25	AMAZON PAY INDIA PVT	0000287247340795	20/03/25		2399
+21/03/25	IMPS-508012696445-PHONEPEPRIVATELIMI-UTIB-XXXXXXXXXXX8981-F13PHONEPEVERIFICATIONTXNT25032112474727996410	0000508012696445	21/03/25		1
+21/03/25	CASHFREE PAYMENTS ESCROW ACCOUNT-SOANCE INNOVATIONS LLP-IDFBN52025032180457672	IDFBN52025032180457672	21/03/25		16000
+23/03/25	M AJAY KUMAR-NAYAN MARCH	0000101909521273	23/03/25	6000	
+23/03/25	RAGIPINDI RAMAKRISHN-KRISHNASCCM	0000101943623763	23/03/25	340	
+23/03/25	TREIS SOLUTIONS LLP PAY	0000101947514686	23/03/25	15384.1	
+27/03/25	RAJILESH P-RAJILESHPANOLI GARDEN DIESEL	0000102115565617	27/03/25	500	
+27/03/25	RAJILESH P-RAJILESHPANOLI	0000102119786730	27/03/25	6189.03	
+27/03/25	RAJILESH P-RAJILESHPANOLI	0000102119848315	27/03/25		6183.03
+29/03/25	S  KESAVULU-SKESAVULU REPAIR	0000102226926536	29/03/25	4850	
+30/03/25	RAJILESH P-RAJILESHPANOLI	0000102303005311	30/03/25	5509.48	
+31/03/25	PRASANNA KUMAR OF EXTRA AM	0000102340374263	31/03/25	2544	
+31/03/25	RAJILESH P-RAJILESHPANOLI	0000102348900432	31/03/25		549
+31/03/25	UDEMY INDIA LLP-UDEMY.ADYEN@HDFCBANK-HDFC0MER100264187053-UPI COLLECT FLOW	0000100264187053	31/03/25	549	
+31/03/25	DASARI VIKRAM CHOWDA-DASARI	0000603222580905	31/03/25		620
+02/04/25	LEELAVATHI KOLEKAR B-MAB	0000102470801463	02/04/25	2530	
+02/04/25	MOHMMAD NABAB-BHARATPE TO BHARATPE ME	0000102495846561	02/04/25	300	
+03/04/25	RAJILESH P-RAJILESHPANOLI	0000102506257460	03/04/25		2530
+03/04/25	RAJILESH P-RAJILESHPANOLI	0000102506342667	03/04/25		300
+03/04/25	IMPS-509327238639-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTAPRIL	0000509327238639	03/04/25		4140
+03/04/25	IMPS-509328238962-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTAPRIL	0000509328238962	03/04/25		4140
+03/04/25	IMPS-509326238880-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTAPRIL	0000509326238880	03/04/25		4140
+03/04/25	IMPS-509325450985-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT712APTAPRIL	0000509325450985	03/04/25		4140
+03/04/25	IMPS-509326240410-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT103APTAPRIL	0000509326240410	03/04/25		4140
+03/04/25	IMPS-509328241435-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTAPRIL	0000509328241435	03/04/25		4140
+03/04/25	IMPS-509327244228-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTAPRIL	0000509327244228	03/04/25		4140
+03/04/25	IMPS-509327255425-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTAPRIL	0000509327255425	03/04/25		4140
+03/04/25	IMPS-509325484517-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTAPRIL	0000509325484517	03/04/25		4140
+03/04/25	IMPS-509325488895-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT209APTAPRIL	0000509325488895	03/04/25		4140
+03/04/25	IMPS-509328262679-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTAPRIL	0000509328262679	03/04/25		4140
+03/04/25	IMPS-509326266264-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTAPRIL	0000509326266264	03/04/25		4140
+03/04/25	IMPS-509325508344-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT405APTAPRIL	0000509325508344	03/04/25		4140
+03/04/25	IMPS-509325509389-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTAPRIL	0000509325509389	03/04/25		4140
+03/04/25	IMPS-509326271365-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTAPRIL	0000509326271365	03/04/25		4140
+03/04/25	IMPS-509327274118-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTAPRIL	0000509327274118	03/04/25		4140
+03/04/25	IMPS-509326275076-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT309APTAPRIL	0000509326275076	03/04/25		4140
+03/04/25	IMPS-509325524274-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTAPRIL	0000509325524274	03/04/25		4140
+03/04/25	IMPS-509325526409-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTAPRIL	0000509325526409	03/04/25		4140
+03/04/25	IMPS-509321450823-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT302APTAPRIL	0000509321450823	03/04/25		4140
+03/04/25	IMPS-509323614251-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT208APTAPRIL	0000509323614251	03/04/25		4140
+03/04/25	IMPS-509323638253-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT507APTAPRIL	0000509323638253	04/04/25		4140
+04/04/25	IMPS-509428000143-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTAPRIL	0000509428000143	04/04/25		4140
+04/04/25	IMPS-509428036399-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTAPRIL	0000509428036399	04/04/25		4140
+04/04/25	IMPS-509425087367-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTAPRIL	0000509425087367	04/04/25		4140
+04/04/25	IMPS-509426048280-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTAPRIL	0000509426048280	04/04/25		4140
+04/04/25	IMPS-509426056844-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT102APTAPRIL	0000509426056844	04/04/25		4140
+04/04/25	IMPS-509425116222-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT406APTAPRIL	0000509425116222	04/04/25		4140
+04/04/25	IMPS-509426073381-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT112APTAPRIL	0000509426073381	04/04/25		4140
+04/04/25	IMPS-509409916204-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG01APTAPRIL	0000509409916204	04/04/25		4140
+04/04/25	IMPS-509425171028-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTAPRIL	0000509425171028	04/04/25		4140
+04/04/25	IMPS-509425237637-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT505APTAPRIL	0000509425237637	04/04/25		4140
+04/04/25	IMPS-509428137508-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTAPRIL	0000509428137508	04/04/25		4140
+04/04/25	IMPS-509413384635-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT407APTAPRIL	0000509413384635	04/04/25		4140
+04/04/25	IMPS-509413401253-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG06APTAPRIL	0000509413401253	04/04/25		4140
+04/04/25	IMPS-509413407237-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT606APTAPRIL	0000509413407237	04/04/25		4140
+04/04/25	IMPS-509413410855-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT703APTAPRIL	0000509413410855	04/04/25		4140
+04/04/25	IMPS-509413421396-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT612APTAPRIL	0000509413421396	04/04/25		4140
+04/04/25	IMPS-509427156655-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTAPRIL	0000509427156655	04/04/25		4140
+04/04/25	IMPS-509425329991-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTAPRIL	0000509425329991	04/04/25		4140
+04/04/25	IMPS-509425383388-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT412APTAPRIL	0000509425383388	04/04/25		4140
+04/04/25	IMPS-509425419659-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTAPRIL	0000509425419659	04/04/25		4140
+04/04/25	IMPS-509426226755-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTAPRIL	0000509426226755	04/04/25		4140
+04/04/25	IMPS-509427266001-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTAPRIL	0000509427266001	04/04/25		4140
+04/04/25	IMPS-509425515638-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTAPRIL	0000509425515638	04/04/25		4140
+05/04/25	IMPS-509527037398-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTAPRIL	0000509527037398	05/04/25		4140
+05/04/25	IMPS-509525106421-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTAPRIL	0000509525106421	05/04/25		4140
+05/04/25	IMPS-509526057565-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTAPRIL	0000509526057565	05/04/25		4140
+05/04/25	IMPS-509526067386-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTAPRIL	0000509526067386	05/04/25		4140
+05/04/25	IMPS-509525136663-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTAPRIL	0000509525136663	05/04/25		4140
+05/04/25	IMPS-509527071312-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTAPRIL	0000509527071312	05/04/25		4140
+05/04/25	IMPS-509525142154-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTAPRIL	0000509525142154	05/04/25		4140
+05/04/25	IMPS-509527075414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTAPRIL	0000509527075414	05/04/25		4140
+05/04/25	IMPS-509525198780-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTAPRIL	0000509525198780	05/04/25		4140
+05/04/25	IMPS-509527152940-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTAPRIL	0000509527152940	05/04/25		4140
+05/04/25	IMPS-509521289994-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT607APTAPRIL	0000509521289994	05/04/25		4140
+05/04/25	IMPS-509527356334-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT106APTAPRIL	0000509527356334	05/04/25		4140
+05/04/25	IMPS-509526229742-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTAPRIL	0000509526229742	05/04/25		4140
+06/04/25	IMPS-509627061063-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTAPRIL	0000509627061063	06/04/25		4140
+06/04/25	IMPS-509628075577-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTAPRIL	0000509628075577	06/04/25		4140
+06/04/25	IMPS-509625169351-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTAPRIL	0000509625169351	06/04/25		4140
+06/04/25	IMPS-509625171740-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTAPRIL	0000509625171740	06/04/25		4140
+06/04/25	IMPS-509625178715-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT113APTAPRIL	0000509625178715	06/04/25		4140
+06/04/25	IMPS-509626110269-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT304APTAPRIL	0000509626110269	06/04/25		4140
+06/04/25	IMPS-509627156433-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTAPRIL	0000509627156433	06/04/25		4140
+06/04/25	IMPS-509627239543-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTAPRIL	0000509627239543	06/04/25		4140
+06/04/25	IMPS-509625548622-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTAPRIL	0000509625548622	06/04/25		4140
+07/04/25	IMPS-509725113712-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTAPRIL	0000509725113712	07/04/25		4140
+07/04/25	IMPS-509726094699-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTAPRIL	0000509726094699	07/04/25		4140
+07/04/25	IMPS-509727096909-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTAPRIL	0000509727096909	07/04/25		4140
+07/04/25	IMPS-509726105105-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTAPRIL	0000509726105105	07/04/25		4140
+07/04/25	GPAY UTIB0000553 - 102742194544	0000102742194544	07/04/25	60501	
+07/04/25	IMPS-509727106485-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT512APTAPRIL	0000509727106485	07/04/25		4140
+07/04/25	GPAY UTIB0000553 - 102742277705	0000102742277705	07/04/25	17924	
+07/04/25	GPAY UTIB0000553 - 102742362369	0000102742362369	07/04/25	6306	
+07/04/25	GPAY UTIB0000553 - 102742408376	0000102742408376	07/04/25	12434	
+07/04/25	IMPS-509727108217-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT210APTAPRIL	0000509727108217	07/04/25		4140
+07/04/25	IMPS-509725247689-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTAPRIL	0000509725247689	07/04/25		4140
+07/04/25	CBDT K2509732689243 - 25040700146446HDFC	0250407120017912	07/04/25	1900	
+07/04/25	CBDT K2509732690011 - 25040700151850HDFC	0250407120022585	07/04/25	911	
+07/04/25	.IMPS P2P 507914167567#20/03/2025 200325-MIR2609481457913	MIR2609481457913	07/04/25	5.9	
+07/04/25	IMPS-509728162751-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTAPRIL	0000509728162751	07/04/25		4140
+07/04/25	IMPS-509725400923-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT104APTAPRIL	0000509725400923	07/04/25		4140
+07/04/25	IMPS-509725404195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTAPRIL	0000509725404195	07/04/25		4140
+07/04/25	IMPS-509725445114-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTAPRIL	0000509725445114	07/04/25		4140
+07/04/25	GUTTA VENU GOPAL-GUTTAVENUGOPALCHOWDARY NO 705	0000509791728964	07/04/25		4140
+07/04/25	IMPS-509725580607-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTAPRIL	0000509725580607	07/04/25		4140
+07/04/25	RAJILESH P-RAJILESHPANOLI	0000546391994690	07/04/25		5509.48
+08/04/25	IMPS-509826063171-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTAPRIL	0000509826063171	08/04/25		4140
+08/04/25	IMPS-509828078907-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTAPRIL	0000509828078907	08/04/25		4140
+08/04/25	IMPS-509825196653-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTAPRIL	0000509825196653	08/04/25		4140
+08/04/25	IMPS-509828157393-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG15APTAPRIL	0000509828157393	08/04/25		4140
+08/04/25	GUTTA VENU GOPAL-GUTTAVENUGOPALCHOWDARY FOR FEB	0000102812782597	08/04/25	520	
+08/04/25	GPAY UTIB0000553 - 102815851143	0000102815851143	08/04/25	8221	
+08/04/25	IMPS-509828211951-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTAPRIL	0000509828211951	08/04/25		4140
+09/04/25	IMPS-509927108921-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTAPRIL	0000509927108921	09/04/25		4140
+09/04/25	IMPS-509926109732-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT114APTAPRIL	0000509926109732	09/04/25		4140
+09/04/25	IMPS-509928456663-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTAPRIL	0000509928456663	09/04/25		4140
+09/04/25	IMPS-509912166515-GEETHA P-FDRL-XXXXXXXXXX3964-MARCH SALARY	0000509912166515	09/04/25	176495.06	
+09/04/25	CCTV	0000102882121353	09/04/25	1050	
+09/04/25	IMPS-509925475086-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTAPRIL	0000509925475086	09/04/25		4140
+09/04/25	IMPS-509925482285-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTAPRIL	0000509925482285	09/04/25		4140
+09/04/25	IMPS-509928616848-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTAPRIL	0000509928616848	09/04/25		4140
+09/04/25	IMPS-509927278655-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTAPRIL	0000509927278655	09/04/25		4140
+10/04/25	IMPS-510026045176-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT101APTAPRIL	0000510026045176	10/04/25		4140
+10/04/25	IMPS-510025096501-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT604APTAPRIL	0000510025096501	10/04/25		4140
+10/04/25	IMPS-510028060502-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTAPRIL	0000510028060502	10/04/25		4140
+10/04/25	IMPS-510008314011-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT313APTAPRIL	0000510008314011	10/04/25		4140
+10/04/25	IMPS-510025134066-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTAPRIL	0000510025134066	10/04/25		4140
+10/04/25	IMPS-510027096284-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT705APTAPRIL	0000510027096284	10/04/25		4140
+10/04/25	IMPS-510027103517-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT214APTAPRIL	0000510027103517	10/04/25		4140
+10/04/25	XXXXXX4043-CNRB0002727-102930909297-WATER	0000102930909297	10/04/25	28050	
+10/04/25	IMPS-510025399122-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTAPRIL	0000510025399122	10/04/25		4140
+11/04/25	IMPS-510126115758-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTAPRIL	0000510126115758	11/04/25		4140
+11/04/25	IMPS-510125439820-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTAPRIL	0000510125439820	11/04/25		4140
+12/04/25	IMPS-510227211396-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTAPRIL	0000510227211396	12/04/25		4140
+14/04/25	KRISHNA REDDY KEESAR STP	0000103146537678	14/04/25	32000	
+14/04/25	NAHEEDA BEGUM-MMUSKANBEGUM	0000103155772192	14/04/25	4000	
+16/04/25	NAHEEDA BEGUM-MMUSKANBEGUM	0000103263461894	16/04/25	2600	
+18/04/25	IMPS-510825201685-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTAPRIL	0000510825201685	18/04/25		4140
+18/04/25	PRAKASH PAUDYAL-PRAKASH.PAUDEL	0000103386299298	18/04/25	5259	
+21/04/25	SUBINA  P UPI	0000103556184778	21/04/25		800
+23/04/25	SHAILA-MANJU.MS COLLECTION	0000103633601860	23/04/25	9000	
+25/04/25	RAGIPINDI RAMAKRISHN-KRISHNASCCM BLOCK MATE	0000103747431415	25/04/25	1080	
+28/04/25	.IMPS P2P 509912166515#09/04/2025 090425-MIR2611643629812	MIR2611643629812	28/04/25	17.7	
+01/05/25	RAJILESH P-RAJILESHPANOLI	0000104079586968	01/05/25	800	
+01/05/25	RAJILESH P-RAJILESHPANOLI PAID	0000104083156203	01/05/25	2811	
+01/05/25	RAJILESH P-RAJILESHPANOLI	0000104083286390	01/05/25		23.6
+03/05/25	GOVIND KUMAR-BHARATPE TO BHARATPE ME	0000104196218470	03/05/25	470	
+04/05/25	IMPS-512427247498-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTMAY	0000512427247498	04/05/25		3361
+04/05/25	IMPS-512428248385-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTMAY	0000512428248385	04/05/25		3361
+04/05/25	IMPS-512426250403-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTMAY	0000512426250403	04/05/25		3361
+04/05/25	IMPS-512427253533-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTMAY	0000512427253533	04/05/25		3361
+04/05/25	IMPS-512427254040-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTMAY	0000512427254040	04/05/25		3361
+04/05/25	IMPS-512427254444-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT210APTMAY	0000512427254444	04/05/25		3361
+04/05/25	IMPS-512428254960-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT302APTMAY	0000512428254960	04/05/25		3361
+04/05/25	IMPS-512425494911-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTMAY	0000512425494911	04/05/25		3361
+04/05/25	IMPS-512428256061-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTMAY	0000512428256061	04/05/25		3361
+04/05/25	IMPS-512428257073-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTMAY	0000512428257073	04/05/25		3361
+04/05/25	IMPS-512428257215-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTMAY	0000512428257215	04/05/25		3361
+04/05/25	IMPS-512426257942-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTMAY	0000512426257942	04/05/25		3361
+04/05/25	IMPS-512428259672-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT412APTMAY	0000512428259672	04/05/25		3361
+04/05/25	IMPS-512425504236-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTMAY	0000512425504236	04/05/25		3361
+04/05/25	IMPS-512427262023-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT106APTMAY	0000512427262023	04/05/25		3361
+04/05/25	IMPS-512425516269-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT103APTMAY	0000512425516269	04/05/25		3361
+04/05/25	IMPS-512427267176-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT208APTMAY	0000512427267176	04/05/25		3361
+04/05/25	IMPS-512425523409-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTMAY	0000512425523409	04/05/25		3361
+04/05/25	IMPS-512425529870-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT405APTMAY	0000512425529870	04/05/25		3361
+04/05/25	IMPS-512427275679-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT407APTMAY	0000512427275679	04/05/25		3361
+04/05/25	IMPS-512426276519-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT102APTMAY	0000512426276519	04/05/25		3361
+04/05/25	IMPS-512425537833-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTMAY	0000512425537833	04/05/25		3361
+04/05/25	IMPS-512426278956-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT612APTMAY	0000512426278956	04/05/25		3361
+04/05/25	IMPS-512427280587-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTMAY	0000512427280587	04/05/25		3361
+04/05/25	IMPS-512425549247-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT505APTMAY	0000512425549247	04/05/25		3361
+04/05/25	IMPS-512425550636-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT703APTMAY	0000512425550636	04/05/25		3361
+04/05/25	IMPS-512425557924-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTMAY	0000512425557924	04/05/25		3361
+04/05/25	IMPS-512427298481-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT512APTMAY	0000512427298481	04/05/25		3361
+04/05/25	IMPS-512428299955-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTMAY	0000512428299955	04/05/25		3361
+04/05/25	IMPS-512428300293-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTMAY	0000512428300293	04/05/25		3361
+04/05/25	IMPS-512428302590-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT309APTMAY	0000512428302590	04/05/25		3361
+04/05/25	IMPS-512427310702-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTMAY	0000512427310702	04/05/25		3361
+04/05/25	IMPS-512428315936-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTMAY	0000512428315936	04/05/25		3361
+04/05/25	IMPS-512426336811-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTMAY	0000512426336811	04/05/25		3361
+04/05/25	IMPS-512425657739-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG06APTMAY	0000512425657739	04/05/25		3361
+04/05/25	IMPS-512425662598-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTMAY	0000512425662598	04/05/25		3361
+04/05/25	IMPS-512425674214-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT209APTMAY	0000512425674214	04/05/25		3361
+04/05/25	IMPS-512425711722-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTMAY	0000512425711722	04/05/25		3361
+04/05/25	IMPS-512425725134-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTMAY	0000512425725134	04/05/25		3361
+04/05/25	IMPS-512427382414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT606APTMAY	0000512427382414	04/05/25		3361
+04/05/25	IMPS-512425761808-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTMAY	0000512425761808	04/05/25		3361
+05/05/25	IMPS-512525149117-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTMAY	0000512525149117	05/05/25		3361
+05/05/25	IMPS-512526085996-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG01APTMAY	0000512526085996	05/05/25		3361
+05/05/25	IMPS-512525189059-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTMAY	0000512525189059	05/05/25		3361
+05/05/25	IMPS-512525202564-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTMAY	0000512525202564	05/05/25		3361
+05/05/25	IMPS-512510785839-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT112APTMAY	0000512510785839	05/05/25		3361
+05/05/25	IMPS-512525232834-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTMAY	0000512525232834	05/05/25		3361
+05/05/25	IMPS-512525252153-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTMAY	0000512525252153	05/05/25		3361
+05/05/25	IMPS-512528136657-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTMAY	0000512528136657	05/05/25		3361
+05/05/25	IMPS-512525291088-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTMAY	0000512525291088	05/05/25		3361
+05/05/25	IMPS-512525305195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTMAY	0000512525305195	05/05/25		3361
+05/05/25	IMPS-512527186780-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTMAY	0000512527186780	05/05/25		3361
+05/05/25	IMPS-512526247376-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTMAY	0000512526247376	05/05/25		3361
+05/05/25	IMPS-512527272874-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTMAY	0000512527272874	05/05/25		3361
+05/05/25	IMPS-512528288279-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTMAY	0000512528288279	05/05/25		3361
+06/05/25	IMPS-512625008349-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT607APTMAY	0000512625008349	06/05/25		3361
+06/05/25	IMPS-512628087771-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTMAY	0000512628087771	06/05/25		3361
+06/05/25	IMPS-512626088888-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTMAY	0000512626088888	06/05/25		3361
+06/05/25	IMPS-512626096508-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTMAY	0000512626096508	06/05/25		3361
+06/05/25	IMPS-512628140284-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT604APTMAY	0000512628140284	06/05/25		3361
+06/05/25	IMPS-512626159635-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT101APTMAY	0000512626159635	06/05/25		3361
+06/05/25	IMPS-512626183607-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTMAY	0000512626183607	06/05/25		3361
+06/05/25	IMPS-512627341233-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT507APTMAY	0000512627341233	06/05/25		3361
+06/05/25	XXXXXX4043-CNRB0002727-104390753011-WATER	0000104390753011	06/05/25	10000	
+06/05/25	IMPS-512625700996-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTMAY	0000512625700996	06/05/25		3361
+06/05/25	IMPS-512627367741-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT104APTMAY	0000512627367741	06/05/25		3361
+07/05/25	IMPS-512726063581-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTMAY	0000512726063581	07/05/25		3361
+07/05/25	IMPS-512725137627-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTMAY	0000512725137627	07/05/25		3361
+07/05/25	IMPS-512728072029-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTMAY	0000512728072029	07/05/25		3361
+07/05/25	IMPS-512725157277-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTMAY	0000512725157277	07/05/25		3361
+07/05/25	IMPS-512728163933-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTMAY	0000512728163933	07/05/25		3361
+07/05/25	IMPS-512726227786-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTMAY	0000512726227786	07/05/25		3361
+07/05/25	IMPS-512728250229-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT406APTMAY	0000512728250229	07/05/25		3361
+07/05/25	IMPS-512726291086-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTMAY	0000512726291086	07/05/25		3361
+08/05/25	GPAY UTIB0000553 - 104455106607	0000104455106607	08/05/25	8679	
+08/05/25	GOOGLE INDIA DIGITAL UPI	0000104455171858	08/05/25	12186	
+08/05/25	GPAY UTIB0000553 - 104455187813	0000104455187813	08/05/25	6933	
+08/05/25	GPAY UTIB0000553 - 104455203036	0000104455203036	08/05/25	20548	
+08/05/25	SB SALARY	HDFCR52025050868705756	08/05/25	210863.66	
+08/05/25	IMPS-512827127105-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTMAY	0000512827127105	08/05/25		3361
+08/05/25	IMPS-512826207426-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTMAY	0000512826207426	08/05/25		3361
+08/05/25	IMPS-512825522579-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTMAY	0000512825522579	08/05/25		3361
+09/05/25	IMPS-512928020512-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT304APTMAY	0000512928020512	09/05/25		3361
+09/05/25	IMPS-512925047672-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT313APTMAY	0000512925047672	09/05/25		3361
+09/05/25	VIJAY KUMAR-VIJAYA6966KUMAR CBR	0000104511279489	09/05/25	9800	
+09/05/25	TREIS SOLUTIONS LLP PAY	0000104512031038	09/05/25	15726	
+09/05/25	IMPS-512925514740-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT214APTMAY	0000512925514740	09/05/25		3361
+09/05/25	IMPS-512925536454-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT712APTMAY	0000512925536454	09/05/25		3361
+09/05/25	GPAY UTIB0000553 - 104560897072	0000104560897072	09/05/25	55528	
+10/05/25	IMPS-513025066479-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG15APTMAY	0000513025066479	10/05/25		3361
+10/05/25	IMPS-513025068297-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTMAY	0000513025068297	10/05/25		3361
+10/05/25	IMPS-513025084514-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTMAY	0000513025084514	10/05/25		3361
+10/05/25	IMPS-513025101291-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTMAY	0000513025101291	10/05/25		3361
+10/05/25	IMPS-513025102326-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTMAY	0000513025102326	10/05/25		3361
+10/05/25	IMPS-513028054883-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT114APTMAY	0000513028054883	10/05/25		3361
+10/05/25	IMPS-513027077016-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTMAY	0000513027077016	10/05/25		3361
+10/05/25	IMPS-513027088002-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTMAY	0000513027088002	10/05/25		3361
+10/05/25	IMPS-513026130527-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTMAY	0000513026130527	10/05/25		3361
+10/05/25	IMPS-513027142614-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTMAY	0000513027142614	10/05/25		3361
+10/05/25	IMPS-513025280254-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTMAY	0000513025280254	10/05/25		3361
+10/05/25	IMPS-513027205916-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTMAY	0000513027205916	10/05/25		3361
+10/05/25	IMPS-513025406933-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTMAY	0000513025406933	10/05/25		3361
+10/05/25	IMPS-513025495559-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTMAY	0000513025495559	10/05/25		3361
+10/05/25	IMPS-513026285914-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTMAY	0000513026285914	10/05/25		3361
+10/05/25	IMPS-513027300536-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTMAY	0000513027300536	10/05/25		3361
+11/05/25	IMPS-513126095756-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTMAY	0000513126095756	11/05/25		3411
+11/05/25	IMPS-513126148116-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTMAY	0000513126148116	11/05/25		3411
+11/05/25	IMPS-513127172332-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTMAY	0000513127172332	11/05/25		3411
+11/05/25	GOOGLE INDIA DIGITAL-GOOG UPI	0000396652911315	11/05/25		6
+12/05/25	SHAILA-MANJU.MS GARBAGE COLLEC	0000104680646243	12/05/25	9000	
+12/05/25	IMPS-513227208126-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT113APTMAY	0000513227208126	12/05/25		3461
+12/05/25	CASHFREE PAYMENTS ESCROW ACCOUNT-SOANCE INNOVATIONS LLP-IDFBN52025051232931347	IDFBN52025051232931347	12/05/25		7000
+13/05/25	CBDT K2513334350064 - 25051300033167HDFC	0250513120009841	13/05/25	4304	
+13/05/25	CBDT K2513334350174 - 25051300035289HDFC	0250513130001665	13/05/25	3602	
+13/05/25	YASHWANTH GOWDA N-YASHYASHWANTHGOWDAN	0000104766302865	13/05/25	1200	
+14/05/25	CHINNARAJU C-CHINNARAJUC	0000104803075131	14/05/25	1250	
+14/05/25	SHANKAR RAO G-RAOS PULLING	0000104816439369	14/05/25	17000	
+14/05/25	MR MUNEGOWDA  V R CAMERA	0000104822965310	14/05/25	1200	
+15/05/25	IMPS-513511842899-BAVUSANI SAI SUMANTH REDDY-KKBK-XXXXXX7341-KKBKTRANSFER	0000513511842899	15/05/25		100
+15/05/25	IMPS-513511859049-BAVUSANI SAI SUMANTH REDDY-KKBK-XXXXXX7341-JAN AND FEB MAINTENANCE	0000513511859049	15/05/25		7576
+15/05/25	IMPS-513514987737-BAVUSANI SAI SUMANTH REDDY-KKBK-XXXXXX7341-JAN AND FEB MAINTENANCE	0000513514987737	15/05/25		6402
+15/05/25	BAVUSANI SAI SUMANTH-SUMANTHREDDY.SAI	0000104855661617	15/05/25	6402	
+16/05/25	MADHAV JOSHI-ANITHAHARIKUMAR	0000104899889857	16/05/25	10000	
+16/05/25	IMPS-513628151609-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT503APTMAY	0000513628151609	16/05/25		9201
+18/05/25	MADHAV JOSHI-ANITHAHARIKUMAR	0000105020479946	18/05/25	11000	
+18/05/25	CHINNARAJU C-CHINNARAJUC CLEANING	0000105021201673	18/05/25	2000	
+18/05/25	IMPS-513827230626-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTMAY	0000513827230626	18/05/25		4511
+19/05/25	IMPS-513927060564-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTMAY	0000513927060564	19/05/25		3811
+19/05/25	YASHWANTH GOWDA N-YASHYASHWANTHGOWDAN CAMERA TE	0000105058057167	19/05/25	1200	
+19/05/25	MADHAV JOSHI-ANITHAHARIKUMAR BOREWELL	0000105071314670	19/05/25	5000	
+21/05/25	ASHOK-ASHOKPOOJ	0000105154681353	21/05/25	1550	
+21/05/25	MRS ASHWINI-AASWINI	0000105171597607	21/05/25	3374	
+23/05/25	TREIS SOLUTIONS LLP PAY	0000105255426638	23/05/25	15726	
+24/05/25	HARIJANA  ESTHERAMMA-HVEERENDRA	0000105315584022	24/05/25	2729.7	
+25/05/25	MRS ASHWINI-AASWINI	0000105369152288	25/05/25	3340.24	
+26/05/25	MRS ASHWINI-AASWINI	0000105417468183	26/05/25	3301.12	
+30/05/25	MAHENDRA ENTERPRISES-PAYTMQR2810050501011KTX76S52IE	0000105617388295	30/05/25	540	
+31/05/25	RAJILESH P-RAJILESHPANOLI	0000105667331650	31/05/25		9860
+31/05/25	RAJILESH P-RAJILESHPANOLI	0000105669326012	31/05/25	9860	
+01/06/25	IMPS-515226101486-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT301APTJUNE	0000515226101486	01/06/25		10001
+04/06/25	IMPS-515526234204-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTJUNE	0000515526234204	04/06/25		4890
+04/06/25	IMPS-515527236023-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT505APTJUNE	0000515527236023	04/06/25		4890
+04/06/25	IMPS-515525473490-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT112APTJUNE	0000515525473490	04/06/25		4890
+04/06/25	IMPS-515527244962-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT507APTJUNE	0000515527244962	04/06/25		4890
+04/06/25	IMPS-515526245077-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTJUNE	0000515526245077	04/06/25		4890
+04/06/25	IMPS-515525474324-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT209APTJUNE	0000515525474324	04/06/25		4890
+04/06/25	IMPS-515526246788-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT302APTJUNE	0000515526246788	04/06/25		4890
+04/06/25	IMPS-515528248106-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT208APTJUNE	0000515528248106	04/06/25		4890
+04/06/25	IMPS-515525502289-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT102APTJUNE	0000515525502289	04/06/25		4890
+04/06/25	IMPS-515526261910-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTJUNE	0000515526261910	04/06/25		4890
+04/06/25	IMPS-515527270510-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT106APTJUNE	0000515527270510	04/06/25		4890
+04/06/25	IMPS-515528282029-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTJUNE	0000515528282029	04/06/25		4890
+04/06/25	IMPS-515525546448-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTJUNE	0000515525546448	04/06/25		4890
+04/06/25	IMPS-515525549674-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTJUNE	0000515525549674	04/06/25		4890
+04/06/25	IMPS-515526314509-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTJUNE	0000515526314509	04/06/25		4890
+05/06/25	IMPS-515627000044-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTJUNE	0000515627000044	05/06/25		4890
+05/06/25	IMPS-515628002199-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTJUNE	0000515628002199	05/06/25		4890
+05/06/25	IMPS-515627037179-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG01APTJUNE	0000515627037179	05/06/25		4890
+05/06/25	IMPS-515625081179-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTJUNE	0000515625081179	05/06/25		4890
+05/06/25	IMPS-515627042855-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTJUNE	0000515627042855	05/06/25		4890
+05/06/25	IMPS-515627044681-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT407APTJUNE	0000515627044681	05/06/25		4890
+05/06/25	IMPS-515628045446-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTJUNE	0000515628045446	05/06/25		4890
+05/06/25	IMPS-515625115864-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTJUNE	0000515625115864	05/06/25		4890
+05/06/25	IMPS-515625121437-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT309APTJUNE	0000515625121437	05/06/25		4890
+05/06/25	IMPS-515625127063-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTJUNE	0000515625127063	05/06/25		4890
+05/06/25	IMPS-515625149003-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTJUNE	0000515625149003	05/06/25		4890
+05/06/25	JANMAR25 INSTAALERTCHG 2 SMS 040425-MIR2615421038625	MIR2615421038625	05/06/25	0.47	
+05/06/25	IMPS-515626084579-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTJUNE	0000515626084579	05/06/25		4890
+05/06/25	IMPS-515627093669-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT103APTJUNE	0000515627093669	05/06/25		4890
+05/06/25	IMPS-515626093891-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTJUNE	0000515626093891	05/06/25		4890
+05/06/25	IMPS-515627094437-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTJUNE	0000515627094437	05/06/25		4890
+05/06/25	IMPS-515626161195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTJUNE	0000515626161195	05/06/25		4890
+05/06/25	IMPS-515627169688-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTJUNE	0000515627169688	05/06/25		4890
+05/06/25	IMPS-515628195440-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT512APTJUNE	0000515628195440	05/06/25		4890
+05/06/25	IMPS-515628218113-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTJUNE	0000515628218113	05/06/25		4890
+06/06/25	IMPS-515725165113-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT503APTJUNE	0000515725165113	06/06/25		4890
+06/06/25	IMPS-515727089586-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTJUNE	0000515727089586	06/06/25		4890
+06/06/25	IMPS-515727107709-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTJUNE	0000515727107709	06/06/25		4890
+06/06/25	IMPS-515725215211-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTJUNE	0000515725215211	06/06/25		4890
+06/06/25	IMPS-515726122736-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT606APTJUNE	0000515726122736	06/06/25		4890
+06/06/25	IMPS-515726129827-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTJUNE	0000515726129827	06/06/25		4890
+06/06/25	IMPS-515726130247-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTJUNE	0000515726130247	06/06/25		4890
+06/06/25	IMPS-515725344208-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTJUNE	0000515725344208	06/06/25		4890
+06/06/25	IMPS-515725355352-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTJUNE	0000515725355352	06/06/25		4890
+06/06/25	IMPS-515726185846-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTJUNE	0000515726185846	06/06/25		4890
+06/06/25	IMPS-515722922840-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT406APTJUNE	0000515722922840	06/06/25		4890
+06/06/25	IMPS-515727272835-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTJUNE	0000515727272835	06/06/25		4890
+07/06/25	IMPS-515828010597-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT703APTJUNE	0000515828010597	07/06/25		4890
+07/06/25	IMPS-515825069554-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTJUNE	0000515825069554	07/06/25		4890
+07/06/25	IMPS-515826043786-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTJUNE	0000515826043786	07/06/25		4890
+07/06/25	IMPS-515826058888-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTJUNE	0000515826058888	07/06/25		4890
+07/06/25	IMPS-515825118207-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTJUNE	0000515825118207	07/06/25		4890
+07/06/25	IMPS-515825119179-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTJUNE	0000515825119179	07/06/25		4890
+07/06/25	IMPS-515825130804-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTJUNE	0000515825130804	07/06/25		4890
+07/06/25	IMPS-515826089129-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTJUNE	0000515826089129	07/06/25		4890
+07/06/25	IMPS-515825176727-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT612APTJUNE	0000515825176727	07/06/25		4890
+07/06/25	IMPS-515825239561-NOBROKER-RATN-XXXXXXXX0617-FLAT412APTJUNE	0000515825239561	07/06/25		4890
+08/06/25	IMPS-515926037420-NOBROKER-RATN-XXXXXXXX0617-FLAT712APTJUNE	0000515926037420	08/06/25		4890
+08/06/25	IMPS-515926093371-NOBROKER-RATN-XXXXXXXX0617-FLAT604APTJUNE	0000515926093371	08/06/25		4890
+08/06/25	IMPS-515925182918-NOBROKER-RATN-XXXXXXXX0617-FLAT405APTJUNE	0000515925182918	08/06/25		4890
+08/06/25	IMPS-515926110829-NOBROKER-RATN-XXXXXXXX0617-FLAT104APTJUNE	0000515926110829	08/06/25		4890
+08/06/25	IMPS-515925236433-NOBROKER-RATN-XXXXXXXX0617-FLAT101APTJUNE	0000515925236433	08/06/25		4890
+08/06/25	IMPS-515925242634-NOBROKER-RATN-XXXXXXXX0617-FLAT214APTJUNE	0000515925242634	08/06/25		4890
+09/06/25	IMPS-516003126818-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT210APTJUNE	0000516003126818	09/06/25		4890
+09/06/25	IMPS-516003126966-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT304APTJUNE	0000516003126966	09/06/25		4890
+09/06/25	IMPS-516004130631-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG06APTJUNE	0000516004130631	09/06/25		4890
+09/06/25	CASHFREE PAYMENTS ESCROW ACCOUNT-SOANCE INNOVATIONS LLP-IDFBN52025060960581093	IDFBN52025060960581093	09/06/25		22500
+09/06/25	IMPS-516028024062-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT113APTJUNE	0000516028024062	09/06/25		4890
+09/06/25	IMPS-516026024133-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTJUNE	0000516026024133	09/06/25		4890
+09/06/25	IMPS-516025053708-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT715APTJUNE	0000516025053708	09/06/25		11267
+09/06/25	IMPS-516026029623-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTJUNE	0000516026029623	09/06/25		4890
+09/06/25	IMPS-516026038604-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTJUNE	0000516026038604	09/06/25		4890
+09/06/25	IMPS-516027039089-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT701APTJUNE	0000516027039089	09/06/25		11267
+09/06/25	IMPS-516009249206-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT114APTJUNE	0000516009249206	09/06/25		4890
+09/06/25	IMPS-516025099953-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTJUNE	0000516025099953	09/06/25		4890
+09/06/25	ASHOK-ASHOKPOOJA	0000106170967608	09/06/25	2306	
+09/06/25	IMPS-516025112208-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTJUNE	0000516025112208	09/06/25		4890
+09/06/25	IMPS-516026060692-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTJUNE	0000516026060692	09/06/25		4890
+09/06/25	IMPS-516027076921-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTJUNE	0000516027076921	09/06/25		4890
+09/06/25	IMPS-516026091414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT607APTJUNE	0000516026091414	09/06/25		4890
+09/06/25	IMPS-516027098146-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTJUNE	0000516027098146	09/06/25		4890
+09/06/25	IMPS-516026159530-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTJUNE	0000516026159530	09/06/25		4890
+09/06/25	IMPS-516027159781-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTJUNE	0000516027159781	09/06/25		4890
+09/06/25	IMPS-516027161567-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTJUNE	0000516027161567	09/06/25		4890
+09/06/25	IMPS-516027162011-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTJUNE	0000516027162011	09/06/25		4890
+09/06/25	IMPS-516027203299-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTJUNE	0000516027203299	09/06/25		4890
+09/06/25	IMPS-516026258902-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTJUNE	0000516026258902	09/06/25		4890
+09/06/25	IMPS-516027292011-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTJUNE	0000516027292011	10/06/25		4890
+10/06/25	SB SALARY MAY	HDFCR52025061079317556	10/06/25	208771.36	
+10/06/25	GPAY UTIB0000553 - 106222714368	0000106222714368	10/06/25	6882	
+10/06/25	GPAY UTIB0000553 - 106222757711	0000106222757711	10/06/25	6686	
+10/06/25	GPAY UTIB0000553 - 106222879549	0000106222879549	10/06/25	5052	
+10/06/25	GPAY UTIB0000553 - 106222975504	0000106222975504	10/06/25	21459	
+10/06/25	GPAY UTIB0000553 - 106223170695	0000106223170695	10/06/25	34065	
+10/06/25	MANJUNATHA-MANJU.MS COLLECTION	0000106223454949	10/06/25	9000	
+10/06/25	IMPS-516125113198-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTJUNE	0000516125113198	10/06/25		4890
+10/06/25	IMPS-516127072128-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTJUNE	0000516127072128	10/06/25		4890
+10/06/25	IMPS-516128073790-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTJUNE	0000516128073790	10/06/25		4890
+10/06/25	IMPS-516128108022-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT313APTJUNE	0000516128108022	10/06/25		4890
+10/06/25	IMPS-516128141572-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTJUNE	0000516128141572	10/06/25		4890
+10/06/25	IMPS-516125328456-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTJUNE	0000516125328456	10/06/25		4890
+10/06/25	IMPS-516127234453-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTJUNE	0000516127234453	10/06/25		4890
+10/06/25	IMPS-516128246390-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTJUNE	0000516128246390	10/06/25		4890
+10/06/25	IMPS-516126253975-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTJUNE	0000516126253975	10/06/25		4890
+10/06/25	IMPS-516128258028-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTJUNE	0000516128258028	10/06/25		4890
+10/06/25	IMPS-516127265463-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTJUNE	0000516127265463	10/06/25		1529
+10/06/25	IMPS-516127305895-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTJUNE	0000516127305895	11/06/25		4890
+11/06/25	IMPS-516225009153-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTJUNE	0000516225009153	11/06/25		4390
+11/06/25	IMPS-516227050126-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTJUNE	0000516227050126	11/06/25		4940
+11/06/25	IMPS-516225110825-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTJUNE	0000516225110825	11/06/25		4940
+11/06/25	IMPS-516228066286-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTJUNE	0000516228066286	11/06/25		4940
+11/06/25	IMPS-516211576695-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLATG15APTJUNE	0000516211576695	11/06/25		4940
+11/06/25	IMPS-516226115731-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT301APTJUNE	0000516226115731	11/06/25		4940
+11/06/25	IMPS-516225537652-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTJUNE	0000516225537652	11/06/25		4940
+11/06/25	IMPS-516227292021-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTJUNE	0000516227292021	11/06/25		4940
+11/06/25	WATER	HDFCN52025061190822221	11/06/25	105600	
+12/06/25	GURUKRIPA TRADING CO MATERIALS	0000106331291285	12/06/25	440	
+12/06/25	BHAWANI  SINGH	0000106367440873	12/06/25	7702	
+13/06/25	IMPS-516426037869-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTJUNE	0000516426037869	13/06/25		5040
+16/06/25	REFUND	HDFCN52025061696815099	16/06/25	22500	
+16/06/25	CHINNARAJU C-CHINNARAJUC CLEANING	0000106546960999	16/06/25	2500	
+19/06/25	TREIS SOLUTIONS LLP PAY	0000106715851080	19/06/25	18460.89	
+20/06/25	GONAPADU SHAKUNTALA-SOMALINGAREDDY	0000106782198822	20/06/25	1200	
+22/06/25	IMPS-517328224755-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTJUNE	0000517328224755	22/06/25		3961
+23/06/25	SIR MANJUNATH ENTERP-PAYTMQR10DD2D@PAYTM-YESB0PTM106913252731-FERTILISER	0000106913252731	23/06/25	1030	
+29/06/25	CHINNARAJU C-CHINNARAJUC	0000107240768978	29/06/25	120	
+06/07/25	IMPS-518725173084-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT202APTJULY	0000518725173084	06/07/25		4749
+06/07/25	IMPS-518728088370-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT111APTJULY	0000518728088370	06/07/25		4749
+06/07/25	IMPS-518725173664-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT210APTJULY	0000518725173664	06/07/25		4749
+06/07/25	IMPS-518709673531-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT209APTJULY	0000518709673531	06/07/25		4749
+06/07/25	IMPS-518709682314-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT102APTJULY	0000518709682314	06/07/25		4749
+06/07/25	IMPS-518709684515-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT103APTJULY	0000518709684515	06/07/25		4749
+06/07/25	IMPS-518709687045-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT309APTJULY	0000518709687045	06/07/25		4749
+06/07/25	IMPS-518709687133-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT512APTJULY	0000518709687133	06/07/25		4749
+06/07/25	IMPS-518710697717-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT106APTJULY	0000518710697717	06/07/25		4749
+06/07/25	IMPS-518710700262-RAZORPAYX ESCROW ACC-IDFB-XXXXXXX8904-FLAT505APTJULY	0000518710700262	06/07/25		4749
+06/07/25	IMPS-518728103970-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT409APTJULY	0000518728103970	06/07/25		4749
+06/07/25	IMPS-518726104366-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT109APTJULY	0000518726104366	06/07/25		4749
+06/07/25	IMPS-518725204816-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT608APTJULY	0000518725204816	06/07/25		4749
+06/07/25	IMPS-518725204967-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT211APTJULY	0000518725204967	06/07/25		4749
+06/07/25	IMPS-518725205174-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT203APTJULY	0000518725205174	06/07/25		4749
+06/07/25	IMPS-518725205477-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT515APTJULY	0000518725205477	06/07/25		4749
+06/07/25	IMPS-518726105883-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT701APTJULY	0000518726105883	06/07/25		3349
+06/07/25	IMPS-518725207264-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT208APTJULY	0000518725207264	06/07/25		4749
+06/07/25	IMPS-518725210489-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT310APTJULY	0000518725210489	06/07/25		4749
+06/07/25	IMPS-518725210571-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT207APTJULY	0000518725210571	06/07/25		4749
+06/07/25	IMPS-518725210818-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT115APTJULY	0000518725210818	06/07/25		4749
+06/07/25	IMPS-518725213794-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT215APTJULY	0000518725213794	06/07/25		4749
+06/07/25	IMPS-518728110520-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG09APTJULY	0000518728110520	06/07/25		4749
+06/07/25	IMPS-518725219831-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT414APTJULY	0000518725219831	06/07/25		4749
+06/07/25	IMPS-518725220771-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT403APTJULY	0000518725220771	06/07/25		4749
+06/07/25	IMPS-518726115067-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT707APTJULY	0000518726115067	06/07/25		4749
+06/07/25	IMPS-518725225029-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT407APTJULY	0000518725225029	06/07/25		4749
+06/07/25	IMPS-518726118177-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT110APTJULY	0000518726118177	06/07/25		4749
+06/07/25	IMPS-518725234959-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT315APTJULY	0000518725234959	06/07/25		4749
+06/07/25	IMPS-518726123510-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT711APTJULY	0000518726123510	06/07/25		4749
+06/07/25	IMPS-518726126181-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT412APTJULY	0000518726126181	06/07/25		4749
+06/07/25	IMPS-518725254578-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT413APTJULY	0000518725254578	06/07/25		4749
+06/07/25	IMPS-518725254936-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT305APTJULY	0000518725254936	06/07/25		4749
+06/07/25	IMPS-518725255607-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT306APTJULY	0000518725255607	06/07/25		4749
+06/07/25	IMPS-518725257450-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT610APTJULY	0000518725257450	06/07/25		4749
+06/07/25	IMPS-518726134311-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT614APTJULY	0000518726134311	06/07/25		4749
+06/07/25	IMPS-518725287995-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT706APTJULY	0000518725287995	06/07/25		4749
+06/07/25	IMPS-518726150165-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG01APTJULY	0000518726150165	06/07/25		4749
+06/07/25	IMPS-518725360552-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG06APTJULY	0000518725360552	06/07/25		4749
+06/07/25	IMPS-518725367911-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT613APTJULY	0000518725367911	06/07/25		4749
+06/07/25	IMPS-518727197998-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT603APTJULY	0000518727197998	06/07/25		4749
+06/07/25	IMPS-518726207088-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT612APTJULY	0000518726207088	06/07/25		4749
+06/07/25	IMPS-518728223566-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT201APTJULY	0000518728223566	06/07/25		4749
+06/07/25	IMPS-518728225441-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT206APTJULY	0000518728225441	06/07/25		4749
+06/07/25	IMPS-518726232233-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT710APTJULY	0000518726232233	06/07/25		4749
+06/07/25	IMPS-518726233295-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT604APTJULY	0000518726233295	06/07/25		4749
+06/07/25	IMPS-518726251588-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT311APTJULY	0000518726251588	06/07/25		4749
+06/07/25	IMPS-518726279190-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT715APTJULY	0000518726279190	06/07/25		3349
+06/07/25	IMPS-518728280795-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT504APTJULY	0000518728280795	06/07/25		4749
+06/07/25	IMPS-518726285642-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT406APTJULY	0000518726285642	06/07/25		4749
+07/07/25	IMPS-518828077487-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT112APTJULY	0000518828077487	07/07/25		4749
+07/07/25	IMPS-518825212170-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG03APTJULY	0000518825212170	07/07/25		4749
+07/07/25	IMPS-518827152958-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT703APTJULY	0000518827152958	07/07/25		4749
+07/07/25	IMPS-518825300345-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG05APTJULY	0000518825300345	07/07/25		4749
+07/07/25	IMPS-518825396217-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT405APTJULY	0000518825396217	07/07/25		4749
+07/07/25	IMPS-518825397456-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT611APTJULY	0000518825397456	07/07/25		4749
+07/07/25	IMPS-518825406613-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT307APTJULY	0000518825406613	07/07/25		4749
+07/07/25	IMPS-518825425093-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT609APTJULY	0000518825425093	07/07/25		4749
+07/07/25	IMPS-518825435879-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT501APTJULY	0000518825435879	07/07/25		4749
+07/07/25	TREIS SOLUTIONS LLP PAY	0000107710317003	07/07/25	15726	
+08/07/25	IMPS-518925104500-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT313APTJULY	0000518925104500	08/07/25		4749
+08/07/25	IMPS-518928055887-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT712APTJULY	0000518928055887	08/07/25		4749
+08/07/25	IMPS-518926064717-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT513APTJULY	0000518926064717	08/07/25		4749
+08/07/25	IMPS-518927070253-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT312APTJULY	0000518927070253	08/07/25		4749
+08/07/25	IMPS-518926072299-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT402APTJULY	0000518926072299	08/07/25		4749
+08/07/25	IMPS-518927083133-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG04APTJULY	0000518927083133	08/07/25		4749
+08/07/25	IMPS-518925296330-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT509APTJULY	0000518925296330	08/07/25		4149
+08/07/25	IMPS-518927219643-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT304APTJULY	0000518927219643	08/07/25		4749
+08/07/25	IMPS-518928233423-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT101APTJULY	0000518928233423	08/07/25		4749
+08/07/25	IMPS-518926256973-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG12APTJULY	0000518926256973	08/07/25		4749
+08/07/25	IMPS-518928267777-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT502APTJULY	0000518928267777	08/07/25		4749
+08/07/25	IMPS-518927269614-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT214APTJULY	0000518927269614	08/07/25		4749
+09/07/25	IMPS-519026005087-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT607APTJULY	0000519026005087	09/07/25		4749
+09/07/25	IMPS-519027058097-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT508APTJULY	0000519027058097	09/07/25		4749
+09/07/25	IMPS-519027064613-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT702APTJULY	0000519027064613	09/07/25		4749
+09/07/25	IMPS-519026106899-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG15APTJULY	0000519026106899	09/07/25		4749
+09/07/25	IMPS-519025376627-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT510APTJULY	0000519025376627	09/07/25		4749
+09/07/25	IMPS-519025411151-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT615APTJULY	0000519025411151	09/07/25		4749
+09/07/25	IMPS-519027221082-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT415APTJULY	0000519027221082	09/07/25		4749
+09/07/25	IMPS-519026227624-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT506APTJULY	0000519026227624	09/07/25		4749
+09/07/25	IMPS-519025480900-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT713APTJULY	0000519025480900	09/07/25		4749
+09/07/25	IMPS-519027279303-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT606APTJULY	0000519027279303	09/07/25		4749
+10/07/25	IMPS-519127011765-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT507APTJULY	0000519127011765	10/07/25		4749
+10/07/25	IMPS-519125062867-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG08APTJULY	0000519125062867	10/07/25		4749
+10/07/25	IMPS-519125063386-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT114APTJULY	0000519125063386	10/07/25		4749
+10/07/25	IMPS-519125073414-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT605APTJULY	0000519125073414	10/07/25		4749
+10/07/25	IMPS-519125085516-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT704APTJULY	0000519125085516	10/07/25		4749
+10/07/25	IMPS-519125200275-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT401APTJULY	0000519125200275	10/07/25		4749
+10/07/25	IMPS-519128313122-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG13APTJULY	0000519128313122	10/07/25		4749
+10/07/25	IMPS-519125601288-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT108APTJULY	0000519125601288	10/07/25		4749
+10/07/25	IMPS-519125621627-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT411APTJULY	0000519125621627	11/07/25		4749
+11/07/25	IMPS-519225067616-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT303APTJULY	0000519225067616	11/07/25		4749
+11/07/25	SB SALARY	HDFCR52025071189846223	11/07/25	210242.34	
+11/07/25	IMPS-519225216395-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT404APTJULY	0000519225216395	11/07/25		4749
+11/07/25	IMPS-519228118562-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT104APTJULY	0000519228118562	11/07/25		4749
+11/07/25	IMPS-519228119988-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT302APTJULY	0000519228119988	11/07/25		4749
+11/07/25	IMPS-519227154230-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG07APTJULY	0000519227154230	11/07/25		4749
+11/07/25	IMPS-519228174195-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT511APTJULY	0000519228174195	11/07/25		4749
+11/07/25	IMPS-519228290663-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT204APTJULY	0000519228290663	11/07/25		4749
+11/07/25	IMPS-519225545401-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT205APTJULY	0000519225545401	11/07/25		4749
+12/07/25	IMPS-519327006385-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT408APTJULY	0000519327006385	12/07/25		4799
+12/07/25	IMPS-519327043223-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLATG11APTJULY	0000519327043223	12/07/25		4799
+12/07/25	IMPS-519325465450-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT105APTJULY	0000519325465450	12/07/25		4799
+13/07/25	IMPS-519425172599-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT514APTJULY	0000519425172599	13/07/25		4849
+13/07/25	IMPS-519428112396-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT503APTJULY	0000519428112396	13/07/25		4849
+13/07/25	WATER	HDFCN52025071352770033	13/07/25	165000	
+13/07/25	MANJUNATHA-MANJU.MS	0000108040538069	13/07/25	9000	
+13/07/25	GPAY UTIB0000553 - 108040708996	0000108040708996	13/07/25	9186	
+13/07/25	GPAY UTIB0000553 - 108040773141	0000108040773141	13/07/25	11078	
+13/07/25	GPAY UTIB0000553 - 108040852231	0000108040852231	13/07/25	6961	
+13/07/25	GPAY UTIB0000553 - 108040974211	0000108040974211	13/07/25	24325	
+13/07/25	GPAY UTIB0000553 - 108041277399	0000108041277399	13/07/25	21166	
+13/07/25	IMPS-519425435445-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT301APTJULY	0000519425435445	13/07/25		4849
+14/07/25	IMPS-519525590509-RAZORPAYX PRIVATE LIMITED-RATN-XXXXXXXX3301-FLAT314APTJULY	0000519525590509	14/07/25		4899
+16/07/25	GANGAVARAPU SAI KRIS-GSAIKRISHNA	0000519781541152	16/07/25		3620
+18/07/25	YASHAS GRAPHICS-PAYTMQR6CWMF	0000108307859393	18/07/25	500	
+18/07/25	CHINNARAJU C-CHINNARAJUC	0000108334797165	18/07/25	1000	
+19/07/25	YASHAS GRAPHICS-PAYTMQR6CWMF	0000108347275481	19/07/25	460	
+19/07/25	TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025071900599588	SCBLN52025071900599588	19/07/25		14
+19/07/25	TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025071900599605	SCBLN52025071900599605	19/07/25		2
+20/07/25	RAZORPAY IDFBN52025072001772457	IDFBN52025072001772457	20/07/25		5199
+20/07/25	GUTTA VENU GOPAL	0000108414102364	20/07/25	13000	
+21/07/25	RAZORPAY IDFBN52025072102032696	IDFBN52025072102032696	21/07/25		16600
+22/07/25	RAJILESH P-RAJILESHPANOLI	0000108502094709	22/07/25		13000
+22/07/25	TREIS SOLUTIONS LLP PAY	0000108506852325	22/07/25	15726	
+23/07/25	SRI VENKATESHWARA EL-GPAY MOTOR	0000108575167939	23/07/25	17000	
+25/07/25	IMPS-520609388365-NOBROKER TECHNOLOGIES SOLUTIONS PRIVATE LIMIT-HSBC-XXXXXXXX7001-NB43654C20500021903000B	0000520609388365	25/07/25		3000
+25/07/25	PP ENTERPRISES-BOISM QR	0000108667990186	25/07/25	285	
+25/07/25	SONALI SURAJITA MOHA-SONALI.MOHANTY LIFT ADS	0000108678488320	25/07/25	3000	
+27/07/25	CBDT K2520836750649 - 25072700028328HDFC	0250727110009464	27/07/25	4291	
+28/07/25	IMPS-520918234638-BRAVIRAJU-UBIN-XXXXXXXXXXX4226-FLAT 308 MAINTENANCE	0000520918234638	28/07/25		21000
+29/07/25	G RAVI KUMAR HEAD	0000108891563648	29/07/25	3200	
+30/07/25	MITESH NITIN SANGHAN CBR VEHICLE STICKE	0000108961588547	30/07/25	6000	
+30/07/25	SONALI SURAJITA MOHANTY-RAJILESH CBR-UTIBN62025073093818150	UTIBN62025073093818150	30/07/25		6000
+05/08/25	RAZORPAY IDFBN52025080517551054	IDFBN52025080517551054	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517551489	IDFBN52025080517551489	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517551501	IDFBN52025080517551501	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517551691	IDFBN52025080517551691	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517552092	IDFBN52025080517552092	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517552559	IDFBN52025080517552559	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517553744	IDFBN52025080517553744	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517555538	IDFBN52025080517555538	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517560601	IDFBN52025080517560601	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517563644	IDFBN52025080517563644	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517565353	IDFBN52025080517565353	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517566235	IDFBN52025080517566235	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517574160	IDFBN52025080517574160	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517594092	IDFBN52025080517594092	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517598157	IDFBN52025080517598157	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517601458	IDFBN52025080517601458	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517609216	IDFBN52025080517609216	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517618729	IDFBN52025080517618729	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517653555	IDFBN52025080517653555	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517660616	IDFBN52025080517660616	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517675698	IDFBN52025080517675698	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517699229	IDFBN52025080517699229	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517706843	IDFBN52025080517706843	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517707383	IDFBN52025080517707383	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517712889	IDFBN52025080517712889	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517714310	IDFBN52025080517714310	05/08/25		4593
+05/08/25	RAZORPAY IDFBN52025080517714825	IDFBN52025080517714825	05/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080517716574	IDFBN52025080517716574	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618721652	IDFBN52025080618721652	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618727514	IDFBN52025080618727514	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618728013	IDFBN52025080618728013	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618728654	IDFBN52025080618728654	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618728745	IDFBN52025080618728745	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618728994	IDFBN52025080618728994	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618729068	IDFBN52025080618729068	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618729412	IDFBN52025080618729412	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618732894	IDFBN52025080618732894	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618733196	IDFBN52025080618733196	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618733709	IDFBN52025080618733709	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618738548	IDFBN52025080618738548	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618740710	IDFBN52025080618740710	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618741349	IDFBN52025080618741349	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618743457	IDFBN52025080618743457	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618764723	IDFBN52025080618764723	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618765190	IDFBN52025080618765190	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618772546	IDFBN52025080618772546	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618773281	IDFBN52025080618773281	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618774198	IDFBN52025080618774198	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618775505	IDFBN52025080618775505	06/08/25		4593
+06/08/25	SHINDE  MARUTI FILTER	0000109337754942	06/08/25	200	
+06/08/25	RAZORPAY IDFBN52025080618794804	IDFBN52025080618794804	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618796040	IDFBN52025080618796040	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618846053	IDFBN52025080618846053	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618853814	IDFBN52025080618853814	06/08/25		4593
+06/08/25	DHARANI  BEHERA-DHARANIBEHERA BOXES	0000109353182013	06/08/25	8456	
+06/08/25	RAZORPAY IDFBN52025080618885855	IDFBN52025080618885855	06/08/25		4593
+06/08/25	RAZORPAY IDFBN52025080618934937	IDFBN52025080618934937	06/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719957915	IDFBN52025080719957915	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719972398	IDFBN52025080719972398	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719979934	IDFBN52025080719979934	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719018257	IDFBN52025080719018257	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719020801	IDFBN52025080719020801	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719022223	IDFBN52025080719022223	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719022519	IDFBN52025080719022519	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719023520	IDFBN52025080719023520	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719044490	IDFBN52025080719044490	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719049452	IDFBN52025080719049452	07/08/25		4593
+07/08/25	CHINNARAJU C-CHINNARAJUC	0000109405095471	07/08/25	100	
+07/08/25	RAZORPAY IDFBN52025080719057018	IDFBN52025080719057018	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719060881	IDFBN52025080719060881	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719067768	IDFBN52025080719067768	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719100641	IDFBN52025080719100641	07/08/25		4593
+07/08/25	RAZORPAY IDFBN52025080719101255	IDFBN52025080719101255	07/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820296223	IDFBN52025080820296223	08/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820296871	IDFBN52025080820296871	08/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820298597	IDFBN52025080820298597	08/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820301269	IDFBN52025080820301269	08/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820305559	IDFBN52025080820305559	08/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820313840	IDFBN52025080820313840	08/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820326946	IDFBN52025080820326946	08/08/25		4593
+08/08/25	IMPS-522012605384-BRAVIRAJU-UBIN-XXXXXXXXXXX4226-F 308, MAINTANANCE JULY25	0000522012605384	08/08/25		3000
+08/08/25	RAZORPAY IDFBN52025080820329909	IDFBN52025080820329909	08/08/25		4593
+08/08/25	RAZORPAY IDFBN52025080820341879	IDFBN52025080820341879	08/08/25		4593
+08/08/25	SB SALARY	HDFCR52025080899245916	08/08/25	211680	
+09/08/25	RAZORPAY IDFBN52025080921560318	IDFBN52025080921560318	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921575560	IDFBN52025080921575560	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921581392	IDFBN52025080921581392	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921582764	IDFBN52025080921582764	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921589793	IDFBN52025080921589793	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921606973	IDFBN52025080921606973	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921615635	IDFBN52025080921615635	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921625248	IDFBN52025080921625248	09/08/25		4593
+09/08/25	RAZORPAY IDFBN52025080921635793	IDFBN52025080921635793	09/08/25		4593
+09/08/25	TREIS SOLUTIONS LLP PAY	0000109551166099	09/08/25	15844.35	
+10/08/25	RAZORPAY IDFBN52025081022663445	IDFBN52025081022663445	10/08/25		4593
+10/08/25	RADHEY ENTERPRISES-VYAPAR	0000109558955640	10/08/25	370	
+10/08/25	RAZORPAY IDFBN52025081022666009	IDFBN52025081022666009	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022666726	IDFBN52025081022666726	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022666863	IDFBN52025081022666863	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022667407	IDFBN52025081022667407	10/08/25		4593
+10/08/25	WATER SENSIR	0000109562067834	10/08/25	22000	
+10/08/25	RAZORPAY IDFBN52025081022670008	IDFBN52025081022670008	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022679002	IDFBN52025081022679002	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022686889	IDFBN52025081022686889	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022690882	IDFBN52025081022690882	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022702834	IDFBN52025081022702834	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022703818	IDFBN52025081022703818	10/08/25		4593
+10/08/25	RAZORPAY IDFBN52025081022720283	IDFBN52025081022720283	11/08/25		4593
+11/08/25	RATNN52025081133997866	RATNN52025081133997866	11/08/25		4593
+11/08/25	RAZORPAY IDFBN52025081123752858	IDFBN52025081123752858	11/08/25		4643
+11/08/25	GPAY UTIB0000553 - 109622923583	0000109622923583	11/08/25	9467	
+11/08/25	GPAY UTIB0000553 - 109622989790	0000109622989790	11/08/25	11811	
+11/08/25	GPAY UTIB0000553 - 109623108775	0000109623108775	11/08/25	7108	
+11/08/25	GPAY UTIB0000553 - 109623212787	0000109623212787	11/08/25	26036	
+11/08/25	GPAY UTIB0000553 - 109623354246	0000109623354246	11/08/25	23275	
+11/08/25	RAZORPAY IDFBN52025081123786170	IDFBN52025081123786170	11/08/25		4643
+12/08/25	WATER	HDFCN52025081210557019	12/08/25	153600	
+12/08/25	GARBAGE	HDFCN52025081210563965	12/08/25	9000	
+12/08/25	RAZORPAY IDFBN52025081224993968	IDFBN52025081224993968	12/08/25		4693
+12/08/25	RAZORPAY IDFBN52025081224004408	IDFBN52025081224004408	12/08/25		4693
+13/08/25	RAZORPAY IDFBN52025081325124336	IDFBN52025081325124336	13/08/25		14179
+14/08/25	MAHENDRA ENTERPRISES-PAYTMQR5VFS5Y@PTYS-YESB0PTM109785699189-MATERIALS	0000109785699189	14/08/25	110	
+14/08/25	SARASWATHI ELECTRICA-SARASWAHI	0000109786067137	14/08/25	320	
+14/08/25	RAZORPAY IDFBN52025081426305284	IDFBN52025081426305284	14/08/25		4793
+14/08/25	CHINNARAJU C-CHINNARAJUC FOR LEAK	0000109806191307	14/08/25	230	
+16/08/25	GPAY UTIB0000553 - 109899272126	0000109899272126	16/08/25	2520	
+16/08/25	GPAY UTIB0000553 - 109899359458	0000109899359458	16/08/25	4610	
+16/08/25	GPAY UTIB0000553 - 109899467220	0000109899467220	16/08/25	25450	
+19/08/25	PAWAN ELECTRICAL AND	0000110018325209	19/08/25	760	
+19/08/25	SALT	HDFCN52025081921092345	19/08/25	21600	
+26/08/25	TREIS SOLUTIONS LLP PAY	0000110343473573	26/08/25	15844.07	
+27/08/25	NPCI BHIM BHIMCASHBACK	0000101300887554	27/08/25		7
+27/08/25	RAJARAM DEWASI-RAJDEVASI	0000110397329215	27/08/25	800	
+27/08/25	RAJARAM DEWASI-RAJDEVASI	0000110400006046	27/08/25	250	
+27/08/25	TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623633	SCBLN52025082700623633	27/08/25		16
+27/08/25	TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623652	SCBLN52025082700623652	27/08/25		8
+27/08/25	TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623648	SCBLN52025082700623648	27/08/25		109
+27/08/25	TERRA CHARGE INDIA PRIVATE LIMITED-SOANCE INNOVATIONS LLP-SCBLN52025082700623644	SCBLN52025082700623644	27/08/25		54
+28/08/25	RAJARAM DEWASI-RAJDEVASI	0000110433515127	28/08/25	250	
+04/09/25	CBDT K2524738305137 - 25090400006368HDFC	0250904060000772	04/09/25	4320	`,mn=(e,t="INR")=>(e??0)===0&&e!==0?"":new Intl.NumberFormat("en-IN",{style:"currency",currency:t}).format(Number(e||0));function ym(e){if(!e)return null;const t=String(e).trim().match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{2,4})$/);if(!t)return null;let[n,r,i,a]=t;r=parseInt(r,10),i=parseInt(i,10)-1,a=parseInt(a,10),a<100&&(a+=2e3);const o=new Date(a,i,r);return isNaN(o.getTime())?null:o}function YG(e){if(!e)return"Unknown";const t=e.getFullYear(),n=e.getMonth()+1;return`${t}-${String(n).padStart(2,"0")}`}function mm(e){if(e==null)return 0;const t=String(e).trim();if(!t||t.toUpperCase()==="NA")return 0;const n=t.replace(/[^0-9.-]/g,""),r=parseFloat(n);return isNaN(r)?0:r}function UG(e){return e.includes("	")?"	":e.includes(",")?",":"	"}function HG(e){if(!e)return[];const t=e.split(/\r?\n/).map(r=>r.trim()).filter(Boolean);if(t.length===0)return[];const n=UG(t[0]);return t.map((r,i)=>{const a=r.split(n).map(A=>A.trim()),[o,u,l,s,f,c]=[a[0],a[1],a[2],a[3],a[4],a[5]],d=ym(o),p=ym(s);return{id:`${i}-${l||Math.random().toString(36).slice(2,8)}`,txnDate:d,valueDate:p||d,txnDateStr:o,valueDateStr:s,description:u||"",refNo:l||"",debit:mm(f),credit:mm(c)}})}function VG(e){const t=new Map;for(const n of e){const r=YG(n.valueDate||n.txnDate);t.has(r)||t.set(r,[]),t.get(r).push(n)}for(const[n,r]of t)r.sort((i,a)=>(i.valueDate||i.txnDate)-(a.valueDate||a.txnDate));return new Map([...t.entries()].sort())}function KG(e,t=0){const n=[];let r=t;for(const[i,a]of e){const o=a.reduce((f,c)=>f+(c.credit||0),0),u=a.reduce((f,c)=>f+(c.debit||0),0),l=r,s=l+o-u;n.push({key:i,opening:l,income:o,expense:u,closing:s,entries:a}),r=s}return{months:n,finalBalance:r}}function gm(e,t){const n=document.createElement("a");n.setAttribute("href","data:text/plain;charset=utf-8,"+encodeURIComponent(t)),n.setAttribute("download",e),n.style.display="none",document.body.appendChild(n),n.click(),document.body.removeChild(n)}function on({children:e,className:t=""}){return x.jsx("div",{className:`rounded-2xl shadow-sm border border-gray-200 bg-white p-4 ${t}`,children:e})}function Xu({label:e,value:t,sub:n}){return x.jsxs("div",{children:[x.jsx("div",{className:"text-sm text-gray-500",children:e}),x.jsx("div",{className:"text-2xl font-semibold",children:t}),n&&x.jsx("div",{className:"text-xs text-gray-400 mt-1",children:n})]})}function uo(e,t){const[n,r]=j.useState(()=>{try{const i=localStorage.getItem(e);return i?JSON.parse(i):t}catch{return t}});return j.useEffect(()=>{try{localStorage.setItem(e,JSON.stringify(n))}catch{}},[e,n]),[n,r]}function ZG({search:e,setSearch:t,monthFrom:n,setMonthFrom:r,monthTo:i,setMonthTo:a}){return x.jsxs("div",{className:"flex flex-col md:flex-row gap-3 items-stretch",children:[x.jsxs("div",{className:"flex items-center gap-2 bg-white border rounded-2xl px-3 py-2 flex-1",children:[x.jsx(fS,{className:"w-4 h-4 text-gray-400"}),x.jsx("input",{className:"w-full outline-none text-sm",placeholder:"Search description or ref no.",value:e,onChange:o=>t(o.target.value)})]}),x.jsxs("div",{className:"flex items-center gap-2 bg-white border rounded-2xl px-3 py-2",children:[x.jsx("label",{className:"text-xs text-gray-500",children:"From"}),x.jsx("input",{type:"month",className:"text-sm",value:n,onChange:o=>r(o.target.value)})]}),x.jsxs("div",{className:"flex items-center gap-2 bg-white border rounded-2xl px-3 py-2",children:[x.jsx("label",{className:"text-xs text-gray-500",children:"To"}),x.jsx("input",{type:"month",className:"text-sm",value:i,onChange:o=>a(o.target.value)})]})]})}function zG({entries:e}){const[t,n]=j.useState(1),r=15,i=Math.max(1,Math.ceil(e.length/r));j.useEffect(()=>{t>i&&n(1)},[e,i]);const a=e.slice((t-1)*r,t*r);return x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center justify-between mb-3",children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700",children:[x.jsx(AS,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Transactions"})," ",x.jsxs("span",{className:"text-xs text-gray-400",children:["(",e.length,")"]})]}),x.jsxs("div",{className:"flex items-center gap-2 text-sm",children:[x.jsx("button",{className:"px-3 py-1.5 rounded-xl border",onClick:()=>n(o=>Math.max(1,o-1)),children:"Prev"}),x.jsxs("div",{className:"text-xs text-gray-500",children:["Page ",t," / ",i]}),x.jsx("button",{className:"px-3 py-1.5 rounded-xl border",onClick:()=>n(o=>Math.min(i,o+1)),children:"Next"})]})]}),x.jsx("div",{className:"overflow-auto",children:x.jsxs("table",{className:"w-full text-sm",children:[x.jsx("thead",{children:x.jsxs("tr",{className:"text-left border-b bg-gray-50",children:[x.jsx("th",{className:"p-2 whitespace-nowrap",children:"Value Date"}),x.jsx("th",{className:"p-2",children:"Description"}),x.jsx("th",{className:"p-2 whitespace-nowrap",children:"Ref No"}),x.jsx("th",{className:"p-2 text-right",children:"Debit"}),x.jsx("th",{className:"p-2 text-right",children:"Credit"})]})}),x.jsx("tbody",{children:a.map(o=>x.jsxs("tr",{className:"border-b last:border-0",children:[x.jsx("td",{className:"p-2 whitespace-nowrap",children:o.valueDate?o.valueDate.toLocaleDateString():o.txnDateStr}),x.jsx("td",{className:"p-2",children:o.description}),x.jsx("td",{className:"p-2 whitespace-nowrap font-mono text-xs",children:o.refNo}),x.jsx("td",{className:"p-2 text-right tabular-nums",children:o.debit?mn(o.debit):""}),x.jsx("td",{className:"p-2 text-right tabular-nums",children:o.credit?mn(o.credit):""})]},o.id))})]})})]})}function GG({months:e}){return x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(uS,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Month‑wise Opening / Closing"})]}),x.jsx("div",{className:"overflow-auto",children:x.jsxs("table",{className:"w-full text-sm",children:[x.jsx("thead",{children:x.jsxs("tr",{className:"text-left border-b bg-gray-50",children:[x.jsx("th",{className:"p-2",children:"Month"}),x.jsx("th",{className:"p-2 text-right",children:"Opening"}),x.jsx("th",{className:"p-2 text-right",children:"Income"}),x.jsx("th",{className:"p-2 text-right",children:"Expense"}),x.jsx("th",{className:"p-2 text-right",children:"Closing"}),x.jsx("th",{className:"p-2 text-right",children:"Txns"})]})}),x.jsx("tbody",{children:e.map(t=>x.jsxs("tr",{className:"border-b last:border-0",children:[x.jsx("td",{className:"p-2 whitespace-nowrap",children:t.key}),x.jsx("td",{className:"p-2 text-right",children:mn(t.opening)}),x.jsx("td",{className:"p-2 text-right text-emerald-600",children:mn(t.income)}),x.jsx("td",{className:"p-2 text-right text-rose-600",children:mn(t.expense)}),x.jsx("td",{className:"p-2 text-right font-medium",children:mn(t.closing)}),x.jsx("td",{className:"p-2 text-right",children:t.entries.length})]},t.key))})]})})]})}function WG({months:e}){const t=e.map(o=>({month:o.key,Income:Number(o.income.toFixed(2)),Expense:Number(o.expense.toFixed(2))}));let n=0;const r=e.map(o=>(n=o.closing,{month:o.key,Balance:Number(n.toFixed(2))})),i=e.reduce((o,u)=>({income:o.income+u.income,expense:o.expense+u.expense}),{income:0,expense:0}),a=[{name:"Income",value:Number(i.income.toFixed(2))},{name:"Expense",value:Number(i.expense.toFixed(2))}];return x.jsxs("div",{className:"grid grid-cols-1 xl:grid-cols-3 gap-4",children:[x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(nh,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Monthly Income vs Expense"})]}),x.jsx("div",{className:"h-64",children:x.jsx(tf,{width:"100%",height:"100%",children:x.jsxs(kG,{data:t,children:[x.jsx(Mp,{strokeDasharray:"3 3"}),x.jsx(Xa,{dataKey:"month"}),x.jsx(Ra,{}),x.jsx(kt,{}),x.jsx(jn,{}),x.jsx(Tr,{dataKey:"Income"}),x.jsx(Tr,{dataKey:"Expense"})]})})})]}),x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(nh,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Cumulative Balance"})]}),x.jsx("div",{className:"h-64",children:x.jsx(tf,{width:"100%",height:"100%",children:x.jsxs(FG,{data:r,children:[x.jsx(Mp,{strokeDasharray:"3 3"}),x.jsx(Xa,{dataKey:"month"}),x.jsx(Ra,{}),x.jsx(kt,{}),x.jsx(jn,{}),x.jsx(Y0,{type:"monotone",dataKey:"Balance"})]})})})]}),x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-3",children:[x.jsx(Q4,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Income vs Expense"})]}),x.jsx("div",{className:"h-64",children:x.jsx(tf,{width:"100%",height:"100%",children:x.jsxs(BG,{children:[x.jsx(kt,{}),x.jsx(jn,{}),x.jsx(qn,{dataKey:"value",data:a,nameKey:"name",cx:"50%",cy:"50%",outerRadius:80,label:!0,children:a.map((o,u)=>x.jsx(Vs,{},`cell-${u}`))})]})})})]})]})}function JG(){var g,T,I,R;const[e,t]=uo("asv_rawText",vm),[n,r]=uo("asv_initialBalance",0),[i,a]=uo("asv_search",""),[o,u]=uo("asv_mfrom",""),[l,s]=uo("asv_mto",""),f=j.useMemo(()=>HG(e),[e]),c=j.useMemo(()=>{let S=f;if(i){const b=i.toLowerCase();S=S.filter(O=>(O.description||"").toLowerCase().includes(b)||(O.refNo||"").toLowerCase().includes(b))}if(o){const[b,O]=o.split("-").map(Number),N=new Date(b,O-1,1);S=S.filter(w=>(w.valueDate||w.txnDate)>=N)}if(l){const[b,O]=l.split("-").map(Number),N=new Date(b,O,0,23,59,59,999);S=S.filter(w=>(w.valueDate||w.txnDate)<=N)}return[...S].sort((b,O)=>(b.valueDate||b.txnDate)-(O.valueDate||O.txnDate))},[f,i,o,l]),d=j.useMemo(()=>VG(c),[c]),{months:p,finalBalance:A}=j.useMemo(()=>KG(d,Number(n||0)),[d,n]),h=j.useMemo(()=>{const S=c.reduce((O,N)=>O+(N.credit||0),0),b=c.reduce((O,N)=>O+(N.debit||0),0);return{income:S,expense:b,net:S-b}},[c]);function P(S){var N;const b=(N=S.target.files)==null?void 0:N[0];if(!b)return;const O=new FileReader;O.onload=()=>t(String(O.result||"")),O.readAsText(b)}function y(){const S=["ValueDate","TxnDate","Description","RefNo","Debit","Credit"].join(","),b=c.map(O=>[O.valueDate?O.valueDate.toLocaleDateString("en-GB"):O.valueDateStr,O.txnDate?O.txnDate.toLocaleDateString("en-GB"):O.txnDateStr,'"'+(O.description||"").replaceAll('"','""')+'"','"'+(O.refNo||"")+'"',O.debit||0,O.credit||0].join(","));gm(`statement_export_${Date.now()}.csv`,[S,...b].join(`
 `))}function v(){const S={settings:{initialBalance:n},entries:c.map(({id:b,...O})=>O),months:p.map(b=>({key:b.key,opening:b.opening,income:b.income,expense:b.expense,closing:b.closing}))};gm(`statement_export_${Date.now()}.json`,JSON.stringify(S,null,2))}const m=((g=p[0])==null?void 0:g.key)||"—",X=((T=p[p.length-1])==null?void 0:T.key)||"—";return x.jsx("div",{className:"min-h-screen bg-gray-50",children:x.jsxs("div",{className:"max-w-7xl mx-auto p-4 md:p-6",children:[x.jsxs("div",{className:"flex items-center justify-between mb-4",children:[x.jsxs("div",{children:[x.jsx("h1",{className:"text-2xl md:text-3xl font-semibold",children:"Account Statement Viewer"}),x.jsx("p",{className:"text-sm text-gray-500",children:"Paste or upload your bank statement. Instantly see openings, income, expenses & charts."})]}),x.jsxs("div",{className:"flex gap-2",children:[x.jsxs("button",{className:"px-3 py-2 rounded-xl border bg-white flex items-center gap-2 text-sm",onClick:()=>t(vm),children:[x.jsx(sS,{className:"w-4 h-4"})," Load Sample"]}),x.jsxs("label",{className:"px-3 py-2 rounded-xl border bg-white flex items-center gap-2 text-sm cursor-pointer",children:[x.jsx(yS,{className:"w-4 h-4"})," Upload CSV/TSV",x.jsx("input",{type:"file",accept:".csv,.tsv,.txt",className:"hidden",onChange:P})]}),x.jsxs("button",{className:"px-3 py-2 rounded-xl border bg-white flex items-center gap-2 text-sm",onClick:y,children:[x.jsx(rS,{className:"w-4 h-4"})," Export CSV"]}),x.jsxs("button",{className:"px-3 py-2 rounded-xl border bg-white flex items-center gap-2 text-sm",onClick:v,children:[x.jsx(tS,{className:"w-4 h-4"})," Export JSON"]})]})]}),x.jsxs("div",{className:"grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4",children:[x.jsxs(on,{className:"lg:col-span-2",children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-2",children:[x.jsx(aS,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Paste Statement (tab/comma delimited)"})]}),x.jsx("textarea",{className:"w-full h-40 border rounded-xl p-3 font-mono text-sm",placeholder:"Paste rows here...",value:e,onChange:S=>t(S.target.value)}),x.jsx("div",{className:"text-xs text-gray-400 mt-2",children:"Expected columns: Date, Description, RefNo, ValueDate, Debit, Credit. (Headers are optional.)"})]}),x.jsxs(on,{children:[x.jsxs("div",{className:"flex items-center gap-2 text-gray-700 mb-2",children:[x.jsx(pS,{className:"w-4 h-4"})," ",x.jsx("b",{children:"Settings"})]}),x.jsxs("div",{className:"flex flex-col gap-3",children:[x.jsxs("label",{className:"text-sm",children:[x.jsx("div",{className:"text-gray-500 mb-1",children:"Initial Balance (before first transaction)"}),x.jsx("input",{type:"number",className:"w-full border rounded-xl p-2",value:n,onChange:S=>r(S.target.value)})]}),x.jsx("div",{className:"text-xs text-gray-500",children:"Tip: Set this to your bank balance before the first month to compute accurate openings."})]})]})]}),x.jsx("div",{className:"mb-4",children:x.jsx(ZG,{search:i,setSearch:a,monthFrom:o,setMonthFrom:u,monthTo:l,setMonthTo:s})}),x.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-4 gap-4 mb-4",children:[x.jsx(on,{children:x.jsx(Xu,{label:"Opening (first month)",value:mn(((I=p[0])==null?void 0:I.opening)||Number(n||0)),sub:`for ${m}`})}),x.jsx(on,{children:x.jsx(Xu,{label:"Total Income",value:mn(h.income),sub:`${p.length} month(s)`})}),x.jsx(on,{children:x.jsx(Xu,{label:"Total Expense",value:mn(h.expense),sub:`${p.length} month(s)`})}),x.jsx(on,{children:x.jsx(Xu,{label:"Closing (last month)",value:mn(((R=p[p.length-1])==null?void 0:R.closing)??Number(n||0)),sub:`for ${X}`})})]}),x.jsx("div",{className:"mb-4",children:x.jsx(WG,{months:p})}),x.jsxs("div",{className:"grid grid-cols-1 lg:grid-cols-3 gap-4",children:[x.jsx("div",{className:"lg:col-span-2",children:x.jsx(zG,{entries:c})}),x.jsx("div",{children:x.jsx(GG,{months:p})})]}),x.jsx("div",{className:"text-xs text-gray-400 mt-6",children:"Built with React + Recharts. Works fully offline in the browser. Data never leaves your device."})]})})}Tf.createRoot(document.getElementById("root")).render(x.jsx(E.StrictMode,{children:x.jsx(JG,{})}));
